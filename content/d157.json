@@ -1,0 +1,311 @@
+[
+  {
+    "id": "natverkens-statistiska-mekanik",
+    "day": 157,
+    "kind": "liv",
+    "arxiv": "cond-mat/0106096",
+    "paper": "Statistical mechanics of complex networks",
+    "hook": "Internet och cellen är byggda enligt samma principer, menade två fysiker.",
+    "title": "Nätverkens fysik",
+    "meta": "Réka Albert & Albert-László Barabási · RMP, 2002",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Nätverk modellerades länge som helt slumpmässiga.",
+      "Men verkliga nätverk har mönster: korta vägar, kluster och knutpunkter.",
+      "Knutpunkterna gör dem tåliga mot slumpfel – men sårbara för riktade attacker."
+    ],
+    "takeaway": "Styrka och svaghet kan sitta på samma ställe.",
+    "source": "arXiv:cond-mat/0106096 · Albert & Barabási (2001)",
+    "more": "Översikten i Reviews of Modern Physics blev en av de mest citerade artiklarna i fysik. Den gick igenom slumpgrafer, småvärldsnätverk och skalfria nätverk, där några få noder har väldigt många länkar. Ett viktigt resultat är att sådana nätverk klarar att många slumpvisa noder slås ut, men faller isär om man angriper knutpunkterna. Senare forskning har visat att skalfrihet är ovanligare än man trodde, men begreppen används fortfarande överallt.",
+    "viz": {
+      "type": "split",
+      "title": "Ett nätverk med knutpunkter",
+      "a": { "h": "Slumpvisa fel", "items": ["Små noder faller", "Nätet håller"] },
+      "b": { "h": "Riktad attack", "items": ["Knutpunkter slås ut", "Nätet faller isär"] }
+    }
+  },
+  {
+    "id": "potenslagar-i-data",
+    "day": 158,
+    "kind": "liv",
+    "arxiv": "0706.1062",
+    "paper": "Power-law distributions in empirical data",
+    "hook": "Många påstådda potenslagar i naturen var resultatet av dålig statistik.",
+    "title": "Hur man testar en potenslag",
+    "meta": "Clauset, Shalizi & Newman · SIAM Review, 2009",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Potenslagar ska finnas överallt: jordbävningar, städer, ord, förmögenheter.",
+      "Men att dra en rak linje i ett log-log-diagram ger ofta fel svar.",
+      "Forskarna visade hur man testar ordentligt – och flera kända exempel höll inte."
+    ],
+    "takeaway": "En rak linje i ett diagram bevisar inget.",
+    "source": "arXiv:0706.1062 · Clauset m.fl. (2007)",
+    "more": "Metoden kombinerar maximum likelihood-skattning, ett test av hur bra modellen passar och jämförelser med alternativa fördelningar, som den log-normala. När forskarna tillämpade den på 24 datamängder från fysik, biologi och samhälle var vissa förenliga med potenslagar, men för andra passade andra fördelningar lika bra eller bättre. Artikeln blev standardreferensen för hur man analyserar sådana data och följdes 2018 av studien om att skalfria nätverk är ovanliga.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett ordentligt test",
+      "steps": ["Skatta exponenten statistiskt", "Hitta var potenslagen börjar", "Testa hur bra den passar", "Jämför med andra fördelningar"]
+    }
+  },
+  {
+    "id": "manniskors-rorelsemonster",
+    "day": 159,
+    "kind": "liv",
+    "arxiv": "0806.1256",
+    "paper": "Understanding individual human mobility patterns",
+    "hook": "100 000 mobiltelefoner avslöjade att vi är mycket mer förutsägbara än vi tror.",
+    "title": "Hur människor rör sig",
+    "meta": "Marta González m.fl. · Nature, 2008",
+    "stat": "100 000",
+    "statLabel": "anonyma mobilanvändare följdes i sex månader",
+    "points": [
+      "Rörelser modellerades ofta som slumpvisa hopp, som djur som letar föda.",
+      "Mobildata visade i stället stark regelbundenhet i tid och rum.",
+      "De flesta återvänder hela tiden till ett fåtal platser – hem och jobb."
+    ],
+    "takeaway": "Våra rörelser är vanor.",
+    "source": "arXiv:0806.1256 · González m.fl. (2008)",
+    "more": "Varje person hade ett eget karaktäristiskt rörelseavstånd som inte ändrades med tiden. När forskarna justerade för skillnader i avstånd och riktning föll alla individers mönster ihop till en och samma fördelning. Resultaten är viktiga för stadsplanering, trafikprognoser och modeller för smittspridning. En uppföljande studie visade att var en person befinner sig i snitt kan förutsägas med 93 procents potential. Studien väckte också frågor om integritet i mobildata.",
+    "viz": {
+      "type": "split",
+      "title": "Två bilder av rörelse",
+      "a": { "h": "Gammal modell", "items": ["Slumpvisa hopp", "Svår att förutsäga"] },
+      "b": { "h": "Mobildatan", "items": ["Få favoritplatser", "Starka vanor"] }
+    }
+  },
+  {
+    "id": "yolo",
+    "day": 160,
+    "kind": "ai",
+    "arxiv": "1506.02640",
+    "paper": "You Only Look Once: Unified, Real-Time Object Detection",
+    "hook": "Titta en gång – och hitta alla föremål i bilden. 45 gånger i sekunden.",
+    "title": "YOLO",
+    "meta": "Joseph Redmon m.fl. · CVPR, 2016",
+    "stat": "45",
+    "statLabel": "bilder per sekund i realtid",
+    "points": [
+      "Tidigare detektorer granskade tusentals utsnitt av bilden ett i taget.",
+      "YOLO delar bilden i ett rutnät och förutsäger alla rutor och klasser på en gång.",
+      "Ett enda nätverk, en enda körning: snabbt nog för video."
+    ],
+    "takeaway": "Snabbt och nästan rätt slår ibland långsamt och perfekt.",
+    "source": "arXiv:1506.02640 · Redmon m.fl. (2015)",
+    "more": "YOLO gjorde fler fel i exakt placering än de bästa metoderna, men färre falsklarm i bakgrunden, eftersom den ser hela bilden. En mindre version, Fast YOLO, klarade 155 bilder per sekund. YOLO fick många efterföljare och används i allt från självkörande bilar till industriella kameror. Joseph Redmon slutade 2020 med datorseende, med hänvisning till militär användning och integritetsproblem.",
+    "viz": {
+      "type": "flow",
+      "title": "Så tittar YOLO",
+      "steps": ["Dela bilden i ett rutnät", "Varje ruta gissar föremål och lådor", "Allt på en gång, i ett nätverk", "Behåll de säkraste lådorna"]
+    }
+  },
+  {
+    "id": "gan",
+    "day": 161,
+    "kind": "ai",
+    "arxiv": "1406.2661",
+    "paper": "Generative Adversarial Networks",
+    "hook": "En förfalskare och en detektiv tävlar – tills förfalskningarna blir perfekta.",
+    "title": "Generativa motståndarnätverk",
+    "meta": "Ian Goodfellow m.fl. · NeurIPS, 2014",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Generatorn skapar bilder från slumpmässigt brus.",
+      "Diskriminatorn försöker avgöra om en bild är äkta eller skapad.",
+      "De tränas mot varandra – när detektiven bara kan gissa är förfalskaren klar."
+    ],
+    "takeaway": "Konkurrens kan göra båda parter bättre.",
+    "source": "arXiv:1406.2661 · Goodfellow m.fl. (2014)",
+    "more": "Enligt anekdoten fick Goodfellow idén under en diskussion på en bar i Montréal och skrev koden samma natt. Teoretiskt visade artikeln att spelet har en unik lösning där generatorn exakt återskapar träningsdatans fördelning och diskriminatorn alltid svarar 50 procent. GAN-modeller låg bakom de första fotorealistiska ansiktena och 'deepfakes', men har i stor utsträckning ersatts av diffusionsmodeller, som är stabilare att träna.",
+    "viz": {
+      "type": "flow",
+      "title": "Spelet",
+      "steps": ["Generatorn skapar en bild", "Diskriminatorn: äkta eller falsk?", "Båda lär sig av utfallet", "Till slut: omöjligt att skilja"]
+    }
+  },
+  {
+    "id": "majoritetsillusionen",
+    "day": 162,
+    "kind": "liv",
+    "arxiv": "1506.03022",
+    "paper": "The Majority Illusion in Social Networks",
+    "hook": "Alla dina vänner verkar göra något – fast nästan ingen gör det.",
+    "title": "Majoritetsillusionen",
+    "meta": "Lerman, Yan & Wu · PLoS ONE, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Vi bedömer vad som är vanligt utifrån vad våra vänner gör.",
+      "Populära personer syns hos många – om de gör något verkar det vanligt överallt.",
+      "Ett ovanligt beteende kan därför se ut som majoritet i många människors kretsar."
+    ],
+    "takeaway": "Ditt flöde är inte världen.",
+    "source": "arXiv:1506.03022 · Lerman m.fl. (2015)",
+    "more": "Fenomenet hänger ihop med vänskapsparadoxen: i snitt har dina vänner fler vänner än du, eftersom personer med många vänner finns med i fler vänkretsar. Om just de välkopplade personerna har en viss egenskap kan en stor del av nätverket se den hos mer än hälften av sina vänner, även om den egentligen är ovanlig. Effekten är starkast i nätverk där populära personer umgås med mindre populära. Det kan påverka hur normer, trender och åsikter sprids.",
+    "viz": {
+      "type": "bars",
+      "title": "Ett exempel med 14 personer",
+      "unit": "",
+      "items": [{ "l": "Har egenskapen", "v": 3 }, { "l": "Tror att de flesta har den", "v": 10 }],
+      "max": 14,
+      "note": "Schematiskt exempel."
+    }
+  },
+  {
+    "id": "attention-is-all-you-need",
+    "day": 163,
+    "kind": "ai",
+    "arxiv": "1706.03762",
+    "paper": "Attention Is All You Need",
+    "hook": "Åtta forskare på Google skrev artikeln som ligger bakom ChatGPT, Claude och Gemini.",
+    "title": "Attention is all you need",
+    "meta": "Ashish Vaswani m.fl. · Google, NeurIPS 2017",
+    "stat": "3,5",
+    "statLabel": "dygn på åtta grafikkort för rekordet i översättning",
+    "points": [
+      "Tidigare språkmodeller läste text ord för ord, i ordning.",
+      "Transformern tittar på alla ord samtidigt och väger hur de hänger ihop – uppmärksamhet.",
+      "Den var bättre på översättning och gick mycket snabbare att träna."
+    ],
+    "takeaway": "Rätt arkitektur kan förändra allt.",
+    "source": "arXiv:1706.03762 · Vaswani m.fl. (2017)",
+    "more": "Transformern tog bort både rekurrenta och konvolutionella lager och byggde helt på uppmärksamhetsmekanismer. Det gjorde att beräkningarna kunde köras parallellt på grafikkort, vilket var avgörande för att skala upp. Modellen satte nya rekord i översättning från engelska till tyska och franska. I dag är transformern grunden för nästan alla stora språkmodeller och många bild-, ljud- och proteinmodeller. Artikeln hör till de mest citerade i datavetenskapens historia.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att läsa",
+      "a": { "h": "Förr (RNN)", "items": ["Ett ord i taget", "Svårt med långa samband", "Svårt att parallellisera"] },
+      "b": { "h": "Transformern", "items": ["Alla ord samtidigt", "Uppmärksamhet", "Snabb på grafikkort"] }
+    }
+  },
+  {
+    "id": "bayesiansk-optimering",
+    "day": 164,
+    "kind": "matte",
+    "arxiv": "1206.2944",
+    "paper": "Practical Bayesian Optimization of Machine Learning Algorithms",
+    "hook": "Att ställa in en AI var en svart konst. Statistik gjorde det till en vetenskap.",
+    "title": "Bayesiansk optimering",
+    "meta": "Snoek, Larochelle & Adams · NeurIPS, 2012",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Maskininlärning har många inställningar som måste testas – och varje test är dyrt.",
+      "En statistisk modell gissar hur bra varje inställning är och hur osäker gissningen är.",
+      "Nästa test väljs där chansen till förbättring är störst."
+    ],
+    "takeaway": "Lär dig av varje försök innan du gör nästa.",
+    "source": "arXiv:1206.2944 · Snoek m.fl. (2012)",
+    "more": "Metoden modellerar resultatet med en gaussisk process, som ger både en förväntan och en osäkerhet för varje möjlig inställning. Författarna visade hur valen av modell och strategi spelar stor roll, och hur man kan ta hänsyn till att vissa försök tar längre tid och köra flera parallellt. Deras verktyg Spearmint hittade inställningar som slog experter på flera problem. Bayesiansk optimering används i dag även för att designa material, läkemedel och experiment.",
+    "viz": {
+      "type": "flow",
+      "title": "En loop av smarta gissningar",
+      "steps": ["Testa några inställningar", "Bygg en modell av resultaten", "Välj nästa test: lovande eller okänt", "Upprepa tills budgeten är slut"]
+    }
+  },
+  {
+    "id": "vetenskaplig-genomslagskurva",
+    "day": 165,
+    "kind": "liv",
+    "arxiv": "1306.3293",
+    "paper": "Quantifying Long-Term Scientific Impact",
+    "hook": "Alla forskningsartiklar verkar följa samma citeringskurva.",
+    "title": "Citeringarnas universella kurva",
+    "meta": "Wang, Song & Barabási · Science, 2013",
+    "stat": "3",
+    "statLabel": "tal beskriver en artikels hela citeringshistoria",
+    "points": [
+      "Citeringar efter några år säger dåligt hur viktig en artikel blir på lång sikt.",
+      "En modell med tre egenskaper – omedelbarhet, livslängd och 'fitness' – fångar förloppet.",
+      "Justerat för dem följer artiklar från olika fält och tidskrifter samma kurva."
+    ],
+    "takeaway": "Även framgång har mönster.",
+    "source": "arXiv:1306.3293 · Wang m.fl. (2013)",
+    "more": "Modellen bygger på tre mekanismer: att citerade artiklar lättare citeras igen, att nya idéer åldras och att varje artikel har en egen attraktionskraft. Med dem kunde forskarna förutsäga långsiktiga citeringar bättre än med vanliga mått som tidskriftens impaktfaktor. Studien är en del av fältet 'science of science', som studerar hur vetenskap fungerar med data.",
+    "viz": {
+      "type": "line",
+      "title": "Citeringar per år",
+      "ymax": 100,
+      "x": ["1", "3", "5", "10", "20", "30"],
+      "series": [{ "l": "Typisk artikel", "pts": [20, 90, 80, 45, 15, 5] }],
+      "note": "Schematisk. X = år efter publicering."
+    }
+  },
+  {
+    "id": "rl-fran-manniskors-val",
+    "day": 166,
+    "kind": "ai",
+    "arxiv": "1706.03741",
+    "paper": "Deep reinforcement learning from human preferences",
+    "hook": "En simulerad robot lärde sig göra en bakåtvolt – bara genom att människor valde det bästa klippet.",
+    "title": "Lära av människors val",
+    "meta": "Paul Christiano m.fl. · OpenAI & DeepMind, 2017",
+    "stat": "1 %",
+    "statLabel": "av agentens handlingar behövde bedömas av människor",
+    "points": [
+      "Vissa mål är svåra att skriva som en belöningsfunktion – som 'gör en snygg volt'.",
+      "Människor fick i stället se två korta klipp och välja det bästa.",
+      "En modell lärde sig belöningen från valen, och agenten tränades mot den."
+    ],
+    "takeaway": "Det som är svårt att beskriva kan vara lätt att bedöma.",
+    "source": "arXiv:1706.03741 · Christiano m.fl. (2017)",
+    "more": "Metoden klarade Atarispel och simulerade robotuppgifter utan tillgång till den riktiga poängen, med återkoppling på mindre än en procent av agentens handlingar. En bakåtvolt kunde läras med ungefär en timmes mänsklig tid. Idén att träna en belöningsmodell på människors jämförelser är grunden för RLHF, som senare användes för InstructGPT, ChatGPT och många andra språkmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Belöning från jämförelser",
+      "steps": ["Agenten provar saker", "Människa väljer det bättre av två klipp", "En modell lär sig vad människan vill", "Agenten tränas mot modellen"]
+    }
+  },
+  {
+    "id": "kadison-singer",
+    "day": 167,
+    "kind": "matte",
+    "arxiv": "1306.3969",
+    "paper": "Interlacing Families II: Mixed Characteristic Polynomials and the Kadison-Singer Problem",
+    "hook": "En fråga från kvantmekanikens grunder från 1959 löstes av tre datavetare.",
+    "title": "Kadison–Singers problem",
+    "meta": "Marcus, Spielman & Srivastava · Annals, 2015",
+    "stat": "54",
+    "statLabel": "år efter att frågan ställdes",
+    "points": [
+      "Kadison och Singer frågade 1959 om viss kunskap i kvantmekanik är entydig.",
+      "Problemet visade sig motsvara frågor i många områden – från signalbehandling till grafer.",
+      "Med sammanflätade polynom bevisades det – svaret blev ja."
+    ],
+    "takeaway": "Lösningen kan komma från ett helt annat håll.",
+    "source": "arXiv:1306.3969 · Marcus m.fl. (2013)",
+    "more": "Den ursprungliga frågan gäller om ett 'rent tillstånd' på en viss sorts observabler entydigt kan utvidgas till alla observabler. Med åren visades den vara likvärdig med Weavers förmodan och Andersons 'pavingförmodan' i matrisanalys. Marcus, Spielman och Srivastava bevisade dessa genom att studera de största rötterna till 'blandade karakteristiska polynom'. Spielman och Srivastava arbetar i teoretisk datavetenskap, och metoden kommer från deras arbete om grafer.",
+    "viz": {
+      "type": "flow",
+      "title": "En kedja av likvärdiga problem",
+      "steps": ["Kadison–Singer (kvantmekanik, 1959)", "Andersons pavingförmodan (matriser)", "Weavers förmodan", "Bevisad med sammanflätade polynom"]
+    }
+  },
+  {
+    "id": "kitaev-anyoner",
+    "day": 168,
+    "kind": "fysik",
+    "arxiv": "cond-mat/0506438",
+    "paper": "Anyons in an exactly solved model and beyond",
+    "hook": "En leksaksmodell på ett bikakemönster visade hur kvantdatorer kan bli felfria.",
+    "title": "Kitaevs bikakemodell",
+    "meta": "Alexei Kitaev · Annals of Physics, 2006",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Kvantspinn sitter i ett bikakemönster och växelverkar olika i tre riktningar.",
+      "Modellen går att lösa exakt – ovanligt för system med starka växelverkningar.",
+      "Den har exotiska partiklar, anyoner, som kan lagra kvantinformation skyddat."
+    ],
+    "takeaway": "En exakt lösbar modell kan visa vägen.",
+    "source": "arXiv:cond-mat/0506438 · Kitaev (2005)",
+    "more": "Anyoner finns bara i två dimensioner och beter sig varken som bosoner eller fermioner. När de flyttas runt varandra – 'flätas' – ändras systemets tillstånd på ett sätt som bara beror på flätningens topologi. Det är grunden för idén om topologiska kvantdatorer. Kitaevs modell visade både abelska och icke-abelska anyoner. Material som α-RuCl₃ har undersökts som möjliga förverkliganden av modellen.",
+    "viz": {
+      "type": "flow",
+      "title": "Från bikakor till kvantdatorer",
+      "steps": ["Spinn i ett bikakemönster", "Exakt lösning med fria fermioner", "Anyoner uppstår", "Flätning = skyddad kvantberäkning"]
+    }
+  }
+]

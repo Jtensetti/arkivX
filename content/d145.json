@@ -1,0 +1,326 @@
+[
+  {
+    "id": "dunbars-tal-twitter",
+    "day": 145,
+    "kind": "liv",
+    "arxiv": "1105.5170",
+    "paper": "Validation of Dunbar's number in Twitter conversations",
+    "hook": "Du kan ha tusentals följare – men bara runt 150 riktiga relationer.",
+    "title": "Dunbars tal på Twitter",
+    "meta": "Gonçalves, Perra & Vespignani · PLoS ONE, 2011",
+    "stat": "100–200",
+    "statLabel": "stabila relationer som mest",
+    "points": [
+      "Antropologen Robin Dunbar föreslog att hjärnan klarar runt 150 stabila relationer.",
+      "Forskarna följde konversationer mellan 1,7 miljoner Twitteranvändare i sex månader.",
+      "Även på nätet höll folk som mest 100–200 stabila kontakter."
+    ],
+    "takeaway": "Uppmärksamhet är en begränsad resurs, även online.",
+    "source": "arXiv:1105.5170 · Gonçalves m.fl. (2011)",
+    "more": "Dunbars tal bygger på sambandet mellan hjärnans storlek och gruppstorlek hos primater. Studien mätte inte följare utan faktiska, ömsesidiga samtal. När antalet kontakter ökade över en viss nivå blev relationerna svagare. Forskarna föreslog en enkel modell där varje användare har begränsad tid och prioriterar sina samtal, vilket återskapade mönstret. Siffran är omdiskuterad, men studien visade att digitala verktyg inte tar bort våra kognitiva gränser.",
+    "viz": {
+      "type": "gauge",
+      "title": "Hur många relationer klarar vi?",
+      "min": 0,
+      "max": 400,
+      "v": 150,
+      "unit": "",
+      "zones": ["Nära vänner", "Stabila relationer", "Bekanta"],
+      "note": "Twitterdata: som mest 100–200."
+    }
+  },
+  {
+    "id": "detr",
+    "day": 146,
+    "kind": "ai",
+    "arxiv": "2005.12872",
+    "paper": "End-to-End Object Detection with Transformers",
+    "hook": "Objektdetektering var full av handgjorda knep. En transformer gjorde dem onödiga.",
+    "title": "DETR",
+    "meta": "Nicolas Carion m.fl. · Facebook AI, 2020",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Äldre detektorer gissar tusentals rutor och rensar sedan bort dubbletter.",
+      "DETR ser detektion som att förutsäga en mängd: en lista med föremål, direkt.",
+      "En transformer resonerar om bilden som helhet och föremålen sinsemellan."
+    ],
+    "takeaway": "Rätt formulering av problemet kan ta bort knepen.",
+    "source": "arXiv:2005.12872 · Carion m.fl. (2020)",
+    "more": "DETR använder ett fast antal inlärda 'frågor' som var och en kan bli ett föremål eller 'inget'. Under träningen paras förutsägelserna ihop med de rätta svaren genom bipartit matchning, så att varje föremål förutsägs exakt en gång. Det tog bort behovet av ankarboxar och efterbehandling. Den första versionen tränade långsamt och var svag på små föremål, men idén har präglat nästan all senare forskning om objektdetektion.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att hitta föremål",
+      "a": { "h": "Klassiskt", "items": ["Tusentals gissningar", "Rensa dubbletter", "Handgjorda regler"] },
+      "b": { "h": "DETR", "items": ["Fast antal frågor", "Ett svar per föremål", "Inga extra regler"] }
+    }
+  },
+  {
+    "id": "kaffeautomaten",
+    "day": 147,
+    "kind": "fysik",
+    "arxiv": "1405.6903",
+    "paper": "Quantifying the Rise and Fall of Complexity in Closed Systems: The Coffee Automaton",
+    "hook": "Häll mjölk i kaffe: först virvlar, sedan bara ljusbrunt. Varför är mitten mest intressant?",
+    "title": "Kaffeautomaten",
+    "meta": "Aaronson, Carroll & Ouellette · 2014",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Entropi ökar alltid – men komplexitet verkar öka och sedan minska igen.",
+      "Forskarna simulerade kaffe och grädde som blandas, ruta för ruta.",
+      "Ett mått på 'synlig komplexitet' toppade mitt i blandningen."
+    ],
+    "takeaway": "Det intressanta finns mellan ordning och kaos.",
+    "source": "arXiv:1405.6903 · Aaronson m.fl. (2014)",
+    "more": "Universum började enkelt och kommer att sluta enkelt, men däremellan finns galaxer, planeter och liv. Fysikern Sean Carroll och datavetaren Scott Aaronson ville göra den känslan mätbar. De använde Kolmogorovkomplexiteten – hur kort en beskrivning kan vara – av en grov version av tillståndet. När partiklarna inte påverkade varandra blev komplexiteten aldrig stor, men när de växelverkade steg den och föll igen. Studien är ett första försök, inte ett slutgiltigt svar.",
+    "viz": {
+      "type": "line",
+      "title": "Entropi och komplexitet över tid",
+      "ymax": 100,
+      "x": ["Start", "", "", "", "Slut"],
+      "series": [
+        { "l": "Entropi", "pts": [5, 40, 70, 90, 98] },
+        { "l": "Komplexitet", "pts": [3, 45, 70, 35, 5] }
+      ],
+      "note": "Schematisk bild av idén."
+    }
+  },
+  {
+    "id": "fermibubblorna",
+    "day": 148,
+    "kind": "rymd",
+    "arxiv": "1005.5480",
+    "paper": "Giant Gamma-ray Bubbles from Fermi-LAT: AGN Activity or Bipolar Galactic Wind?",
+    "hook": "Två jättebubblor av gammastrålning sticker ut ur Vintergatans centrum.",
+    "title": "Fermibubblorna",
+    "meta": "Meng Su, Tracy Slatyer & Douglas Finkbeiner · ApJ, 2010",
+    "stat": "50°",
+    "statLabel": "ut från galaxens plan, åt båda hållen",
+    "points": [
+      "Forskarna gick igenom data från gammateleskopet Fermi och såg två enorma bubblor.",
+      "De sträcker sig tiotusentals ljusår ovanför och under galaxens centrum.",
+      "Troligen blåstes de ut när det svarta hålet i mitten var aktivt."
+    ],
+    "takeaway": "Vår galax har ett våldsamt förflutet.",
+    "source": "arXiv:1005.5480 · Su m.fl. (2010)",
+    "more": "Bubblorna är ungefär lika stora upptill och nedtill och har skarpa kanter, vilket tyder på en kraftig händelse i galaxens centrum, kanske för några miljoner år sedan. De sammanfaller med ett mikrovågsdis som WMAP sett och med strukturer i röntgen. Två förklaringar diskuteras: att det supermassiva svarta hålet Sagittarius A* slukade mycket materia, eller att ett utbrott av stjärnbildning drev en vind. Senare har röntgensatelliten eROSITA hittat ännu större bubblor.",
+    "viz": {
+      "type": "flow",
+      "title": "Bubblornas möjliga ursprung",
+      "steps": ["Svarta hålet i centrum äter mycket materia", "Energi och partiklar skjuts ut", "Två bubblor blåses upp", "Fermi ser dem i gammastrålning"]
+    }
+  },
+  {
+    "id": "grovers-algoritm",
+    "day": 149,
+    "kind": "fysik",
+    "arxiv": "quant-ph/9605043",
+    "paper": "A fast quantum mechanical algorithm for database search",
+    "hook": "Hitta ett namn bland en miljon på bara tusen steg – med en kvantdator.",
+    "title": "Grovers algoritm",
+    "meta": "Lov Grover · Bell Labs, 1996",
+    "stat": "√N",
+    "statLabel": "steg i stället för N",
+    "points": [
+      "I en osorterad lista med N namn måste en vanlig dator i snitt titta på hälften.",
+      "En kvantdator kan undersöka alla samtidigt i en superposition.",
+      "Med interferens förstärks rätt svar steg för steg – det tar bara ungefär √N steg."
+    ],
+    "takeaway": "Interferens kan leta åt dig.",
+    "source": "arXiv:quant-ph/9605043 · Grover (1996)",
+    "more": "Grovers algoritm ger en kvadratisk uppsnabbning: en miljon poster kräver runt tusen steg. Det är mindre dramatiskt än Shors exponentiella uppsnabbning för faktorisering, men gäller ett mycket bredare slags problem. Det har också bevisats att ingen kvantalgoritm kan söka snabbare än så i en osorterad mängd. Algoritmen påverkar kryptografi: för att vara säker mot den behöver symmetriska nycklar dubbelt så många bitar.",
+    "viz": {
+      "type": "bars",
+      "title": "Steg för att hitta 1 av 1 miljon",
+      "unit": "",
+      "items": [{ "l": "Vanlig dator (snitt)", "v": 500000, "t": "500 000" }, { "l": "Grovers algoritm", "v": 1000, "t": "≈1 000" }],
+      "hi": 1,
+      "max": 500000
+    }
+  },
+  {
+    "id": "cap-set",
+    "day": 150,
+    "kind": "matte",
+    "arxiv": "1605.09223",
+    "paper": "On large subsets of F_q^n with no three-term arithmetic progression",
+    "hook": "Ett problem från kortspelet SET löstes på tre sidor med ett nytt trick.",
+    "title": "Cap set-problemet",
+    "meta": "Jordan Ellenberg & Dion Gijswijt · Annals, 2017",
+    "stat": "3",
+    "statLabel": "sidor räckte för genombrottet",
+    "points": [
+      "I kortspelet SET bildar tre kort ett 'set' om varje egenskap är lika eller helt olika.",
+      "Frågan: hur många kort kan ligga utan att det finns ett enda set?",
+      "Med ett nytt polynomtrick bevisades att gränsen växer mycket långsammare än man trott."
+    ],
+    "takeaway": "Ett enkelt trick kan slå årtionden av tekniska framsteg.",
+    "source": "arXiv:1605.09223 · Ellenberg & Gijswijt (2016)",
+    "more": "Matematiskt handlar det om mängder i rummet F₃ⁿ utan tre punkter på linje. Tidigare var den bästa övre gränsen bara något mindre än 3ⁿ. Croot, Lev och Pach hade precis hittat en ny metod för ett närliggande problem, och inom några veckor använde Ellenberg och Gijswijt oberoende av varandra den för att visa att gränsen är högst cirka 2,756ⁿ. De publicerade tillsammans. Metoden har sedan använts på många andra problem.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett set i SET",
+      "steps": ["Varje kort har fyra egenskaper", "Tre kort: varje egenskap lika eller olika", "Hur många kort utan ett set?", "Högst ≈ 2,756ⁿ i n dimensioner"]
+    }
+  },
+  {
+    "id": "efficiency-gap",
+    "day": 151,
+    "kind": "liv",
+    "arxiv": "1705.10812",
+    "paper": "A formula goes to court: Partisan gerrymandering and the efficiency gap",
+    "hook": "Kan en enkel formel avslöja att valkretsar ritats för att fuska?",
+    "title": "En formel i rätten",
+    "meta": "Mira Bernstein & Moon Duchin · 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Gerrymandering betyder att rita valkretsar så att ett parti gynnas.",
+      "'Efficiency gap' räknar röster som 'slösas': i förlorade kretsar eller på för stora segrar.",
+      "Matematikerna visar formelns svagheter – men att den ändå kan vara användbar."
+    ],
+    "takeaway": "Matematik i rätten kräver både precision och ödmjukhet.",
+    "source": "arXiv:1705.10812 · Bernstein & Duchin (2017)",
+    "more": "Formeln var central i rättsfallet Gill mot Whitford om Wisconsins valkretsar, som nådde USA:s högsta domstol. Bernstein och Duchin visar att den i praktiken jämför andelen röster med andelen mandat och kan ge konstiga resultat i ojämna val. Duchin har sedan utvecklat metoder där man jämför en karta med tusentals slumpade alternativa kartor. 2019 slog högsta domstolen fast att federala domstolar inte ska pröva partipolitisk gerrymandering.",
+    "viz": {
+      "type": "flow",
+      "title": "Två sätt att slösa röster",
+      "steps": ["Rita gränserna", "Packa motståndarens väljare i få kretsar", "Sprid resten tunt i många kretsar", "Fler mandat med samma röster"]
+    }
+  },
+  {
+    "id": "gpt-3",
+    "day": 152,
+    "kind": "ai",
+    "arxiv": "2005.14165",
+    "paper": "Language Models are Few-Shot Learners",
+    "hook": "Visa en AI tre exempel – och den lär sig uppgiften utan att tränas om.",
+    "title": "GPT-3",
+    "meta": "Tom Brown m.fl. · OpenAI, NeurIPS 2020",
+    "stat": "175",
+    "statLabel": "miljarder parametrar – tio gånger mer än någon tidigare",
+    "points": [
+      "Tidigare behövde språkmodeller finjusteras på tusentals exempel per uppgift.",
+      "GPT-3 fick bara några exempel i själva frågan – 'few-shot'.",
+      "Ju större modellen var, desto bättre blev den på att lära sig av exemplen."
+    ],
+    "takeaway": "Storlek kan ge helt nya förmågor.",
+    "source": "arXiv:2005.14165 · Brown m.fl. (2020)",
+    "more": "GPT-3 kunde översätta, svara på frågor, räkna enkla tal och skriva texter som testpersoner hade svårt att skilja från mänskliga. Den kunde också använda nya ord den fått förklarade. Artikeln diskuterade också risker som desinformation, fördomar och energiförbrukning. GPT-3 var föregångaren till ChatGPT och visade att 'in-context learning' – att lära sig av exempel i prompten – blir starkare med storleken.",
+    "viz": {
+      "type": "flow",
+      "title": "Few-shot i praktiken",
+      "steps": ["Engelska: cheese → franska: fromage", "Engelska: sea otter → loutre de mer", "Engelska: peppermint → ?", "GPT-3: menthe poivrée"]
+    }
+  },
+  {
+    "id": "ai-energikostnad",
+    "day": 153,
+    "kind": "liv",
+    "arxiv": "1906.02243",
+    "paper": "Energy and Policy Considerations for Deep Learning in NLP",
+    "hook": "Att träna en enda AI-modell kunde släppa ut lika mycket koldioxid som fem bilar under livstiden.",
+    "title": "AI:s klimatnota",
+    "meta": "Strubell, Ganesh & McCallum · ACL, 2019",
+    "stat": "5",
+    "statLabel": "bilars livstidsutsläpp – för en extrem träning",
+    "points": [
+      "Forskarna räknade ut el, kostnad och utsläpp för att träna kända språkmodeller.",
+      "Värst var en sökning efter den bästa arkitekturen med tusentals träningar.",
+      "De föreslog att forskare ska redovisa träningstid och prioritera effektiva metoder."
+    ],
+    "takeaway": "Även bättre noggrannhet har ett pris.",
+    "source": "arXiv:1906.02243 · Strubell m.fl. (2019)",
+    "more": "Det mest citerade talet – omkring 284 ton koldioxid, ungefär fem bilars livstidsutsläpp inklusive tillverkning – gäller en ovanligt dyr arkitektursökning, inte en vanlig träning. Senare studier har visat att utsläppen beror mycket på var datorhallen ligger och hur elen produceras. Artikeln väckte ändå frågan om AI:s klimatpåverkan och om att stora beräkningsresurser gör det svårare för universitet att konkurrera med stora företag.",
+    "viz": {
+      "type": "bars",
+      "title": "Koldioxid (ton)",
+      "unit": "",
+      "items": [{ "l": "Flyg NY–SF, en person", "v": 0.9, "t": "≈0,9" }, { "l": "En bil, hela livet", "v": 57, "t": "≈57" }, { "l": "Extrem arkitektursökning", "v": 284, "t": "≈284" }],
+      "hi": 2,
+      "max": 300,
+      "note": "Ungefärliga siffror från artikeln."
+    }
+  },
+  {
+    "id": "er-epr",
+    "day": 154,
+    "kind": "fysik",
+    "arxiv": "1306.0533",
+    "paper": "Cool horizons for entangled black holes",
+    "hook": "Kanske är kvantsammanflätning och maskhål samma sak.",
+    "title": "ER = EPR",
+    "meta": "Juan Maldacena & Leonard Susskind · 2013",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Einstein och Rosen beskrev 1935 en 'bro' som förbinder två svarta hål – ett maskhål.",
+      "Samma år skrev Einstein, Podolsky och Rosen om sammanflätning – 'EPR'.",
+      "Maldacena och Susskind föreslog att de två är olika sidor av samma fenomen."
+    ],
+    "takeaway": "Rumtiden kan vara vävd av sammanflätning.",
+    "source": "arXiv:1306.0533 · Maldacena & Susskind (2013)",
+    "more": "Två maximalt sammanflätade svarta hål kan beskrivas som förbundna genom ett maskhål, en Einstein–Rosen-bro. Maskhålet går inte att resa igenom och kan inte skicka signaler snabbare än ljuset. Förslaget var ett svar på 'brandväggsparadoxen', som föreslog att den som faller in i ett gammalt svart hål möts av en vägg av energi. ER = EPR är fortfarande en hypotes, men den har inspirerat mycket forskning om hur rumtid kan växa fram ur kvantinformation.",
+    "viz": {
+      "type": "split",
+      "title": "Två artiklar från 1935",
+      "a": { "h": "ER", "items": ["Einstein & Rosen", "Maskhål, broar"] },
+      "b": { "h": "EPR", "items": ["Einstein, Podolsky & Rosen", "Sammanflätning"] },
+      "note": "Hypotesen: de är samma sak."
+    }
+  },
+  {
+    "id": "fermis-paradox-upplost",
+    "day": 155,
+    "kind": "rymd",
+    "arxiv": "1806.02404",
+    "paper": "Dissolving the Fermi Paradox",
+    "hook": "'Var är alla?' frågade Fermi. Kanske är svaret att vi aldrig borde ha väntat oss många.",
+    "title": "Fermis paradox – upplöst?",
+    "meta": "Sandberg, Drexler & Ord · Oxford, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Drakes ekvation multiplicerar sannolikheter för att uppskatta antalet civilisationer.",
+      "Men många av faktorerna är osäkra över många storleksordningar.",
+      "Räknar man med osäkerheten blir det ganska troligt att vi är ensamma i galaxen."
+    ],
+    "takeaway": "Räkna med osäkerheten, inte bara medelvärdet.",
+    "source": "arXiv:1806.02404 · Sandberg m.fl. (2018)",
+    "more": "Om man sätter in 'bästa gissningar' i Drakes ekvation får man ofta tusentals civilisationer. Men när forskarna ersatte varje faktor med en fördelning som speglar den verkliga osäkerheten – till exempel hur sannolikt det är att liv uppstår – blev resultatet helt annorlunda. Med deras antaganden var sannolikheten att vi är ensamma i Vintergatan mellan 53 och 99,6 procent, och i det observerbara universum mellan 39 och 85 procent. Att himlen verkar tom är alltså inte så förvånande.",
+    "viz": {
+      "type": "bars",
+      "title": "Chans att vi är ensamma",
+      "unit": "%",
+      "items": [{ "l": "I Vintergatan", "v": 76, "t": "53–99,6 %" }, { "l": "I det observerbara universum", "v": 62, "t": "39–85 %" }],
+      "max": 100,
+      "note": "Intervall beroende på antaganden."
+    }
+  },
+  {
+    "id": "openai-gym",
+    "day": 156,
+    "kind": "ai",
+    "arxiv": "1606.01540",
+    "paper": "OpenAI Gym",
+    "hook": "Innan AI kunde jämföras behövdes en gemensam lekplats. Den hette Gym.",
+    "title": "OpenAI Gym",
+    "meta": "Greg Brockman m.fl. · OpenAI, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskare i förstärkningsinlärning testade sina metoder i olika, egenbyggda miljöer.",
+      "Gym samlade spel, robotar och klassiska problem bakom ett gemensamt gränssnitt.",
+      "Plötsligt kunde alla jämföra sina algoritmer på samma uppgifter."
+    ],
+    "takeaway": "Gemensamma verktyg driver forskningen framåt.",
+    "source": "arXiv:1606.01540 · Brockman m.fl. (2016)",
+    "more": "Gym innehöll miljöer som att balansera en pinne på en vagn (CartPole), Atarispel och simulerade robotar. Varje miljö har samma enkla gränssnitt: agenten väljer en handling och får tillbaka en observation och en belöning. Det gjorde det lätt att byta miljö och jämföra resultat. Gym blev standard för förstärkningsinlärning och lever vidare som projektet Gymnasium.",
+    "viz": {
+      "type": "flow",
+      "title": "Gränssnittet",
+      "steps": ["Agenten ser en observation", "Agenten väljer en handling", "Miljön ger belöning och ny observation", "Upprepa tills episoden är slut"]
+    }
+  }
+]

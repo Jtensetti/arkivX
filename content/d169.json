@@ -1,0 +1,317 @@
+[
+  {
+    "id": "gaia-enceladus",
+    "day": 169,
+    "kind": "rymd",
+    "arxiv": "1806.06038",
+    "paper": "The merger that led to the formation of the Milky Way's inner stellar halo and thick disk",
+    "hook": "För 10 miljarder år sedan slukade Vintergatan en annan galax. Spåren finns runt oss.",
+    "title": "Gaia-Enceladus",
+    "meta": "Amina Helmi m.fl. · Nature, 2018",
+    "stat": "10",
+    "statLabel": "miljarder år sedan krocken",
+    "points": [
+      "Gaia mätte hur tusentals stjärnor nära solen rör sig.",
+      "Många rörde sig 'fel håll' och hade en annan kemisk sammansättning.",
+      "De kommer från en galax som Vintergatan slukade – nu kallad Gaia-Enceladus."
+    ],
+    "takeaway": "Stjärnornas rörelser bär på galaxens historia.",
+    "source": "arXiv:1806.06038 · Helmi m.fl. (2018)",
+    "more": "Den inre stjärnhalon – det glesa molnet av stjärnor runt Vintergatans skiva – visade sig till stor del bestå av rester från en enda galax ungefär lika stor som det Lilla magellanska molnet. Krocken skakade också om den unga skivan och bidrog till att bilda den 'tjocka skivan'. Galaxen döptes efter Gaia och jätten Enceladus i grekisk mytologi, son till Gaia. En annan grupp beskrev samma struktur oberoende och kallade den 'Gaia-korven'.",
+    "viz": {
+      "type": "timeline",
+      "title": "Vintergatans måltid",
+      "ev": [
+        { "t": "≈10 mdr år sedan", "d": "Gaia-Enceladus krockar med Vintergatan" },
+        { "t": "Efteråt", "d": "Stjärnorna sprids ut i halon" },
+        { "t": "2018", "d": "Gaia avslöjar resterna" }
+      ]
+    }
+  },
+  {
+    "id": "neural-ode",
+    "day": 170,
+    "kind": "ai",
+    "arxiv": "1806.07366",
+    "paper": "Neural Ordinary Differential Equations",
+    "hook": "Vad händer om ett nätverk har oändligt många lager?",
+    "title": "Neurala differentialekvationer",
+    "meta": "Ricky T. Q. Chen m.fl. · NeurIPS, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ett djupt nätverk ändrar sitt inre tillstånd ett lager i taget.",
+      "Neural ODE beskriver i stället förändringen kontinuerligt, med en differentialekvation.",
+      "En vanlig ekvationslösare räknar fram svaret – med fast minnesåtgång."
+    ],
+    "takeaway": "Lager kan bli flöden.",
+    "source": "arXiv:1806.07366 · Chen m.fl. (2018)",
+    "more": "Idén kopplar residualnätverk till numeriska metoder för differentialekvationer: ett residualsteg liknar ett steg i Eulers metod. Genom att låta ett nätverk definiera derivatan kan modellen själv anpassa hur många steg som behövs. Författarna visade också hur man räknar gradienter genom vilken lösare som helst, och byggde kontinuerliga normaliserande flöden för generativa modeller. Artikeln fick pris för bästa artikel på NeurIPS 2018 och knöt ihop maskininlärning med klassisk tillämpad matematik.",
+    "viz": {
+      "type": "split",
+      "title": "Diskret eller kontinuerligt",
+      "a": { "h": "Vanligt nätverk", "items": ["Lager 1, 2, 3 …", "Fast antal steg"] },
+      "b": { "h": "Neural ODE", "items": ["Ett flöde i tiden", "Lösaren väljer steg"] }
+    }
+  },
+  {
+    "id": "ddpm",
+    "day": 171,
+    "kind": "ai",
+    "arxiv": "2006.11239",
+    "paper": "Denoising Diffusion Probabilistic Models",
+    "hook": "Lär en AI att ta bort brus – och den kan skapa helt nya bilder ur ingenting.",
+    "title": "Diffusionsmodellerna tar fart",
+    "meta": "Ho, Jain & Abbeel · Berkeley, NeurIPS 2020",
+    "stat": "3,17",
+    "statLabel": "i FID-poäng – rekord för bildkvalitet på CIFAR-10",
+    "points": [
+      "Lägg brus på en bild i tusen små steg tills bara brus finns kvar.",
+      "Träna ett nätverk att förutsäga bruset i varje steg.",
+      "Starta från rent brus och ta bort lite i taget – en ny bild växer fram."
+    ],
+    "takeaway": "Att städa bort brus kan vara att skapa.",
+    "source": "arXiv:2006.11239 · Ho m.fl. (2020)",
+    "more": "Diffusionsmodeller föreslogs redan 2015, men gav då inte särskilt bra bilder. Ho, Jain och Abbeel hittade en enkel träningsformel, kopplad till 'score matching' och Langevindynamik, som gav bilder i nivå med de bästa GAN-modellerna. Träningen var dessutom stabil. Inom två år låg samma idé bakom DALL·E 2, Imagen och Stable Diffusion, och i dag dominerar diffusion bild- och videogenerering.",
+    "viz": {
+      "type": "flow",
+      "title": "Från brus till bild",
+      "steps": ["Rent brus", "Nätverket gissar bruset", "Ta bort lite brus", "Upprepa ~1 000 gånger → bild"]
+    }
+  },
+  {
+    "id": "konkreta-ai-sakerhetsproblem",
+    "day": 172,
+    "kind": "ai",
+    "arxiv": "1606.06565",
+    "paper": "Concrete Problems in AI Safety",
+    "hook": "En städrobot som välter vaser för att bli klar snabbare. Fem konkreta AI-risker.",
+    "title": "Konkreta problem i AI-säkerhet",
+    "meta": "Dario Amodei m.fl. · Google & OpenAI, 2016",
+    "stat": "5",
+    "statLabel": "praktiska forskningsproblem",
+    "points": [
+      "Artikeln flyttade AI-säkerhet från science fiction till konkreta forskningsfrågor.",
+      "Exempel: oönskade bieffekter, att 'fuska' med belöningen och säker utforskning.",
+      "Den ledde till ett nytt forskningsfält inom maskininlärning."
+    ],
+    "takeaway": "Svåra risker blir lösbara när de görs konkreta.",
+    "source": "arXiv:1606.06565 · Amodei m.fl. (2016)",
+    "more": "De fem problemen är: att undvika bieffekter, att undvika belöningsfusk (reward hacking), skalbar övervakning när det är dyrt att bedöma resultat, säker utforskning under inlärningen och robusthet när miljön ändras. En städrobot används som genomgående exempel – den kanske täcker över smutsen i stället för att städa, om det är det som belönas. Flera av författarna grundade senare Anthropic.",
+    "viz": {
+      "type": "flow",
+      "title": "De fem problemen",
+      "steps": ["Undvik bieffekter", "Undvik belöningsfusk", "Skalbar övervakning", "Säker utforskning", "Klara förändrade miljöer"]
+    }
+  },
+  {
+    "id": "wav2vec-2",
+    "day": 173,
+    "kind": "ai",
+    "arxiv": "2006.11477",
+    "paper": "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
+    "hook": "Tio minuter transkriberat tal räckte för att lära en AI förstå engelska.",
+    "title": "wav2vec 2.0",
+    "meta": "Alexei Baevski m.fl. · Facebook AI, 2020",
+    "stat": "10",
+    "statLabel": "minuter märkt tal räckte",
+    "points": [
+      "Taligenkänning behövde tidigare tusentals timmar inspelat tal med utskrift.",
+      "wav2vec 2.0 lär sig först från 53 000 timmar tal utan utskrift.",
+      "Den döljer delar av ljudet och lär sig gissa vad som saknas."
+    ],
+    "takeaway": "Lyssna mycket – då räcker lite undervisning.",
+    "source": "arXiv:2006.11477 · Baevski m.fl. (2020)",
+    "more": "Med bara tio minuter märkt data var felprocenten 4,8 procent på rena inspelningar. Med en timme slog modellen den tidigare bästa metoden som använt 100 timmar. Det öppnade för taligenkänning på språk där det finns lite transkriberat material. Tekniken liknar BERT för text: dölj delar av indatan och lär dig förutsäga dem, men här med inlärda ljudenheter.",
+    "viz": {
+      "type": "flow",
+      "title": "Två steg",
+      "steps": ["53 000 timmar tal utan text", "Dölj delar, gissa vad som saknas", "Finjustera på 10 minuter med text", "Fungerande taligenkänning"]
+    }
+  },
+  {
+    "id": "lora",
+    "day": 174,
+    "kind": "ai",
+    "arxiv": "2106.09685",
+    "paper": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "hook": "Anpassa en jättemodell genom att träna 10 000 gånger färre parametrar.",
+    "title": "LoRA",
+    "meta": "Edward Hu m.fl. · Microsoft, 2021",
+    "stat": "10 000×",
+    "statLabel": "färre parametrar att träna",
+    "points": [
+      "Att finjustera alla 175 miljarder parametrar i GPT-3 är dyrt.",
+      "LoRA fryser modellen och lägger till två små matriser i varje lager.",
+      "Bara de små matriserna tränas – och resultatet blir lika bra."
+    ],
+    "takeaway": "Små justeringar kan räcka för stora förändringar.",
+    "source": "arXiv:2106.09685 · Hu m.fl. (2021)",
+    "more": "Idén bygger på att förändringen som behövs för en ny uppgift har låg 'rang' – den kan beskrivas med få dimensioner. Viktändringen skrivs som produkten av två smala matriser. Det minskade antalet tränbara parametrar med 10 000 gånger och minnesbehovet med tre gånger, utan extra fördröjning när modellen används. LoRA blev standard för att anpassa öppna språk- och bildmodeller, och hobbyister delar i dag tusentals LoRA-filer för Stable Diffusion.",
+    "viz": {
+      "type": "flow",
+      "title": "Så fungerar LoRA",
+      "steps": ["Stor viktmatris W – fryst", "Lägg till A · B, två smala matriser", "Träna bara A och B", "Ny modell: W + A · B"]
+    }
+  },
+  {
+    "id": "berattelsers-kanslobagar",
+    "day": 175,
+    "kind": "liv",
+    "arxiv": "1606.07772",
+    "paper": "The emotional arcs of stories are dominated by six basic shapes",
+    "hook": "Alla berättelser kan delas in i sex former, enligt en dator som läst 1 327 romaner.",
+    "title": "Berättelsernas sex former",
+    "meta": "Andrew Reagan m.fl. · EPJ Data Science, 2016",
+    "stat": "1 327",
+    "statLabel": "berättelser från Project Gutenberg",
+    "points": [
+      "Forskarna mätte känsloläget längs texten i över tusen berättelser.",
+      "Tre olika metoder hittade samma sex grundformer.",
+      "Vissa former, som 'Ikaros' och 'Oidipus', laddades ner oftare."
+    ],
+    "takeaway": "Berättelser har former – och vissa fungerar bättre.",
+    "source": "arXiv:1606.07772 · Reagan m.fl. (2016)",
+    "more": "Idén kommer från författaren Kurt Vonnegut, som i en föreläsning ritade berättelser som kurvor mellan lycka och olycka. Forskarna använde hedonometern, en ordlista med lyckobetyg, för att mäta stämningen i fönster genom texten. De sex formerna är: uppgång (från fattig till rik), nedgång (tragedi), fall och uppgång ('man i ett hål'), uppgång och fall (Ikaros), uppgång–fall–uppgång (Askungen) och fall–uppgång–fall (Oidipus).",
+    "viz": {
+      "type": "split",
+      "title": "De sex grundformerna",
+      "a": { "h": "Enkla", "items": ["Uppgång", "Nedgång", "Fall–uppgång"] },
+      "b": { "h": "Sammansatta", "items": ["Uppgång–fall (Ikaros)", "Askungen", "Oidipus"] }
+    }
+  },
+  {
+    "id": "mindre-omvalvande-vetenskap",
+    "day": 176,
+    "kind": "liv",
+    "arxiv": "2106.11184",
+    "paper": "The decline of disruptive science and technology",
+    "hook": "Det publiceras mer forskning än någonsin. Men den bryter allt mindre ny mark.",
+    "title": "Mindre omvälvande vetenskap",
+    "meta": "Park, Leahey & Funk · Nature, 2023",
+    "stat": "45 miljoner",
+    "statLabel": "artiklar och 3,5 miljoner patent analyserades",
+    "points": [
+      "Ett mått mäter om en artikel ersätter tidigare arbeten eller bygger vidare på dem.",
+      "Under sex decennier har artiklar och patent blivit allt mindre omvälvande.",
+      "Mönstret gäller alla fält – och forskare citerar allt smalare urval av äldre arbeten."
+    ],
+    "takeaway": "Mer forskning är inte automatiskt mer nyskapande.",
+    "source": "arXiv:2106.11184 · Park m.fl. (2021)",
+    "more": "Måttet, CD-index, ser på om senare arbeten citerar en artikel utan att citera dess källor – ett tecken på att den gjort äldre arbeten överflödiga. Nedgången fanns i naturvetenskap, medicin, samhällsvetenskap och teknik. Författarna kopplade den till att forskare bygger på en allt snävare del av befintlig kunskap. Det absoluta antalet omvälvande arbeten var dock ungefär konstant. Studien har kritiserats för hur måttet påverkas av citeringsvanor.",
+    "viz": {
+      "type": "line",
+      "title": "Hur omvälvande är en typisk artikel?",
+      "ymax": 100,
+      "x": ["1950", "1960", "1970", "1980", "1990", "2010"],
+      "series": [{ "l": "CD-index (index)", "pts": [100, 75, 50, 30, 15, 8] }],
+      "note": "Schematisk bild av trenden."
+    }
+  },
+  {
+    "id": "forsta-bilden-svart-hal",
+    "day": 177,
+    "kind": "rymd",
+    "arxiv": "1906.11238",
+    "paper": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+    "hook": "Ett teleskop stort som jorden tog den första bilden av ett svart hål.",
+    "title": "Den första bilden av ett svart hål",
+    "meta": "Event Horizon Telescope · ApJ Letters, 2019",
+    "stat": "6,5 miljarder",
+    "statLabel": "solmassor i M87:s svarta hål",
+    "points": [
+      "Radioteleskop över hela jorden kopplades ihop till ett jordstort teleskop.",
+      "De riktades mot galaxen M87, 55 miljoner ljusår bort.",
+      "Bilden visade en ljus ring runt en mörk skugga – precis som Einstein förutsäger."
+    ],
+    "takeaway": "Det osynliga kan avbildas.",
+    "source": "arXiv:1906.11238 · EHT (2019)",
+    "more": "Tekniken kallas interferometri med mycket långa baslinjer: teleskop på olika kontinenter tar upp data samtidigt med atomur, och data skickas sedan på hårddiskar för att kombineras. Ringen hade en diameter på 42 mikrobågsekunder – som att se en apelsin på månen. Bilden visades den 10 april 2019. Tre år senare kom bilden av Sagittarius A*, det svarta hålet i Vintergatans centrum.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett jordstort teleskop",
+      "steps": ["Åtta radioobservatorier världen över", "Samtidiga mätningar med atomur", "Petabyte data på hårddiskar", "Superdatorer sätter ihop bilden"]
+    }
+  },
+  {
+    "id": "emergenta-formagor",
+    "day": 178,
+    "kind": "ai",
+    "arxiv": "2206.07682",
+    "paper": "Emergent Abilities of Large Language Models",
+    "hook": "Små modeller klarar det inte alls. Stora gör det plötsligt. Vad händer?",
+    "title": "Emergenta förmågor",
+    "meta": "Jason Wei m.fl. · TMLR, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En förmåga kallas emergent om den saknas i små modeller men finns i stora.",
+      "Forskarna samlade dussintals exempel, från räkning till att förstå ordlekar.",
+      "Sådana förmågor går inte att förutsäga genom att följa de små modellerna."
+    ],
+    "takeaway": "Mer kan bli annorlunda.",
+    "source": "arXiv:2206.07682 · Wei m.fl. (2022)",
+    "more": "Begreppet emergens kommer från fysik och biologi, där helheten får egenskaper som delarna saknar. Artikeln visade grafer där träffsäkerheten ligger på slumpnivå långt upp i storlek och sedan stiger brant. Om det stämmer kan ännu större modeller få oförutsedda förmågor, både goda och farliga. Ett år senare hävdade en annan studie att många av hoppen beror på vilka mått man använder – en debatt som pågår.",
+    "viz": {
+      "type": "line",
+      "title": "Träffsäkerhet mot modellstorlek",
+      "ymax": 100,
+      "x": ["10⁸", "10⁹", "10¹⁰", "10¹¹", "10¹²"],
+      "series": [{ "l": "Träffsäkerhet", "pts": [5, 5, 6, 40, 70] }],
+      "note": "Schematisk. X = antal parametrar."
+    }
+  },
+  {
+    "id": "zuchongzhi",
+    "day": 179,
+    "kind": "fysik",
+    "arxiv": "2106.14734",
+    "paper": "Strong quantum computational advantage using a superconducting quantum processor",
+    "hook": "En kinesisk kvantdator gjorde på 1,2 timmar det som tar en superdator minst åtta år.",
+    "title": "Zuchongzhi",
+    "meta": "Yulin Wu m.fl. · USTC, PRL 2021",
+    "stat": "66",
+    "statLabel": "fungerande kvantbitar",
+    "points": [
+      "Kvantdatorn Zuchongzhi har 66 supraledande kvantbitar på ett chip.",
+      "Den körde slumpmässiga kvantkretsar med 56 kvantbitar och 20 cykler.",
+      "Uppgiften bedömdes vara 100–1 000 gånger svårare att simulera än Googles test 2019."
+    ],
+    "takeaway": "Kapplöpningen om kvantfördel hårdnar.",
+    "source": "arXiv:2106.14734 · Wu m.fl. (2021)",
+    "more": "Precis som Googles Sycamore-test 2019 är uppgiften att ta prover från en slumpmässig kvantkrets – inget praktiskt problem, men ett sätt att visa att kvantdatorn gör något vanliga datorer har svårt med. Efter Googles test hittade forskare bättre klassiska simuleringsmetoder som krympte försprånget, så kraven skärptes. Zuchongzhi, uppkallad efter en kinesisk matematiker från 400-talet, var ett svar på det.",
+    "viz": {
+      "type": "bars",
+      "title": "Tid för samma uppgift",
+      "unit": "",
+      "items": [{ "l": "Zuchongzhi (timmar)", "v": 1.2, "t": "1,2 h" }, { "l": "Superdator (timmar)", "v": 70080, "t": "≥ 8 år" }],
+      "max": 70080
+    }
+  },
+  {
+    "id": "verifiera-steg-for-steg",
+    "day": 180,
+    "kind": "ai",
+    "arxiv": "2305.20050",
+    "paper": "Let's Verify Step by Step",
+    "hook": "Belöna inte bara rätt svar – belöna varje rätt steg på vägen.",
+    "title": "Verifiera steg för steg",
+    "meta": "Hunter Lightman m.fl. · OpenAI, 2023",
+    "stat": "78 %",
+    "statLabel": "av mattetävlingsproblemen lösta",
+    "points": [
+      "Utfallsövervakning ger feedback bara på slutsvaret.",
+      "Processövervakning bedömer varje steg i resonemanget.",
+      "Med 800 000 bedömda steg vann processövervakningen klart."
+    ],
+    "takeaway": "Rätt svar av fel skäl är ändå fel.",
+    "source": "arXiv:2305.20050 · Lightman m.fl. (2023)",
+    "more": "Forskarna lät människor markera varje steg i modellens lösningar som rätt, fel eller neutralt och släppte datan som PRM800K. En belöningsmodell tränad på steg valde bäst lösning bland många och löste 78 procent av ett urval från MATH-testet. Fördelen med processövervakning är också att den belönar resonemang som människor kan följa, vilket gör modellerna lättare att granska. Metoden anses ha påverkat utvecklingen av resonerande modeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att ge feedback",
+      "a": { "h": "Utfall", "items": ["Bara slutsvaret", "Rätt av en slump räknas"] },
+      "b": { "h": "Process", "items": ["Varje steg", "Fel steg upptäcks"] }
+    }
+  }
+]

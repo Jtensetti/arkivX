@@ -1,0 +1,324 @@
+[
+  {
+    "id": "sfarpackning-8d",
+    "day": 73,
+    "kind": "matte",
+    "arxiv": "1603.04246",
+    "paper": "The sphere packing problem in dimension 8",
+    "hook": "Hur packar man klot tätast i åtta dimensioner? Svaret gav en Fieldsmedalj.",
+    "title": "Klotpackning i åtta dimensioner",
+    "meta": "Maryna Viazovska · Annals of Math., 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Att packa klot tätt är svårt redan i tre dimensioner – det tog 400 år att bevisa.",
+      "I dimension 8 finns ett extremt symmetriskt mönster: E8-gittret.",
+      "Viazovska bevisade på 23 sidor att inget packar tätare än E8."
+    ],
+    "takeaway": "En vacker funktion kan avsluta ett gammalt problem.",
+    "source": "arXiv:1603.04246 · Viazovska (2016)",
+    "more": "Cohn och Elkies hade visat att man kan bevisa en packnings optimalitet om man hittar en speciell 'hjälpfunktion' med rätt egenskaper. Ingen hade lyckats konstruera den. Viazovska byggde den med modulära former, en klassisk del av talteorin. Beviset är kort och elegant, och en vecka senare kom beviset för 24 dimensioner. Hon fick Fieldsmedaljen 2022, som andra kvinna någonsin.",
+    "viz": {
+      "type": "timeline",
+      "title": "Klotpackningens historia",
+      "ev": [
+        { "t": "1611", "d": "Kepler gissar svaret i 3D" },
+        { "t": "2003", "d": "Cohn & Elkies: metod med hjälpfunktioner" },
+        { "t": "2016", "d": "Viazovska löser dimension 8" },
+        { "t": "2022", "d": "Fieldsmedalj" }
+      ]
+    }
+  },
+  {
+    "id": "tretiotre-kuber",
+    "day": 74,
+    "kind": "matte",
+    "arxiv": "1903.04284",
+    "paper": "Cracking the problem with 33",
+    "hook": "Kan 33 skrivas som summan av tre kuber? Svaret har 16 siffror.",
+    "title": "Gåtan med 33",
+    "meta": "Andrew Booker · Bristol, 2019",
+    "stat": "16",
+    "statLabel": "siffror i talen som löste gåtan",
+    "points": [
+      "Frågan: vilka tal kan skrivas som x³ + y³ + z³ med heltal?",
+      "För 33 hade ingen hittat en lösning, trots årtionden av datorsökning.",
+      "Inspirerad av en YouTube-video hittade Booker svaret med en smartare algoritm."
+    ],
+    "takeaway": "En video kan sätta igång en upptäckt.",
+    "source": "arXiv:1903.04284 · Booker (2019)",
+    "more": "Lösningen är 33 = 8 866 128 975 287 528³ + (−8 778 405 442 862 239)³ + (−2 736 111 468 807 040)³. Tal som ger rest 4 eller 5 vid division med 9 kan aldrig skrivas så, men för alla andra tror man att det går. Efter 33 återstod bland tal under 100 bara 42, som Booker och Andrew Sutherland löste samma år med hjälp av en halv miljon privata datorer i projektet Charity Engine.",
+    "viz": {
+      "type": "flow",
+      "title": "Svaret",
+      "steps": ["8 866 128 975 287 528³", "+ (−8 778 405 442 862 239)³", "+ (−2 736 111 468 807 040)³", "= 33"]
+    }
+  },
+  {
+    "id": "gpt-4",
+    "day": 75,
+    "kind": "ai",
+    "arxiv": "2303.08774",
+    "paper": "GPT-4 Technical Report",
+    "hook": "En AI klarade juristexamen bättre än nio av tio människor.",
+    "title": "GPT-4",
+    "meta": "OpenAI · 2023",
+    "stat": "10 %",
+    "statLabel": "bästa på ett simulerat advokatprov",
+    "points": [
+      "GPT-4 tar emot både bild och text och svarar med text.",
+      "Den nådde mänsklig nivå på många yrkes- och akademiska prov.",
+      "Forskarna kunde förutsäga dess förmåga från modeller med 1/1 000 av beräkningarna."
+    ],
+    "takeaway": "Förmågan kunde förutsägas – men inte detaljerna.",
+    "source": "arXiv:2303.08774 · OpenAI (2023)",
+    "more": "Rapporten var ovanligt hemlighetsfull: den angav inte modellens storlek, träningsdata eller arkitektur, med hänvisning till konkurrens och säkerhet. Den visade att GPT-4 klarade ett simulerat amerikanskt advokatprov på nivå med de bästa tio procenten, medan GPT-3.5 hamnade bland de sämsta tio procenten. Ett viktigt resultat var att infrastrukturen gjorde det möjligt att förutsäga slutmodellens fel från mycket mindre modeller.",
+    "viz": {
+      "type": "bars",
+      "title": "Percentil på advokatprovet",
+      "unit": "",
+      "items": [{ "l": "GPT-3.5", "v": 10, "t": "ca 10:e" }, { "l": "GPT-4", "v": 90, "t": "ca 90:e" }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "bicep2-utropet",
+    "day": 76,
+    "kind": "rymd",
+    "arxiv": "1403.3985",
+    "paper": "BICEP2 I: Detection Of B-mode Polarization at Degree Angular Scales",
+    "hook": "Forskarna firade med champagne – och fick sedan backa.",
+    "title": "BICEP2:s stora besked",
+    "meta": "BICEP2-samarbetet · PRL, 2014",
+    "stat": "5σ",
+    "statLabel": "signifikans för ett virvelmönster i ljuset",
+    "points": [
+      "Ett teleskop på Sydpolen letade efter virvlar i Big Bangs efterglöd.",
+      "Det hittade ett tydligt mönster – kanske gravitationsvågor från inflationen.",
+      "Senare visade sig signalen till stor del komma från damm i Vintergatan."
+    ],
+    "takeaway": "Statistisk säkerhet säger inte vad signalen är.",
+    "source": "arXiv:1403.3985 · BICEP2 (2014)",
+    "more": "BICEP2 observerade himlen från Sydpolen 2010–2012 med 512 detektorer. Det överskott av B-mönster som hittades var statistiskt mycket säkert, och om det kom från inflationen hade det varit en av årtiondets största upptäckter. Problemet var att forskarna inte kunde mäta dammet i området själva och fick förlita sig på osäkra modeller. Ett år senare visade den gemensamma analysen med Planck att dammet räckte för att förklara signalen.",
+    "viz": {
+      "type": "split",
+      "title": "Två möjliga förklaringar",
+      "a": { "h": "Hoppet", "items": ["Gravitationsvågor", "Från inflationen"] },
+      "b": { "h": "Sanningen", "items": ["Polariserat damm", "I Vintergatan"] }
+    }
+  },
+  {
+    "id": "self-consistency",
+    "day": 77,
+    "kind": "ai",
+    "arxiv": "2203.11171",
+    "paper": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "hook": "Låt AI:n lösa samma uppgift många gånger – och välj svaret den kommer fram till oftast.",
+    "title": "Självkonsistens",
+    "meta": "Xuezhi Wang m.fl. · Google, 2023",
+    "stat": "+17,9",
+    "statLabel": "procentenheter på mattetestet GSM8K",
+    "points": [
+      "Ett svårt problem kan lösas på många sätt men har bara ett rätt svar.",
+      "Modellen får resonera fram flera olika lösningar i stället för en.",
+      "Svaret som de flesta lösningarna landar i väljs – en sorts omröstning."
+    ],
+    "takeaway": "Många tankar leder oftare rätt än en.",
+    "source": "arXiv:2203.11171 · Wang m.fl. (2022)",
+    "more": "Tidigare valde man den mest sannolika tankekedjan, ord för ord. Självkonsistens samplar i stället många olika kedjor och röstar om slutsvaret. Metoden kräver ingen extra träning och förbättrade resultaten kraftigt: +17,9 procentenheter på GSM8K, +11,0 på SVAMP och +12,2 på AQuA. Den kostar mer beräkningar, men idén att använda mer tid när modellen svarar har blivit central i AI.",
+    "viz": {
+      "type": "bars",
+      "title": "Förbättring med självkonsistens",
+      "unit": "",
+      "items": [{ "l": "GSM8K", "v": 17.9, "t": "+17,9" }, { "l": "AQuA", "v": 12.2, "t": "+12,2" }, { "l": "SVAMP", "v": 11, "t": "+11,0" }, { "l": "StrategyQA", "v": 6.4, "t": "+6,4" }],
+      "hi": 0,
+      "max": 20,
+      "note": "Procentenheter jämfört med en enda tankekedja."
+    }
+  },
+  {
+    "id": "nerf",
+    "day": 78,
+    "kind": "ai",
+    "arxiv": "2003.08934",
+    "paper": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+    "hook": "Ta några foton av ett rum – och gå runt i det i 3D.",
+    "title": "NeRF",
+    "meta": "Ben Mildenhall m.fl. · Berkeley & Google, 2020",
+    "stat": "5",
+    "statLabel": "dimensioner in: plats (x, y, z) och blickriktning",
+    "points": [
+      "Ett nätverk lär sig hur mycket ljus varje punkt i rummet sänder åt varje håll.",
+      "En ny bild skapas genom att följa strålar från kameran genom scenen.",
+      "Det enda som behövs är vanliga foton med känd kameraposition."
+    ],
+    "takeaway": "Ett nätverk kan vara en hel 3D-scen.",
+    "source": "arXiv:2003.08934 · Mildenhall m.fl. (2020)",
+    "more": "NeRF står för Neural Radiance Fields. Scenen lagras inte som ytor och texturer utan i ett nätverks vikter: för varje punkt och riktning ger det täthet och färg. Eftersom volymrendering kan deriveras går det att träna nätverket direkt mot fotona. Resultaten var fotorealistiska med reflexer och fina detaljer, och metoden startade en explosion av forskning. Senare har den snabbare tekniken Gaussian splatting tagit över många användningar.",
+    "viz": {
+      "type": "flow",
+      "title": "Så skapas en ny vy",
+      "steps": ["Skicka en stråle från kameran", "Fråga nätverket i punkter längs strålen", "Få täthet och färg i varje punkt", "Summera till en pixel"]
+    }
+  },
+  {
+    "id": "mask-r-cnn",
+    "day": 79,
+    "kind": "ai",
+    "arxiv": "1703.06870",
+    "paper": "Mask R-CNN",
+    "hook": "Att hitta en katt i en bild är lätt. Att rita exakt runt den var svårt – tills 2017.",
+    "title": "Mask R-CNN",
+    "meta": "Kaiming He m.fl. · Facebook AI, 2017",
+    "stat": "5",
+    "statLabel": "bilder per sekund",
+    "points": [
+      "Faster R-CNN ritade rutor runt föremål i en bild.",
+      "Mask R-CNN lade till en gren som också ritar en exakt mask för varje föremål.",
+      "Samma ramverk kunde även hitta kroppens leder för att uppskatta poser."
+    ],
+    "takeaway": "En enkel tillbyggnad kan slå allt annat.",
+    "source": "arXiv:1703.06870 · He m.fl. (2017)",
+    "more": "En viktig detalj var RoIAlign, ett sätt att hämta ut rätt pixlar för varje föremål utan avrundningsfel. Mask R-CNN vann alla tre grenarna i COCO-tävlingen – segmentering, objektdetektion och detektion av kroppspunkter – och slog tidigare vinnare utan extra knep. Artikeln fick Marr-priset på ICCV 2017 och blev under flera år standardmetoden för att segmentera enskilda föremål.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre svar per föremål",
+      "steps": ["Hitta möjliga föremål", "Vad är det? (klass)", "Var är det? (ruta)", "Exakt form (mask)"]
+    }
+  },
+  {
+    "id": "sfarpackning-24d",
+    "day": 80,
+    "kind": "matte",
+    "arxiv": "1603.06518",
+    "paper": "The sphere packing problem in dimension 24",
+    "hook": "En vecka efter genombrottet i dimension 8 föll även dimension 24.",
+    "title": "Klotpackning i 24 dimensioner",
+    "meta": "Cohn, Kumar, Miller, Radchenko & Viazovska · 2017",
+    "stat": "7",
+    "statLabel": "dagar efter Viazovskas första bevis",
+    "points": [
+      "I 24 dimensioner finns Leechgittret, ett av matematikens märkligaste objekt.",
+      "Varje klot rör där 196 560 andra klot.",
+      "Med Viazovskas metod bevisades att Leechgittret är den tätaste packningen."
+    ],
+    "takeaway": "En ny metod kan lösa flera problem på en gång.",
+    "source": "arXiv:1603.06518 · Cohn m.fl. (2016)",
+    "more": "Leechgittret upptäcktes på 1960-talet och hänger ihop med felrättande koder och den enorma 'monstergruppen'. Forskarna hittade en hjälpfunktion för dimension 24, motsvarande den Viazovska byggt för dimension 8, och visade också att Leechgittret är den enda optimala periodiska packningen. Dimension 8 och 24 är speciella – i nästan alla andra dimensioner är den tätaste packningen fortfarande okänd.",
+    "viz": {
+      "type": "bars",
+      "title": "Hur många grannar rör varje klot?",
+      "unit": "",
+      "items": [{ "l": "3 dimensioner", "v": 12 }, { "l": "8 dimensioner (E8)", "v": 240 }, { "l": "24 dimensioner", "v": 196560, "t": "196 560" }],
+      "hi": 2,
+      "max": 196560
+    }
+  },
+  {
+    "id": "datablad-for-dataset",
+    "day": 81,
+    "kind": "ai",
+    "arxiv": "1803.09010",
+    "paper": "Datasheets for Datasets",
+    "hook": "Varje motstånd i en elektronikbutik har ett datablad. Varför inte AI:ns träningsdata?",
+    "title": "Datablad för dataset",
+    "meta": "Timnit Gebru m.fl. · CACM, 2021",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "AI-modeller ärver brister från datan de tränas på.",
+      "Men dataset saknade ett standardsätt att beskriva innehåll och ursprung.",
+      "Förslaget: ett datablad med syfte, innehåll, insamling och rekommenderad användning."
+    ],
+    "takeaway": "Det du inte dokumenterar kan du inte granska.",
+    "source": "arXiv:1803.09010 · Gebru m.fl. (2018)",
+    "more": "Databladet består av frågor som skaparen av datan ska svara på: Varför skapades den? Vilka människor finns med? Hur samlades den in, och fick de samtycka? Vad bör den inte användas till? Idén har tagits upp av många organisationer och plattformar, bland annat i form av 'dataset cards'. Den hör ihop med 'model cards' för AI-modeller, som flera av samma forskare föreslog.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett datablad svarar på",
+      "steps": ["Varför skapades datan?", "Vad och vilka innehåller den?", "Hur samlades den in?", "Vad ska den – och inte – användas till?"]
+    }
+  },
+  {
+    "id": "landauers-princip",
+    "day": 82,
+    "kind": "fysik",
+    "arxiv": "1503.06537",
+    "paper": "Information and thermodynamics: Experimental verification of Landauer's erasure principle",
+    "hook": "Att radera information kostar värme. Ett experiment mätte exakt hur mycket.",
+    "title": "Priset för att glömma",
+    "meta": "Bérut, Petrosyan & Ciliberto · 2015",
+    "stat": "3 × 10⁻²¹",
+    "statLabel": "joule – minsta värmen för att radera en bit",
+    "points": [
+      "Landauer hävdade 1961 att varje raderad bit måste avge minst kT·ln 2 värme.",
+      "Forskarna byggde ett minne av en enda glaspärla fångad i två laserfällor.",
+      "När raderingen gick långsamt närmade sig värmen precis Landauers gräns."
+    ],
+    "takeaway": "Information är fysik.",
+    "source": "arXiv:1503.06537 · Bérut m.fl. (2015)",
+    "more": "Pärlan kan ligga i den vänstra eller högra fällan – det är bitens 0 eller 1. Att radera betyder att flytta den till ett bestämt läge oavsett var den låg. Forskarna mätte värmen över många upprepningar. Vid rumstemperatur är gränsen ungefär 3 × 10⁻²¹ joule, mycket mindre än vad dagens datorer gör av med. Experimentet bekräftade kopplingen mellan informationsteori och termodynamik som också löser gåtan med Maxwells demon.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett minne med en pärla",
+      "steps": ["Pärla i vänster fälla = 0, höger = 1", "Sänk barriären mellan fällorna", "Knuffa pärlan till vänster", "Mät värmen: minst kT·ln 2"]
+    }
+  },
+  {
+    "id": "ramsey-exponentiell",
+    "day": 83,
+    "kind": "matte",
+    "arxiv": "2303.09521",
+    "paper": "An exponential improvement for diagonal Ramsey",
+    "hook": "En gräns från 1935 i kombinatoriken rubbades äntligen 2023.",
+    "title": "Ramseytalen krymper",
+    "meta": "Campos, Griffiths, Morris & Sahasrabudhe · 2023",
+    "stat": "88",
+    "statLabel": "år med samma gräns",
+    "points": [
+      "På varje stor fest finns k personer som alla känner eller inte känner varandra.",
+      "Ramseytalet R(k) är hur stor festen måste vara för att det ska vara säkert.",
+      "Erdős och Szekeres visade R(k) ≤ 4ᵏ. Nu är gränsen (4 − ε)ᵏ."
+    ],
+    "takeaway": "Även små förbättringar kan vara historiska.",
+    "source": "arXiv:2303.09521 · Campos m.fl. (2023)",
+    "more": "Ramseytal är kända för att vara extremt svåra: R(4) = 18, men R(5) är fortfarande okänt. Gränsen 4ᵏ från 1935 hade bara förbättrats med faktorer som var små jämfört med den. Det nya beviset gav den första exponentiella förbättringen med en ny 'boklik' algoritm. Senare har andra visat att ε kan väljas så att gränsen blir ungefär 3,8ᵏ.",
+    "viz": {
+      "type": "timeline",
+      "title": "Övre gränsen för R(k)",
+      "ev": [
+        { "t": "1935", "d": "Erdős & Szekeres: R(k) ≤ 4ᵏ" },
+        { "t": "1935–2022", "d": "Bara små förbättringar" },
+        { "t": "2023", "d": "Första exponentiella förbättringen" },
+        { "t": "Senare", "d": "Gränsen sänks till ca 3,8ᵏ" }
+      ]
+    }
+  },
+  {
+    "id": "komplexa-natverk-newman",
+    "day": 84,
+    "kind": "liv",
+    "arxiv": "cond-mat/0303516",
+    "paper": "The structure and function of complex networks",
+    "hook": "Internet, vänskaper och proteiner har en sak gemensamt: de är nätverk.",
+    "title": "Nätverkens vetenskap",
+    "meta": "Mark Newman · SIAM Review, 2003",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Kring år 2000 började forskare jämföra helt olika nätverk med samma verktyg.",
+      "Många har 'liten värld': korta vägar mellan nästan alla noder.",
+      "De har också ofta knutpunkter och kluster – vänners vänner känner varandra."
+    ],
+    "takeaway": "Samma mönster går igen i helt olika system.",
+    "source": "arXiv:cond-mat/0303516 · Newman (2003)",
+    "more": "Översiktsartikeln samlade ett fält som vuxit explosionsartat på några år. Den beskriver begrepp som småvärldseffekten, gradfördelningar, klustring och korrelationer, modeller som slumpgrafer och 'preferential attachment' där de rika blir rikare, samt processer på nätverk som smittspridning och sökning. Den blev en av de mest citerade texterna inom nätverksvetenskap och är fortfarande en vanlig startpunkt.",
+    "viz": {
+      "type": "split",
+      "title": "Vanliga drag i verkliga nätverk",
+      "a": { "h": "Struktur", "items": ["Korta vägar", "Kluster", "Knutpunkter"] },
+      "b": { "h": "Exempel", "items": ["Internet", "Vänskaper", "Proteiner"] }
+    }
+  }
+]

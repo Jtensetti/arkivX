@@ -1,0 +1,313 @@
+[
+  {
+    "id": "planets-kromatiska-tal",
+    "day": 97,
+    "kind": "matte",
+    "arxiv": "1804.02385",
+    "paper": "The chromatic number of the plane is at least 5",
+    "hook": "En forskare på åldrande löste en 70 år gammal fråga om att färglägga planet.",
+    "title": "Fyra färger räcker inte",
+    "meta": "Aubrey de Grey · 2018",
+    "stat": "1 581",
+    "statLabel": "punkter i grafen som inte går att färga med 4 färger",
+    "points": [
+      "Frågan: hur många färger behövs för att alla punkter på avstånd 1 ska få olika färg?",
+      "Länge visste man bara att svaret är minst 4 och högst 7.",
+      "de Grey byggde en graf med 1 581 punkter som kräver minst 5 färger."
+    ],
+    "takeaway": "En utomstående kan flytta en gräns som stått still.",
+    "source": "arXiv:1804.02385 · de Grey (2018)",
+    "more": "Problemet kallas Hadwiger–Nelsons problem och ställdes runt 1950. Gränserna 4 och 7 hade inte rubbats sedan dess. Aubrey de Grey är mest känd som forskare om åldrande, men hade matematik som hobby. Han byggde sin graf med datorhjälp, och ett samarbetsprojekt på nätet (Polymath16) krympte den sedan till omkring 500 punkter. Svaret är alltså 5, 6 eller 7.",
+    "viz": {
+      "type": "spectrum",
+      "title": "Antal färger som behövs",
+      "rows": [["Minst 4 (före 2018)", "Minst 5 (de Grey)", "Högst 7"]],
+      "note": "Rätt svar är 5, 6 eller 7."
+    }
+  },
+  {
+    "id": "green-tao",
+    "day": 98,
+    "kind": "matte",
+    "arxiv": "math/0404188",
+    "paper": "The primes contain arbitrarily long arithmetic progressions",
+    "hook": "3, 5, 7. Primtal på jämnt avstånd. Hur långa sådana rader finns det?",
+    "title": "Green–Taos sats",
+    "meta": "Ben Green & Terence Tao · Annals, 2008",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En aritmetisk följd har samma avstånd mellan talen, som 5, 11, 17, 23, 29.",
+      "Green och Tao bevisade att det finns sådana följder av primtal av alla längder.",
+      "Nyckeln: primtalen beter sig tillräckligt 'slumpmässigt' bland nästan-primtal."
+    ],
+    "takeaway": "Även glesa mängder kan gömma oändlig ordning.",
+    "source": "arXiv:math/0404188 · Green & Tao (2004)",
+    "more": "Szemerédis sats säger att varje mängd med positiv täthet bland heltalen innehåller godtyckligt långa följder, men primtalen blir allt glesare. Green och Tao utvecklade en 'överföringsprincip' som gör att satsen ändå kan användas, genom att placera primtalen i en pseudoslumpmässig mängd av nästan-primtal. Beviset säger att följderna finns men inte var. Den längsta kända har 27 primtal. Terence Tao fick Fieldsmedaljen 2006, delvis för detta arbete.",
+    "viz": {
+      "type": "flow",
+      "title": "Exempel på primtalsföljder",
+      "steps": ["3, 5, 7 (avstånd 2)", "5, 11, 17, 23, 29 (avstånd 6)", "… längre följder finns alltid", "Rekordet: 27 primtal i rad"]
+    }
+  },
+  {
+    "id": "kelvins-kilvatten",
+    "day": 99,
+    "kind": "fysik",
+    "arxiv": "1304.2653",
+    "paper": "Ship wakes: Kelvin or Mach angle?",
+    "hook": "Kilvattnet efter en båt ska alltid ha samma vinkel. Det stämmer inte.",
+    "title": "Kilvattnets vinkel",
+    "meta": "Marc Rabaud & Frédéric Moisy · PRL, 2013",
+    "stat": "19,47°",
+    "statLabel": "– Kelvins klassiska vinkel för kilvatten",
+    "points": [
+      "Lord Kelvin visade 1887 att kilvattnet alltid har samma vinkel, oavsett fart.",
+      "Flygbilder av fartyg visade att snabba båtar ger smalare kilvatten.",
+      "Vid hög fart beter sig vattnet mer som en överljudsknall – vinkeln minskar med farten."
+    ],
+    "takeaway": "Klassisk fysik har undantag – om man tittar efter.",
+    "source": "arXiv:1304.2653 · Rabaud & Moisy (2013)",
+    "more": "Forskarna analyserade bilder från Google Earth och såg att vinkeln minskar ungefär som 1/U vid höga hastigheter, på samma sätt som Machkonen bakom ett överljudsplan. Förklaringen är att en båt inte är en punkt utan har en längd. Över en viss gräns – när Froudetalet, som jämför fart med skrovlängd, är runt 0,5 – kan båten inte längre skapa de långa vågor som ger Kelvins vinkel.",
+    "viz": {
+      "type": "split",
+      "title": "Två regimer",
+      "a": { "h": "Långsam båt", "items": ["Kelvins vinkel", "19,47°, alltid"] },
+      "b": { "h": "Snabb båt", "items": ["Machlik vinkel", "Smalare med farten"] }
+    }
+  },
+  {
+    "id": "fermilab-myon-g2",
+    "day": 100,
+    "kind": "fysik",
+    "arxiv": "2104.03281",
+    "paper": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+    "hook": "En liten partikel i en jättelik magnet verkade bryta mot fysikens lagar.",
+    "title": "Myonen vickar för mycket",
+    "meta": "Muon g-2 vid Fermilab · PRL, 2021",
+    "stat": "3,3σ",
+    "statLabel": "avvikelse från standardmodellens förutsägelse",
+    "points": [
+      "Myoner snurrar som små magneter när de åker runt i en ring med 14 meters diameter.",
+      "Takten avslöjar myonens magnetism med en precision på miljondelar.",
+      "Resultatet stämde med Brookhavens mätning – och avvek från teorin."
+    ],
+    "takeaway": "Mät noga – och räkna lika noga.",
+    "source": "arXiv:2104.03281 · Muon g-2 (2021)",
+    "more": "Magneten flyttades 2013 från Brookhaven i New York till Fermilab utanför Chicago, en resa på 5 000 kilometer med båt och lastbil. Tillsammans med Brookhavens mätning blev avvikelsen 4,2 standardavvikelser, nära gränsen för en upptäckt. Men samtidigt gav gitterberäkningar en annan teoretisk förutsägelse som stämde bättre. Fermilabs slutliga mätning 2025 hade en precision på 0,127 miljondelar och stämmer med den uppdaterade teorin.",
+    "viz": {
+      "type": "timeline",
+      "title": "Myonmagnetens resa",
+      "ev": [
+        { "t": "2001–06", "d": "Brookhaven ser en avvikelse" },
+        { "t": "2013", "d": "Magneten fraktas till Fermilab" },
+        { "t": "2021", "d": "Första resultat: avvikelsen kvarstår" },
+        { "t": "2025", "d": "Slutmätning – teorin har kommit ikapp" }
+      ]
+    }
+  },
+  {
+    "id": "nionde-dedekindtalet",
+    "day": 101,
+    "kind": "matte",
+    "arxiv": "2304.00895",
+    "paper": "A computation of the ninth Dedekind Number",
+    "hook": "Ett tal med 42 siffror som matematiker jagat i över 30 år.",
+    "title": "Det nionde Dedekindtalet",
+    "meta": "Christian Jäkel · 2023",
+    "stat": "42",
+    "statLabel": "siffror i svaret",
+    "points": [
+      "Dedekindtalen räknar hur många 'växande' logiska funktioner som finns med n variabler.",
+      "De växer otroligt snabbt – det åttonde räknades fram 1991.",
+      "2023 beräknade två grupper oberoende det nionde – och fick samma svar."
+    ],
+    "takeaway": "Två oberoende svar är starkare än ett.",
+    "source": "arXiv:2304.00895 · Jäkel (2023)",
+    "more": "En monoton boolesk funktion är en där svaret aldrig går från sant till falskt när någon indata går från falskt till sant. Richard Dedekind ställde frågan om deras antal redan 1897. Det nionde talet är 286 386 577 668 298 411 128 469 151 667 598 498 812 366. Jäkel använde matrismultiplikation på grafikkort och symmetrier. Samtidigt räknade en grupp i Belgien och Tyskland fram samma tal med en helt annan metod på superdatorn Noctua 2.",
+    "viz": {
+      "type": "bars",
+      "title": "Dedekindtalen växer explosivt",
+      "unit": "",
+      "items": [{ "l": "D(4)", "v": 168 }, { "l": "D(5)", "v": 7581, "t": "7 581" }, { "l": "D(6)", "v": 7828354, "t": "7,8 miljoner" }],
+      "max": 7828354,
+      "note": "D(9) har 42 siffror."
+    }
+  },
+  {
+    "id": "majorana-nanotrad-2012",
+    "day": 102,
+    "kind": "fysik",
+    "arxiv": "1204.2792",
+    "paper": "Signatures of Majorana fermions in hybrid superconductor-semiconductor nanowire devices",
+    "hook": "En partikel som är sin egen antipartikel – syntes den 2012 i en nanotråd?",
+    "title": "Majoranas spår i nanotråden",
+    "meta": "Vincent Mourik m.fl. · Delft, Science 2012",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Majoranafermioner är sina egna antipartiklar och kan ge stabila kvantdatorer.",
+      "I nanotrådar av indiumantimonid nära en supraledare sågs en topp vid noll spänning.",
+      "Toppen stod kvar när magnetfält och spänningar ändrades – ett möjligt Majoranatecken."
+    ],
+    "takeaway": "En signal är inte samma sak som ett bevis.",
+    "source": "arXiv:1204.2792 · Mourik m.fl. (2012)",
+    "more": "Studien från Leo Kouwenhovens grupp väckte stor uppmärksamhet och fick Microsoft att satsa på topologiska kvantdatorer. Senare visade det sig att liknande toppar kan uppstå av mer vardagliga orsaker, som oordning i materialet. En uppföljare från samma grupp om 'kvantiserad Majoranakonduktans' i Nature 2018 drogs tillbaka 2021 efter att data visat sig vara selektivt redovisade. Frågan om Majoranalägen verkligen setts är fortfarande omstridd.",
+    "viz": {
+      "type": "flow",
+      "title": "Experimentet",
+      "steps": ["Nanotråd av indiumantimonid", "Kopplad till guld och en supraledare", "Lägg på ett magnetfält", "Topp vid noll spänning"]
+    }
+  },
+  {
+    "id": "dall-e-2",
+    "day": 103,
+    "kind": "ai",
+    "arxiv": "2204.06125",
+    "paper": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+    "hook": "'En astronaut som rider en häst i fotorealistisk stil.' Våren 2022 blev det en bild.",
+    "title": "DALL·E 2",
+    "meta": "Aditya Ramesh m.fl. · OpenAI, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Först gör modellen om texten till en 'bildidé' i CLIP:s gemensamma rum.",
+      "Sedan målar en diffusionsmodell fram en bild från idén, steg för steg.",
+      "Samma idé kan ge många varianter med samma innehåll och stil."
+    ],
+    "takeaway": "Tänk först – måla sedan.",
+    "source": "arXiv:2204.06125 · Ramesh m.fl. (2022)",
+    "more": "Modellen kallas unCLIP i artikeln. Uppdelningen i två steg – en 'prior' som går från text till bildrepresentation och en avkodare som går till pixlar – gav större variation i bilderna utan att de blev sämre. Eftersom CLIP kopplar text och bild kunde man också ändra bilder med språk. DALL·E 2 blev för många den första kontakten med AI som skapar bilder, kort före Midjourney och Stable Diffusion.",
+    "viz": {
+      "type": "flow",
+      "title": "Två steg från text till bild",
+      "steps": ["Text: 'en astronaut på en häst'", "Prior: text → bildidé (CLIP)", "Avkodare: diffusion målar bilden", "Färdig bild – eller varianter"]
+    }
+  },
+  {
+    "id": "g-hat-dysonsfarer",
+    "day": 104,
+    "kind": "rymd",
+    "arxiv": "1504.03418",
+    "paper": "The Ĝ Infrared Search for Extraterrestrial Civilizations with Large Energy Supplies. III. The Reddest Extended Sources in WISE",
+    "hook": "Forskare letade efter galaxer där utomjordingar fångat in allt stjärnljus.",
+    "title": "Jakten på supercivilisationer",
+    "meta": "Roger Griffith m.fl. · ApJS, 2015",
+    "stat": "100 000",
+    "statLabel": "galaxer granskades",
+    "points": [
+      "En civilisation som utnyttjar en hel galax energi borde stråla värme i infrarött.",
+      "Satelliten WISE användes för att leta efter galaxer som glöder misstänkt varmt.",
+      "Ingen galax hade en civilisation som gör om mer än 85 % av stjärnljuset till värme."
+    ],
+    "takeaway": "Ett nej är också ett svar.",
+    "source": "arXiv:1504.03418 · Griffith m.fl. (2015)",
+    "more": "Kardashevskalan delar in civilisationer efter hur mycket energi de använder; typ III styr energin från en hel galax. Om de bygger 'Dysonsfärer' runt stjärnor måste den använda energin till slut stråla ut som värme. Projektet Ĝ, lett av Jason Wright, sökte 1 000 gånger fler galaxer än tidigare. Ett femtiotal galaxer, som Arp 220, hade starkt infrarött ljus men har naturliga förklaringar, som intensiv stjärnbildning.",
+    "viz": {
+      "type": "flow",
+      "title": "Logiken i sökningen",
+      "steps": ["Supercivilisation fångar stjärnljus", "Energin blir till slut värme", "Värme syns som infrarött ljus", "Leta efter för varma galaxer"]
+    }
+  },
+  {
+    "id": "ramanujangrafer",
+    "day": 105,
+    "kind": "matte",
+    "arxiv": "1304.4132",
+    "paper": "Interlacing Families I: Bipartite Ramanujan Graphs of All Degrees",
+    "hook": "Tre forskare hittade en ny metod – och löste två kända problem på kort tid.",
+    "title": "Ramanujangrafer i alla grader",
+    "meta": "Marcus, Spielman & Srivastava · Annals, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ramanujangrafer är glesa nätverk som ändå är extremt väl sammankopplade.",
+      "Man visste att de fanns för vissa grader, men inte för alla.",
+      "Med en ny metod – 'sammanflätade polynom' – visades att de finns för varje grad."
+    ],
+    "takeaway": "En ny metod kan öppna många dörrar.",
+    "source": "arXiv:1304.4132 · Marcus m.fl. (2013)",
+    "more": "Sådana grafer är viktiga i datavetenskap, till exempel för robusta nätverk och felrättande koder. De bästa möjliga kallas Ramanujangrafer, eftersom de första konstruktionerna byggde på talteori kopplad till Ramanujan. Metoden med sammanflätade polynom användes kort därefter av samma trio för att lösa Kadison–Singers problem, en fråga från 1959 i matematisk fysik. De fick Pólyapriset 2014 för arbetena.",
+    "viz": {
+      "type": "split",
+      "title": "Ramanujangrafer är",
+      "a": { "h": "Glesa", "items": ["Få länkar per nod", "Billiga att bygga"] },
+      "b": { "h": "Välkopplade", "items": ["Korta vägar", "Svåra att dela"] }
+    }
+  },
+  {
+    "id": "segment-anything",
+    "day": 106,
+    "kind": "ai",
+    "arxiv": "2304.02643",
+    "paper": "Segment Anything",
+    "hook": "Klicka på vad som helst i en bild – så ritar AI:n exakt runt det.",
+    "title": "Segment Anything",
+    "meta": "Alexander Kirillov m.fl. · Meta AI, 2023",
+    "stat": "1 miljard",
+    "statLabel": "masker i 11 miljoner bilder",
+    "points": [
+      "SAM tar emot en punkt, en ruta eller en text och ritar en mask runt föremålet.",
+      "Modellen hjälpte till att bygga sin egen träningsdata i flera omgångar.",
+      "Den fungerar på bilder den aldrig sett, ofta lika bra som specialtränade modeller."
+    ],
+    "takeaway": "En bra modell kan hjälpa till att skapa sin egen data.",
+    "source": "arXiv:2304.02643 · Kirillov m.fl. (2023)",
+    "more": "Datamängden SA-1B byggdes i tre steg: först ritade människor med hjälp av modellen, sedan blandades manuellt och automatiskt arbete och till sist skapade modellen masker helt själv. Resultatet blev den överlägset största segmenteringsdatan. Modellen och datan släpptes öppet, och SAM används i dag i allt från medicinsk bildanalys till fotoredigering. Senare versioner klarar även video.",
+    "viz": {
+      "type": "flow",
+      "title": "Datamotorn",
+      "steps": ["Människor ritar med modellens hjälp", "Modellen tränas om", "Halvautomatisk märkning", "Helt automatisk: 1 miljard masker"]
+    }
+  },
+  {
+    "id": "generativa-agenter",
+    "day": 107,
+    "kind": "ai",
+    "arxiv": "2304.03442",
+    "paper": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "hook": "25 AI-figurer i en liten stad ordnade en alla hjärtans dag-fest helt själva.",
+    "title": "Generativa agenter",
+    "meta": "Joon Sung Park m.fl. · Stanford & Google, 2023",
+    "stat": "25",
+    "statLabel": "agenter bodde i staden Smallville",
+    "points": [
+      "Varje agent drivs av en språkmodell och har ett minne av allt den upplevt.",
+      "De reflekterar över sina minnen och planerar dagen utifrån dem.",
+      "En agent fick idén till en fest – och nyheten spreds tills gästerna kom."
+    ],
+    "takeaway": "Minne och reflektion ger trovärdigt beteende.",
+    "source": "arXiv:2304.03442 · Park m.fl. (2023)",
+    "more": "Smallville är inspirerad av spelet The Sims. Agenterna vaknar, lagar frukost, går till jobbet, pratar med varandra och bildar åsikter. Arkitekturen har tre delar: ett minne i naturligt språk, reflektioner som sammanfattar minnen till insikter och planering som använder dem. Utvärderingar visade att alla tre behövdes för att beteendet skulle kännas trovärdigt. Studien inspirerade mycket forskning om simulering av människor med AI.",
+    "viz": {
+      "type": "flow",
+      "title": "En agents tankeloop",
+      "steps": ["Observera omgivningen", "Spara i minnet", "Reflektera över minnena", "Planera nästa handling"]
+    }
+  },
+  {
+    "id": "golfstrommens-kollaps",
+    "day": 108,
+    "kind": "liv",
+    "arxiv": "2304.09160",
+    "paper": "Warning of a forthcoming collapse of the Atlantic meridional overturning circulation",
+    "hook": "Havsströmmen som värmer Europa kan kollapsa redan i det här århundradet.",
+    "title": "Varning för AMOC",
+    "meta": "Peter & Susanne Ditlevsen · Nature Comms, 2023",
+    "stat": "2057",
+    "statLabel": "– mest sannolika år för en kollaps enligt studien",
+    "points": [
+      "AMOC är den stora cirkulationen i Atlanten som för varmt vatten norrut.",
+      "System nära en tippunkt varierar mer och återhämtar sig långsammare.",
+      "Sådana tecken i 150 år av temperaturdata pekade mot kollaps 2025–2095."
+    ],
+    "takeaway": "Varningssignaler syns innan systemet tippar.",
+    "source": "arXiv:2304.09160 · Ditlevsen & Ditlevsen (2023)",
+    "more": "Forskarna använde havstemperaturer i Nordatlanten som ett mått på cirkulationens styrka och letade efter statistiska varningssignaler: ökad varians och ökad autokorrelation. Uppskattningen blev en kollaps mellan 2025 och 2095, troligast runt 2057, om utsläppen fortsätter. Resultatet är omdiskuterat – många klimatforskare menar att osäkerheten är större och att en kollaps snarare är en risk än en prognos. Men flera senare studier har också pekat på att AMOC är försvagad.",
+    "viz": {
+      "type": "flow",
+      "title": "Tecken på en tippunkt",
+      "steps": ["Ökande variationer", "Långsammare återhämtning", "Systemet närmar sig tippunkten", "Plötslig övergång till nytt läge"]
+    }
+  }
+]

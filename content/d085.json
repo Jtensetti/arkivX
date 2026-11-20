@@ -1,0 +1,321 @@
+[
+  {
+    "id": "gpts-are-gpts",
+    "day": 85,
+    "kind": "liv",
+    "arxiv": "2303.10130",
+    "paper": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+    "hook": "Hur många jobb påverkas av språkmodeller? Fyra av fem, enligt en tidig studie.",
+    "title": "GPT:er är GPT:er",
+    "meta": "Tyna Eloundou m.fl. · OpenAI & UPenn, 2023",
+    "stat": "80 %",
+    "statLabel": "av USA:s arbetskraft kan få minst var tionde uppgift påverkad",
+    "points": [
+      "Forskarna gick igenom yrken uppgift för uppgift: kan en språkmodell hjälpa här?",
+      "Ca 19 % av de anställda kan få minst hälften av sina uppgifter påverkade.",
+      "Till skillnad från tidigare automatisering drabbas högavlönade jobb mest."
+    ],
+    "takeaway": "Den här tekniken når också kontoret.",
+    "source": "arXiv:2303.10130 · Eloundou m.fl. (2023)",
+    "more": "Titeln är en ordlek: GPT står både för Generative Pre-trained Transformer och för General Purpose Technology, en teknik som påverkar hela ekonomin, som elektricitet. Bedömningarna gjordes av både människor och GPT-4. Studien mäter exponering – vilka uppgifter som skulle kunna göras snabbare – inte om jobb försvinner eller när det händer. Effekterna fanns på alla lönenivåer men var störst bland högre inkomster.",
+    "viz": {
+      "type": "bars",
+      "title": "Andel anställda som påverkas",
+      "unit": "%",
+      "items": [{ "l": "Minst 10 % av uppgifterna", "v": 80 }, { "l": "Minst 50 % av uppgifterna", "v": 19 }],
+      "max": 100
+    }
+  },
+  {
+    "id": "galax-utan-mork-materia",
+    "day": 86,
+    "kind": "rymd",
+    "arxiv": "1803.10237",
+    "paper": "A galaxy lacking dark matter",
+    "hook": "En galax verkar sakna mörk materia – och det kan vara ett bevis för att mörk materia finns.",
+    "title": "Galaxen utan mörk materia",
+    "meta": "Pieter van Dokkum m.fl. · Nature, 2018",
+    "stat": "10,5",
+    "statLabel": "km/s – högsta hastigheten i galaxens stjärnhopar",
+    "points": [
+      "Galaxer brukar ha ungefär 30 gånger mer mörk materia än stjärnor, eller mer.",
+      "I den diffusa galaxen NGC 1052-DF2 rörde sig stjärnhoparna förvånansvärt långsamt.",
+      "Det tyder på nästan ingen mörk materia alls – kanske 400 gånger mindre än väntat."
+    ],
+    "takeaway": "Undantaget kan bekräfta regeln.",
+    "source": "arXiv:1803.10237 · van Dokkum m.fl. (2018)",
+    "more": "Paradoxen är att en galax utan mörk materia talar för att mörk materia är något verkligt som kan skiljas från stjärnorna. Om gravitationen bara betedde sig annorlunda, som i teorin MOND, borde effekten synas i alla galaxer. Resultatet ifrågasattes, bland annat när det gäller galaxens avstånd. En liknande galax, DF4, hittades senare, och en hypotes är att båda bildades vid en våldsam krock där gas och mörk materia separerades.",
+    "viz": {
+      "type": "bars",
+      "title": "Mörk materia per stjärnmassa",
+      "unit": "",
+      "items": [{ "l": "Vintergatan-liknande", "v": 30, "t": "≈30" }, { "l": "NGC 1052-DF2", "v": 1, "t": "≲1" }],
+      "max": 35,
+      "note": "Ungefärliga värden."
+    }
+  },
+  {
+    "id": "reflexion",
+    "day": 87,
+    "kind": "ai",
+    "arxiv": "2303.11366",
+    "paper": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "hook": "En AI-agent som misslyckas skriver en dagbok om vad som gick fel – och blir bättre.",
+    "title": "Reflexion",
+    "meta": "Noah Shinn m.fl. · NeurIPS, 2023",
+    "stat": "91 %",
+    "statLabel": "rätt på kodtestet HumanEval",
+    "points": [
+      "Vanlig förstärkningsinlärning ändrar modellens vikter och kräver många försök.",
+      "Reflexion låter agenten i stället skriva ner vad den lärt sig efter varje försök.",
+      "Anteckningarna sparas i ett minne och används nästa gång – utan ny träning."
+    ],
+    "takeaway": "Att reflektera i ord är också att lära sig.",
+    "source": "arXiv:2303.11366 · Shinn m.fl. (2023)",
+    "more": "Agenten får återkoppling – till exempel att ett test misslyckades – och skriver en kort reflektion om varför och vad den ska göra annorlunda. Reflektionerna läggs till i prompten vid nästa försök. Metoden förbättrade resultaten i beslutsuppgifter, frågesvar och programmering. På kodtestet HumanEval nådde den 91 procent rätt vid första försöket, mot 80 procent för GPT-4 utan Reflexion vid den tiden.",
+    "viz": {
+      "type": "flow",
+      "title": "Agentens loop",
+      "steps": ["Försök lösa uppgiften", "Få återkoppling", "Skriv en reflektion om felet", "Försök igen med reflektionen i minnet"]
+    }
+  },
+  {
+    "id": "chinchilla",
+    "day": 88,
+    "kind": "ai",
+    "arxiv": "2203.15556",
+    "paper": "Training Compute-Optimal Large Language Models",
+    "hook": "De största språkmodellerna var för stora – och hade läst för lite.",
+    "title": "Chinchilla",
+    "meta": "Jordan Hoffmann m.fl. · DeepMind, 2022",
+    "stat": "400",
+    "statLabel": "språkmodeller tränades för att hitta regeln",
+    "points": [
+      "Med en fast budget: ska man bygga en större modell eller träna på mer text?",
+      "Svaret: öka båda lika mycket – dubbla storleken, dubbla datan.",
+      "Chinchilla, 70 miljarder parametrar och 4× mer data, slog Gopher på 280 miljarder."
+    ],
+    "takeaway": "Lika viktigt att läsa mycket som att vara stor.",
+    "source": "arXiv:2203.15556 · Hoffmann m.fl. (2022)",
+    "more": "Tidigare skalningslagar hade lett till modeller som växte snabbare än datamängden. DeepMind tränade över 400 modeller och kom fram till att de flesta stora modeller var kraftigt undertränade. Chinchilla använde samma beräkningsbudget som Gopher men tränades på ungefär 1,4 biljoner token. Den var bättre på nästan alla test och billigare att använda. Tumregeln blev ungefär 20 token träningsdata per parameter.",
+    "viz": {
+      "type": "bars",
+      "title": "Samma budget, olika val",
+      "unit": "",
+      "items": [{ "l": "Gopher (parametrar, mdr)", "v": 280 }, { "l": "Chinchilla (parametrar, mdr)", "v": 70 }],
+      "max": 300,
+      "note": "Chinchilla tränades på 4× mer data – och vann."
+    }
+  },
+  {
+    "id": "cyclegan",
+    "day": 89,
+    "kind": "ai",
+    "arxiv": "1703.10593",
+    "paper": "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks",
+    "hook": "Gör en häst till en zebra – utan att någonsin ha sett samma bild av båda.",
+    "title": "CycleGAN",
+    "meta": "Jun-Yan Zhu m.fl. · Berkeley, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "För att översätta bilder behövs vanligen par: samma scen som foto och som målning.",
+      "CycleGAN lär sig översätta åt båda hållen med bara två högar bilder.",
+      "Kravet: översätter man fram och tillbaka ska man få tillbaka originalet."
+    ],
+    "takeaway": "Det som kan översättas tillbaka har bevarats.",
+    "source": "arXiv:1703.10593 · Zhu m.fl. (2017)",
+    "more": "Metoden använder två generatorer, G från X till Y och F från Y till X, och två diskriminatorer som försöker skilja äkta från falskt. 'Cykelkonsistensen' kräver att F(G(x)) ≈ x. Med den kunde forskarna göra om foton till målningar i Monets stil, sommar till vinter och hästar till zebror. Metoden har brister, till exempel kan den inte ändra form mycket, men den gjorde bildöversättning utan par möjlig.",
+    "viz": {
+      "type": "flow",
+      "title": "Cykeln",
+      "steps": ["Foto av en häst", "G: gör om till zebra", "F: gör om tillbaka till häst", "Ska likna originalet"]
+    }
+  },
+  {
+    "id": "kahn-kalai",
+    "day": 90,
+    "kind": "matte",
+    "arxiv": "2203.17207",
+    "paper": "A Proof of the Kahn-Kalai Conjecture",
+    "hook": "En förmodan som kallades nästan för djärv att vara sann bevisades på sex sidor.",
+    "title": "Kahn–Kalais förmodan",
+    "meta": "Jinyoung Park & Huy Tuan Pham · JAMS, 2024",
+    "stat": "6",
+    "statLabel": "sidor räckte för beviset",
+    "points": [
+      "När man slumpmässigt lägger till länkar i ett nätverk uppstår egenskaper plötsligt.",
+      "Kahn och Kalai gissade att man kan förutsäga tröskeln med en enkel räkning.",
+      "Park och Pham bevisade gissningen med ett kort och elegant argument."
+    ],
+    "takeaway": "Ibland är den djärva gissningen sann.",
+    "source": "arXiv:2203.17207 · Park & Pham (2022)",
+    "more": "En tröskel är den sannolikhet där en egenskap – till exempel att ett slumpnätverk innehåller en viss struktur – går från nästan omöjlig till nästan säker. Förmodan från 2006 säger att den verkliga tröskeln aldrig ligger långt över den 'förväntade tröskeln', som är lätt att räkna ut, högst en logaritmisk faktor. Resultatet förenar många tidigare satser om slumpgrafer. Jinyoung Park bytte till matematik efter att ha varit lärare, vilket gjorde historien extra uppmärksammad.",
+    "viz": {
+      "type": "flow",
+      "title": "Påståendet",
+      "steps": ["Lägg till länkar slumpmässigt", "En egenskap dyker upp plötsligt", "Enkel räkning ger en gissad tröskel", "Verklig tröskel ≤ gissning · log"]
+    }
+  },
+  {
+    "id": "hatten-monotile",
+    "day": 91,
+    "kind": "matte",
+    "arxiv": "2303.10798",
+    "paper": "An aperiodic monotile",
+    "hook": "En pensionär hittade formen som matematiker letat efter i 60 år: en 'einstein'.",
+    "title": "Hatten",
+    "meta": "Smith, Myers, Kaplan & Goodman-Strauss · 2023",
+    "stat": "60",
+    "statLabel": "år av letande efter en ensam aperiodisk platta",
+    "points": [
+      "Kan en enda form täcka ett golv utan att mönstret någonsin upprepas?",
+      "David Smith, en hobbymatematiker, hittade 'hatten' – byggd av åtta drakar.",
+      "Med tre forskare bevisades att hatten bara kan bilda icke-upprepande mönster."
+    ],
+    "takeaway": "Upptäckter kan komma från köksbordet.",
+    "source": "arXiv:2303.10798 · Smith m.fl. (2023)",
+    "more": "'Einstein' betyder här 'en sten' på tyska. Penroses mönster från 1970-talet behövde två olika plattor. Hatten löste problemet med en enda, men den används ibland spegelvänd. Några månader senare hittade samma grupp 'spöket' (the spectre), som klarar det helt utan spegelbilder. David Smith är en pensionerad trycktekniker från Yorkshire som experimenterade med former i ett ritprogram.",
+    "viz": {
+      "type": "timeline",
+      "title": "Jakten på en enda platta",
+      "ev": [
+        { "t": "1966", "d": "Första aperiodiska mönstret: 20 426 plattor" },
+        { "t": "1974", "d": "Penrose: två plattor räcker" },
+        { "t": "2023", "d": "Hatten: en platta (med spegling)" },
+        { "t": "2023", "d": "Spöket: en platta, ingen spegling" }
+      ]
+    }
+  },
+  {
+    "id": "gnistor-av-agi",
+    "day": 92,
+    "kind": "ai",
+    "arxiv": "2303.12712",
+    "paper": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+    "hook": "Forskare bad GPT-4 rita en enhörning i ett programspråk. Den gjorde det.",
+    "title": "Gnistor av AGI",
+    "meta": "Sébastien Bubeck m.fl. · Microsoft Research, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Microsoft testade en tidig version av GPT-4 innan den släpptes.",
+      "Den löste nya uppgifter i matematik, kod, medicin, juridik och psykologi.",
+      "Forskarna såg 'gnistor' av generell intelligens – men också tydliga brister."
+    ],
+    "takeaway": "Stora påståenden kräver stora prov.",
+    "source": "arXiv:2303.12712 · Bubeck m.fl. (2023)",
+    "more": "Rapporten är full av exempel: GPT-4 skrev ett bevis om oändligt många primtal på rim, ritade en enhörning med ritspråket TikZ trots att den bara tränats på text och löste Fermi-problem. Forskarna påpekade också svagheter, som att den har svårt att planera i förväg. Titeln väckte kritik för att vara mer marknadsföring än vetenskap, och exemplen gick inte att återskapa exakt eftersom modellen ändrades. Rapporten blev ändå en av de mest lästa om stora språkmodeller.",
+    "viz": {
+      "type": "split",
+      "title": "Styrkor och svagheter",
+      "a": { "h": "Klarade", "items": ["Matte och kod", "Medicin och juridik", "Rita med kod"] },
+      "b": { "h": "Brister", "items": ["Planera i förväg", "Räkna exakt", "Hitta på fakta"] }
+    }
+  },
+  {
+    "id": "trappist-1b-jwst",
+    "day": 93,
+    "kind": "rymd",
+    "arxiv": "2303.14849",
+    "paper": "Thermal emission from the Earth-sized exoplanet TRAPPIST-1 b using JWST",
+    "hook": "JWST mätte värmen från en jordstor planet 40 ljusår bort.",
+    "title": "TRAPPIST-1 b i infrarött",
+    "meta": "Thomas Greene m.fl. · Nature, 2023",
+    "stat": "500",
+    "statLabel": "kelvin på dagsidan – ungefär 230 °C",
+    "points": [
+      "JWST mätte hur mycket infrarött ljus som försvann när planeten gick bakom stjärnan.",
+      "Dagsidan var omkring 500 kelvin – så varm som en kal sten utan luft blir.",
+      "Planeten verkar alltså sakna en tjock atmosfär."
+    ],
+    "takeaway": "Att mäta värme kan avslöja om det finns luft.",
+    "source": "arXiv:2303.14849 · Greene m.fl. (2023)",
+    "more": "TRAPPIST-1 b är den innersta av de sju planeterna och får ungefär fyra gånger så mycket strålning som jorden. En atmosfär skulle föra över värme till nattsidan och göra dagsidan svalare. Mätningen gjordes vid 15 mikrometer i fem separata förmörkelser. Resultatet stämmer bäst med en mörk yta utan atmosfär. Det var första gången man mätte värme från en så liten och sval exoplanet.",
+    "viz": {
+      "type": "split",
+      "title": "Vad temperaturen säger",
+      "a": { "h": "Med atmosfär", "items": ["Värme sprids", "Svalare dagsida"] },
+      "b": { "h": "Utan atmosfär", "items": ["Värmen stannar", "Het dagsida ✓"] }
+    }
+  },
+  {
+    "id": "hubblekonstanten-riess",
+    "day": 94,
+    "kind": "rymd",
+    "arxiv": "1604.01424",
+    "paper": "A 2.4% Determination of the Local Value of the Hubble Constant",
+    "hook": "Hur snabbt växer universum? Två metoder ger olika svar – och glappet består.",
+    "title": "Hubblespänningen",
+    "meta": "Adam Riess m.fl. · ApJ, 2016",
+    "stat": "73,24",
+    "statLabel": "km/s per megaparsek – lokal mätning",
+    "points": [
+      "Riess grupp mätte avstånd med pulserande stjärnor och supernovor.",
+      "Osäkerheten minskade från 3,3 % till 2,4 %.",
+      "Resultatet skilde sig från vad Planck får ur bakgrundsstrålningen: ca 67."
+    ],
+    "takeaway": "Två bra mätningar som inte stämmer är en ledtråd.",
+    "source": "arXiv:1604.01424 · Riess m.fl. (2016)",
+    "more": "Hubblekonstanten anger hur fort universum expanderar. Den lokala 'avståndsstegen' går från parallaxer till cepheider – stjärnor vars pulsering avslöjar ljusstyrkan – och vidare till supernovor av typ Ia. Planck räknar i stället fram värdet från det tidiga universum med standardmodellen. Med åren har mätningarna blivit ännu säkrare, även med JWST, och skillnaden kallas Hubblespänningen. Den kan bero på okända fel eller på ny fysik.",
+    "viz": {
+      "type": "bars",
+      "title": "Hubblekonstanten (km/s/Mpc)",
+      "unit": "",
+      "items": [{ "l": "Lokal mätning (Riess)", "v": 73.24, "t": "73,2" }, { "l": "Tidiga universum (Planck)", "v": 67.4, "t": "67,4" }],
+      "max": 80
+    }
+  },
+  {
+    "id": "millennium-simuleringen",
+    "day": 95,
+    "kind": "rymd",
+    "arxiv": "astro-ph/0504097",
+    "paper": "Simulating the joint evolution of quasars, galaxies and their large-scale distribution",
+    "hook": "Tio miljarder partiklar i en dator visade hur universums kosmiska nät växte fram.",
+    "title": "Millennium-simuleringen",
+    "meta": "Volker Springel m.fl. · Nature, 2005",
+    "stat": "10 miljarder",
+    "statLabel": "partiklar av mörk materia",
+    "points": [
+      "Teorin om kall mörk materia förutsäger hur strukturer växer genom gravitation.",
+      "Millennium följde mörk materia i en kub över två miljarder ljusår bred.",
+      "Ovanpå lades modeller för galaxer och kvasarer – och de liknade verkligheten."
+    ],
+    "takeaway": "En dator kan spela upp universums historia.",
+    "source": "arXiv:astro-ph/0504097 · Springel m.fl. (2005)",
+    "more": "Simuleringen var den största i sitt slag när den gjordes och följde utvecklingen från strax efter Big Bang till i dag. Galaxernas egenskaper räknades fram med så kallade semianalytiska modeller. Resultaten visade att även mycket tidiga och ljusstarka kvasarer kan uppstå i modellen, och att spår av de baryonakustiska svängningarna bör synas i galaxernas fördelning. Simuleringens data har använts i tusentals studier.",
+    "viz": {
+      "type": "flow",
+      "title": "Från jämnt till nät",
+      "steps": ["Nästan jämnt fördelad materia", "Gravitationen förstärker små skillnader", "Trådar och knutar bildas", "Galaxer tänds i knutarna"]
+    }
+  },
+  {
+    "id": "starshot-lubin",
+    "day": 96,
+    "kind": "rymd",
+    "arxiv": "1604.01356",
+    "paper": "A Roadmap to Interstellar Flight",
+    "hook": "Voyager skulle behöva tiotusentals år till närmaste stjärna. Kan vi klara det på 20?",
+    "title": "Färdplan till stjärnorna",
+    "meta": "Philip Lubin · JBIS, 2016",
+    "stat": "0,006 %",
+    "statLabel": "av ljusets hastighet – så fort färdas Voyager 1",
+    "points": [
+      "Med raketer når vi aldrig andra stjärnor inom överskådlig tid.",
+      "Förslaget: små sonder på gram med tunna segel som skjuts av jättelika laserkanoner.",
+      "De skulle kunna nå en femtedel av ljusets hastighet."
+    ],
+    "takeaway": "Lämna bränslet hemma.",
+    "source": "arXiv:1604.01356 · Lubin (2016)",
+    "more": "Idén är fotonisk framdrivning: ett lasersystem på marken eller i rymden belyser seglet i några minuter. Eftersom sonden inte bär med sig bränsle kan den bli extremt snabb. Lubin beskriver en stegvis väg med allt större laserinstallationer. Artikeln låg till grund för Breakthrough Starshot, som lanserades i april 2016 med målet att skicka sonder till Alfa Centauri. De tekniska utmaningarna är enorma.",
+    "viz": {
+      "type": "bars",
+      "title": "Restid till Alfa Centauri (år)",
+      "unit": "",
+      "items": [{ "l": "Voyager 1-fart", "v": 75000, "t": "≈75 000" }, { "l": "Lasersegel, 20 % av c", "v": 20, "t": "≈20" }],
+      "max": 75000
+    }
+  }
+]

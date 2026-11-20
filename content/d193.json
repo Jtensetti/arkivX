@@ -1,0 +1,317 @@
+[
+  {
+    "id": "pentakvarkar",
+    "day": 193,
+    "kind": "fysik",
+    "arxiv": "1507.03414",
+    "paper": "Observation of J/ψp resonances consistent with pentaquark states in Λb0→J/ψK−p decays",
+    "hook": "Partiklar av fem kvarkar förutsades 1964. LHC såg dem 2015.",
+    "title": "Pentakvarkar",
+    "meta": "LHCb-samarbetet · PRL, 2015",
+    "stat": "9σ",
+    "statLabel": "säkerhet för var och en av de två nya partiklarna",
+    "points": [
+      "Protoner har tre kvarkar, mesoner två. Men teorin tillåter fler.",
+      "LHCb studerade sönderfall av en tung partikel, Λb, och såg två oväntade toppar.",
+      "Topparna passar partiklar av fem kvarkar: pentakvarkar."
+    ],
+    "takeaway": "Teorin tillät det – nu syns det.",
+    "source": "arXiv:1507.03414 · LHCb (2015)",
+    "more": "Murray Gell-Mann nämnde möjligheten redan i sin kvarkmodell 1964. Tidigare påstådda pentakvarkar runt 2003 visade sig vara falsklarm. LHCb hittade två tillstånd, med massor kring 4 380 och 4 450 MeV, som innehåller en charmkvark och en anticharmkvark plus tre lätta kvarkar. Senare data visade att den smalare toppen egentligen är två. Det är fortfarande oklart om kvarkarna sitter tätt ihop eller bildar en löst bunden 'molekyl'.",
+    "viz": {
+      "type": "split",
+      "title": "Hur många kvarkar?",
+      "a": { "h": "Vanliga partiklar", "items": ["Meson: 2", "Proton: 3"] },
+      "b": { "h": "Exotiska", "items": ["Tetrakvark: 4", "Pentakvark: 5"] }
+    }
+  },
+  {
+    "id": "brandvaggar",
+    "day": 194,
+    "kind": "fysik",
+    "arxiv": "1207.3123",
+    "paper": "Black Holes: Complementarity or Firewalls?",
+    "hook": "Faller du in i ett svart hål kanske du brinner upp vid horisonten.",
+    "title": "Svarta hål och brandväggar",
+    "meta": "Almheiri, Marolf, Polchinski & Sully · JHEP, 2013",
+    "stat": "3",
+    "statLabel": "rimliga antaganden som inte alla kan vara sanna",
+    "points": [
+      "Information i Hawkingstrålning ska bevaras, enligt kvantmekaniken.",
+      "Informationen ska komma från nära horisonten, där vanlig fysik gäller.",
+      "En fallande astronaut ska inte märka något vid horisonten. Alla tre går inte ihop."
+    ],
+    "takeaway": "När rimliga antaganden krockar lär vi oss mest.",
+    "source": "arXiv:1207.3123 · Almheiri m.fl. (2012)",
+    "more": "Artikeln kallas ofta AMPS efter författarnas initialer. Den mest 'konservativa' lösningen, menade de, är att horisonten är en brandvägg av högenergetiska partiklar – vilket bryter mot Einsteins ekvivalensprincip. Förslaget skakade om fysiken och ledde till intensiv forskning, bland annat idén ER = EPR. Senare arbeten om hur information kan läcka ut genom 'öar' i rumtiden har gett nya ledtrådar, men frågan är inte avgjord.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre antaganden – ett måste bort",
+      "steps": ["Informationen bevaras", "Vanlig fysik nära horisonten", "Inget märkligt för den som faller in", "→ Brandvägg?"]
+    }
+  },
+  {
+    "id": "ytkod-skalad",
+    "day": 195,
+    "kind": "fysik",
+    "arxiv": "2207.06431",
+    "paper": "Suppressing quantum errors by scaling a surface code logical qubit",
+    "hook": "Fler kvantbitar brukar ge fler fel. Google visade att det kan bli tvärtom.",
+    "title": "Fler kvantbitar, färre fel",
+    "meta": "Google Quantum AI · Nature, 2023",
+    "stat": "49",
+    "statLabel": "fysiska kvantbitar i den större logiska kvantbiten",
+    "points": [
+      "En logisk kvantbit byggs av många fysiska, så att fel kan rättas.",
+      "Men fler kvantbitar betyder också fler felkällor.",
+      "För första gången var den större koden, med 49 kvantbitar, bättre än den mindre med 17."
+    ],
+    "takeaway": "Felkorrigering börjar löna sig.",
+    "source": "arXiv:2207.06431 · Google Quantum AI (2022)",
+    "more": "Ytkoden lägger kvantbitar i ett rutnät. Med avstånd 3 behövs 17 fysiska kvantbitar, med avstånd 5 behövs 49. Om de fysiska felen är tillräckligt få ska större kod ge färre logiska fel. Googles avstånd-5-kod var bara lite bättre än genomsnittet av fyra avstånd-3-koder – 2,9 mot 3,0 procents fel per cykel – men det var första gången det fungerade. 2024 visade Googles Willowchip att felen halveras för varje steg upp i storlek.",
+    "viz": {
+      "type": "bars",
+      "title": "Logiskt fel per cykel",
+      "unit": "%",
+      "items": [{ "l": "Avstånd 3 (17 kvantbitar)", "v": 3.03, "t": "3,03 %" }, { "l": "Avstånd 5 (49 kvantbitar)", "v": 2.91, "t": "2,91 %" }],
+      "hi": 1,
+      "max": 4,
+      "note": "Lägre är bättre."
+    }
+  },
+  {
+    "id": "knutar-inte-additiva",
+    "day": 196,
+    "kind": "matte",
+    "arxiv": "2506.24088",
+    "paper": "Unknotting number is not additive under connected sum",
+    "hook": "Två knutar ihop ska vara lika svåra att lösa upp som var för sig. Det stämmer inte.",
+    "title": "Knutar som hjälper varandra",
+    "meta": "Mark Brittenham & Susan Hermiller · 2025",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Upplösningstalet är hur många gånger man måste klippa och skarva för att få en ren ögla.",
+      "Man trodde länge att talet för två ihopknutna knutar är summan av deras tal.",
+      "Med datorstöd hittades två knutar där summan krymper – en klipp sparas."
+    ],
+    "takeaway": "Även intuitiva regler kan ha undantag.",
+    "source": "arXiv:2506.24088 · Brittenham & Hermiller (2025)",
+    "more": "Frågan fanns på Kirbys berömda lista över öppna problem inom lågdimensionell topologi. Motexemplet använder en knut med upplösningstal 3 och dess spegelbild: tillsammans borde de kräva 6 byten, men det räcker med 5. Forskarna använde programmet SnapPy och undersökte miljontals knutdiagram för att hitta exemplet. Upplösningstalet är känt för att vara mycket svårt att beräkna, och resultatet visar att det är ännu mer komplicerat än man trott.",
+    "viz": {
+      "type": "flow",
+      "title": "Motexemplet",
+      "steps": ["Knut A: 3 byten", "Knut B (spegelbild): 3 byten", "Väntad summa: 6", "Verkligheten: 5 räcker"]
+    }
+  },
+  {
+    "id": "lk-99",
+    "day": 197,
+    "kind": "fysik",
+    "arxiv": "2307.12008",
+    "paper": "The First Room-Temperature Ambient-Pressure Superconductor",
+    "hook": "Sommaren 2023 hävdade forskare att de hittat en supraledare som fungerar i rumstemperatur.",
+    "title": "LK-99",
+    "meta": "Sukbae Lee m.fl. · 2023",
+    "stat": "127 °C",
+    "statLabel": "– påstådd kritisk temperatur",
+    "points": [
+      "En supraledare utan kylning skulle förändra elnät, magneter och elektronik.",
+      "Artikeln påstod att en kopparbehandlad blyapatit, LK-99, var supraledande.",
+      "Labb världen över försökte upprepa resultatet – inom några veckor föll det."
+    ],
+    "takeaway": "Upprepning är vetenskapens immunförsvar.",
+    "source": "arXiv:2307.12008 · Lee m.fl. (2023)",
+    "more": "Artikeln och videor på en sten som verkade sväva spred sig snabbt på sociala medier. Snart visade flera grupper att materialets plötsliga fall i motstånd vid omkring 104 °C berodde på en förorening, kopparsulfid, som ändrar struktur vid den temperaturen. Rent LK-99 visade sig vara en isolator. Episoden blev ett exempel på öppen vetenskap i realtid – med både entusiasm och snabb granskning.",
+    "viz": {
+      "type": "timeline",
+      "title": "LK-99 sommaren 2023",
+      "ev": [
+        { "t": "22 juli", "d": "Artiklarna läggs ut på arXiv" },
+        { "t": "Slutet av juli", "d": "Videor och hype på sociala medier" },
+        { "t": "Augusti", "d": "Försöken att upprepa misslyckas" },
+        { "t": "Mitten av aug.", "d": "Förklaring: kopparsulfid, inte supraledning" }
+      ]
+    }
+  },
+  {
+    "id": "planck-2018",
+    "day": 198,
+    "kind": "rymd",
+    "arxiv": "1807.06209",
+    "paper": "Planck 2018 results. VI. Cosmological parameters",
+    "hook": "Sex tal räcker för att beskriva hela universum. Planck mätte dem.",
+    "title": "Universum i sex tal",
+    "meta": "Planck-samarbetet · A&A, 2020",
+    "stat": "13,8",
+    "statLabel": "miljarder år – universums ålder",
+    "points": [
+      "Satelliten Planck kartlade Big Bangs efterglöd med extrem precision.",
+      "Standardmodellen med bara sex parametrar passade datan mycket bra.",
+      "Universum består av 5 % vanlig materia, 27 % mörk materia och 68 % mörk energi."
+    ],
+    "takeaway": "Det mesta av universum är något vi inte förstår.",
+    "source": "arXiv:1807.06209 · Planck (2018)",
+    "more": "Planck mätte små temperatur- och polarisationsvariationer i den kosmiska bakgrundsstrålningen. Ur dem räknades bland annat mängden mörk materia, vanlig materia och hur universum expanderar. Vinkelstorleken på de akustiska topparna mättes med 0,03 procents precision. Resultatet är fortfarande referensen för kosmologi. Hubblekonstanten från Planck, omkring 67 km/s/Mpc, skiljer sig dock från lokala mätningar på omkring 73 – Hubblespänningen.",
+    "viz": {
+      "type": "bars",
+      "title": "Vad består universum av?",
+      "unit": "%",
+      "items": [{ "l": "Mörk energi", "v": 68 }, { "l": "Mörk materia", "v": 27 }, { "l": "Vanlig materia", "v": 5 }],
+      "max": 100
+    }
+  },
+  {
+    "id": "polymath8",
+    "day": 199,
+    "kind": "matte",
+    "arxiv": "1407.4897",
+    "paper": "Variants of the Selberg sieve, and bounded intervals containing many primes",
+    "hook": "Hundratals matematiker samarbetade på en blogg för att krympa ett primtalsgap.",
+    "title": "Polymath och primtalsgapen",
+    "meta": "D. H. J. Polymath · RMS, 2014",
+    "stat": "246",
+    "statLabel": "– oändligt många primtalspar ligger högst så nära",
+    "points": [
+      "2013 visade Yitang Zhang att oändligt många primtalspar ligger högst 70 miljoner isär.",
+      "Ett öppet nätsamarbete, Polymath, började genast förbättra gränsen.",
+      "Med James Maynards nya metod sjönk den till 246."
+    ],
+    "takeaway": "Matematik kan göras i öppet samarbete.",
+    "source": "arXiv:1407.4897 · Polymath (2014)",
+    "more": "Tvillingprimtalsförmodan säger att det finns oändligt många primtalspar med avståndet 2, som 11 och 13. Zhangs bevis var första gången någon visade att avståndet är begränsat för oändligt många par. Polymath-projektet, initierat av Terence Tao, sänkte först gränsen till 4 680. Maynard kom på en enklare och starkare metod som gav 600, och Polymath förbättrade den till 246. Med en obevisad förmodan skulle gränsen bli 6. 'D. H. J. Polymath' är en kollektiv pseudonym.",
+    "viz": {
+      "type": "bars",
+      "title": "Gränsen för primtalsgapet",
+      "unit": "",
+      "items": [{ "l": "Zhang 2013", "v": 70000000, "t": "70 000 000" }, { "l": "Polymath 2013", "v": 4680, "t": "4 680" }, { "l": "Maynard 2013", "v": 600, "t": "600" }, { "l": "Polymath 2014", "v": 246, "t": "246" }],
+      "hi": 3,
+      "max": 70000000
+    }
+  },
+  {
+    "id": "gravitation-sammanflatning",
+    "day": 200,
+    "kind": "fysik",
+    "arxiv": "1707.06036",
+    "paper": "Gravitationally-induced entanglement between two massive particles is sufficient evidence of quantum effects in gravity",
+    "hook": "Om gravitationen kan sammanfläta två föremål, då är den kvantmekanisk.",
+    "title": "Är gravitationen kvant?",
+    "meta": "Chiara Marletto & Vlatko Vedral · PRL, 2017",
+    "stat": "43",
+    "statLabel": "storleksordningar svagare än elektromagnetismen",
+    "points": [
+      "Gravitonen – gravitationens kvantpartikel – går nästan inte att upptäcka.",
+      "Idén: låt två små massor i superposition påverka varandra bara via gravitation.",
+      "Blir de sammanflätade måste gravitationen ha kvantegenskaper."
+    ],
+    "takeaway": "Ett litet test kan avgöra en stor fråga.",
+    "source": "arXiv:1707.06036 · Marletto & Vedral (2017)",
+    "more": "Argumentet bygger på en princip från kvantinformation: två system kan inte bli sammanflätade av en förmedlare som är helt klassisk. Om gravitationen ensam kan skapa sammanflätning visar det att den inte kan beskrivas klassiskt. Samma dag publicerades ett liknande förslag med spinn av Bose och kollegor. Tillsammans kallas idén BMV-experimentet. Ingen har ännu lyckats göra experimentet, men flera grupper arbetar på det.",
+    "viz": {
+      "type": "flow",
+      "title": "Experimentidén",
+      "steps": ["Två massor, var och en på två ställen", "De påverkar varandra bara via gravitation", "Mät om de blivit sammanflätade", "Ja → gravitationen är kvantmekanisk"]
+    }
+  },
+  {
+    "id": "spinn-gravitation",
+    "day": 201,
+    "kind": "fysik",
+    "arxiv": "1707.06050",
+    "paper": "A Spin Entanglement Witness for Quantum Gravity",
+    "hook": "Två mikroskopiska diamanter kan avslöja om gravitationen följer kvantfysikens regler.",
+    "title": "Diamanter som testar gravitationen",
+    "meta": "Sougato Bose m.fl. · PRL, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Två små kristaller med ett spinn var sätts i superposition på två platser.",
+      "De faller bredvid varandra, påverkade bara av varandras gravitation.",
+      "Sedan mäts spinnen: hänger de ihop är gravitationen en kvantförmedlare."
+    ],
+    "takeaway": "Gravitation och kvantfysik kan mötas i ett labb.",
+    "source": "arXiv:1707.06050 · Bose m.fl. (2017)",
+    "more": "Förslaget beskriver ett konkret experiment: mikrometerstora diamanter med kväve-vakans-defekter, vars spinn styr var kristallen hamnar, i två närliggande materievågsinterferometrar. Gravitationen ger olika fasförskjutningar beroende på avståndet, vilket sammanflätar spinnen. Avståndet måste vara tillräckligt stort för att andra krafter, som Casimir–Polder-kraften, inte ska störa. Tekniken är fortfarande långt ifrån redo, men förslaget har blivit ett mål för många laboratorier.",
+    "viz": {
+      "type": "flow",
+      "title": "Experimentet steg för steg",
+      "steps": ["Två diamanter med spinn", "Dela upp varje i två banor", "Gravitationen ger olika faser", "Mät spinnen: sammanflätade?"]
+    }
+  },
+  {
+    "id": "fordomar-i-ordvektorer",
+    "day": 202,
+    "kind": "liv",
+    "arxiv": "1607.06520",
+    "paper": "Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings",
+    "hook": "Man är till programmerare som kvinna är till … hemmafru, enligt en AI tränad på nyheter.",
+    "title": "Ordvektorernas fördomar",
+    "meta": "Tolga Bolukbasi m.fl. · NeurIPS, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ordvektorer tränade på Google News lärde sig könsstereotyper ur texterna.",
+      "Könet visade sig motsvara en riktning i vektorrummet.",
+      "Forskarna föreslog att ta bort den riktningen från ord som borde vara neutrala."
+    ],
+    "takeaway": "AI speglar datan – även dess fördomar.",
+    "source": "arXiv:1607.06520 · Bolukbasi m.fl. (2016)",
+    "more": "Med samma analogiräkning som gav 'kung − man + kvinna = drottning' fick forskarna också stereotypa par som 'kirurg' och 'sjuksköterska'. Eftersom ordvektorer användes i många system, som sökmotorer och rekryteringsverktyg, riskerade fördomarna att förstärkas. Metoden för att 'avfördoma' vektorerna blev mycket citerad. Senare forskning visade att fördomarna ofta finns kvar i dold form, så problemet är svårare än att ta bort en riktning.",
+    "viz": {
+      "type": "flow",
+      "title": "Analogier från datan",
+      "steps": ["man : kung = kvinna : drottning ✓", "man : programmerare = kvinna : hemmafru ✗", "Könet är en riktning i rummet", "Ta bort den från neutrala ord"]
+    }
+  },
+  {
+    "id": "ppo",
+    "day": 203,
+    "kind": "ai",
+    "arxiv": "1707.06347",
+    "paper": "Proximal Policy Optimization Algorithms",
+    "hook": "En enkel regel – 'ändra dig inte för mycket åt gången' – blev standard i förstärkningsinlärning.",
+    "title": "PPO",
+    "meta": "John Schulman m.fl. · OpenAI, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "I förstärkningsinlärning kan för stora uppdateringar förstöra en bra strategi.",
+      "PPO klipper av förändringen så att den nya strategin inte avviker för mycket.",
+      "Det är enkelt att implementera och fungerar bra på många problem."
+    ],
+    "takeaway": "Små, säkra steg vinner i längden.",
+    "source": "arXiv:1707.06347 · Schulman m.fl. (2017)",
+    "more": "Föregångaren TRPO begränsade förändringar med en krånglig matematisk bivillkor. PPO uppnår ungefär samma sak med en enkel 'klippning' i målfunktionen, så att samma data kan användas för flera uppdateringar. PPO användes för att träna OpenAI Five i Dota 2, robothanden som löste Rubiks kub och i RLHF-steget för InstructGPT och ChatGPT. Den är fortfarande en av de mest använda algoritmerna inom förstärkningsinlärning.",
+    "viz": {
+      "type": "flow",
+      "title": "En PPO-loop",
+      "steps": ["Agenten samlar erfarenheter", "Räkna ut hur bra varje handling var", "Uppdatera – men klipp stora ändringar", "Upprepa med nya erfarenheter"]
+    }
+  },
+  {
+    "id": "bottar-och-desinformation",
+    "day": 204,
+    "kind": "liv",
+    "arxiv": "1707.07592",
+    "paper": "The spread of low-credibility content by social bots",
+    "hook": "Under valet 2016 spreds lögnaktiga nyheter av ett överraskande antal robotkonton.",
+    "title": "Bottar som sprider lögner",
+    "meta": "Chengcheng Shao m.fl. · Nature Comms, 2018",
+    "stat": "14 miljoner",
+    "statLabel": "tweets om 400 000 artiklar analyserades",
+    "points": [
+      "Forskarna följde hur artiklar från opålitliga källor spreds på Twitter.",
+      "Konton som spred sådana artiklar var oftare automatiserade bottar.",
+      "Bottarna var särskilt aktiva i början, innan en artikel blivit viral."
+    ],
+    "takeaway": "Tidiga delningar kan vara konstgjorda.",
+    "source": "arXiv:1707.07592 · Shao m.fl. (2017)",
+    "more": "Bottarna riktade sig ofta mot användare med många följare genom att nämna dem i svar. Människor delade sedan vidare innehåll från bottarna nästan lika ofta som från andra människor. Simuleringar visade att om man stängde av en liten andel av de mest inflytelserika bottarna minskade spridningen av opålitligt innehåll kraftigt. Studien bidrog till debatten om plattformarnas ansvar och verktyg som Botometer.",
+    "viz": {
+      "type": "flow",
+      "title": "Så sprids en lögn",
+      "steps": ["En opålitlig artikel publiceras", "Bottar delar den direkt", "Bottar nämner konton med många följare", "Människor delar vidare"]
+    }
+  }
+]

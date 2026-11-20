@@ -1,0 +1,314 @@
+[
+  {
+    "id": "kosmiskt-belltest",
+    "day": 229,
+    "kind": "fysik",
+    "arxiv": "1808.05966",
+    "paper": "Cosmic Bell Test using Random Measurement Settings from High-Redshift Quasars",
+    "hook": "Ljus från kvasarer som skickades för miljarder år sedan fick bestämma ett kvantexperiment.",
+    "title": "Kosmiskt Belltest",
+    "meta": "Dominik Rauch m.fl. · PRL, 2018",
+    "stat": "7,8",
+    "statLabel": "miljarder år sedan kvasarljuset sändes ut",
+    "points": [
+      "Ett kryphål i Belltester: kanske påverkar något både partiklarna och mätvalen.",
+      "Forskarna lät färgen på ljus från avlägsna kvasarer välja mätinställningarna.",
+      "Kvantfysiken vann – med 9,3 standardavvikelser."
+    ],
+    "takeaway": "Även universums historia kan vara en del av ett experiment.",
+    "source": "arXiv:1808.05966 · Rauch m.fl. (2018)",
+    "more": "Experimentet gjordes på La Palma med två stora teleskop som tittade på olika kvasarer. Om någon dold mekanism skulle ha 'fuskat' genom att påverka både mätvalen och fotonerna, måste den ha gjort det för minst 7,8 miljarder år sedan. Det utesluter sådana förklaringar från 96 procent av rumtiden sedan Big Bang i experimentets bakåtriktade ljuskon. Kryphålet 'fri vilja' kan aldrig stängas helt, men kan skjutas mycket långt bakåt.",
+    "viz": {
+      "type": "flow",
+      "title": "Kvasarer som slumptal",
+      "steps": ["Ljus från kvasarer når teleskopen", "Röd eller blå foton väljer inställning", "Sammanflätade fotoner mäts", "Bells olikhet bryts: 9,3σ"]
+    }
+  },
+  {
+    "id": "egocaptioner",
+    "day": 230,
+    "kind": "ai",
+    "arxiv": "2611.26380",
+    "paper": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+    "hook": "Video från någons ögon – kan AI beskriva varje liten handling i rätt ordning?",
+    "title": "EgoCaptioner",
+    "meta": "Yuqi Tang m.fl. · 2026",
+    "stat": "50 000",
+    "statLabel": "träningsexempel från åtta videokällor",
+    "points": [
+      "Video från huvudkameror är full av korta handlingar och snabba rörelser.",
+      "Dagens AI-modeller missar ofta små steg eller tar dem i fel ordning.",
+      "EgoCaptioner ger både en översikt och tidsstämplade steg med detaljer."
+    ],
+    "takeaway": "Detaljer och tidpunkter hör ihop.",
+    "source": "arXiv:2611.26380 · Tang m.fl. (2026)",
+    "more": "Beskrivningarna byggs i två nivåer: först en översikt av miljön, personerna och vad bäraren gör, sedan tidsstämplade steg vars detaljnivå anpassas. Träningsdatan togs fram med en process som först fastställer händelsestrukturen och sedan fyller i detaljer. Modellen förbättrades sedan med förstärkningsinlärning (GRPO) och belöningar för faktakorrekthet, täckning och rätt tidpunkter. Sådana modeller kan användas i hjälpmedel, AR-glasögon och robotinlärning.",
+    "viz": {
+      "type": "flow",
+      "title": "En beskrivning i två nivåer",
+      "steps": ["Översikt: miljö, personer, aktivitet", "Steg 1 med tidsstämpel", "Steg 2 med tidsstämpel", "Viktiga ögonblick markeras"]
+    }
+  },
+  {
+    "id": "kulhopen",
+    "day": 231,
+    "kind": "rymd",
+    "arxiv": "astro-ph/0608407",
+    "paper": "A direct empirical proof of the existence of dark matter",
+    "hook": "Två galaxhopar krockade – och den mörka materien seglade rakt igenom.",
+    "title": "Kulhopen",
+    "meta": "Douglas Clowe m.fl. · ApJ Letters, 2006",
+    "stat": "8σ",
+    "statLabel": "säkerhet för att massan och gasen är åtskilda",
+    "points": [
+      "Det mesta av den vanliga materien i galaxhopar är het gas, som syns i röntgen.",
+      "I krocken bromsades gasen upp, medan galaxerna fortsatte.",
+      "Gravitationslinser visade att massan följde galaxerna – inte gasen."
+    ],
+    "takeaway": "Massan finns där vi inte ser den.",
+    "source": "arXiv:astro-ph/0608407 · Clowe m.fl. (2006)",
+    "more": "Kulhopen, 1E 0657-558, består av två galaxhopar som kolliderat. Gasen från den mindre hopen har formen av en kula, därav namnet. Genom att mäta hur bakgrundsgalaxernas ljus böjs kunde forskarna kartlägga var massan finns. Eftersom huvuddelen av massan inte följer den synliga gasen kan det inte förklaras bara med ändrade gravitationslagar. Studien kallas ofta det mest direkta beviset för mörk materia.",
+    "viz": {
+      "type": "split",
+      "title": "Efter krocken",
+      "a": { "h": "Het gas (röntgen)", "items": ["Bromsades i mitten", "Mest vanlig materia"] },
+      "b": { "h": "Massan (linser)", "items": ["Följde galaxerna", "Mest mörk materia"] }
+    }
+  },
+  {
+    "id": "grana-robotbeloning",
+    "day": 232,
+    "kind": "ai",
+    "arxiv": "2611.24926",
+    "paper": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation",
+    "hook": "Hur vet en robot hur långt den kommit i en lång uppgift – som att duka ett bord?",
+    "title": "Grana",
+    "meta": "Zi-ang Cao m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Robotar lär sig av belöningar, men långa uppgifter är svåra att poängsätta.",
+      "Grana ser vilka deluppgifter som är klara och hur långt den pågående har kommit.",
+      "Deluppgifterna beskrivs med vanligt språk, så kunskapen kan återanvändas."
+    ],
+    "takeaway": "Dela upp – och räkna framstegen.",
+    "source": "arXiv:2611.24926 · Cao m.fl. (2026)",
+    "more": "Grana är en belöningsmodell som tittar på kamerabilder och text. Den tränas först att uppskatta framsteg i korta uppgifter och i delmoment av långa uppgifter. För en lång uppgift väljer den den första ofärdiga deluppgiften, uppskattar hur långt den kommit och lägger till poäng för de redan avklarade. Eftersom deluppgifterna inte kommer från en fast lista kan modellen användas för nya uppgifter.",
+    "viz": {
+      "type": "flow",
+      "title": "Framsteg i en lång uppgift",
+      "steps": ["Deluppgift 1: klar ✓", "Deluppgift 2: klar ✓", "Deluppgift 3: 40 % klar", "Totalt framsteg ≈ 2,4 av 4"]
+    }
+  },
+  {
+    "id": "willow-under-troskeln",
+    "day": 233,
+    "kind": "fysik",
+    "arxiv": "2408.13687",
+    "paper": "Quantum error correction below the surface code threshold",
+    "hook": "För första gången halverades felen varje gång kvantkoden gjordes större.",
+    "title": "Under tröskeln",
+    "meta": "Google Quantum AI · Nature, 2025",
+    "stat": "2,14",
+    "statLabel": "gånger färre fel för varje steg uppåt i storlek",
+    "points": [
+      "Felkorrigering fungerar bara om de fysiska felen är under en viss tröskel.",
+      "Googles chip Willow kom under tröskeln – större kod gav färre fel.",
+      "Den största logiska kvantbiten, med 101 kvantbitar, höll längre än den bästa fysiska."
+    ],
+    "takeaway": "Kvantdatorer kan skalas upp – i princip.",
+    "source": "arXiv:2408.13687 · Google Quantum AI (2024)",
+    "more": "Med avstånd 3, 5 och 7 i ytkoden minskade felet med en faktor 2,14 för varje steg. Med avstånd 7 var felet 0,143 procent per korrigeringscykel, och den logiska kvantbiten levde 2,4 gånger längre än den bästa enskilda fysiska. Det var också första gången man klarade avkodningen i realtid. För praktiska tillämpningar krävs mycket lägre fel, men resultatet visade att vägen dit går genom fler kvantbitar.",
+    "viz": {
+      "type": "bars",
+      "title": "Logiskt fel per cykel",
+      "unit": "%",
+      "items": [{ "l": "Avstånd 3", "v": 0.65, "t": "≈0,65 %" }, { "l": "Avstånd 5", "v": 0.3, "t": "≈0,30 %" }, { "l": "Avstånd 7", "v": 0.143, "t": "0,143 %" }],
+      "hi": 2,
+      "max": 0.7,
+      "note": "Ungefärliga värden för avstånd 3 och 5."
+    }
+  },
+  {
+    "id": "solroslemmat",
+    "day": 234,
+    "kind": "matte",
+    "arxiv": "1908.08483",
+    "paper": "Improved bounds for the sunflower lemma",
+    "hook": "Ett 60 år gammalt problem om 'solrosor' fick ett stort kliv – delvis tack vare en doktorand.",
+    "title": "Solroslemmat",
+    "meta": "Alweiss, Lovett, Wu & Zhang · Annals, 2021",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En solros är mängder som alla har samma gemensamma kärna – som kronblad runt en mitt.",
+      "Erdős och Rado visade 1960 att tillräckligt många mängder alltid innehåller en solros.",
+      "Den nya gränsen är dramatiskt bättre: från ungefär wʷ till (log w)ʷ."
+    ],
+    "takeaway": "Även gamla gränser kan krympas rejält.",
+    "source": "arXiv:1908.08483 · Alweiss m.fl. (2019)",
+    "more": "Solrosförmodan säger att gränsen borde vara cʷ för någon konstant c. Den nya gränsen är inte där, men det var det första stora framsteget på årtionden. Beviset använde idéer från teoretisk datavetenskap, där solrosor dyker upp i analyser av kretsar och algoritmer. Metoden blev också grunden för beviset av Kahn–Kalais förmodan några år senare. Ryan Alweiss var doktorand när arbetet gjordes.",
+    "viz": {
+      "type": "flow",
+      "title": "En solros",
+      "steps": ["Mängd A = kärna + kronblad 1", "Mängd B = kärna + kronblad 2", "Mängd C = kärna + kronblad 3", "Alla par delar exakt kärnan"]
+    }
+  },
+  {
+    "id": "hycean-varldar",
+    "day": 235,
+    "kind": "rymd",
+    "arxiv": "2108.10888",
+    "paper": "Habitability and Biosignatures of Hycean Worlds",
+    "hook": "Planeter med hav under en atmosfär av väte – kanske de vanligaste platserna för liv?",
+    "title": "Hyceanvärldar",
+    "meta": "Nikku Madhusudhan m.fl. · ApJ, 2021",
+    "stat": "2,6",
+    "statLabel": "jordradier – så stora kan de vara och ändå vara beboeliga",
+    "points": [
+      "Hycean betyder väte (hydrogen) plus hav (ocean).",
+      "Sådana planeter kan vara större än stenplaneter och ändå ha flytande vatten.",
+      "Deras beboeliga zon är bredare – och atmosfären är lättare att studera."
+    ],
+    "takeaway": "Liv kanske inte kräver en jord.",
+    "source": "arXiv:2108.10888 · Madhusudhan m.fl. (2021)",
+    "more": "Artikeln beskrev en ny klass av planeter mellan superjordar och mini-Neptunus: vattenrika med djupa hav och en tjock väteatmosfär. Eftersom väteatmosfärer är utsträckta blir signalen från eventuella biologiska gaser lättare att mäta med JWST. Planeten K2-18 b föreslogs som kandidat, och 2025 rapporterade samma grupp möjliga spår av gasen dimetylsulfid där. De resultaten har kritiserats starkt och anses inte bekräftade.",
+    "viz": {
+      "type": "split",
+      "title": "Hycean mot jordlik",
+      "a": { "h": "Jordlik", "items": ["Sten och tunn luft", "Smal beboelig zon"] },
+      "b": { "h": "Hycean", "items": ["Hav under väteatmosfär", "Bredare beboelig zon"] }
+    }
+  },
+  {
+    "id": "belltest-delft",
+    "day": 236,
+    "kind": "fysik",
+    "arxiv": "1508.05949",
+    "paper": "Experimental loophole-free violation of a Bell inequality using entangled electron spins separated by 1.3 km",
+    "hook": "Efter 80 år av debatt stängde ett experiment i Delft de sista kryphålen.",
+    "title": "Belltest utan kryphål",
+    "meta": "Bas Hensen m.fl. · Nature, 2015",
+    "stat": "1,3",
+    "statLabel": "km mellan de sammanflätade elektronerna",
+    "points": [
+      "Bell visade att kvantfysiken och 'lokal realism' ger olika förutsägelser.",
+      "Tidigare tester hade kryphål: missade detektioner eller för korta avstånd.",
+      "Elektroner i diamanter 1,3 km isär stängde båda kryphålen samtidigt."
+    ],
+    "takeaway": "Kvantvärlden är verkligen så konstig som teorin säger.",
+    "source": "arXiv:1508.05949 · Hensen m.fl. (2015)",
+    "more": "Elektronspinnen satt i defekter i två diamanter på olika platser på Delfts universitetsområde. Sammanflätningen skapades genom att fotoner skickades till en mittpunkt. Varje mätning hann göras innan någon signal med ljusets hastighet kunde nå den andra platsen, och varje försök registrerades. Det blev bara 245 lyckade försök på 18 dagar, men det räckte för att bryta Bells olikhet. Samma år gjordes liknande tester i Wien och vid NIST. Nobelpriset 2022 gick till pionjärerna inom Belltester.",
+    "viz": {
+      "type": "split",
+      "title": "Två kryphål – båda stängda",
+      "a": { "h": "Lokalitet", "items": ["1,3 km isär", "Ingen signal hinner fram"] },
+      "b": { "h": "Detektion", "items": ["Varje försök räknas", "Inga missade mätningar"] }
+    }
+  },
+  {
+    "id": "dreambooth",
+    "day": 237,
+    "kind": "ai",
+    "arxiv": "2208.12242",
+    "paper": "DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation",
+    "hook": "Visa AI:n några foton av din hund – så kan den måla hunden på månen.",
+    "title": "DreamBooth",
+    "meta": "Nataniel Ruiz m.fl. · Google, CVPR 2023",
+    "stat": "3–5",
+    "statLabel": "bilder räcker för att lära modellen ett nytt motiv",
+    "points": [
+      "Bildgeneratorer kan måla 'en hund' men inte just din hund.",
+      "DreamBooth finjusterar modellen med några bilder och ett unikt kodord.",
+      "Ett extra träningsmål hindrar modellen från att glömma hur andra hundar ser ut."
+    ],
+    "takeaway": "Lite data kan räcka när grunden är stark.",
+    "source": "arXiv:2208.12242 · Ruiz m.fl. (2022)",
+    "more": "Kodordet, till exempel 'sks', kopplas till motivet så att man kan skriva 'en sks-hund som simmar'. Problemet med att finjustera på få bilder är att modellen kan glömma klassen eller bara upprepa träningsbilderna. Forskarna lade till en förlust som bevarar modellens bild av klassen genom att den samtidigt tränas på egna genererade hundbilder. Metoden blev mycket populär för personliga avatarer – och väckte frågor om samtycke och förfalskade bilder.",
+    "viz": {
+      "type": "flow",
+      "title": "Lär modellen ditt motiv",
+      "steps": ["3–5 foton av din hund", "Kodord: 'en sks-hund'", "Finjustera och bevara klassen", "'En sks-hund på månen'"]
+    }
+  },
+  {
+    "id": "neural-stiloverforing",
+    "day": 238,
+    "kind": "ai",
+    "arxiv": "1508.06576",
+    "paper": "A Neural Algorithm of Artistic Style",
+    "hook": "Ditt semesterfoto, målat som Van Goghs Stjärnenatt. 2015 blev det möjligt.",
+    "title": "Neural stilöverföring",
+    "meta": "Gatys, Ecker & Bethge · Tübingen, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ett nätverk tränat att känna igen bilder fångar både innehåll och stil.",
+      "Innehåll syns i vad som aktiveras, stil i hur mönstren hänger ihop.",
+      "Genom att optimera en bild mot båda kan man blanda motiv och målarstil."
+    ],
+    "takeaway": "Innehåll och stil går att separera.",
+    "source": "arXiv:1508.06576 · Gatys m.fl. (2015)",
+    "more": "Stilen mättes med så kallade Gram-matriser, som visar vilka egenskaper som tenderar att förekomma tillsammans oberoende av var i bilden de finns. Metoden startade från brus och justerade bilden steg för steg tills den liknade fotot i innehåll och målningen i stil. Det tog minuter per bild, men snart kom snabbare varianter, och appar som Prisma gjorde stilöverföring till en flugsvamp 2016.",
+    "viz": {
+      "type": "flow",
+      "title": "Så blandas foto och målning",
+      "steps": ["Innehåll från fotot", "Stil från målningen", "Justera en bild mot båda", "Fotot i målarens stil"]
+    }
+  },
+  {
+    "id": "noperthedern",
+    "day": 239,
+    "kind": "matte",
+    "arxiv": "2508.18475",
+    "paper": "A convex polyhedron without Rupert's property",
+    "hook": "Kan en kub passera genom ett hål i en lika stor kub? Ja. Men inte alla former kan det.",
+    "title": "Noperthedern",
+    "meta": "Jakob Steininger & Sergey Yurkevich · 2025",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Prins Rupert vann på 1600-talet ett vad: en kub kan passera genom en lika stor kub.",
+      "Många trodde att alla konvexa kroppar har den egenskapen.",
+      "2025 hittades en polyeder som bevisligen inte kan passera genom sig själv."
+    ],
+    "takeaway": "En gissning kan hålla länge – tills ett motexempel dyker upp.",
+    "source": "arXiv:2508.18475 · Steininger & Yurkevich (2025)",
+    "more": "En kropp har Ruperts egenskap om man kan borra ett rakt hål genom den, så att en lika stor kopia kan glida igenom. Det visades för många kroppar, och 2017 föreslogs att alla konvexa polyedrar har egenskapen. Författarna konstruerade en kropp som fått smeknamnet 'Noperthedern' och bevisade med en kombination av analys och datorsökning att inget sådant hål finns. De hittade också en kropp som har egenskapen men bara på ett 'icke-lokalt' sätt.",
+    "viz": {
+      "type": "timeline",
+      "title": "Prins Ruperts problem",
+      "ev": [
+        { "t": "1600-talet", "d": "Prins Rupert: en kub går genom en kub" },
+        { "t": "1900-talet", "d": "Fler kroppar visas ha egenskapen" },
+        { "t": "2017", "d": "Gissning: alla konvexa polyedrar" },
+        { "t": "2025", "d": "Motexempel hittas" }
+      ]
+    }
+  },
+  {
+    "id": "datorseendets-fyra-lagar",
+    "day": 240,
+    "kind": "ai",
+    "arxiv": "2611.24917",
+    "paper": "Unified Law for Visual Tasks (The Four Laws of Computer Vision)",
+    "hook": "Kan en enda AI klara nästan alla bilduppgifter – om allt ses som att skapa bilder?",
+    "title": "Datorseendets fyra lagar",
+    "meta": "Sen Fang m.fl. · 2026",
+    "stat": "1 000+",
+    "statLabel": "bilduppgifter testades",
+    "points": [
+      "Språkmodeller förenade nästan all språkteknik i en sorts modell.",
+      "Idén här: om världen kodas i bilder blir bildbehandling världsbehandling.",
+      "Om alla bilduppgifter skrivs om som bildgenerering kan en modell klara dem."
+    ],
+    "takeaway": "Rätt omformulering kan förena ett helt fält.",
+    "source": "arXiv:2611.24917 · Fang m.fl. (2026)",
+    "more": "Författarna kallar bilder som kodar information om världen för 'World Snapshots' och föreslår 'World Snapshot Models' som ska göra det som språkmodellerna gjort för text. De formulerar en enhetlig lag, uppdelad i fyra 'lagar för datorseende', och testar idén på över tusen uppgifter definierade av olika par av indata och utdata. Det är en ambitiös hypotes, och hur väl den håller får framtida forskning avgöra.",
+    "viz": {
+      "type": "flow",
+      "title": "Idén i fyra steg",
+      "steps": ["Världen kodas i bilder", "Bildbehandling = världsbehandling", "Alla uppgifter blir bildgenerering", "En modell för allt"]
+    }
+  }
+]

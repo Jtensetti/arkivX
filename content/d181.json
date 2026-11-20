@@ -1,0 +1,319 @@
+[
+  {
+    "id": "kansliga-formodan",
+    "day": 181,
+    "kind": "matte",
+    "arxiv": "1907.00847",
+    "paper": "Induced subgraphs of hypercubes and a proof of the Sensitivity Conjecture",
+    "hook": "En gåta i datavetenskap stod olöst i 30 år. Beviset fick plats på två sidor.",
+    "title": "Känslighetsförmodan",
+    "meta": "Hao Huang · Annals of Math., 2019",
+    "stat": "2",
+    "statLabel": "sidor räckte för kärnan i beviset",
+    "points": [
+      "En boolesk funktion tar ettor och nollor och svarar ja eller nej.",
+      "Känslighet mäter hur många enskilda bitar som kan vända svaret.",
+      "Huang visade att känslighet och andra mått på komplexitet hänger tätt ihop."
+    ],
+    "takeaway": "Det kortaste beviset kan vara det djupaste.",
+    "source": "arXiv:1907.00847 · Huang (2019)",
+    "more": "Förmodan formulerades av Nisan och Szegedy 1992. Många försök hade gjort små framsteg. Huang angrep i stället en fråga om hyperkuber: om man väljer lite mer än hälften av hörnen i en n-dimensionell kub, måste något hörn ha minst √n grannar bland de valda. Med ett smart val av matris med plus- och minustecken följde detta direkt. Scott Aaronson skrev att beviset var så kort att det kunde läsas på en kaffepaus.",
+    "viz": {
+      "type": "flow",
+      "title": "Bevisets idé",
+      "steps": ["Välj mer än hälften av hyperkubens hörn", "Något hörn har minst √n grannar", "Visas med en klurig ±1-matris", "→ Känslighetsförmodan följer"]
+    }
+  },
+  {
+    "id": "hora-trummans-form",
+    "day": 182,
+    "kind": "matte",
+    "arxiv": "math/9207215",
+    "paper": "One cannot hear the shape of a drum",
+    "hook": "Kan man höra formen på en trumma? 1992 kom svaret: nej.",
+    "title": "Man kan inte höra trummans form",
+    "meta": "Gordon, Webb & Wolpert · Bull. AMS, 1992",
+    "stat": "26",
+    "statLabel": "år efter att frågan ställdes",
+    "points": [
+      "Mark Kac frågade 1966 om tonerna avslöjar formen på ett trumskinn.",
+      "Tonerna bestäms av ytans egenfrekvenser – dess 'spektrum'.",
+      "Tre matematiker hittade två olika former som låter exakt likadant."
+    ],
+    "takeaway": "Samma ljud kan komma från olika former.",
+    "source": "arXiv:math/9207215 · Gordon m.fl. (1992)",
+    "more": "Formerna är två månghörningar byggda av sju likadana trianglar, sammansatta på olika sätt. Konstruktionen bygger på en metod av Toshikazu Sunada. Vissa saker kan man ändå höra: arean, omkretsen och antalet hål. Frågan lever kvar i varianter: kan man höra formen om den är konvex eller har släta kanter? Senare har fysiker byggt 'trummor' av mikrovågskaviteter och bekräftat resultatet experimentellt.",
+    "viz": {
+      "type": "split",
+      "title": "Vad kan man höra?",
+      "a": { "h": "Hörs", "items": ["Arean", "Omkretsen", "Antal hål"] },
+      "b": { "h": "Hörs inte", "items": ["Exakt form"] }
+    }
+  },
+  {
+    "id": "dropout",
+    "day": 183,
+    "kind": "ai",
+    "arxiv": "1207.0580",
+    "paper": "Improving neural networks by preventing co-adaptation of feature detectors",
+    "hook": "Stäng av hälften av nätverkets neuroner slumpvis – så blir det smartare.",
+    "title": "Dropout",
+    "meta": "Geoffrey Hinton m.fl. · Toronto, 2012",
+    "stat": "50 %",
+    "statLabel": "av neuronerna stängs av vid varje träningsexempel",
+    "points": [
+      "Stora nätverk tränade på lite data lär sig ofta träningsdatan utantill.",
+      "Dropout stänger av slumpvisa neuroner under träningen.",
+      "Då kan ingen neuron lita på specifika andra – var och en måste bli användbar själv."
+    ],
+    "takeaway": "Lite kaos under träningen ger robusthet.",
+    "source": "arXiv:1207.0580 · Hinton m.fl. (2012)",
+    "more": "Tekniken kan ses som att träna ett enormt antal mindre nätverk samtidigt och sedan använda deras genomsnitt. Hinton har berättat att idén delvis kom från bankkassörer som byts ut ofta så att det blir svårt att samarbeta för att lura banken. Dropout gav nya rekord i tal- och bildigenkänning och var en av ingredienserna i AlexNet, som 2012 startade djupinlärningens genombrott.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett träningssteg med dropout",
+      "steps": ["Välj slumpvis hälften av neuronerna", "Stäng av dem för detta exempel", "Träna resten", "Nytt exempel – ny slumpad halva"]
+    }
+  },
+  {
+    "id": "super-kamiokande",
+    "day": 184,
+    "kind": "fysik",
+    "arxiv": "hep-ex/9807003",
+    "paper": "Evidence for oscillation of atmospheric neutrinos",
+    "hook": "Neutriner som kommit genom hela jorden var färre än de som kom ovanifrån.",
+    "title": "Neutriner byter skepnad",
+    "meta": "Super-Kamiokande · PRL, 1998",
+    "stat": "50 000",
+    "statLabel": "ton vatten i detektorn under ett berg i Japan",
+    "points": [
+      "Kosmisk strålning skapar neutriner högt i atmosfären, överallt på jorden.",
+      "Myonneutriner som kom underifrån, genom jorden, saknades i stor utsträckning.",
+      "Förklaringen: på den långa vägen hann de byta till en annan typ."
+    ],
+    "takeaway": "Avståndet avslöjade förvandlingen.",
+    "source": "arXiv:hep-ex/9807003 · Super-Kamiokande (1998)",
+    "more": "Super-Kamiokande är en jättelik tank med ultrarent vatten, omgiven av över 11 000 ljusdetektorer, en kilometer under jord i Kamiokagruvan. Neutriner som kommer ovanifrån har färdats några tiotals kilometer, medan de underifrån färdats 13 000 kilometer. Underskottet berodde på riktningen precis som om myonneutriner svängde över till tauneutriner. Det var första starka beviset för att neutriner har massa. Takaaki Kajita fick Nobelpriset 2015.",
+    "viz": {
+      "type": "split",
+      "title": "Två vägar till detektorn",
+      "a": { "h": "Ovanifrån", "items": ["Kort väg", "Nästan alla finns kvar"] },
+      "b": { "h": "Underifrån", "items": ["Genom hela jorden", "Många har bytt typ"] }
+    }
+  },
+  {
+    "id": "teleportering-till-satellit",
+    "day": 185,
+    "kind": "fysik",
+    "arxiv": "1707.00934",
+    "paper": "Ground-to-satellite quantum teleportation",
+    "hook": "Kina teleporterade kvanttillstånd från Tibet till en satellit i rymden.",
+    "title": "Teleportering till rymden",
+    "meta": "Ji-Gang Ren m.fl. · Nature, 2017",
+    "stat": "1 400",
+    "statLabel": "km – längsta avståndet för teleporteringen",
+    "points": [
+      "Kvantteleportering för över ett okänt kvanttillstånd utan att skicka själva partikeln.",
+      "I glasfiber tappas fotonerna, så rekordet låg runt 100 km.",
+      "Från en station i Tibet till satelliten Micius nåddes upp till 1 400 km."
+    ],
+    "takeaway": "Rymden kan bli kvantinternetets motorväg.",
+    "source": "arXiv:1707.00934 · Ren m.fl. (2017)",
+    "more": "Teleportering kräver ett par sammanflätade fotoner och en vanlig signal som berättar resultatet av en mätning. Inget färdas snabbare än ljuset. Markstationen låg i Ngari på 5 100 meters höjd, där luften är tunn. Satelliten Micius, uppskjuten 2016, användes också för att dela sammanflätning mellan städer 1 200 kilometer från varandra och för kvantkrypterade videosamtal mellan Kina och Österrike.",
+    "viz": {
+      "type": "bars",
+      "title": "Längsta teleporteringen (km)",
+      "unit": "",
+      "items": [{ "l": "Via mark (före 2017)", "v": 100, "t": "≈100" }, { "l": "Mark till satellit", "v": 1400, "t": "1 400" }],
+      "hi": 1,
+      "max": 1400
+    }
+  },
+  {
+    "id": "llm-som-domare",
+    "day": 186,
+    "kind": "ai",
+    "arxiv": "2306.05685",
+    "paper": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+    "hook": "Kan en AI bedöma andra AI:er lika bra som människor? Nästan.",
+    "title": "AI som domare",
+    "meta": "Lianmin Zheng m.fl. · LMSYS, NeurIPS 2023",
+    "stat": "80 %",
+    "statLabel": "samstämmighet med människor – lika mycket som mellan människor",
+    "points": [
+      "Chattbotar är svåra att bedöma med vanliga test.",
+      "Forskarna lät GPT-4 döma svar och jämförde med människors omdömen.",
+      "De byggde Chatbot Arena, där vem som helst röstar mellan två anonyma botar."
+    ],
+    "takeaway": "Även domaren har fördomar – som ordning och längd.",
+    "source": "arXiv:2306.05685 · Zheng m.fl. (2023)",
+    "more": "AI-domare visade flera svagheter: de föredrar ofta svaret som visas först, långa svar och sina egna svar. Med motåtgärder, som att byta ordning och ge domaren referenssvar, blev bedömningarna mer pålitliga. MT-Bench är en samling flerstegsfrågor, och Chatbot Arena har sedan blivit en av de mest följda topplistorna för språkmodeller, med miljontals röster.",
+    "viz": {
+      "type": "flow",
+      "title": "Domarens fördomar",
+      "steps": ["Föredrar svaret som visas först", "Föredrar långa svar", "Föredrar sina egna svar", "Lösning: byt ordning och ge referenser"]
+    }
+  },
+  {
+    "id": "nanograv-bakgrund",
+    "day": 187,
+    "kind": "rymd",
+    "arxiv": "2306.16213",
+    "paper": "The NANOGrav 15-year Data Set: Evidence for a Gravitational-Wave Background",
+    "hook": "Hela universum brummar av gravitationsvågor. Pulsarer avslöjade det.",
+    "title": "Universums brum",
+    "meta": "NANOGrav · ApJ Letters, 2023",
+    "stat": "67",
+    "statLabel": "pulsarer följdes i 15 år",
+    "points": [
+      "Pulsarer är snurrande neutronstjärnor som tickar som extremt exakta klockor.",
+      "En gravitationsvåg ändrar avstånden lite, så pulserna kommer för tidigt eller sent.",
+      "Pulsarerna visade ett gemensamt mönster – tecken på en bakgrund av vågor."
+    ],
+    "takeaway": "En galax full av klockor blev en detektor.",
+    "source": "arXiv:2306.16213 · NANOGrav (2023)",
+    "more": "Vågorna har perioder på flera år – helt andra än de LIGO hör. Det avslöjande mönstret kallas Hellings–Downs-kurvan: hur mycket två pulsarers fel hänger ihop beror på vinkeln mellan dem på himlen. Den troligaste källan är par av supermassiva svarta hål som kretsar kring varandra i galaxers centrum. Samma dag presenterade grupper i Europa, Indien, Australien och Kina liknande resultat.",
+    "viz": {
+      "type": "flow",
+      "title": "En detektor stor som galaxen",
+      "steps": ["Pulsarer tickar regelbundet", "Gravitationsvågor sträcker rummet", "Pulserna kommer lite fel", "Mönstret följer Hellings–Downs"]
+    }
+  },
+  {
+    "id": "codex",
+    "day": 188,
+    "kind": "ai",
+    "arxiv": "2107.03374",
+    "paper": "Evaluating Large Language Models Trained on Code",
+    "hook": "GPT-3 klarade 0 % av programmeringsuppgifterna. Codex klarade 29 %.",
+    "title": "Codex",
+    "meta": "Mark Chen m.fl. · OpenAI, 2021",
+    "stat": "28,8 %",
+    "statLabel": "av uppgifterna lösta vid första försöket",
+    "points": [
+      "Codex är GPT finjusterad på öppen kod från GitHub.",
+      "Testet HumanEval mäter om programmen faktiskt fungerar, inte hur de ser ut.",
+      "Med 100 försök per uppgift löstes 70 % – att prova flera gånger hjälper."
+    ],
+    "takeaway": "Kod kan testas – och det gjorde AI-kod mätbar.",
+    "source": "arXiv:2107.03374 · Chen m.fl. (2021)",
+    "more": "HumanEval består av 164 handskrivna programmeringsproblem med tester. Codex låg bakom den första versionen av GitHub Copilot. Artikeln diskuterade också begränsningar: modellen hade svårt med långa kedjor av operationer och kunde skriva osäker kod. HumanEval och måttet pass@k – andelen uppgifter där minst ett av k försök fungerar – blev standard för att mäta AI:s programmeringsförmåga.",
+    "viz": {
+      "type": "bars",
+      "title": "Lösta uppgifter i HumanEval",
+      "unit": "%",
+      "items": [{ "l": "GPT-3", "v": 0 }, { "l": "Codex, 1 försök", "v": 28.8, "t": "28,8 %" }, { "l": "Codex, 100 försök", "v": 70.2, "t": "70,2 %" }],
+      "hi": 2,
+      "max": 100
+    }
+  },
+  {
+    "id": "lost-in-the-middle",
+    "day": 189,
+    "kind": "ai",
+    "arxiv": "2307.03172",
+    "paper": "Lost in the Middle: How Language Models Use Long Contexts",
+    "hook": "Ge en AI ett långt dokument. Det den läser i mitten glömmer den lättast.",
+    "title": "Vilse i mitten",
+    "meta": "Nelson Liu m.fl. · Stanford, TACL 2024",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Språkmodeller kan ta in långa texter, men använder de allt?",
+      "Forskarna flyttade den viktiga informationen runt i texten.",
+      "Bäst gick det när den låg först eller sist – sämst i mitten."
+    ],
+    "takeaway": "Placera det viktiga först eller sist.",
+    "source": "arXiv:2307.03172 · Liu m.fl. (2023)",
+    "more": "I testet fick modellerna svara på frågor med hjälp av 20 dokument, där bara ett innehöll svaret. Träffsäkerheten bildade en U-formad kurva beroende på var dokumentet låg. I vissa fall var resultatet med svaret i mitten sämre än utan några dokument alls. Samma mönster påminner om människors minne, som bättre minns början och slutet av en lista. Nyare modeller har förbättrats, men effekten används fortfarande som test.",
+    "viz": {
+      "type": "line",
+      "title": "Träffsäkerhet efter placering",
+      "ymax": 100,
+      "x": ["1:a", "5:e", "10:e", "15:e", "20:e"],
+      "series": [{ "l": "Rätt svar", "pts": [75, 58, 53, 56, 64] }],
+      "note": "Schematisk U-form, 20 dokument."
+    }
+  },
+  {
+    "id": "anyoner-kvantdator",
+    "day": 190,
+    "kind": "fysik",
+    "arxiv": "quant-ph/9707021",
+    "paper": "Fault-tolerant quantum computation by anyons",
+    "hook": "Tänk om en kvantdator kunde vara felfri av naturen – inte genom korrigering?",
+    "title": "Kvantdatorer av knutar",
+    "meta": "Alexei Kitaev · Annals of Physics, 2003",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "I vissa tvådimensionella system finns partiklar som kallas anyoner.",
+      "Beräkningar görs genom att flytta anyonerna runt varandra – som att fläta hår.",
+      "Resultatet beror bara på flätningens form, så små störningar påverkar inte."
+    ],
+    "takeaway": "Låt topologin skydda informationen.",
+    "source": "arXiv:quant-ph/9707021 · Kitaev (1997)",
+    "more": "Artikeln introducerade både topologisk kvantberäkning och 'torisk kod', en felrättande kod som blev förebild för ytkoder som används i dagens kvantdatorer. Mätningar görs genom att föra ihop anyoner parvis och se vad de smälter samman till. Eftersom informationen lagras globalt, i hur anyonerna är flätade, kan lokalt brus inte förstöra den. Microsoft och andra försöker bygga sådana kvantbitar, hittills utan genombrott.",
+    "viz": {
+      "type": "flow",
+      "title": "Beräkning med flätor",
+      "steps": ["Skapa par av anyoner", "Fläta dem runt varandra", "Flätans form = beräkningen", "Läs av genom att smälta ihop dem"]
+    }
+  },
+  {
+    "id": "kan-natverk",
+    "day": 191,
+    "kind": "ai",
+    "arxiv": "2404.19756",
+    "paper": "KAN: Kolmogorov-Arnold Networks",
+    "hook": "En sats från 1957 inspirerade ett nytt slags neuralt nätverk.",
+    "title": "Kolmogorov–Arnold-nätverk",
+    "meta": "Ziming Liu m.fl. · MIT, 2024",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Vanliga nätverk har fasta funktioner i noderna och inlärda vikter mellan dem.",
+      "KAN har i stället inlärda funktioner på länkarna – och inga vanliga vikter.",
+      "Små KAN kan vara lika träffsäkra som stora nätverk och lättare att tolka."
+    ],
+    "takeaway": "Gamla satser kan ge nya idéer.",
+    "source": "arXiv:2404.19756 · Liu m.fl. (2024)",
+    "more": "Kolmogorov–Arnolds sats säger att varje kontinuerlig funktion av flera variabler kan skrivas som summor av funktioner av en variabel. KAN tar idén till praktiken med funktioner som byggs av splines. Fördelen är att man kan rita upp och förenkla funktionerna och ibland läsa ut en formel. Författarna visade exempel där KAN hjälpte till att återupptäcka samband i knutteori och fysik. Senare studier har visat att fördelarna mot vanliga nätverk är mindre i större uppgifter.",
+    "viz": {
+      "type": "split",
+      "title": "Var sitter inlärningen?",
+      "a": { "h": "Vanligt nätverk", "items": ["Vikter på länkarna", "Fast funktion i noden"] },
+      "b": { "h": "KAN", "items": ["Funktion på länkarna", "Bara summa i noden"] }
+    }
+  },
+  {
+    "id": "galax-z14",
+    "day": 192,
+    "kind": "rymd",
+    "arxiv": "2405.18485",
+    "paper": "Spectroscopic confirmation of two luminous galaxies at z~14",
+    "hook": "JWST hittade en ljusstark galax bara 300 miljoner år efter Big Bang.",
+    "title": "Galaxen från kosmisk gryning",
+    "meta": "Stefano Carniani m.fl. · Nature, 2024",
+    "stat": "14,32",
+    "statLabel": "i rödförskjutning – rekord när det mättes",
+    "points": [
+      "JWST har hittat många ljusstarka galaxer i det unga universum.",
+      "Men avståndet måste bekräftas med ett spektrum, inte bara bilder.",
+      "JADES-GS-z14-0 bekräftades – stor och ljus redan 300 miljoner år efter Big Bang."
+    ],
+    "takeaway": "Universum växte upp fortare än väntat.",
+    "source": "arXiv:2405.18485 · Carniani m.fl. (2024)",
+    "more": "Rödförskjutningen anger hur mycket ljuset sträckts ut på vägen; 14,32 betyder att vi ser galaxen som den var när universum var ungefär 2 procent av sin nuvarande ålder. Galaxen var oväntat ljusstark och utsträckt, med en radie på runt 260 parsec, vilket betyder att ljuset kommer från stjärnor och inte bara ett svart hål. Fler sådana galaxer än väntat utmanar modeller för hur snabbt galaxer bildas. Rekordet har sedan slagits.",
+    "viz": {
+      "type": "timeline",
+      "title": "Universums första miljard år",
+      "ev": [
+        { "t": "0", "d": "Big Bang" },
+        { "t": "380 000 år", "d": "Bakgrundsstrålningen frigörs" },
+        { "t": "≈300 milj. år", "d": "JADES-GS-z14-0 lyser" },
+        { "t": "≈1 mdr år", "d": "Universum blir genomskinligt för UV" }
+      ]
+    }
+  }
+]

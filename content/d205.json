@@ -1,0 +1,322 @@
+[
+  {
+    "id": "kepler-452b",
+    "day": 205,
+    "kind": "rymd",
+    "arxiv": "1507.06723",
+    "paper": "Discovery and Validation of Kepler-452b: A 1.6-Re Super Earth Exoplanet in the Habitable Zone of a G2 Star",
+    "hook": "En planet som går runt en sol lik vår på 385 dagar. Jordens 'storkusin'?",
+    "title": "Kepler-452b",
+    "meta": "Jon Jenkins m.fl. · AJ, 2015",
+    "stat": "385",
+    "statLabel": "dagar för ett varv runt stjärnan",
+    "points": [
+      "Kepler-teleskopet hittade en planet 1,6 gånger så stor som jorden.",
+      "Den kretsar runt en solliknande stjärna, i den beboeliga zonen.",
+      "Stjärnan är äldre än solen – planeten kan ha haft 6 miljarder år på sig."
+    ],
+    "takeaway": "Det finns platser som liknar vår – men ingen är lik.",
+    "source": "arXiv:1507.06723 · Jenkins m.fl. (2015)",
+    "more": "Planeten tar emot ungefär 10 procent mer strålning än jorden får från solen. Chansen att den är en stenplanet bedömdes till 49–62 procent; den kan också vara en liten gasplanet. Den ligger omkring 1 400 ljusår bort. Eftersom stjärnan är äldre och ljusare än solen kan planeten vara på väg mot en okontrollerad växthuseffekt – som en framtida jord. Senare analyser har ifrågasatt om signalen ens är en planet, och den räknas nu som osäker.",
+    "viz": {
+      "type": "bars",
+      "title": "Kepler-452b mot jorden",
+      "unit": "",
+      "items": [{ "l": "Radie (jorden = 1)", "v": 1.63, "t": "1,63" }, { "l": "Omloppstid (jorden = 1)", "v": 1.05, "t": "1,05" }, { "l": "Strålning (jorden = 1)", "v": 1.1, "t": "1,1" }],
+      "max": 2
+    }
+  },
+  {
+    "id": "icecube-blazar",
+    "day": 206,
+    "kind": "rymd",
+    "arxiv": "1807.08816",
+    "paper": "Multi-messenger observations of a flaring blazar coincident with high-energy neutrino IceCube-170922A",
+    "hook": "En enda neutrino fångad i Antarktis ledde till en galax fyra miljarder ljusår bort.",
+    "title": "Neutrinon från blazaren",
+    "meta": "IceCube m.fl. · Science, 2018",
+    "stat": "290",
+    "statLabel": "TeV – neutrinons energi",
+    "points": [
+      "IceCube är en kubikkilometer is full av ljusdetektorer vid Sydpolen.",
+      "22 september 2017 kom en extremt energirik neutrino – och ett larm skickades ut.",
+      "Teleskop såg att blazaren TXS 0506+056 i samma riktning hade ett utbrott."
+    ],
+    "takeaway": "Flera budbärare ger en klarare bild.",
+    "source": "arXiv:1807.08816 · IceCube m.fl. (2018)",
+    "more": "Tidigare var de enda kända källorna till neutriner solen och supernovan 1987A. En blazar är en galax med ett aktivt supermassivt svart hål vars jetstråle pekar mot oss. Larmet ledde till observationer från radio till gammastrålning med ett tjugotal teleskop. Senare hittade IceCube i gamla data ett överskott av neutriner från samma blazar 2014–2015. Det var det första övertygande tecknet på en källa till de kosmiska neutrinerna med hög energi.",
+    "viz": {
+      "type": "flow",
+      "title": "Från is till galax",
+      "steps": ["En neutrino träffar isen", "Automatiskt larm till teleskop", "Gammateleskop ser en blazar som flammar", "Källa: TXS 0506+056"]
+    }
+  },
+  {
+    "id": "s2-rodforskjutning",
+    "day": 207,
+    "kind": "rymd",
+    "arxiv": "1807.09409",
+    "paper": "Detection of the gravitational redshift in the orbit of the star S2 near the Galactic centre massive black hole",
+    "hook": "En stjärna susade förbi Vintergatans svarta hål i 7 650 km/s. Einstein hade rätt igen.",
+    "title": "Stjärnan S2 och Einstein",
+    "meta": "GRAVITY-samarbetet · A&A, 2018",
+    "stat": "7 650",
+    "statLabel": "km/s – S2:s fart närmast det svarta hålet",
+    "points": [
+      "Stjärnan S2 går runt det svarta hålet Sagittarius A* på 16 år.",
+      "I maj 2018 var den som närmast, bara 120 gånger jordens avstånd till solen.",
+      "Dess ljus var rödförskjutet av gravitationen – precis enligt relativitetsteorin."
+    ],
+    "takeaway": "Även nära ett svart hål gäller Einsteins teori.",
+    "source": "arXiv:1807.09409 · GRAVITY (2018)",
+    "more": "Forskarna har följt S2 i över 26 år med Very Large Telescope i Chile. Instrumentet GRAVITY kombinerar ljuset från fyra teleskop och kan mäta positioner extremt exakt. Den uppmätta effekten – en kombination av gravitationell rödförskjutning och tidsdilatation på grund av farten – stämde med allmänna relativitetsteorin och inte med Newton. Reinhard Genzel och Andrea Ghez fick Nobelpriset i fysik 2020 för upptäckten av det supermassiva svarta hålet i Vintergatans centrum.",
+    "viz": {
+      "type": "timeline",
+      "title": "S2 runt Sagittarius A*",
+      "ev": [
+        { "t": "1992", "d": "Uppföljningen av S2 börjar" },
+        { "t": "2002", "d": "S2 passerar närmast – banan fastställs" },
+        { "t": "2018", "d": "Ny passage: rödförskjutningen mäts" },
+        { "t": "2020", "d": "Nobelpris till Genzel och Ghez" }
+      ]
+    }
+  },
+  {
+    "id": "roda-massiva-galaxer",
+    "day": 208,
+    "kind": "rymd",
+    "arxiv": "2207.12446",
+    "paper": "A population of red candidate massive galaxies ~600 Myr after the Big Bang",
+    "hook": "JWST:s första bilder verkade visa galaxer som var för stora för sin ålder.",
+    "title": "För stora för tidigt?",
+    "meta": "Ivo Labbé m.fl. · Nature, 2023",
+    "stat": "6",
+    "statLabel": "kandidater till massiva galaxer i det unga universum",
+    "points": [
+      "JWST ser infrarött ljus från de första miljarderna år.",
+      "Forskarna hittade sex röda galaxer som verkade ha lika många stjärnor som Vintergatan.",
+      "Det skulle vara svårt att förklara bara 500–700 miljoner år efter Big Bang."
+    ],
+    "takeaway": "Kandidater måste bekräftas innan teorin skrivs om.",
+    "source": "arXiv:2207.12446 · Labbé m.fl. (2022)",
+    "more": "Massorna uppskattades från färgerna i bilder, inte från spektrum. Om de stämde skulle de hota standardmodellens förutsägelser om hur snabbt galaxer växer. Senare spektroskopi har visat att flera av objekten troligen är mindre massiva, och att en del av ljuset kan komma från aktiva svarta hål – en ny sorts objekt som kallas 'små röda prickar'. Studien visar både hur spännande och hur osäkra de första JWST-resultaten var.",
+    "viz": {
+      "type": "flow",
+      "title": "Från bild till slutsats",
+      "steps": ["Röda prickar i JWST-bilder", "Färgen tyder på många stjärnor", "Spektrum behövs för att bekräfta", "Delvis aktiva svarta hål"]
+    }
+  },
+  {
+    "id": "tidskristall-google",
+    "day": 209,
+    "kind": "fysik",
+    "arxiv": "2107.13571",
+    "paper": "Observation of Time-Crystalline Eigenstate Order on a Quantum Processor",
+    "hook": "Google använde sin kvantdator till att skapa en ny fas av materia: en tidskristall.",
+    "title": "Tidskristall i kvantdatorn",
+    "meta": "Xiao Mi m.fl. · Google, Nature 2022",
+    "stat": "20",
+    "statLabel": "kvantbitar bildade tidskristallen",
+    "points": [
+      "En tidskristall vänder sitt tillstånd i en takt som skiljer sig från drivningen.",
+      "Med 20 kvantbitar i Sycamore-processorn skapades en stabil sådan fas.",
+      "Mönstret höll för alla starttillstånd – inte bara några utvalda."
+    ],
+    "takeaway": "Kvantdatorer kan också vara laboratorier.",
+    "source": "arXiv:2107.13571 · Mi m.fl. (2021)",
+    "more": "Systemet drevs med periodiska pulser, och kvantbitarna vände sig fram och tillbaka med dubbla perioden. Det som skiljer en äkta tidskristall från en tillfällig effekt är att ordningen är stabil och gäller hela spektrumet av tillstånd. Det kräver 'mångkropps-lokalisering', där oordning hindrar systemet från att värmas upp. Experimentet visade att en kvantprocessor kan användas för att studera nya faser av materia, inte bara för beräkningar.",
+    "viz": {
+      "type": "split",
+      "title": "Drivning och svar",
+      "a": { "h": "Drivningen", "items": ["En puls per period", "Takt: 1, 2, 3 …"] },
+      "b": { "h": "Tidskristallen", "items": ["Vänder varannan period", "Takt: 2, 4, 6 …"] }
+    }
+  },
+  {
+    "id": "classifier-free-guidance",
+    "day": 210,
+    "kind": "ai",
+    "arxiv": "2207.12598",
+    "paper": "Classifier-Free Diffusion Guidance",
+    "hook": "Varför följer bildgeneratorer din beskrivning så noga? Ett enkelt trick.",
+    "title": "Classifier-free guidance",
+    "meta": "Jonathan Ho & Tim Salimans · Google, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En diffusionsmodell tränas att måla både med och utan beskrivning.",
+      "När den skapar en bild jämförs de två gissningarna.",
+      "Skillnaden förstärks – så bilden följer beskrivningen tydligare."
+    ],
+    "takeaway": "Jämför med och utan – och förstärk skillnaden.",
+    "source": "arXiv:2207.12598 · Ho & Salimans (2022)",
+    "more": "Tidigare metoder krävde en separat bildklassificerare för att styra diffusionen. Ho och Salimans visade att samma modell kan göra jobbet om den ibland tränas utan textvillkor. En 'guidance scale' bestämmer hur mycket skillnaden förstärks: högre värde ger bilder som följer texten mer, men med mindre variation. Tekniken används i nästan alla text-till-bild-system, från Stable Diffusion till Imagen.",
+    "viz": {
+      "type": "flow",
+      "title": "Guidance i ett steg",
+      "steps": ["Gissning utan beskrivning", "Gissning med beskrivning", "Skillnad = vad beskrivningen tillför", "Förstärk skillnaden"]
+    }
+  },
+  {
+    "id": "higgs-cms",
+    "day": 211,
+    "kind": "fysik",
+    "arxiv": "1207.7235",
+    "paper": "Observation of a new boson at a mass of 125 GeV with the CMS experiment at the LHC",
+    "hook": "Den 4 juli 2012 jublade fysiker över hela världen. Higgsbosonen var hittad.",
+    "title": "Higgsbosonen – CMS",
+    "meta": "CMS-samarbetet · Phys. Lett. B, 2012",
+    "stat": "125",
+    "statLabel": "GeV – den nya partikelns massa",
+    "points": [
+      "Higgsbosonen förutsades 1964 för att förklara varför partiklar har massa.",
+      "CMS såg ett överskott av händelser vid 125 GeV med 5 standardavvikelser.",
+      "Tydligast syntes det när partikeln sönderföll till två fotoner eller två Z-bosoner."
+    ],
+    "takeaway": "48 års väntan, två detektorer, samma svar.",
+    "source": "arXiv:1207.7235 · CMS (2012)",
+    "more": "CMS och ATLAS är två oberoende jättedetektorer vid LHC på CERN. Att båda såg samma partikel var avgörande för att resultatet skulle tas på allvar. Sönderfallet till två fotoner visade att partikeln har heltalsspinn som inte är 1 – en boson. Peter Higgs och François Englert fick Nobelpriset 2013. Sedan dess har mätningarna visat att partikeln beter sig som standardmodellens Higgsboson.",
+    "viz": {
+      "type": "timeline",
+      "title": "Jakten på Higgs",
+      "ev": [
+        { "t": "1964", "d": "Higgs, Englert m.fl. förutsäger partikeln" },
+        { "t": "2008", "d": "LHC startar" },
+        { "t": "4 juli 2012", "d": "CMS och ATLAS: upptäckt" },
+        { "t": "2013", "d": "Nobelpris till Higgs och Englert" }
+      ]
+    }
+  },
+  {
+    "id": "higgs-atlas",
+    "day": 212,
+    "kind": "fysik",
+    "arxiv": "1207.7214",
+    "paper": "Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC",
+    "hook": "Sannolikheten att det var en slump: 1 på 600 miljoner.",
+    "title": "Higgsbosonen – ATLAS",
+    "meta": "ATLAS-samarbetet · Phys. Lett. B, 2012",
+    "stat": "5,9σ",
+    "statLabel": "säkerhet för den nya partikeln",
+    "points": [
+      "ATLAS letade efter Higgs i flera olika sönderfall och kombinerade resultaten.",
+      "Vid 126 GeV fanns ett tydligt överskott.",
+      "Risken att bakgrunden råkade se ut så: 1,7 på en miljard."
+    ],
+    "takeaway": "Fem sigma är fysikens gräns för en upptäckt.",
+    "source": "arXiv:1207.7214 · ATLAS (2012)",
+    "more": "I partikelfysik krävs fem standardavvikelser, 5σ, för att kalla något en upptäckt – det motsvarar ungefär en chans på 3,5 miljoner att en slumpvariation ser ut som en signal. ATLAS fick 5,9σ. Detektorn är 46 meter lång och 25 meter hög, och samarbetet har tusentals forskare. Artikeln och CMS motsvarighet publicerades i samma nummer av Physics Letters B.",
+    "viz": {
+      "type": "gauge",
+      "title": "Statistisk säkerhet",
+      "min": 0,
+      "max": 7,
+      "v": 5.9,
+      "unit": "σ",
+      "zones": ["Slump?", "Antydan", "Bevis", "Upptäckt"],
+      "note": "5σ krävs för att kalla det en upptäckt."
+    }
+  },
+  {
+    "id": "webarena",
+    "day": 213,
+    "kind": "ai",
+    "arxiv": "2307.13854",
+    "paper": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "hook": "Kan en AI-agent handla på nätet, svara i forum och ändra kod? 2023: knappt.",
+    "title": "WebArena",
+    "meta": "Shuyan Zhou m.fl. · Carnegie Mellon, ICLR 2024",
+    "stat": "14 %",
+    "statLabel": "av uppgifterna klarade GPT-4 – människor 78 %",
+    "points": [
+      "AI-agenter testades ofta i förenklade miljöer långt från verkligheten.",
+      "WebArena har riktiga, fungerande webbplatser: butik, forum, kodplattform och CMS.",
+      "Uppgifterna bedöms efter om resultatet blir rätt, inte hur agenten gör."
+    ],
+    "takeaway": "Det vardagliga är svårt för maskiner.",
+    "source": "arXiv:2307.13854 · Zhou m.fl. (2023)",
+    "more": "Miljön körs lokalt så att resultaten går att upprepa, med verktyg som karta och manualer. Det finns 812 uppgifter, som att hitta en produkt och lämna en recension eller öppna ett ärende i ett kodprojekt. Den bästa agenten byggd på GPT-4 klarade drygt 14 procent, medan människor klarade 78 procent. Sedan dess har agenterna blivit mycket bättre, och WebArena har blivit ett standardtest.",
+    "viz": {
+      "type": "bars",
+      "title": "Lösta uppgifter",
+      "unit": "%",
+      "items": [{ "l": "GPT-4-agent (2023)", "v": 14.4, "t": "14,4 %" }, { "l": "Människor", "v": 78.2, "t": "78,2 %" }],
+      "max": 100
+    }
+  },
+  {
+    "id": "universella-jailbreaks",
+    "day": 214,
+    "kind": "ai",
+    "arxiv": "2307.15043",
+    "paper": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+    "hook": "En rad obegripliga tecken fick chattbotar att strunta i sina säkerhetsregler.",
+    "title": "Universella jailbreaks",
+    "meta": "Andy Zou m.fl. · CMU, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Säkerhetstränade språkmodeller vägrar svara på skadliga frågor.",
+      "Forskarna lät en algoritm söka fram ett suffix som får modellen att börja svara 'Visst, här är …'.",
+      "Suffixet fungerade på många frågor – och även på andra modeller."
+    ],
+    "takeaway": "Säkerhet genom träning har sårbarheter.",
+    "source": "arXiv:2307.15043 · Zou m.fl. (2023)",
+    "more": "Metoden, GCG, kombinerar girig sökning med gradienter för att byta ut tecken i suffixet ett i taget. Den tränades på öppna modeller som Vicuna, men suffixen fungerade också mot ChatGPT, Bard och Claude, som forskarna informerade innan publiceringen. Studien visade att jailbreaks kan automatiseras och väckte frågan om AI-säkerhet kan förlita sig på träning ensam. Det har lett till mer forskning om robusthet och filter.",
+    "viz": {
+      "type": "flow",
+      "title": "Så hittas suffixet",
+      "steps": ["Börja med slumpvisa tecken", "Mät hur nära 'Visst, här är …' modellen kommer", "Byt tecken som hjälper mest", "Upprepa tills det fungerar"]
+    }
+  },
+  {
+    "id": "rt-2",
+    "day": 215,
+    "kind": "ai",
+    "arxiv": "2307.15818",
+    "paper": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "hook": "'Plocka upp det utdöda djuret.' Roboten tog leksaksdinosaurien.",
+    "title": "RT-2",
+    "meta": "Anthony Brohan m.fl. · Google DeepMind, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "RT-2 bygger på en modell tränad på bilder och text från internet.",
+      "Robotens rörelser skrivs som text – precis som ord.",
+      "Då kan den använda webbkunskap för att förstå instruktioner den aldrig tränats på."
+    ],
+    "takeaway": "Kunskap från nätet kan bli handlingar i världen.",
+    "source": "arXiv:2307.15818 · Brohan m.fl. (2023)",
+    "more": "Modellen tränades samtidigt på robotdata och på vanliga uppgifter som att svara på frågor om bilder. Rörelser kodades som sekvenser av tal i textform. Det gav 'emergenta' förmågor: roboten kunde välja rätt föremål utifrån begrepp den bara sett på nätet, som 'utdött djur' eller 'något du kan använda som hammare'. Typen av modell kallas vision-language-action och är i dag grunden för många robotprojekt.",
+    "viz": {
+      "type": "flow",
+      "title": "Från bild och ord till rörelse",
+      "steps": ["Kamerabild + instruktion", "Modell tränad på webben och robotdata", "Svar: rörelser skrivna som text", "Roboten utför rörelsen"]
+    }
+  },
+  {
+    "id": "ytkoder",
+    "day": 216,
+    "kind": "fysik",
+    "arxiv": "1208.0928",
+    "paper": "Surface codes: Towards practical large-scale quantum computation",
+    "hook": "Hur bygger man en kvantdator som tål fel? Den här manualen blev standard.",
+    "title": "Ytkoder",
+    "meta": "Austin Fowler m.fl. · Phys. Rev. A, 2012",
+    "stat": "1 %",
+    "statLabel": "fel per operation kan koden ungefär tåla",
+    "points": [
+      "Kvantbitar är extremt känsliga – fel uppstår hela tiden.",
+      "Ytkoden lägger kvantbitar i ett rutnät där grannar kontinuerligt kontrollerar varandra.",
+      "Felen hittas utan att man förstör informationen, och kan rättas."
+    ],
+    "takeaway": "Många opålitliga delar kan bli en pålitlig helhet.",
+    "source": "arXiv:1208.0928 · Fowler m.fl. (2012)",
+    "more": "Ytkoden är populär eftersom den bara kräver att kvantbitar påverkar sina närmaste grannar och tål relativt höga felnivåer, runt en procent. Artikeln förklarar steg för steg hur logiska kvantbitar bildas, flyttas och kopplas ihop, och uppskattar hur stor en praktisk kvantdator måste vara. Den blev en manual för fältet. Googles experiment 2023 och 2024 med ytkoder bygger direkt på dessa idéer.",
+    "viz": {
+      "type": "flow",
+      "title": "Ytkoden i korthet",
+      "steps": ["Datakvantbitar i ett rutnät", "Mätkvantbitar mellan dem", "Upprepade kontroller hittar fel", "En dator räknar ut rättningen"]
+    }
+  }
+]

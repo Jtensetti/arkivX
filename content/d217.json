@@ -1,0 +1,313 @@
+[
+  {
+    "id": "gaussisk-korrelation",
+    "day": 217,
+    "kind": "matte",
+    "arxiv": "1408.1028",
+    "paper": "A simple proof of the Gaussian correlation conjecture extended to multivariate gamma distributions",
+    "hook": "En pensionerad statistiker löste en känd gissning – och nästan ingen märkte det.",
+    "title": "Den gaussiska korrelationen",
+    "meta": "Thomas Royen · 2014",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Gissningen gäller hur sannolikheter för två symmetriska områden hänger ihop.",
+      "Matematiker hade försökt bevisa den i årtionden.",
+      "Thomas Royen fick idén när han borstade tänderna – beviset var kort."
+    ],
+    "takeaway": "Ett bevis måste också bli läst.",
+    "source": "arXiv:1408.1028 · Royen (2014)",
+    "more": "Förmodan säger ungefär: om man kastar pilar med normalfördelad spridning mot en tavla, är chansen att träffa både en rektangel och en cirkel som är centrerade i samma punkt minst lika stor som produkten av chanserna var för sig. Royen publicerade sitt bevis i en mindre känd tidskrift och på arXiv. Det dröjde runt två år innan andra matematiker insåg att det var korrekt, efter att det skrivits om i en mer lättläst form. Historien blev ett exempel på hur viktiga resultat kan förbises.",
+    "viz": {
+      "type": "flow",
+      "title": "Påståendet med pilkastning",
+      "steps": ["Pilar med normalfördelad spridning", "Två symmetriska områden på tavlan", "Träff i båda ≥ produkten av chanserna", "Bevisat för alla dimensioner"]
+    }
+  },
+  {
+    "id": "test-time-compute",
+    "day": 218,
+    "kind": "ai",
+    "arxiv": "2408.03314",
+    "paper": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "hook": "En liten AI som tänker längre kan slå en 14 gånger större som svarar direkt.",
+    "title": "Tänk längre i stället för större",
+    "meta": "Charlie Snell m.fl. · Berkeley & DeepMind, 2024",
+    "stat": "14×",
+    "statLabel": "större modell kunde slås med mer tänketid",
+    "points": [
+      "Man kan förbättra en AI genom att göra den större – eller ge den mer tid att svara.",
+      "Två sätt: generera många svar och låta en verifierare välja, eller låta modellen rätta sig själv.",
+      "Bästa strategin beror på hur svår frågan är."
+    ],
+    "takeaway": "Tid att tänka kan ersätta storlek.",
+    "source": "arXiv:2408.03314 · Snell m.fl. (2024)",
+    "more": "Forskarna fann att en adaptiv strategi, som väljer metod efter frågans svårighet, kunde vara fyra gånger effektivare än att bara generera många svar och välja det bästa. På lätta och medelsvåra frågor kunde en mindre modell med mer beräkningstid slå en modell 14 gånger större. På de svåraste frågorna hjälpte förträning mer. Studien kom samtidigt som OpenAI:s o1 och blev en viktig förklaring till varför resonerande modeller fungerar.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att använda tänketid",
+      "a": { "h": "Bredd", "items": ["Många svar", "Verifierare väljer"] },
+      "b": { "h": "Djup", "items": ["Ett svar i taget", "Modellen rättar sig själv"] }
+    }
+  },
+  {
+    "id": "nfw-profilen",
+    "day": 219,
+    "kind": "rymd",
+    "arxiv": "astro-ph/9508025",
+    "paper": "The Structure of Cold Dark Matter Halos",
+    "hook": "Från dvärggalaxer till galaxhopar: all mörk materia verkar fördela sig på samma sätt.",
+    "title": "Den universella haloprofilen",
+    "meta": "Navarro, Frenk & White · ApJ, 1996",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Galaxer omges av klot – haloer – av mörk materia.",
+      "Datorsimuleringar visade att alla haloer har samma form, oavsett storlek.",
+      "Tätheten faller långsamt nära centrum och brantare längre ut."
+    ],
+    "takeaway": "Under mångfalden finns en gemensam form.",
+    "source": "arXiv:astro-ph/9508025 · Navarro m.fl. (1995)",
+    "more": "Profilen kallas NFW efter författarna och blev en av de mest använda formlerna i kosmologi. Den beskrivs med bara två parametrar: en karaktäristisk täthet och en skalradie. Mindre haloer är mer koncentrerade eftersom de bildades tidigare, när universum var tätare. Observationer av dvärggalaxer har dock ofta visat plattare centrum än NFW förutsäger – ett problem som kallas 'cusp–core' och som diskuteras än i dag.",
+    "viz": {
+      "type": "line",
+      "title": "Täthet från centrum och utåt",
+      "ymax": 100,
+      "x": ["Centrum", "", "Skalradie", "", "Kanten"],
+      "series": [{ "l": "Täthet (log)", "pts": [100, 75, 50, 22, 5] }],
+      "note": "Schematisk. Brantare fall längre ut."
+    }
+  },
+  {
+    "id": "gaussian-splatting",
+    "day": 220,
+    "kind": "ai",
+    "arxiv": "2308.04079",
+    "paper": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+    "hook": "Miljontals suddiga färgklickar blev ett fotorealistiskt 3D-rum du kan gå runt i.",
+    "title": "Gaussian splatting",
+    "meta": "Bernhard Kerbl m.fl. · SIGGRAPH, 2023",
+    "stat": "30",
+    "statLabel": "bilder per sekund i full HD – i realtid",
+    "points": [
+      "NeRF gav vackra 3D-scener men var långsamma att visa.",
+      "Gaussian splatting beskriver scenen med miljontals 3D-'klickar' i stället för ett nätverk.",
+      "Klickarna kan ritas extremt snabbt med vanliga grafiktekniker."
+    ],
+    "takeaway": "Ibland är den enkla representationen den bästa.",
+    "source": "arXiv:2308.04079 · Kerbl m.fl. (2023)",
+    "more": "Varje klick är en tredimensionell gaussisk fördelning med position, form, färg och genomskinlighet. Startpunkterna kommer från kamerakalibreringen, och sedan optimeras klickarna mot fotona – fler läggs till där det behövs detaljer. Metoden gav samma kvalitet som de bästa NeRF-varianterna men renderade i realtid i 1080p. Den fick pris för bästa artikel på SIGGRAPH 2023 och används i dag i appar för 3D-skanning, spel och film.",
+    "viz": {
+      "type": "flow",
+      "title": "Från foton till 3D",
+      "steps": ["Foton från olika vinklar", "Startpunkter från kamerakalibreringen", "Gör punkterna till gaussiska klickar", "Optimera form och färg – rita i realtid"]
+    }
+  },
+  {
+    "id": "3i-atlas",
+    "day": 221,
+    "kind": "rymd",
+    "arxiv": "2507.02757",
+    "paper": "Discovery and Preliminary Characterization of a Third Interstellar Object: 3I/ATLAS",
+    "hook": "Den tredje besökaren från en annan stjärna upptäcktes den 1 juli 2025.",
+    "title": "3I/ATLAS",
+    "meta": "Darryl Seligman m.fl. · ApJ Letters, 2025",
+    "stat": "58",
+    "statLabel": "km/s – farten från rymden mellan stjärnorna",
+    "points": [
+      "Teleskopnätverket ATLAS upptäckte ett objekt på en bana som inte går runt solen.",
+      "Banan är så öppen att det måste komma från en annan stjärna.",
+      "Det har en koma av gas och damm – det är en interstellär komet."
+    ],
+    "takeaway": "Material från andra stjärnor passerar genom vårt solsystem.",
+    "source": "arXiv:2507.02757 · Seligman m.fl. (2025)",
+    "more": "3I/ATLAS följer 1I/'Oumuamua 2017 och 2I/Borisov 2019. Banans excentricitet är omkring 6, långt över 1 som är gränsen för att vara bunden till solen. Färgen liknar andra interstellära objekt och primitiva kroppar i solsystemet. Kometen passerade närmast solen i slutet av oktober 2025, då den inte kunde ses från jorden, men rymdsonder, bland annat runt Mars, kunde följa den. Interstellära kometer kan ge prover av hur planetsystem kring andra stjärnor är uppbyggda.",
+    "viz": {
+      "type": "timeline",
+      "title": "Besökare från andra stjärnor",
+      "ev": [
+        { "t": "2017", "d": "1I/'Oumuamua – avlångt och utan koma" },
+        { "t": "2019", "d": "2I/Borisov – en tydlig komet" },
+        { "t": "2025", "d": "3I/ATLAS – snabbast hittills" }
+      ]
+    }
+  },
+  {
+    "id": "manniska-ai-kalibrering",
+    "day": 222,
+    "kind": "ai",
+    "arxiv": "2606.10906",
+    "paper": "Human-AI Teaming Through the Lens of Calibration",
+    "hook": "När människa och AI samarbetar – vem ska bestämma, och hur vet man det?",
+    "title": "Team av människa och AI",
+    "meta": "Eric Nalisnick m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ett team kan blanda människans och AI:ns bedömningar, eller låta en av dem avgöra.",
+      "Att blanda dem förstör människans kalibrering – hur väl säkerheten stämmer med träffsäkerheten.",
+      "Att delegera fungerar bättre, men den som väljer vem som svarar blir flaskhalsen."
+    ],
+    "takeaway": "Samarbete kräver att man vet vem som kan vad.",
+    "source": "arXiv:2606.10906 · Nalisnick m.fl. (2026)",
+    "more": "Kalibrering betyder att en bedömare som säger sig vara 80 procent säker har rätt i ungefär 80 procent av fallen. Forskarna antar att både människan och AI-modellen är kalibrerade och undersöker vad som händer i olika samarbetsformer. Att kombinera förutsägelserna bevarar inte människans kalibrering. Vid delegering måste en 'väljarmodell' avgöra när människan eller AI:n är bättre – och den uppgiften blir svårare ju skickligare människan är.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att samarbeta",
+      "a": { "h": "Kombinera", "items": ["Blanda bedömningar", "Kalibreringen går förlorad"] },
+      "b": { "h": "Delegera", "items": ["En svarar åt gången", "Väljaren måste vara skarp"] }
+    }
+  },
+  {
+    "id": "tidecache",
+    "day": 223,
+    "kind": "ai",
+    "arxiv": "2611.26619",
+    "paper": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
+    "hook": "Nya språkmodeller blandar två sorters minne. Det kräver ett nytt sätt att köra dem.",
+    "title": "TideCache",
+    "meta": "Jinbin Luo m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Många öppna modeller är hybrider: vissa lager minns allt, andra har fast minne.",
+      "Det gör att grafikkortets minne används ojämnt beroende på textlängd.",
+      "TideCache flyttar data mellan GPU och CPU lager för lager, medan beräkningen pågår."
+    ],
+    "takeaway": "Smart flytt av data kan vara lika viktig som snabb beräkning.",
+    "source": "arXiv:2611.26619 · Luo m.fl. (2026)",
+    "more": "Systemet är byggt för 'superchip' där CPU och GPU sitter tätt ihop. Det har tre delar: en minnespool som omfördelar fysiska minnessidor bakom fasta adresser, en streamer som förhämtar nästa uppmärksamhetslagers data medan andra lager räknar, och en schemaläggare som väljer om en förfrågan ska köras med allt i GPU-minnet eller strömmas. Målet är att kunna köra fler och längre förfrågningar samtidigt på samma hårdvara.",
+    "viz": {
+      "type": "flow",
+      "title": "Lager för lager",
+      "steps": ["Lager med fast minne räknar", "Samtidigt: hämta nästa lagers cache", "Uppmärksamhetslagret räknar", "Upprepa genom modellen"]
+    }
+  },
+  {
+    "id": "depth-pro-2",
+    "day": 224,
+    "kind": "ai",
+    "arxiv": "2611.26603",
+    "paper": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+    "hook": "Hur långt bort är allt i en video – mätt i meter, från en enda kamera?",
+    "title": "Depth Pro 2",
+    "meta": "Peiyun Hu m.fl. · Apple, 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Djupkartor visar hur långt bort varje pixel ligger.",
+      "Tidigare metoder valde mellan skarpa kanter och stabilitet över tid.",
+      "Depth Pro 2 ger båda – i full upplösning och i riktiga meter."
+    ],
+    "takeaway": "Ibland kan man få både skärpa och stabilitet.",
+    "source": "arXiv:2611.26603 · Hu m.fl. (2026)",
+    "more": "Metoder som tittar på flera bildrutor ger jämna djupkartor i video men suddiga kanter. Metoder för enstaka bilder ger skarpa kanter men flimmer. Depth Pro 2 är ett enda nätverk som tränats på både bilder och video och förutsäger djupet i bildens egen upplösning. Enligt författarna är det bättre än tidigare metoder på noggrannhet, skärpa och stabilitet samtidigt. Kod och modellvikter är öppna. Djupkartor används bland annat i AR, robotik och bildredigering.",
+    "viz": {
+      "type": "split",
+      "title": "Den gamla avvägningen",
+      "a": { "h": "En bild i taget", "items": ["Skarpa kanter", "Flimmer i video"] },
+      "b": { "h": "Flera bilder", "items": ["Stabilt över tid", "Suddiga kanter"] },
+      "note": "Depth Pro 2 vill ha båda."
+    }
+  },
+  {
+    "id": "coda-davinci",
+    "day": 225,
+    "kind": "ai",
+    "arxiv": "2611.26595",
+    "paper": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+    "hook": "Låt en AI-agent bygga en enkel 3D-scen i kod – och låt videomodellen måla resten.",
+    "title": "Coda-DaVinci",
+    "meta": "Yiyan Ji m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Videogeneratorer är svåra att styra exakt: rörelser och former blir fel.",
+      "I Code2Video skriver en agent kod som bygger grova 3D-modeller som guide.",
+      "Studien visar att grova modeller ger naturlig rörelse och mer detaljerade bättre stabilitet."
+    ],
+    "takeaway": "En skiss i kod kan styra en målning i pixlar.",
+    "source": "arXiv:2611.26595 · Ji m.fl. (2026)",
+    "more": "Forskarna testade med blinda bedömningar hur detaljerade 3D-modellerna bör vara, om fysiksimulering hjälper och hur prompten ska formuleras. Svaret berodde på uppgiften. Utifrån det byggde de Coda-DaVinci, ett ramverk med flera agenter som för varje scen väljer om guiden ska användas, hur detaljerad varje föremål ska vara och när fysik ska simuleras. Det är ett exempel på hur AI-agenter kombineras med generativa modeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Från kod till video",
+      "steps": ["Agent skriver kod för en 3D-skiss", "Fysiksimulering ger rörelse", "Skissen guidar videomodellen", "Färdig video med rätt struktur"]
+    }
+  },
+  {
+    "id": "natdejting-hierarki",
+    "day": 226,
+    "kind": "liv",
+    "arxiv": "1808.04840",
+    "paper": "Aspirational pursuit of mates in online dating markets",
+    "hook": "På dejtingappar skriver folk till dem som är 25 % 'mer önskvärda' än de själva.",
+    "title": "Dejtingens hierarki",
+    "meta": "Elizabeth Bruch & Mark Newman · Science Advances, 2018",
+    "stat": "25 %",
+    "statLabel": "mer önskvärda i snitt – dit siktar folk",
+    "points": [
+      "Forskarna mätte önskvärdhet med en PageRank-liknande metod: vem får meddelanden från vem.",
+      "Hierarkin var mycket lika i fyra amerikanska städer.",
+      "Både män och kvinnor skrev oftast till personer något högre upp än de själva."
+    ],
+    "takeaway": "Vi siktar lite högre än oss själva.",
+    "source": "arXiv:1808.04840 · Bruch & Newman (2018)",
+    "more": "Datan kom från en stor gratis dejtingtjänst i New York, Boston, Chicago och Seattle. Önskvärdhet räknades så att ett meddelande från en eftertraktad person vägde mer. Svarsfrekvensen var lägre när man skrev till någon högre upp, men inte noll. Studien visade också tydliga mönster efter ålder och utbildning, olika för män och kvinnor. Den mäter hur folk beter sig på en plattform, inte människors egentliga värde.",
+    "viz": {
+      "type": "flow",
+      "title": "Så mättes önskvärdhet",
+      "steps": ["Vem skriver till vem?", "Meddelanden från eftertraktade väger mer", "Räkna fram en rangordning", "Jämför avsändare och mottagare"]
+    }
+  },
+  {
+    "id": "mind2act-world",
+    "day": 227,
+    "kind": "ai",
+    "arxiv": "2611.26444",
+    "paper": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+    "hook": "När en robot misslyckas – tänkte den fel, rörde den sig fel, eller båda?",
+    "title": "Mind2Act World",
+    "meta": "Yuzhi Huang m.fl. · 2026",
+    "stat": "180",
+    "statLabel": "testkonfigurationer för robotar",
+    "points": [
+      "Robotar behöver både minnas och resonera, och röra sig exakt och i rätt tid.",
+      "Tidigare test blandade ihop förmågorna, så man visste inte vad som gick fel.",
+      "Mind2Act testar tänkande, handling och kombinationen var för sig."
+    ],
+    "takeaway": "För att laga ett fel måste man veta var det sitter.",
+    "source": "arXiv:2611.26444 · Huang m.fl. (2026)",
+    "more": "Testet har 30 simulerade uppgifter från fem verkliga områden, var och en i tre svårighetsgrader och två miljöer – en städad och en slumpad – totalt 180 konfigurationer. 'Mind' testar beslut som bygger på tidigare observationer, 'Act' testar precisa och snabba rörelser och 'Mind2Act' kräver båda i en sluten loop med återkoppling från miljön. Syftet är att göra robotforskningen mer diagnostisk.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre sorters test",
+      "steps": ["Mind: minns och resonerar", "Act: exakt och i tid", "Mind2Act: båda i samspel", "Hitta var felen uppstår"]
+    }
+  },
+  {
+    "id": "grundmodeller",
+    "day": 228,
+    "kind": "ai",
+    "arxiv": "2108.07258",
+    "paper": "On the Opportunities and Risks of Foundation Models",
+    "hook": "Över hundra forskare gav ett namn åt AI:s nya era: grundmodeller.",
+    "title": "Grundmodeller",
+    "meta": "Rishi Bommasani m.fl. · Stanford, 2021",
+    "stat": "100+",
+    "statLabel": "forskare skrev rapporten",
+    "points": [
+      "Modeller som BERT och GPT-3 tränas brett och anpassas sedan till många uppgifter.",
+      "Rapporten kallade dem 'foundation models' – grunden som allt annat byggs på.",
+      "Det ger enorma möjligheter men också risker, eftersom fel ärvs överallt."
+    ],
+    "takeaway": "En svag grund påverkar allt som byggs ovanpå.",
+    "source": "arXiv:2108.07258 · Bommasani m.fl. (2021)",
+    "more": "Rapporten på över 200 sidor täckte förmågor (språk, bild, robotik, resonemang), teknik (arkitekturer, data, säkerhet), tillämpningar (juridik, vård, utbildning) och samhällspåverkan (ojämlikhet, missbruk, miljö, ekonomi). Namnet väckte debatt – vissa menade att det överdrev hur stabil grunden var – men begreppet slog igenom och påverkade både forskningen och debatten kring lagar som EU:s AI-förordning.",
+    "viz": {
+      "type": "flow",
+      "title": "En grundmodells liv",
+      "steps": ["Tränas på enorma mängder data", "Blir en allmän grund", "Anpassas till många uppgifter", "Styrkor och brister sprids vidare"]
+    }
+  }
+]

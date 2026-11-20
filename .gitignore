@@ -3,3 +3,4 @@ renders/
 video/.hyperframes/
 video/batch.json
 research/render.log
+research/render-loop.out

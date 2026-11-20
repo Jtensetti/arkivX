@@ -99,8 +99,8 @@
     "viz": {
       "type": "gauge",
       "title": "Solsystemets beboeliga zon",
-      "min": 0.5,
-      "max": 2,
+      "min": 0.29,
+      "max": 2.39,
       "v": 1,
       "unit": "AU",
       "zones": ["För varmt", "Beboeligt", "För kallt"],

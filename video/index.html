@@ -620,7 +620,10 @@
           const o = { f: 0 };
           const show = () => {
             const value = z.min + o.f * (z.max - z.min);
-            val.textContent = Math.round(value / 15) * 15 + " " + (z.unit || "");
+            // Same number of decimals as the target value, Swedish decimal comma; z.step rounds (e.g. 15).
+            const dec = String(z.v).includes(".") ? String(z.v).split(".")[1].length : 0;
+            const shown = z.step ? Math.round(value / z.step) * z.step : value;
+            val.textContent = (z.label && o.f >= frac - 1e-9 ? z.label : shown.toFixed(dec).replace(".", ",")) + (z.unit ? " " + z.unit : "");
             const zs = z.zones || [];
             zone.textContent = zs.length ? zs[Math.min(zs.length - 1, Math.floor(o.f * zs.length * 0.9999))] : "";
             zone.style.color = o.f > 0.8 ? "#ff5a5a" : o.f > 0.5 ? "#ffd166" : "#6ee7a8";
@@ -631,7 +634,7 @@
           tl.fromTo(svg, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t);
           tl.fromTo([val, zone], { opacity: 0 }, { opacity: 1, duration: 0.4 }, t + 0.3);
           tl.fromTo(o, { f: 0 }, { f: frac, duration: 5.2, ease: "power1.in", onUpdate: show }, t + 0.6);
-          tl.fromTo(svg, { x: 0 }, { x: 6, duration: 0.05, repeat: 9, yoyo: true, ease: "none" }, t + 5.8);
+          if (z.shake) tl.fromTo(svg, { x: 0 }, { x: 6, duration: 0.05, repeat: 9, yoyo: true, ease: "none" }, t + 5.8);
           return t + 6.4;
         }
 

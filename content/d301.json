@@ -1,0 +1,315 @@
+[
+  {
+    "id": "vision-transformer",
+    "day": 301,
+    "kind": "ai",
+    "arxiv": "2010.11929",
+    "paper": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+    "hook": "En bild är värd 16 × 16 ord. Så tog transformern över även bildigenkänningen.",
+    "title": "Vision Transformer",
+    "meta": "Alexey Dosovitskiy m.fl. · Google, ICLR 2021",
+    "stat": "16 × 16",
+    "statLabel": "pixlar i varje 'ord' av bilden",
+    "points": [
+      "Bilder analyserades i ett decennium med faltningsnätverk.",
+      "ViT delar bilden i rutor och läser dem som ord i en mening.",
+      "Med tillräckligt mycket träningsdata slog den de bästa faltningsnäten."
+    ],
+    "takeaway": "Samma arkitektur kan förstå både språk och bilder.",
+    "source": "arXiv:2010.11929 · Dosovitskiy m.fl. (2020)",
+    "more": "Varje ruta blir en vektor, får en positionskod och skickas in i en vanlig transformer, precis som ord. Utan de inbyggda antaganden som faltningsnät har om bilder – att närliggande pixlar hör ihop – behöver ViT mer data, men skalar bättre. Förtränad på stora datamängder nådde den toppresultat på ImageNet med mindre beräkningar. Vision Transformers är i dag grunden i många bildmodeller, från CLIP till multimodala språkmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "En bild som en mening",
+      "steps": ["Dela bilden i rutor på 16×16 pixlar", "Gör varje ruta till en vektor", "Lägg till position", "Transformern läser dem som ord"]
+    }
+  },
+  {
+    "id": "kvantiserad-majorana-tillbakadragen",
+    "day": 302,
+    "kind": "fysik",
+    "arxiv": "1710.10701",
+    "paper": "Quantized Majorana conductance",
+    "hook": "En hyllad upptäckt i Nature drogs tillbaka. Data hade valts ut för att se bättre ut.",
+    "title": "Den tillbakadragna upptäckten",
+    "meta": "Hao Zhang m.fl. · Nature 2018 (tillbakadragen 2021)",
+    "stat": "2e²/h",
+    "statLabel": "– den kvantiserade konduktans som påstods",
+    "points": [
+      "Majoranalägen förutsägs ge en konduktans på exakt 2e²/h vid noll spänning.",
+      "Artikeln rapporterade en sådan platå – ett starkt tecken på Majorana.",
+      "Granskning visade att data som inte passade hade utelämnats. Artikeln drogs tillbaka."
+    ],
+    "takeaway": "Det som inte visas kan vara det viktigaste.",
+    "source": "arXiv:1710.10701 · Zhang m.fl. (2017)",
+    "more": "Resultatet sågs som ett genombrott för topologiska kvantdatorer och var viktigt för Microsofts satsning. Två fysiker, Sergey Frolov och Vincent Mourik, begärde att få se all rådata och upptäckte att den bredare datan inte stödde slutsatsen. En utredning visade att det inte var avsiktligt fusk men allvarliga brister i hur data valts ut och presenterats. Nature drog tillbaka artikeln i mars 2021. Fallet ledde till krav på öppen data inom fältet.",
+    "viz": {
+      "type": "timeline",
+      "title": "Ett fall av selektiv data",
+      "ev": [
+        { "t": "2017", "d": "Artikeln läggs ut på arXiv" },
+        { "t": "2018", "d": "Publiceras i Nature" },
+        { "t": "2020", "d": "Kritiker får se rådata" },
+        { "t": "2021", "d": "Artikeln dras tillbaka" }
+      ]
+    }
+  },
+  {
+    "id": "twitter-algoritmisk-forstarkning",
+    "day": 303,
+    "kind": "liv",
+    "arxiv": "2110.11010",
+    "paper": "Algorithmic Amplification of Politics on Twitter",
+    "hook": "Twitter testade sin egen algoritm på två miljoner användare. Högern förstärktes mer.",
+    "title": "Algoritmen och politiken",
+    "meta": "Ferenc Huszár m.fl. · PNAS, 2022",
+    "stat": "6 av 7",
+    "statLabel": "länder där högern förstärktes mer än vänstern",
+    "points": [
+      "Sedan 2016 hade en slumpad grupp på nästan 2 miljoner konton ett flöde utan algoritm.",
+      "Forskarna jämförde hur mycket politikers tweets syntes med och utan algoritm.",
+      "I sex av sju länder fick den etablerade högern mer förstärkning."
+    ],
+    "takeaway": "Algoritmer tar ställning, även utan avsikt.",
+    "source": "arXiv:2110.11010 · Huszár m.fl. (2021)",
+    "more": "Studien gjordes av forskare på Twitter med plattformens egna data, vilket är ovanligt. Länderna var Kanada, Frankrike, Japan, Spanien, Storbritannien, USA och Tyskland; Tyskland var undantaget. I USA förstärktes också högerinriktade nyhetskällor mer. Forskarna kunde inte förklara varför – det kan bero på hur användare interagerar med innehållet snarare än på något i algoritmen som riktats mot politik. Resultaten väckte frågor om transparens för sociala medier.",
+    "viz": {
+      "type": "flow",
+      "title": "Experimentet",
+      "steps": ["2 miljoner konton får kronologiskt flöde", "Övriga får algoritmens flöde", "Mät hur mycket politiker syns", "Jämför höger och vänster"]
+    }
+  },
+  {
+    "id": "jeveration",
+    "day": 304,
+    "kind": "ai",
+    "arxiv": "2611.24738",
+    "paper": "Jeveration: System One Models Now Generate",
+    "hook": "En snabb 'system 1'-modell skapar hela bilden i ett enda steg.",
+    "title": "Jeveration",
+    "meta": "Yuhe Liu m.fl. · 2026",
+    "stat": "1",
+    "statLabel": "steg genom nätverket per bild",
+    "points": [
+      "Bildgeneratorer brukar arbeta i många steg, som diffusion.",
+      "Jeveration bygger på en fryst bild- och språkmodell och gissar alla delar parallellt.",
+      "Ett delat slumptillstånd gör att delarna passar ihop till en enhetlig bild."
+    ],
+    "takeaway": "Snabbt och samtidigt kan också bli sammanhängande.",
+    "source": "arXiv:2611.24738 · Liu m.fl. (2026)",
+    "more": "'System 1' syftar på snabbt, intuitivt tänkande i motsats till långsamt resonerande. Utmaningen med att generera allt parallellt är att en text kan motsvara många bilder, och delarna måste välja samma. Därför villkoras alla positioner på ett gemensamt slumptillstånd. Eftersom modellen annars ignorerar slumpen lär den sig först en fördelning över diskreta bildkoder. Samma arkitektur används också för att redigera bilder och för täta förutsägelser som djup.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att skapa en bild",
+      "a": { "h": "Diffusion", "items": ["Många steg", "Långsammare"] },
+      "b": { "h": "Jeveration", "items": ["Ett steg", "Delat slumptillstånd"] }
+    }
+  },
+  {
+    "id": "ioi-kretsen",
+    "day": 305,
+    "kind": "ai",
+    "arxiv": "2211.00593",
+    "paper": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+    "hook": "'Anna och Bo gick till affären. Bo gav en dryck till …' Hur vet AI:n att svaret är Anna?",
+    "title": "En krets i GPT-2",
+    "meta": "Kevin Wang m.fl. · ICLR, 2023",
+    "stat": "26",
+    "statLabel": "uppmärksamhetshuvuden i kretsen",
+    "points": [
+      "Forskarna ville förstå exakt hur en språkmodell löser en enkel grammatisk uppgift.",
+      "Med riktade ingrepp kartlade de vilka delar av GPT-2 som gör jobbet.",
+      "Resultatet: en 'krets' med 26 huvuden i sju roller, som hittar och väljer rätt namn."
+    ],
+    "takeaway": "Även AI:ns tankar kan kartläggas – bit för bit.",
+    "source": "arXiv:2211.00593 · Wang m.fl. (2022)",
+    "more": "Uppgiften kallas 'indirect object identification'. Kretsen har bland annat huvuden som upptäcker att ett namn upprepas, huvuden som undertrycker det upprepade namnet och huvuden som flyttar det andra namnet till svaret. Det var det största försöket då att baklänges konstruera ett naturligt beteende i en språkmodell. Forskarna testade förklaringen med tre kriterier – trogenhet, fullständighet och minimalitet – och redovisade att den inte är perfekt.",
+    "viz": {
+      "type": "flow",
+      "title": "Kretsens steg",
+      "steps": ["Hitta namnen i meningen", "Upptäck vilket som upprepas", "Undertryck det upprepade", "Svara med det andra: Anna"]
+    }
+  },
+  {
+    "id": "negativ-temperatur",
+    "day": 306,
+    "kind": "fysik",
+    "arxiv": "1211.0545",
+    "paper": "Negative Absolute Temperature for Motional Degrees of Freedom",
+    "hook": "Kallare än absoluta nollpunkten? Nej – varmare än oändligt varmt.",
+    "title": "Under absoluta nollpunkten",
+    "meta": "Simon Braun m.fl. · LMU München, Science 2013",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Normalt finns fler partiklar i låga energitillstånd än i höga.",
+      "Om det är tvärtom – fler högt än lågt – blir temperaturen formellt negativ.",
+      "Forskarna gjorde det med rörliga kaliumatomer i ett gitter av laserljus."
+    ],
+    "takeaway": "Temperatur är mer än hur varmt något känns.",
+    "source": "arXiv:1211.0545 · Braun m.fl. (2012)",
+    "more": "Temperatur definieras av hur entropin ändras när energin ökar. I system där energin har ett tak kan entropin minska när energin ökar, och då blir temperaturen negativ. Ett sådant system är faktiskt 'varmare' än alla positiva temperaturer: värme flödar från det till vilket vanligt system som helst. Tidigare hade man visat negativ temperatur för spinn; här gällde det atomernas rörelse. Negativ temperatur ger också negativt tryck, vilket påminner om mörk energi.",
+    "viz": {
+      "type": "spectrum",
+      "title": "Temperaturskalan, logiskt ordnad",
+      "rows": [["+0 K (kallast)", "+∞ / −∞", "−0 K (varmast)"]],
+      "note": "Negativa temperaturer är varmare än alla positiva."
+    }
+  },
+  {
+    "id": "piccolo",
+    "day": 307,
+    "kind": "ai",
+    "arxiv": "2611.24651",
+    "paper": "Piccolo: Co-Evolving Decision Models and Data through Recursive Self-Improvement",
+    "hook": "AI-agenter tränar nästa generation AI – och väljer själva vilken data som behövs.",
+    "title": "Piccolo",
+    "meta": "Zhenqing Ling m.fl. · 2026",
+    "stat": "75,59",
+    "statLabel": "poäng – etta på Decision Index Vision",
+    "points": [
+      "Piccolo är beslutsmodeller med 0,8–27 miljarder parametrar som väljer bland svarsalternativ.",
+      "Forskningsagenter analyserar modellerna, bygger träningsdata och gör experiment.",
+      "Resultaten används för att förbättra nästa omgång – rekursiv självförbättring."
+    ],
+    "takeaway": "Modell och data kan växa tillsammans.",
+    "source": "arXiv:2611.24651 · Ling m.fl. (2026)",
+    "more": "Modellerna förutsäger sannolikheter för olika svar i uppgifter som text- och bildbedömningar, agentuppgifter, dataflöden och spel. Agenterna delar ett forskningsminne så att erfarenheter förs vidare mellan modellstorlekar. Den största modellen toppade en topplista för visuella beslut, och de mindre var bäst i sina storleksklasser på ett privat test. Arbetet är ett exempel på hur AI-agenter i allt högre grad deltar i att utveckla AI.",
+    "viz": {
+      "type": "flow",
+      "title": "Självförbättringsloopen",
+      "steps": ["Agenter analyserar modellens fel", "Bygger ny träningsdata", "Tränar och testar", "Lärdomar sparas i ett delat minne"]
+    }
+  },
+  {
+    "id": "agenter-som-lar-sig-sjalva",
+    "day": 308,
+    "kind": "ai",
+    "arxiv": "2611.23219",
+    "paper": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "hook": "Ge en AI-agent verktyg och ett mål. Kommer den på själv hur den ska bli bättre?",
+    "title": "Behöver agenter instruktioner?",
+    "meta": "Shobhita Sundaram m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Självförbättring brukar bygga på loopar som människor har designat.",
+      "Här fick en fryst språkmodell bara en budget, verktyg och målet att bli bättre på spel.",
+      "Tillräckligt kapabla modeller byggde själva strategier som liknar mänskligt självlärande."
+    ],
+    "takeaway": "Kapabla modeller kan ibland lära sig att lära.",
+    "source": "arXiv:2611.23219 · Sundaram m.fl. (2026)",
+    "more": "Agenten kunde samla erfarenheter och uppdatera textdokument – sitt eget 'minne' – men modellens vikter ändrades inte. Ingen extern loop styrde hur den skulle använda verktygen. Starka modeller förbättrade sig ändå, med strategier som påminner om klassiska teorier om självreglerat lärande: att planera, övervaka och utvärdera sitt eget lärande. Svagare modeller lyckades sämre. Det antyder att framtida agenter kan behöva mindre handgjord styrning.",
+    "viz": {
+      "type": "flow",
+      "title": "Agentens egen loop",
+      "steps": ["Spela och samla erfarenheter", "Skriv ner lärdomar", "Planera nästa försök", "Utvärdera – och justera"]
+    }
+  },
+  {
+    "id": "pi4-4d-scener",
+    "day": 309,
+    "kind": "ai",
+    "arxiv": "2611.23144",
+    "paper": "π^4: A Foundation Model for 4D Scene Geometry and Motion",
+    "hook": "Från en vanlig video: 3D-form, kamerans rörelse och vad som rör sig – på en gång.",
+    "title": "π⁴: scener i 4D",
+    "meta": "Yifan Wang m.fl. · 2026",
+    "stat": "0,5",
+    "statLabel": "miljarder parametrar – hälften av konkurrenternas",
+    "points": [
+      "Att förstå en scen i 4D betyder 3D-form plus hur den förändras över tid.",
+      "π⁴ tar en bild, en samling bilder eller en video, utan känd kameraposition.",
+      "Den ger djup, kamerarörelse, skala, punktspår och vilka föremål som rör sig."
+    ],
+    "takeaway": "En modell kan se både form och rörelse.",
+    "source": "arXiv:2611.23144 · Wang m.fl. (2026)",
+    "more": "Modellen har en gren för geometri och en för rörelse som använder geometrin för att lyfta tvådimensionella punktspår till tre dimensioner. Allt beräknas i ett enda steg genom nätverket, även för stora scener. Enligt författarna fick den bäst genomsnittlig placering i geometritester och var konkurrenskraftig i spårning och segmentering av rörliga föremål. Sådana modeller är viktiga för robotik, självkörande bilar och AR.",
+    "viz": {
+      "type": "flow",
+      "title": "Från video till 4D",
+      "steps": ["Vanlig video eller bilder", "Geometri: djup och kamerarörelse", "Rörelse: punktspår i 3D", "Masker för rörliga föremål"]
+    }
+  },
+  {
+    "id": "soffproblemet",
+    "day": 310,
+    "kind": "matte",
+    "arxiv": "2411.19826",
+    "paper": "Optimality of Gerver's Sofa",
+    "hook": "Vilken är den största soffa som kan bäras runt ett hörn? Svaret: 2,2195.",
+    "title": "Soffproblemet",
+    "meta": "Jineon Baek · 2024",
+    "stat": "2,2195",
+    "statLabel": "– största möjliga soffarean",
+    "points": [
+      "En korridor med bredden 1 svänger i rät vinkel. Vilken form har störst area och går runt?",
+      "Leo Moser ställde frågan 1966. Joseph Gerver hittade 1992 en form med 18 bitar.",
+      "Jineon Baek bevisade att Gervers soffa inte går att slå."
+    ],
+    "takeaway": "Ett vardagsproblem kan vara matematiskt djupt.",
+    "source": "arXiv:2411.19826 · Baek (2024)",
+    "more": "Problemet blev känt för att det verkar enkelt men visade sig mycket svårt. Redan 1968 föreslog John Hammersley en telefonliknande form med arean 2,2074. Gervers soffa består av 18 kurvbitar och har arean 2,2195…, men ingen kunde visa att den var bäst. Baeks bevis är över hundra sidor och bygger på att hitta en funktion som alltid är större än arean och som är maximal just för Gervers soffa. Beviset granskas fortfarande.",
+    "viz": {
+      "type": "timeline",
+      "title": "Soffan genom tiderna",
+      "ev": [
+        { "t": "1966", "d": "Leo Moser ställer frågan" },
+        { "t": "1968", "d": "Hammersley: area 2,2074" },
+        { "t": "1992", "d": "Gerver: area 2,2195" },
+        { "t": "2024", "d": "Baek: Gerver är optimal" }
+      ]
+    }
+  },
+  {
+    "id": "mamba",
+    "day": 311,
+    "kind": "ai",
+    "arxiv": "2312.00752",
+    "paper": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "hook": "En utmanare till transformern: lika bra på språk, men linjär i textlängd.",
+    "title": "Mamba",
+    "meta": "Albert Gu & Tri Dao · 2023",
+    "stat": "5×",
+    "statLabel": "högre genomströmning än transformer vid generering",
+    "points": [
+      "Transformerns uppmärksamhet blir dyrare i kvadrat med textlängden.",
+      "Tillståndsmodeller är billigare, men har varit sämre på språk.",
+      "Mamba låter modellen välja vad den ska minnas och glömma, beroende på varje ord."
+    ],
+    "takeaway": "Selektivt minne kan vara bättre än att minnas allt.",
+    "source": "arXiv:2312.00752 · Gu & Dao (2023)",
+    "more": "Mambas tillståndsmodell har parametrar som beror på indatan, vilket gör att den kan fokusera på relevant information. Det gör att man inte kan använda vanliga snabba faltningar, så författarna skrev en hårdvarunära algoritm för grafikkort. Mamba matchade transformers av dubbel storlek på språk och fungerade även för ljud och DNA. Hybridmodeller som blandar Mamba-lager och uppmärksamhet används i dag i flera öppna språkmodeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att hantera långa texter",
+      "a": { "h": "Transformer", "items": ["Ser allt", "Kostnad växer i kvadrat"] },
+      "b": { "h": "Mamba", "items": ["Väljer vad den minns", "Kostnad växer linjärt"] }
+    }
+  },
+  {
+    "id": "dikt-dikt-dikt",
+    "day": 312,
+    "kind": "ai",
+    "arxiv": "2311.17035",
+    "paper": "Scalable Extraction of Training Data from (Production) Language Models",
+    "hook": "Be ChatGPT upprepa ordet 'poem' för evigt. Till slut läckte den träningsdata.",
+    "title": "Dikt, dikt, dikt …",
+    "meta": "Milad Nasr m.fl. · Google DeepMind m.fl., 2023",
+    "stat": "150×",
+    "statLabel": "mer träningsdata läckte med attacken",
+    "points": [
+      "Språkmodeller kan memorera delar av sin träningsdata ordagrant.",
+      "Forskarna bad ChatGPT upprepa ett ord om och om igen.",
+      "Efter ett tag 'divergerade' modellen och började skriva ut memorerad text."
+    ],
+    "takeaway": "Säkerhetsträning tar inte bort minnet.",
+    "source": "arXiv:2311.17035 · Nasr m.fl. (2023)",
+    "more": "Från öppna modeller kunde forskarna extrahera gigabyte av träningsdata. För ChatGPT gav den nya 'divergensattacken' 150 gånger mer memorerad text än vanligt beteende, bland annat personuppgifter som e-postadresser och telefonnummer. Med en budget på 200 dollar fick de ut över 10 000 unika exempel. OpenAI informerades i förväg och spärrade attacken. Studien visade att justering av modellens beteende inte tar bort det den memorerat.",
+    "viz": {
+      "type": "flow",
+      "title": "Attacken",
+      "steps": ["'Upprepa ordet poem för evigt'", "poem poem poem poem …", "Modellen spårar ur", "Memorerad träningstext läcker ut"]
+    }
+  }
+]

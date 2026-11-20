@@ -1,0 +1,314 @@
+[
+  {
+    "id": "gw170817-vagorna",
+    "day": 289,
+    "kind": "rymd",
+    "arxiv": "1710.05832",
+    "paper": "GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral",
+    "hook": "Två neutronstjärnor spiralerade mot varandra i 100 sekunder. LIGO hörde allt.",
+    "title": "Neutronstjärnornas dans",
+    "meta": "LIGO & Virgo · PRL, 2017",
+    "stat": "2,74",
+    "statLabel": "solmassor – parets sammanlagda massa",
+    "points": [
+      "Neutronstjärnor är kompakta: mer massa än solen i en kula stor som en stad.",
+      "Signalen var den starkaste och närmaste gravitationsvåg som setts dittills.",
+      "Den var synlig i detektorerna i ungefär 100 sekunder, mot en bråkdel för svarta hål."
+    ],
+    "takeaway": "Gravitationsvågor kan väga och mäta stjärnor.",
+    "source": "arXiv:1710.05832 · LIGO & Virgo (2017)",
+    "more": "Eftersom neutronstjärnorna är lättare än svarta hål tar sammanslagningen längre tid i detektorernas frekvensband. Signalen gjorde det möjligt att mäta hur mycket stjärnorna deformerades av varandras tidvatten, vilket säger något om materia vid extrema tätheter. Avståndet från gravitationsvågorna kombinerat med galaxens hastighet gav också en ny, oberoende mätning av Hubblekonstanten – runt 70 km/s/Mpc.",
+    "viz": {
+      "type": "bars",
+      "title": "Hur länge syntes signalen?",
+      "unit": "",
+      "items": [{ "l": "Svarta hål (GW150914), s", "v": 0.2, "t": "≈0,2 s" }, { "l": "Neutronstjärnor (GW170817), s", "v": 100, "t": "≈100 s" }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "social-dynamikens-fysik",
+    "day": 290,
+    "kind": "liv",
+    "arxiv": "0710.3256",
+    "paper": "Statistical physics of social dynamics",
+    "hook": "Kan åsikter spridas som magnetism? Fysiker försökte räkna på samhället.",
+    "title": "Samhällets statistiska fysik",
+    "meta": "Castellano, Fortunato & Loreto · RMP, 2009",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Fysiker använder enkla modeller av samverkande delar – som atomer i en magnet.",
+      "Samma idéer kan beskriva åsikter, språk, kultur och folkmassor.",
+      "Översikten samlade modellerna och jämförde dem med verkliga data."
+    ],
+    "takeaway": "Enkla regler kan ge komplexa samhällsmönster.",
+    "source": "arXiv:0710.3256 · Castellano m.fl. (2007)",
+    "more": "Ett exempel är 'väljarmodellen', där varje person slumpmässigt tar över en grannes åsikt – en modell som leder till konsensus på ett förutsägbart sätt. Andra modeller beskriver hur kulturer förblir olika trots kontakt, hur språkliga konventioner uppstår och hur rykten sprids. Översikten i Reviews of Modern Physics betonade att modellerna måste testas mot data, något som blivit lättare med sociala medier och mobiltelefoner.",
+    "viz": {
+      "type": "flow",
+      "title": "Väljarmodellen",
+      "steps": ["Alla har en åsikt: A eller B", "Välj en slumpvis person", "Den tar en grannes åsikt", "Till slut: alla tycker lika"]
+    }
+  },
+  {
+    "id": "fallande-slinky",
+    "day": 291,
+    "kind": "fysik",
+    "arxiv": "1110.4368",
+    "paper": "The falling slinky",
+    "hook": "Släpp en hängande slinky. Den nedre änden svävar – tills toppen kommer ner.",
+    "title": "Den svävande slinkyn",
+    "meta": "William Unruh · 2011",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En slinky hänger utsträckt av sin egen tyngd. Du släpper toppen.",
+      "Nedre änden står still i luften – den 'vet' inte att toppen släppts.",
+      "Informationen färdas som en våg nedåt. Först när vågen kommer fram börjar botten falla."
+    ],
+    "takeaway": "Även information behöver tid att färdas.",
+    "source": "arXiv:1110.4368 · Unruh (2011)",
+    "more": "Fysikern William Unruh, känd för Unruheffekten och akustiska svarta hål, analyserade fenomenet med två modeller: en där slinkyns varv kan passera genom varandra och en realistisk där de krockar och bildar en chockvåg. I den realistiska modellen börjar botten röra sig tidigare, men fortfarande först när den kollapsade delen når den. Hela tiden faller slinkyns tyngdpunkt med vanlig acceleration – det är bara formen som ändras.",
+    "viz": {
+      "type": "flow",
+      "title": "Ögonblick för ögonblick",
+      "steps": ["Slinkyn hänger utsträckt", "Toppen släpps", "En våg av kollapsade varv går nedåt", "När vågen når botten faller allt"]
+    }
+  },
+  {
+    "id": "grafen",
+    "day": 292,
+    "kind": "fysik",
+    "arxiv": "cond-mat/0410550",
+    "paper": "Electric Field Effect in Atomically Thin Carbon Films",
+    "hook": "Med tejp och blyertsgrafit gjorde två fysiker världens tunnaste material.",
+    "title": "Grafen",
+    "meta": "Kostya Novoselov m.fl. · Science, 2004",
+    "stat": "1",
+    "statLabel": "atom tjockt",
+    "points": [
+      "Grafit består av lager av kolatomer i bikakemönster.",
+      "Geim och Novoselov drog av lager med tejp tills bara ett enda var kvar.",
+      "Grafen leder elektricitet extremt bra – och elektronerna styrs av ett elektriskt fält."
+    ],
+    "takeaway": "Stora upptäckter kan börja med enkla verktyg.",
+    "source": "arXiv:cond-mat/0410550 · Novoselov m.fl. (2004)",
+    "more": "Teoretiker hade länge trott att ett tvådimensionellt kristallskikt skulle vara instabilt. Upptäckten gjordes delvis under 'fredagsexperiment' i Manchester, där gruppen testade udda idéer. Grafen är starkare än stål, nästan genomskinligt och leder värme och el mycket bra. Andre Geim och Konstantin Novoselov fick Nobelpriset i fysik 2010. Upptäckten startade forskning om en hel familj av tvådimensionella material.",
+    "viz": {
+      "type": "flow",
+      "title": "Tejpmetoden",
+      "steps": ["En bit grafit", "Tejp drar av tunna lager", "Upprepa – tunnare och tunnare", "Ett enda atomlager: grafen"]
+    }
+  },
+  {
+    "id": "epidemier-i-skalfria-natverk",
+    "day": 293,
+    "kind": "liv",
+    "arxiv": "cond-mat/0010317",
+    "paper": "Epidemic spreading in scale-free networks",
+    "hook": "Varför försvinner datorvirus aldrig helt? Svaret ligger i nätverkets form.",
+    "title": "Smitta utan tröskel",
+    "meta": "Pastor-Satorras & Vespignani · PRL, 2001",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Klassiska modeller säger att en smitta dör ut om den sprids för långsamt – det finns en tröskel.",
+      "I nätverk med några få extremt välkopplade noder försvinner den tröskeln.",
+      "Även svaga virus kan då överleva länge, eftersom knutpunkterna håller liv i dem."
+    ],
+    "takeaway": "Nätverkets form avgör hur smitta sprids.",
+    "source": "arXiv:cond-mat/0010317 · Pastor-Satorras & Vespignani (2000)",
+    "more": "Forskarna analyserade data om datorvirus som levde kvar på internet i månader och år, trots låg spridning. Förklaringen var att internets struktur liknar ett skalfritt nätverk. Resultatet hade stor betydelse även för biologisk smitta: om man vaccinerar eller isolerar de mest uppkopplade knutpunkterna kan man stoppa en epidemi mycket effektivare än med slumpvisa åtgärder.",
+    "viz": {
+      "type": "split",
+      "title": "Två slags nätverk",
+      "a": { "h": "Jämnt nätverk", "items": ["Tydlig tröskel", "Svag smitta dör ut"] },
+      "b": { "h": "Med knutpunkter", "items": ["Ingen tröskel", "Svag smitta överlever"] }
+    }
+  },
+  {
+    "id": "barabasi-albert",
+    "day": 294,
+    "kind": "liv",
+    "arxiv": "cond-mat/9910332",
+    "paper": "Emergence of scaling in random networks",
+    "hook": "De rika blir rikare – även i nätverk. Två regler räcker för att förklara webbens form.",
+    "title": "De rika blir rikare",
+    "meta": "Barabási & Albert · Science, 1999",
+    "stat": "2",
+    "statLabel": "enkla regler: tillväxt och preferens",
+    "points": [
+      "Många verkliga nätverk har några få noder med väldigt många länkar.",
+      "Modellen: nätverket växer, och nya noder länkar helst till redan populära noder.",
+      "Det ger automatiskt en potenslag – ett 'skalfritt' nätverk."
+    ],
+    "takeaway": "Små fördelar kan växa till stora.",
+    "source": "arXiv:cond-mat/9910332 · Barabási & Albert (1999)",
+    "more": "Modellen kallas Barabási–Albert-modellen och förklarade varför webbsidor, citeringar och proteinnätverk verkade ha liknande form. Mekanismen kallas 'preferential attachment' och liknar tidigare idéer av Herbert Simon och Derek de Solla Price. Artikeln är en av de mest citerade i nätverksvetenskap. Senare har det visats att verkliga nätverk ofta är mer komplicerade och att rena potenslagar är ovanligare än man trodde.",
+    "viz": {
+      "type": "flow",
+      "title": "Hur nätverket växer",
+      "steps": ["En ny nod läggs till", "Den väljer vilka den länkar till", "Populära noder väljs oftare", "De populära blir ännu populärare"]
+    }
+  },
+  {
+    "id": "tetris-np",
+    "day": 295,
+    "kind": "matte",
+    "arxiv": "cs/0210020",
+    "paper": "Tetris is Hard, Even to Approximate",
+    "hook": "Tetris är inte bara svårt för dig. Det är bevisat svårt för alla datorer.",
+    "title": "Tetris är svårt",
+    "meta": "Demaine, Hohenberger & Liben-Nowell · MIT, 2002",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Tänk dig att du vet alla bitar som ska komma, i förväg.",
+      "Att hitta det bästa sättet att rensa flest rader är ändå NP-fullständigt.",
+      "Det är till och med svårt att komma i närheten av det bästa."
+    ],
+    "takeaway": "Även enkla spel kan vara omöjliga att lösa perfekt.",
+    "source": "arXiv:cs/0210020 · Demaine m.fl. (2002)",
+    "more": "Beviset visar att om man kunde lösa Tetris effektivt, skulle man också kunna lösa '3-partitionsproblemet', ett känt svårt problem. Det gäller många varianter av reglerna. NP-fullständigt betyder att ingen känd algoritm kan lösa alla fall snabbt, och att en sådan algoritm skulle lösa P mot NP-problemet. Erik Demaine är känd för att studera komplexiteten i spel och pussel, från Tetris till origami.",
+    "viz": {
+      "type": "flow",
+      "title": "Beviset i korthet",
+      "steps": ["Ett känt svårt problem (3-partition)", "Översätt till en Tetrisplan och bitar", "Rensa allt ⇔ lös problemet", "Tetris är minst lika svårt"]
+    }
+  },
+  {
+    "id": "kvantoverlagsenhet",
+    "day": 296,
+    "kind": "fysik",
+    "arxiv": "1910.11333",
+    "paper": "Quantum supremacy using a programmable superconducting processor",
+    "hook": "200 sekunder för en kvantdator – 10 000 år för en superdator, sa Google.",
+    "title": "Kvantöverlägsenhet",
+    "meta": "Frank Arute m.fl. · Google, Nature 2019",
+    "stat": "53",
+    "statLabel": "kvantbitar i processorn Sycamore",
+    "points": [
+      "Google körde slumpmässiga kvantkretsar och tog miljontals prover av resultatet.",
+      "Det tog 200 sekunder – och uppskattades ta en superdator 10 000 år.",
+      "IBM svarade att en smartare simulering skulle ta 2,5 dagar."
+    ],
+    "takeaway": "Försprång mäts mot den bästa motståndaren.",
+    "source": "arXiv:1910.11333 · Arute m.fl. (2019)",
+    "more": "Detta arXiv-dokument är det tekniska tillägget till Nature-artikeln från 24 oktober 2019. Uppgiften var vald för att vara svår för vanliga datorer, inte för att vara användbar. Testet blev en milstolpe, men debatten om hur stort försprånget var fortsatte: med åren hittades klassiska metoder som simulerade samma kretsar mycket snabbare. Det ledde till nya, svårare test från både Google och kinesiska grupper.",
+    "viz": {
+      "type": "bars",
+      "title": "Tid för samma uppgift",
+      "unit": "",
+      "items": [{ "l": "Sycamore", "v": 200, "t": "200 s" }, { "l": "Googles uppskattning, superdator", "v": 315360000000, "t": "10 000 år" }, { "l": "IBM:s uppskattning", "v": 216000, "t": "2,5 dagar" }],
+      "max": 315360000000
+    }
+  },
+  {
+    "id": "kollektiv-rorelse",
+    "day": 297,
+    "kind": "liv",
+    "arxiv": "1010.5017",
+    "paper": "Collective motion",
+    "hook": "Fiskstim, fågelflockar, bakterier och människor rör sig efter samma enkla regler.",
+    "title": "Kollektiv rörelse",
+    "meta": "Tamás Vicsek & Anna Zafeiris · Phys. Reports, 2012",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Kollektiv rörelse finns överallt, från molekyler till folkmassor.",
+      "Ofta räcker en enkel regel: rör dig ungefär åt samma håll som dina grannar.",
+      "När bruset minskar går gruppen plötsligt från kaos till ordnad rörelse."
+    ],
+    "takeaway": "Ingen behöver leda för att alla ska röra sig tillsammans.",
+    "source": "arXiv:1010.5017 · Vicsek & Zafeiris (2010)",
+    "more": "Tamás Vicsek föreslog 1995 en enkel modell där partiklar rör sig med konstant fart och anpassar sin riktning efter grannarnas genomsnitt, plus lite slump. Modellen visar en fasövergång mellan oordning och ordning, liknande magnetism. Översikten går igenom experiment med bakterier, insekter, fåglar, fiskar och robotar, och modeller som förklarar dem. Fältet är viktigt för både biologi och styrning av drönarsvärmar.",
+    "viz": {
+      "type": "flow",
+      "title": "Vicseks regel",
+      "steps": ["Varje individ rör sig framåt", "Titta på grannarnas riktning", "Anpassa dig – med lite slump", "Ordning uppstår av sig själv"]
+    }
+  },
+  {
+    "id": "oumuamua-ljussegel",
+    "day": 298,
+    "kind": "rymd",
+    "arxiv": "1810.11490",
+    "paper": "Could Solar Radiation Pressure Explain 'Oumuamua's Peculiar Acceleration?",
+    "hook": "Var den interstellära besökaren 'Oumuamua ett utomjordiskt solsegel?",
+    "title": "'Oumuamua som solsegel?",
+    "meta": "Shmuel Bialy & Avi Loeb · ApJ Letters, 2018",
+    "stat": "0,3–0,9",
+    "statLabel": "mm tjockt skulle ett sådant segel behöva vara",
+    "points": [
+      "'Oumuamua accelererade lite bort från solen, utan synlig gas som en komet.",
+      "Förslag: solljusets tryck på ett extremt tunt föremål – som ett segel.",
+      "Författarna spekulerade att det kunde vara konstgjort."
+    ],
+    "takeaway": "Ett spekulativt förslag måste vägas mot enklare förklaringar.",
+    "source": "arXiv:1810.11490 · Bialy & Loeb (2018)",
+    "more": "Artikeln väckte enorm uppmärksamhet för sin sista spekulation om utomjordisk teknik. De flesta astronomer föredrar naturliga förklaringar. 2023 föreslog forskare att 'Oumuamua var en isig kropp där vätgas, bildad av kosmisk strålning och instängd i isen, frigjordes av solens värme och gav en svag knuff utan synlig koma. Eftersom objektet bara sågs i några veckor kommer frågan troligen aldrig att avgöras helt.",
+    "viz": {
+      "type": "split",
+      "title": "Två förklaringar",
+      "a": { "h": "Solsegel", "items": ["Extremt tunt", "Ljustryck ger knuff", "Spekulativt"] },
+      "b": { "h": "Isig kropp", "items": ["Vätgas frigörs", "Ingen synlig koma", "Naturligt"] }
+    }
+  },
+  {
+    "id": "pluto-new-horizons",
+    "day": 299,
+    "kind": "rymd",
+    "arxiv": "1510.07704",
+    "paper": "The Pluto system: Initial results from its exploration by New Horizons",
+    "hook": "Efter nio års resa flög New Horizons förbi Pluto – och hittade ett hjärta.",
+    "title": "Pluto på nära håll",
+    "meta": "Alan Stern m.fl. · Science, 2015",
+    "stat": "14 juli 2015",
+    "statLabel": "– närmaste passagen",
+    "points": [
+      "Pluto var bara en suddig prick i teleskop före New Horizons.",
+      "Bilderna visade ett ljust 'hjärta' av kväveis, berg av vattenis och unga ytor.",
+      "Pluto är geologiskt aktiv – trots att den är liten och kall."
+    ],
+    "takeaway": "Även små världar kan leva.",
+    "source": "arXiv:1510.07704 · Stern m.fl. (2015)",
+    "more": "Den västra delen av hjärtat, Sputnik Planitia, är en jättelik slätt av kväveis utan kratrar, vilket betyder att ytan är högst några miljoner år gammal. Isen rör sig i långsamma konvektionsceller. Atmosfären har dislager, och månen Charon har kanjoner och en mörk nordpol. Hur en så liten värld kan vara aktiv miljarder år efter att den bildades är en av de stora frågorna New Horizons väckte.",
+    "viz": {
+      "type": "timeline",
+      "title": "Resan till Pluto",
+      "ev": [
+        { "t": "2006", "d": "Uppskjutning – samma år degraderas Pluto" },
+        { "t": "2007", "d": "Förbi Jupiter för fartökning" },
+        { "t": "14 juli 2015", "d": "Förbiflygning av Pluto" },
+        { "t": "2019", "d": "Förbi Arrokoth i Kuiperbältet" }
+      ]
+    }
+  },
+  {
+    "id": "tva-solmassor-neutronstjarna",
+    "day": 300,
+    "kind": "rymd",
+    "arxiv": "1010.5788",
+    "paper": "Shapiro delay measurement of a two solar mass neutron star",
+    "hook": "En neutronstjärna med två solars massa satte gränser för den tätaste materian i universum.",
+    "title": "Två solmassor i en stjärna",
+    "meta": "Paul Demorest m.fl. · Nature, 2010",
+    "stat": "1,97",
+    "statLabel": "solmassor – rekord när det mättes",
+    "points": [
+      "Neutronstjärnor är så täta att en tesked väger miljarder ton.",
+      "När pulsarens radiopulser passerar nära följeslagaren fördröjs de av gravitationen.",
+      "Fördröjningen avslöjade massan: nästan två solmassor."
+    ],
+    "takeaway": "En enda tung stjärna kan utesluta många teorier.",
+    "source": "arXiv:1010.5788 · Demorest m.fl. (2010)",
+    "more": "Effekten kallas Shapirofördröjning och förutsägs av allmänna relativitetsteorin. Pulsaren PSR J1614-2230 och dess följeslagare ligger nästan kant i kant sett från jorden, vilket gjorde effekten stark. En så tung neutronstjärna kan inte bestå av för 'mjuk' materia, eftersom den då skulle kollapsa till ett svart hål. Det uteslöt flera modeller med exotiska partiklar som hyperoner eller fria kvarkar i kärnan.",
+    "viz": {
+      "type": "flow",
+      "title": "Shapirofördröjning",
+      "steps": ["Pulsaren skickar radiopulser", "Pulserna passerar följeslagaren", "Gravitationen fördröjer dem lite", "Fördröjningen ger massan"]
+    }
+  }
+]

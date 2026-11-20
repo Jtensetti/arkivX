@@ -1,0 +1,311 @@
+[
+  {
+    "id": "mip-re",
+    "day": 13,
+    "kind": "matte",
+    "arxiv": "2001.04383",
+    "paper": "MIP*=RE",
+    "hook": "Ett bevis om datorer och kvantsammanflätning fällde en 44 år gammal gissning.",
+    "title": "MIP* = RE",
+    "meta": "Ji, Natarajan, Vidick, Wright & Yuen · 2020",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En vanlig dator förhör flera allvetande 'bevisare' som delar kvantsammanflätning.",
+      "Sådana förhör kan kontrollera svar på problem lika svåra som stopproblemet.",
+      "Som bieffekt visade sig Connes inbäddningsförmodan från 1976 vara falsk."
+    ],
+    "takeaway": "Sammanflätning gör ett förhör nästan obegränsat starkt.",
+    "source": "arXiv:2001.04383 · Ji m.fl. (2020)",
+    "more": "MIP* är klassen av problem som en vanlig dator kan avgöra genom att ställa frågor till flera bevisare som inte kan prata med varandra men delar sammanflätade kvanttillstånd. RE är alla problem vars ja-svar kan bekräftas, bland dem stopproblemet. Att klasserna är lika betyder att sammanflätning gör sådana förhör otroligt kraftfulla. Resultatet gav också ett nej till Tsirelsons problem i kvantfysik och därmed till Connes inbäddningsförmodan i operatoralgebra – tre områden förenades i ett bevis.",
+    "viz": {
+      "type": "flow",
+      "title": "Från förhör till matematik",
+      "steps": ["En vanlig dator ställer frågor", "Två bevisare med delad sammanflätning", "De kan bekräfta allt som är 'RE'", "→ Connes förmodan faller"]
+    }
+  },
+  {
+    "id": "robomorpher",
+    "day": 14,
+    "kind": "ai",
+    "arxiv": "2611.24816",
+    "paper": "RoboMorpher: Scaling Robot Morphology Representations for Cross-Embodiment Action Prediction",
+    "hook": "Samma ledvinkel betyder olika saker för olika robotarmar. Kan de få ett gemensamt språk?",
+    "title": "RoboMorpher",
+    "meta": "Wenwei Lin m.fl. · 2026",
+    "stat": "40 miljoner",
+    "statLabel": "par av robotform och rörelse i förträningen",
+    "points": [
+      "Robotar ser olika ut – samma ledvinkel kan flytta armen till helt olika platser.",
+      "RoboMorpher lär sig koppla ledvinklar till var armens delar faktiskt hamnar.",
+      "Robotformerna genereras automatiskt, så träningsdatan kan växa nästan fritt."
+    ],
+    "takeaway": "Förstå kroppen först, sedan rörelsen.",
+    "source": "arXiv:2611.24816 · Lin m.fl. (2026)",
+    "more": "Målet är robotar som kan dela kunskap trots att deras kroppar är olika. Systemet är en 'tokeniserare' för handlingar som tar hänsyn till robotens form, tränad på 40 miljoner exempel från genererade robotarmar. Den kopplas sedan in i en modell som tolkar bilder och språk och väljer rörelser. Forskarna byggde också ett nytt test, EmbodiBench. Med robotformer som modellen aldrig sett i förträningen klarade den 56,4 procent av uppgifterna i RoboTwin 2.0 och 23,3 procent i EmbodiBench.",
+    "viz": {
+      "type": "bars",
+      "title": "Lyckade uppgifter, okända robotar",
+      "unit": "%",
+      "items": [{ "l": "RoboTwin 2.0", "v": 56.4, "t": "56,4 %" }, { "l": "EmbodiBench", "v": 23.3, "t": "23,3 %" }],
+      "max": 100
+    }
+  },
+  {
+    "id": "desi-dr2",
+    "day": 15,
+    "kind": "rymd",
+    "arxiv": "2503.14738",
+    "paper": "DESI DR2 Results II: Measurements of Baryon Acoustic Oscillations and Cosmological Constraints",
+    "hook": "Den mörka energin som driver isär universum kanske blir svagare med tiden.",
+    "title": "Mörk energi som ändras?",
+    "meta": "DESI-samarbetet · Phys. Rev. D, 2025",
+    "stat": "14 miljoner",
+    "statLabel": "galaxer och kvasarer kartlagda",
+    "points": [
+      "DESI mätte universums 'ljudvågslinjal' i över 14 miljoner galaxer och kvasarer.",
+      "Resultaten krockar lite med Plancks mätningar av bakgrundsstrålningen.",
+      "Mörk energi som förändras över tid passar bättre – men det är inte avgjort än."
+    ],
+    "takeaway": "Kosmologins standardmodell kan behöva justeras.",
+    "source": "arXiv:2503.14738 · DESI-samarbetet (2025)",
+    "more": "DESI är ett instrument på ett teleskop i Arizona som mäter spektrum från tusentals objekt samtidigt. Efter tre års data passar mätningarna av baryonakustiska svängningar en enkel modell med konstant mörk energi, men parametrarna ligger något ifrån dem som bakgrundsstrålningen ger. Spänningen minskar om den mörka energin får förändras över tid, särskilt när supernovadata läggs till. Signalen är ännu inte stark nog för att räknas som en upptäckt, men den har gjort frågan om mörk energi mer öppen än på länge.",
+    "viz": {
+      "type": "flow",
+      "title": "Så testas den mörka energin",
+      "steps": ["Kartlägg 14 miljoner galaxer", "Mät avstånd med ljudvågslinjalen", "Jämför med bakgrundsstrålningen", "Konstant mörk energi passar sämre"]
+    }
+  },
+  {
+    "id": "word2vec",
+    "day": 16,
+    "kind": "ai",
+    "arxiv": "1301.3781",
+    "paper": "Efficient Estimation of Word Representations in Vector Space",
+    "hook": "Kung − man + kvinna = drottning. Så lärde sig datorer vad ord betyder.",
+    "title": "Word2vec",
+    "meta": "Tomas Mikolov m.fl. · Google, 2013",
+    "stat": "1,6 miljarder",
+    "statLabel": "ord – och träningen tog mindre än ett dygn",
+    "points": [
+      "Varje ord blir en lista med tal: en punkt i ett rum med hundratals dimensioner.",
+      "Ord som dyker upp i liknande sammanhang hamnar nära varandra.",
+      "Riktningar i rummet fångar samband, till exempel mellan kön eller land och huvudstad."
+    ],
+    "takeaway": "Ett ord känns igen på sitt sällskap.",
+    "source": "arXiv:1301.3781 · Mikolov m.fl. (2013)",
+    "more": "Mikolov och kollegor föreslog två enkla modeller som lär sig ordvektorer genom att gissa ett ord utifrån orden runt omkring, eller tvärtom. De var mycket snabbare än tidigare neurala modeller men gav bättre vektorer. I ett test med analogier visade de att man kan räkna med betydelser: vektorn för 'kung' minus 'man' plus 'kvinna' hamnar närmast 'drottning'. Idén banade väg för dagens språkmodeller, som också gör om ord till vektorer.",
+    "viz": {
+      "type": "flow",
+      "title": "Räkna med betydelser",
+      "steps": ["kung", "− man", "+ kvinna", "≈ drottning"]
+    }
+  },
+  {
+    "id": "microsoft-majorana-paritet",
+    "day": 17,
+    "kind": "fysik",
+    "arxiv": "2401.09549",
+    "paper": "Interferometric Single-Shot Parity Measurement in an InAs-Al Hybrid Device",
+    "hook": "Microsoft jagar en kvantbit som skyddas av naturens egen topologi.",
+    "title": "Topologisk kvantbit, steg ett",
+    "meta": "Microsoft Azure Quantum · Nature, 2025",
+    "stat": "1 ms",
+    "statLabel": "som paritetstillstånden höll i sig",
+    "points": [
+      "Idén: lagra kvantinformation i par av Majoranalägen, skyddad mot störningar.",
+      "Forskarna mätte i ett enda försök om en nanotråd hade jämn eller udda paritet.",
+      "Ett nödvändigt steg – men det bevisar inte att lägena verkligen är topologiska."
+    ],
+    "takeaway": "Ett steg framåt, men bevisen är omstridda.",
+    "source": "arXiv:2401.09549 · Aghaee m.fl. (2024)",
+    "more": "En topologisk kvantbit skulle vara mycket mer tålig än dagens kvantbitar, eftersom informationen sprids ut så att lokala störningar inte når den. För att använda den måste man kunna mäta den gemensamma pariteten hos två Majoranalägen. Här görs det med en nanotråd av indiumarsenid och aluminium kopplad till kvantprickar, där kapacitansen ändras beroende på pariteten. Nature skrev i samband med publiceringen att resultaten inte i sig visar att Majoranalägen finns. Tidigare påstådda Majoranasignaler har dragits tillbaka, så fältet är försiktigt.",
+    "viz": {
+      "type": "flow",
+      "title": "Så mäts pariteten",
+      "steps": ["Nanotråd av InAs och aluminium", "Kopplad till kvantprickar", "Kapacitansen beror på pariteten", "Jämn eller udda – i ett enda försök"]
+    }
+  },
+  {
+    "id": "hilberts-sjatte-problem",
+    "day": 18,
+    "kind": "matte",
+    "arxiv": "2503.01800",
+    "paper": "Hilbert's sixth problem: derivation of fluid equations via Boltzmann's kinetic theory",
+    "hook": "År 1900 bad Hilbert om en härledning som kom först 2025.",
+    "title": "Hilberts sjätte problem",
+    "meta": "Deng, Hani & Ma · 2025",
+    "stat": "125",
+    "statLabel": "år efter att Hilbert ställde frågan",
+    "points": [
+      "Hilbert ville ge fysiken en lika stadig grund som geometrin.",
+      "Författarna börjar med hårda kulor som studsar mot varandra enligt Newton.",
+      "Därifrån härleder de rigoröst Boltzmanns ekvation och sedan ekvationerna för flöden."
+    ],
+    "takeaway": "Från studsande kulor till strömmande vatten.",
+    "source": "arXiv:2503.01800 · Deng, Hani & Ma (2025)",
+    "more": "Fluiders rörelse beskrivs av ekvationer som Euler- och Navier–Stokes-ekvationerna, medan atomer följer Newtons lagar. Hilbert föreslog 1900 att man skulle visa hur det ena följer ur det andra via Boltzmanns kinetiska teori. Det svåra har varit att visa att Boltzmanns ekvation gäller under lång tid. Deng, Hani och Ma gör det för hårda sfärer som kolliderar elastiskt och fullbordar på så vis kedjan. Arbetet är en förhandspublicering och granskas fortfarande, men det har väckt stor uppmärksamhet.",
+    "viz": {
+      "type": "flow",
+      "title": "Kedjan som nu är bevisad",
+      "steps": ["Newton: hårda kulor som krockar", "Boltzmann: statistik för partiklarna", "Euler och Navier–Stokes: flöden", "Alla steg rigoröst härledda"]
+    }
+  },
+  {
+    "id": "planet-nio",
+    "day": 19,
+    "kind": "rymd",
+    "arxiv": "1601.05438",
+    "paper": "Evidence for a Distant Giant Planet in the Solar System",
+    "hook": "Något stort kan gömma sig långt bortom Neptunus.",
+    "title": "Planet nio",
+    "meta": "Batygin & Brown · Caltech, 2016",
+    "stat": "0,007 %",
+    "statLabel": "chans att banornas mönster är en slump",
+    "points": [
+      "Några avlägsna objekt i Kuiperbältet har banor som pekar åt samma håll.",
+      "Chansen att mönstret är en slump beräknades till 0,007 %.",
+      "En planet med mer än tio jordmassor på en avlång bana kan förklara det."
+    ],
+    "takeaway": "Banorna avslöjar det vi ännu inte kan se.",
+    "source": "arXiv:1601.05438 · Batygin & Brown (2016)",
+    "more": "Batygin och Brown – Brown är astronomen bakom att Pluto degraderades till dvärgplanet – visade att de mest avlägsna objektens banor inte bara har liknande orientering utan också ligger samlade i rummet. Med simuleringar fann de att en tung planet på en lång, avlång bana kan hålla ihop mönstret. Ingen har ännu sett planeten. Kritiker menar att mönstret kan bero på var teleskopen har tittat. Vera C. Rubin-observatoriet väntas ge ett tydligare svar.",
+    "viz": {
+      "type": "flow",
+      "title": "Spåren efter en osynlig planet",
+      "steps": ["Avlägsna objekt bortom Neptunus", "Banorna pekar åt samma håll", "Slumpen: bara 0,007 % chans", "Förklaring: en okänd jätteplanet"]
+    }
+  },
+  {
+    "id": "tennis-pagerank",
+    "day": 20,
+    "kind": "liv",
+    "arxiv": "1101.4028",
+    "paper": "Who is the best player ever? A complex network analysis of the history of professional tennis",
+    "hook": "Vem är tidernas bästa tennisspelare? Ett nätverk svarade: Jimmy Connors.",
+    "title": "Tennisens PageRank",
+    "meta": "Filippo Radicchi · PLoS ONE, 2011",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Alla proffsmatcher 1968–2010 blev ett nätverk av vem som slagit vem.",
+      "En algoritm i stil med Googles PageRank vägde segrar efter motståndets styrka.",
+      "Etta blev Jimmy Connors. Rankningen förutsåg matcher bättre än andra metoder."
+    ],
+    "takeaway": "Det spelar roll vem du slår, inte bara hur ofta.",
+    "source": "arXiv:1101.4028 · Radicchi (2011)",
+    "more": "I nätverket pekar varje match från förloraren till vinnaren, så att 'prestige' flödar mot dem som slagit starka spelare. Radicchi rankade också bästa spelare per underlag och per år. Hans metod behövde inga godtyckliga poängregler, som de officiella rankningarna har, och förutsade utfallet av matcher bättre. Studien gäller bara data fram till 2010, så senare karriärer, som Djokovićs och Nadals fortsättning, ingår inte fullt ut.",
+    "viz": {
+      "type": "flow",
+      "title": "Så rankar nätverket",
+      "steps": ["Varje match: pil från förlorare till vinnare", "Prestige flödar genom nätverket", "Seger mot en toppspelare väger mest", "Etta 1968–2010: Jimmy Connors"]
+    }
+  },
+  {
+    "id": "deepseek-r1",
+    "day": 21,
+    "kind": "ai",
+    "arxiv": "2501.12948",
+    "paper": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "hook": "En AI lärde sig resonera steg för steg – utan att någon visade hur.",
+    "title": "DeepSeek-R1",
+    "meta": "DeepSeek-AI · Nature, 2025",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Modellen tränades med belöning på uppgifter där svaret går att kontrollera.",
+      "Den fick inga mänskliga exempel på resonemang – bara poäng för rätt svar.",
+      "Självkontroll och omprövning ('vänta, jag räknar om') växte fram av sig själv."
+    ],
+    "takeaway": "Belöna rätt svar, så kan resonemanget växa fram.",
+    "source": "arXiv:2501.12948 · DeepSeek-AI (2025)",
+    "more": "Förstegsmodellen R1-Zero tränades enbart med förstärkningsinlärning på matematik och programmering, och dess svar blev längre och mer genomtänkta med tiden. På mattetävlingen AIME 2024 steg träffsäkerheten från 15,6 till 71 procent. R1-Zero blandade ibland språk och var svårläst, så den slutliga R1 fick också lite förträning med exempel. DeepSeek släppte modellvikterna öppet, och lanseringen i januari 2025 påverkade både AI-forskningen och börsen.",
+    "viz": {
+      "type": "bars",
+      "title": "R1-Zero på mattetävlingen AIME",
+      "unit": "%",
+      "items": [{ "l": "Före träningen", "v": 15.6, "t": "15,6 %" }, { "l": "Efter träningen", "v": 71, "t": "71 %" }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "supersolid",
+    "day": 22,
+    "kind": "fysik",
+    "arxiv": "1901.07982",
+    "paper": "Transient supersolid properties in an array of dipolar quantum droplets",
+    "hook": "Ett ämne som är både fast och flytande på samma gång.",
+    "title": "Supersoliden",
+    "meta": "Böttcher m.fl. · Stuttgart, Phys. Rev. X 2019",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En supersolid är ordnad som en kristall men kan flyta helt utan friktion.",
+      "Forskarna kylde magnetiska dysprosiumatomer till ett Bose–Einstein-kondensat.",
+      "Det bildade en rad kvantdroppar som ändå hängde ihop i en gemensam kvantvåg."
+    ],
+    "takeaway": "Fast och flytande är inte alltid motsatser.",
+    "source": "arXiv:1901.07982 · Böttcher m.fl. (2019)",
+    "more": "Supersolider förutsades redan på 1960- och 70-talen, men försök med fast helium gav inga säkra bevis. Under 2019 rapporterade tre grupper, i Stuttgart, Innsbruck och Florens, supersolida egenskaper i kalla gaser av starkt magnetiska atomer. I Stuttgart visade man både den periodiska täthetsvariationen och att faserna hängde ihop genom att låta dropparna interferera som materievågor. Tillståndet var kortlivat, men senare försök har gjort det stabilt.",
+    "viz": {
+      "type": "split",
+      "title": "Två egenskaper på en gång",
+      "a": { "h": "Som en kristall", "items": ["Ordnat mönster", "Droppar i rad"] },
+      "b": { "h": "Som en supervätska", "items": ["Flyter utan friktion", "En gemensam kvantvåg"] }
+    }
+  },
+  {
+    "id": "mixture-of-experts",
+    "day": 23,
+    "kind": "ai",
+    "arxiv": "1701.06538",
+    "paper": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+    "hook": "Ett nätverk med tusentals experter – men bara några få jobbar åt gången.",
+    "title": "Mixture of Experts",
+    "meta": "Noam Shazeer m.fl. · Google, 2017",
+    "stat": "1 000×",
+    "statLabel": "större kapacitet med nästan samma beräkningskostnad",
+    "points": [
+      "Lagret består av upp till tusentals små delnätverk, så kallade experter.",
+      "Ett grindnätverk väljer ut några få experter för varje ord.",
+      "Modellen kan bli enorm, men varje beräkning använder bara en liten del av den."
+    ],
+    "takeaway": "Stort kan vara snabbt, om bara rätt delar jobbar.",
+    "source": "arXiv:1701.06538 · Shazeer m.fl. (2017)",
+    "more": "Mer kapacitet brukar kräva mer beräkningar. Idén med villkorlig beräkning är att bara aktivera de delar av nätverket som behövs. Shazeer och kollegor löste flera praktiska problem, som att se till att alla experter faktiskt används. De byggde modeller med upp till 137 miljarder parametrar för språkmodellering och översättning. Tekniken används i dag i många av de största språkmodellerna.",
+    "viz": {
+      "type": "flow",
+      "title": "Så väljs experterna",
+      "steps": ["Ett ord kommer in", "Grinden väljer ett fåtal experter", "Bara de räknar", "Deras svar vägs ihop"]
+    }
+  },
+  {
+    "id": "skalningslagar",
+    "day": 24,
+    "kind": "ai",
+    "arxiv": "2001.08361",
+    "paper": "Scaling Laws for Neural Language Models",
+    "hook": "Gör modellen tio gånger större – hur mycket bättre blir den? Det går att räkna ut.",
+    "title": "Skalningslagarna",
+    "meta": "Jared Kaplan m.fl. · OpenAI, 2020",
+    "stat": "7",
+    "statLabel": "storleksordningar som vissa trender håller över",
+    "points": [
+      "Felet minskar som en potenslag med modellstorlek, datamängd och beräkningskraft.",
+      "Detaljer som nätverkets bredd eller djup spelar förvånansvärt liten roll.",
+      "Bästa budget: träna mycket stora modeller och sluta innan de är färdigtränade."
+    ],
+    "takeaway": "Större modeller lär sig mer av varje exempel.",
+    "source": "arXiv:2001.08361 · Kaplan m.fl. (2020)",
+    "more": "Artikeln visade att språkmodellers fel följer jämna, förutsägbara kurvor när man ökar storleken. Det gjorde det möjligt att planera stora träningar i förväg. Slutsatsen att modellen borde växa snabbare än datamängden påverkade bland annat GPT-3. Två år senare visade Chinchilla-studien att man i stället bör öka modell och data ungefär lika mycket – men idén om skalningslagar står kvar.",
+    "viz": {
+      "type": "line",
+      "title": "Felet sjunker när modellen växer",
+      "ymax": 6,
+      "x": ["10⁵", "10⁶", "10⁷", "10⁸", "10⁹"],
+      "series": [{ "l": "Fel", "pts": [5.6, 4.8, 4.0, 3.3, 2.7] }],
+      "note": "Schematisk. X = antal parametrar."
+    }
+  }
+]

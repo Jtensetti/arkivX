@@ -1,0 +1,250 @@
+1706.03762 ai attention
+1810.04805 ai bert
+1512.03385 ai residual
+1406.2661 ai generative adversarial
+1312.6114 ai variational
+1412.6980 ai adam
+1502.03167 ai batch normalization
+1207.0580 ai co-adaptation
+1409.0473 ai align and translate
+1409.3215 ai sequence to sequence
+1301.3781 ai word representations
+1312.5602 ai atari
+2005.14165 ai few-shot learners
+2001.08361 ai scaling laws
+2203.15556 ai compute-optimal
+2006.11239 ai denoising diffusion
+2112.10752 ai latent diffusion
+2103.00020 ai transferable visual
+2010.11929 ai 16x16
+1505.04597 ai u-net
+1506.02640 ai you only look once
+1703.06870 ai mask r-cnn
+2203.02155 ai instructions with human feedback
+2201.11903 ai chain-of-thought
+2205.11916 ai zero-shot reasoners
+1707.06347 ai proximal policy
+1312.6199 ai intriguing properties
+1412.6572 ai adversarial examples
+1503.02531 ai distilling
+1803.03635 ai lottery ticket
+2106.09685 ai low-rank adaptation
+2302.13971 ai llama
+2212.08073 ai constitutional
+2005.11401 ai retrieval-augmented
+2210.03629 ai react
+2302.04761 ai toolformer
+2305.18290 ai direct preference
+1611.03530 ai rethinking generalization
+1912.02292 ai double descent
+2108.07258 ai foundation models
+2206.07682 ai emergent abilities
+2304.15004 ai mirage
+2307.03172 ai lost in the middle
+2309.12288 ai reversal curse
+2305.10601 ai tree of thoughts
+2203.11171 ai self-consistency
+1609.03499 ai wavenet
+1606.06565 ai concrete problems
+1706.03741 ai human preferences
+1602.04938 ai why should i trust
+1705.07874 ai unified approach
+2111.06377 ai masked autoencoders
+2304.02643 ai segment anything
+2204.06125 ai clip latents
+2003.08934 ai nerf
+2308.04079 ai gaussian splatting
+1703.10593 ai cycle-consistent
+1812.04948 ai style-based
+2212.04356 ai robust speech
+2009.03300 ai multitask language understanding
+2107.03374 ai evaluating large language models trained on code
+2303.08774 ai gpt-4
+2303.12712 ai sparks
+1701.06538 ai outrageously
+2205.14135 ai flashattention
+2312.00752 ai mamba
+2211.17192 ai speculative decoding
+1609.02907 ai graph convolutional
+1806.07366 ai neural ordinary
+1703.03400 ai model-agnostic
+2002.05709 ai contrastive learning
+1712.01815 ai chess and shogi
+1911.08265 ai muzero
+1912.06680 ai dota
+1910.07113 ai rubik
+2307.15818 ai rt-2
+1508.07909 ai rare words
+1508.06576 ai artistic style
+2104.09864 ai roformer
+2201.02177 ai grokking
+2209.10652 ai superposition
+2202.05262 ai locating and editing
+2307.15043 ai universal and transferable
+2012.07805 ai extracting training data
+2305.17493 ai curse of recursion
+2501.12948 ai deepseek-r1
+2408.03314 ai test-time compute
+2310.06770 ai swe-bench
+2404.19756 ai kolmogorov-arnold
+2305.20050 ai verify step by step
+2311.12022 ai gpqa
+2501.14249 ai humanity
+1805.00899 ai debate
+2312.09390 ai weak-to-strong
+2401.05566 ai sleeper agents
+2412.14093 ai alignment faking
+1503.03585 ai nonequilibrium thermodynamics
+2207.12598 ai classifier-free
+2302.05543 ai controlnet
+2208.12242 ai dreambooth
+2209.14988 ai dreamfusion
+2304.03442 ai generative agents
+2305.16291 ai voyager
+1906.02243 ai energy and policy
+1803.09010 ai datasheets
+1810.03993 ai model cards
+1607.06520 ai homemaker
+1610.02413 ai equality of opportunity
+1609.05807 ai inherent trade-offs
+1802.07228 ai malicious use
+2306.05685 ai judge
+2305.11206 ai lima
+2309.06180 ai pagedattention
+2006.11477 ai wav2vec
+2104.14294 ai emerging properties
+2005.12872 ai end-to-end object detection
+1711.05225 ai chexnet
+2209.06899 ai out of one
+2303.10130 ai gpts are gpts
+2302.06590 ai copilot
+2304.11771 ai generative ai at work
+1612.00593 ai pointnet
+2311.17035 ai scalable extraction
+1606.01540 ai openai gym
+2402.03300 ai deepseekmath
+2412.19437 ai deepseek-v3
+1711.10561 ai physics informed
+2212.09748 ai scalable diffusion models with transformers
+2210.02747 ai flow matching
+2112.09332 ai webgpt
+2303.11366 ai reflexion
+2310.01405 ai representation engineering
+2211.00593 ai interpretability in the wild
+quant-ph/9508027 fysik prime factorization
+quant-ph/9605043 fysik database search
+1910.11333 fysik supremacy
+1801.00862 fysik nisq
+2012.01625 fysik photons
+1208.0928 fysik surface codes
+2408.13687 fysik below the surface code threshold
+1508.05949 fysik loophole-free
+1707.00934 fysik teleportation
+cond-mat/0410550 fysik atomically thin carbon
+1803.02342 fysik unconventional superconductivity
+2307.12008 fysik room-temperature superconductor
+hep-th/9711200 fysik large n limit
+hep-th/9601029 fysik microscopic origin
+1207.3123 fysik black holes: complementarity or firewalls
+1306.0533 fysik cool horizons
+1207.7214 fysik atlas
+1207.7235 fysik cms
+1109.4897 fysik neutrino velocity
+2104.03281 fysik anomalous magnetic
+1203.1669 fysik daya bay
+hep-ex/9807003 fysik atmospheric neutrinos
+nucl-ex/0204008 fysik sudbury
+2107.13571 fysik time-crystalline
+1609.08684 fysik discrete time crystal
+1002.3895 fysik topological insulators
+1502.03807 fysik weyl
+hep-ph/9803315 fysik hierarchy problem
+hep-ph/9905221 fysik large mass hierarchy
+quant-ph/9707021 fysik anyons
+2207.06431 fysik suppressing quantum errors
+1511.03190 fysik significant-loophole-free
+2501.00536 fysik cacio
+cond-mat/0611743 fysik phase transition
+0911.4393 fysik scale-free correlations
+1602.03837 rymd binary black hole merger
+1710.05832 rymd gw170817
+1710.05833 rymd multi-messenger
+1906.11238 rymd event horizon telescope
+astro-ph/9805201 rymd observational evidence from supernovae
+astro-ph/9812133 rymd measurements of omega and lambda
+1807.06209 rymd planck 2018
+1604.01424 rymd 2.4% determination
+astro-ph/0608407 rymd direct empirical proof
+1609.03449 rymd proxima
+1703.01424 rymd seven temperate
+1509.03622 rymd where's the flux
+2207.12446 rymd massive galaxies
+1909.05218 rymd k2-18
+2309.05566 rymd carbon-bearing
+astro-ph/0501171 rymd baryon acoustic
+0709.4301 rymd millisecond radio burst
+1701.01098 rymd direct localization
+1507.06723 rymd kepler-452b
+1005.5480 rymd giant gamma-ray bubbles
+1807.08816 rymd txs 0506
+1403.3985 rymd bicep2
+1502.00612 rymd joint analysis
+2306.16213 rymd nanograv 15
+2404.03002 rymd desi 2024
+2503.14738 rymd desi dr2
+1807.09409 rymd gravitational redshift
+1010.5788 rymd two solar mass
+1806.02404 rymd dissolving the fermi
+1804.09365 rymd gaia data release 2
+1806.06038 rymd merger that led
+1810.05912 rymd absorption profile
+1301.6674 rymd habitable zones
+1604.01356 rymd roadmap to interstellar
+1810.11490 rymd radiation pressure
+2303.03464 rymd kinetic impact
+cond-mat/9910332 liv emergence of scaling
+physics/0602124 liv modularity
+cond-mat/0112110 liv community structure
+cond-mat/0010317 liv epidemic spreading
+1712.01804 liv hot streaks
+1505.06454 liv sleeping beauties
+0806.1256 liv human mobility
+2110.11010 liv algorithmic amplification
+2310.04153 matte fair coin
+math/0211159 matte entropy formula
+math/0303109 matte ricci flow with surgery
+math/0404188 matte primes contain
+1311.4600 matte small gaps
+1407.4897 matte variants of the selberg
+1305.2897 matte ternary goldbach
+1603.04246 matte sphere packing problem in dimension 8
+1603.06518 matte dimension 24
+1512.03547 matte graph isomorphism
+1907.00847 matte sensitivity
+2302.05537 matte three-term
+2303.10798 matte aperiodic monotile
+2303.09521 matte diagonal ramsey
+1509.05363 matte erdos discrepancy
+1909.03562 matte collatz
+2502.17655 matte kakeya
+2411.19826 matte sofa
+2211.09055 matte union-closed
+2410.02545 matte bunkbed
+1903.04284 matte 33
+1501.02155 matte kepler conjecture
+1603.02754 matte xgboost
+1802.03426 matte umap
+1206.2944 matte bayesian optimization
+cs/0210020 matte tetris
+1203.1895 matte nintendo
+1402.0290 matte navier-stokes
+0811.3171 matte linear systems
+2001.04383 matte mip
+1601.05438 rymd giant planet
+1311.5238 rymd extraterrestrial neutrinos
+astro-ph/9508025 rymd dark matter halos
+astro-ph/0504097 rymd quasars, galaxies
+1504.03418 rymd extraterrestrial civilizations
+1111.4503 liv facebook
+2106.11184 liv disruptive
+1201.0749 matte sudoku

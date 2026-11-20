@@ -1,0 +1,116 @@
+# NOTFOUND fysik Observation of J/psi p resonances consistent with pentaquark
+# NOTFOUND fysik Measurement of the Positive Muon Anomalous Magnetic Moment to 0.20 ppm
+2312.03982 fysik logical    # Logical quantum processor based on reconfigurable atom arrays (2023) <= Logical quantum processor based on reconfigurable atom arrays
+2106.14734 fysik strong    # Strong quantum computational advantage using a superconducting quantum processor (2021) <= Strong quantum computational advantage using a superconducting quantum processor
+# NOTFOUND fysik Quantum computational advantage with a programmable photonic processor
+# NOTFOUND fysik Physics of the cheerios effect
+2608.07465 fysik mpemba    # Entanglement Mpemba Effect (2026) <= Mpemba effect
+1304.2653 fysik ship    # Ship wakes: Kelvin or Mach angle? (2013) <= Ship wakes: Kelvin or Mach angle
+0704.3320 fysik trapped    # Towards Antihydrogen Confinement with the ALPHA Antihydrogen Trap (2007) <= Trapped antihydrogen
+# NOTFOUND fysik Spin entanglement witness for quantum gravity
+1707.06036 fysik gravitationally    # Gravitationally-induced entanglement between two massive particles is sufficient evidence of quantum effects i (2017) <= Gravitationally induced entanglement between two massive particles
+# NOTFOUND fysik Quantum theory cannot consistently describe the use of itself
+1902.05080 fysik experimental    # Experimental test of local observer-independence (2019) <= Experimental test of local observer independence
+# NOTFOUND fysik Negative absolute temperature for motional degrees of freedom
+1202.2539 fysik quantum    # Quantum Time Crystals (2012) <= Quantum time crystals
+1007.1058 fysik dynamical    # The dynamical Casimir effect in superconducting microwave circuits (2010) <= Dynamical Casimir effect in a superconducting circuit
+# NOTFOUND fysik Observation of quantum Hawking radiation and its entanglement in an analogue black hole
+# NOTFOUND fysik Anyons in an exactly solved model and beyond
+1204.2792 fysik signatures    # Signatures of Majorana fermions in hybrid superconductor-semiconductor nanowire devices (2012) <= Signatures of Majorana fermions in hybrid superconductor-semiconductor nanowire devices
+1710.10701 fysik quantized    # Quantized Majorana conductance (2017) <= Quantized Majorana conductance
+2401.09549 fysik interferometric    # Interferometric Single-Shot Parity Measurement in an InAs-Al Hybrid Device (2024) <= Interferometric single-shot parity measurement in InAs-Al hybrid devices
+1503.06537 fysik experimental    # Information and thermodynamics: Experimental verification of Landauer's erasure principle (2015) <= Experimental verification of Landauer's principle
+1412.6490 fysik experimental    # Experimental demonstration of information to energy conversion in a quantum system at the Landauer Limit (2014) <= Experimental demonstration of information-to-energy conversion
+physics/0210015 fysik physics    # The physics of stone skipping (2002) <= physics of stone skipping
+2604.05089 fysik twisting    # Tennis-racket instability of twisted electrons (2026) <= twisting tennis racket
+# NOTFOUND fysik Self-organized origami
+2312.14818 fysik quantum    # A strontium quantum-gas microscope (2023) <= A quantum gas microscope
+# NOTFOUND fysik Evidence for a new particle diphoton 750
+# NOTFOUND fysik Hydrodynamics of soft active matter
+# NOTFOUND fysik Microscopic origin of the Mpemba effect
+2203.11788 rymd discovery    # Pegasus IV: Discovery and Spectroscopic Confirmation of an Ultra-Faint Dwarf Galaxy in the Constellation Pegas (2022) <= Discovery of a spectroscopically confirmed galaxy at z 14
+1411.6009 rymd multiple    # Multiple Images of a Highly Magnified Supernova Formed by an Early-Type Cluster Galaxy Lens (2014) <= Multiple images of a highly magnified supernova formed by an early-type cluster galaxy lens
+# NOTFOUND rymd Extreme magnification of an individual star at redshift 1.5
+2209.14866 rymd highly    # A Highly Magnified Star at Redshift 6.2 (2022) <= A highly magnified star at redshift 6.2
+# NOTFOUND rymd Discovery of a possible interstellar meteor
+# NOTFOUND rymd Phosphine gas in the cloud decks of Venus
+2005.10324 rymd bright    # A bright millisecond-duration radio burst from a Galactic magnetar (2020) <= A bright millisecond-duration radio burst from a Galactic magnetar
+# NOTFOUND rymd The Pluto system: initial results from its exploration by New Horizons
+1803.10237 rymd galaxy    # A galaxy lacking dark matter (2018) <= A galaxy lacking dark matter
+1603.00464 rymd did    # Did LIGO detect dark matter? (2016) <= Did LIGO detect dark matter
+# NOTFOUND rymd The Laniakea supercluster of galaxies
+# NOTFOUND rymd If loud aliens explain human earliness, quiet aliens are also rare
+2209.06833 rymd sun    # A Sun-like star orbiting a black hole (2022) <= A Sun-like star orbiting a black hole
+2404.10486 rymd discovery    # Discovery of a dormant 33 solar-mass black hole in pre-release Gaia astrometry (2024) <= Discovery of a dormant 33 solar-mass black hole in pre-release Gaia astrometry
+# NOTFOUND rymd HD 140283: a star in the solar neighborhood that formed shortly after the big bang
+2311.14231 rymd extremely    # An extremely energetic cosmic ray observed by a surface detector array (2023) <= An extremely energetic cosmic ray observed by a surface detector array
+# NOTFOUND rymd Discovery and characterization of the interstellar comet 3I/ATLAS
+# NOTFOUND rymd Global warming in the pipeline
+# NOTFOUND rymd Thermal emission from the Earth-sized exoplanet TRAPPIST-1 b using JWST
+# NOTFOUND rymd The Kessler syndrome
+1010.5017 liv collective    # Collective motion (2010) <= Collective motion
+0704.3702 liv statistical    # Statistical mechanics of complex networks (2007) <= Statistical mechanics of complex networks
+0706.1062 liv power    # Power-law distributions in empirical data (2007) <= Power-law distributions in empirical data
+# NOTFOUND liv The structure and function of complex networks
+1608.06419 liv limits    # An alternative approach to the limits of predictability in human mobility (2016) <= Limits of predictability in human mobility
+# NOTFOUND liv The spread of low-credibility content by social bots
+# NOTFOUND liv Twitter mood predicts the stock market
+# NOTFOUND liv How social influence can undermine the wisdom of crowd effect
+# NOTFOUND liv Social force model for pedestrian dynamics
+cond-mat/0009448 liv simulating    # Simulating Dynamical Features of Escape Panic (2000) <= Simulating dynamical features of escape panic
+# NOTFOUND liv A mathematical model reveals the influence of population heterogeneity on herd immunity
+# NOTFOUND liv Measuring the evolution of contemporary western popular music
+# NOTFOUND liv Temporal patterns of happiness and information in a global social network
+# NOTFOUND liv The emotional arcs of stories are dominated by six basic shapes
+# NOTFOUND liv Quantifying the evolution of individual scientific impact
+cond-mat/0001432 liv statistical    # Statistical mechanics of money (2000) <= Statistical mechanics of money
+# NOTFOUND liv Warning of a forthcoming collapse of the Atlantic meridional overturning circulation
+1012.0206 liv catastrophic    # Catastrophic Cascade of Failures in Interdependent Networks (2010) <= Catastrophic cascade of failures in interdependent networks
+# NOTFOUND liv The price of anarchy in transportation networks
+# NOTFOUND liv Partisan gerrymandering and the efficiency gap
+1808.04840 liv aspirational    # Aspirational pursuit of mates in online dating markets (2018) <= Aspirational pursuit of mates in online dating markets
+# NOTFOUND liv The majority illusion in social networks
+1105.5170 liv validation    # Validation of Dunbar's number in Twitter conversations (2011) <= Validation of Dunbar's number in Twitter conversations
+# NOTFOUND liv Accelerating dynamics of collective attention
+# NOTFOUND liv Large teams develop and small teams disrupt science and technology
+2212.12794 liv learning    # GraphCast: Learning skillful medium-range global weather forecasting (2022) <= Learning skillful medium-range global weather forecasting
+# NOTFOUND liv Combining satellite imagery and machine learning to predict poverty
+# NOTFOUND liv Home advantage during the COVID-19 pandemic
+1711.06752 liv political    # Political Polarization in Social Media: Analysis of the "Twitter Political Field" in Japan (2017) <= Political polarization on Twitter
+1812.09583 liv origins    # Uncovering Urban Mobility and City Dynamics from Large-Scale Taxi Origin-Destination (O-D) Trips: Case Study i (2018) <= Origins of scaling in cities
+# NOTFOUND liv Traffic jams without bottlenecks
+1306.3293 liv quantifying    # Quantifying Long-Term Scientific Impact (2013) <= Quantifying long-term scientific impact
+# NOTFOUND liv The hot hand fallacy surprised by the gambler
+# NOTFOUND liv Scale-free networks are rare
+# NOTFOUND liv The science of science
+# NOTFOUND liv Experimental evidence for scale-free correlations in starling flocks
+# NOTFOUND liv Detecting influenza epidemics using search engine query data
+# NOTFOUND liv Mapping the global footprint of fisheries
+2508.18475 matte convex    # A convex polyhedron without Rupert's property (2025) <= A convex polyhedron without Rupert's property
+# NOTFOUND matte On the Erdos-Szekeres convex polygon problem
+# NOTFOUND matte On large subsets of F_q^n with no three-term arithmetic progression
+# NOTFOUND matte Improved bounds for the sunflower lemma
+# NOTFOUND matte A proof of the Kahn-Kalai conjecture
+# NOTFOUND matte The chromatic number of the plane is at least 5
+2001.02665 matte proof    # A proof of Ringel's Conjecture (2020) <= A proof of Ringel's conjecture
+# NOTFOUND matte On the telescope conjecture
+# NOTFOUND matte Proof of the geometric Langlands conjecture
+# NOTFOUND matte Long time derivation of the Boltzmann equation hard sphere Hilbert sixth problem
+# NOTFOUND matte The ninth Dedekind number
+1711.08076 matte schur    # Schur Number Five (2017) <= Schur number five
+# NOTFOUND matte Solving and verifying the boolean Pythagorean triples problem
+1401.4689 matte keller's    # On Keller's conjecture in dimension seven (2014) <= Keller's conjecture in dimension seven
+2403.17370 matte empty    # Formal Verification of the Empty Hexagon Number (2024) <= Empty hexagon number is 30
+# NOTFOUND matte A discrete and bounded envy-free cake cutting protocol
+1304.4132 matte interlacing    # Interlacing Families I: Bipartite Ramanujan Graphs of All Degrees (2013) <= Interlacing families I bipartite Ramanujan graphs
+# NOTFOUND matte Interlacing families II mixed characteristic polynomials and the Kadison-Singer problem
+# NOTFOUND matte A simple proof of the Gaussian correlation conjecture
+# NOTFOUND matte A proof of the Duffin-Schaeffer conjecture
+# NOTFOUND matte Sendov's conjecture for sufficiently high degree polynomials
+# NOTFOUND matte A proof of the Erdos-Faber-Lovasz conjecture
+# NOTFOUND matte Unknotting number is not additive under connected sum
+2211.01890 matte combinatorics    # Additive Combinatorics in Groups and Geometric Combinatorics on Spheres (2022) <= Combinatorics of Go
+# NOTFOUND matte The diameter of the Rubik's cube group is twenty
+# NOTFOUND matte Determination of the fifth Busy Beaver value
+# NOTFOUND matte Can you hear the shape of a drum
+1905.02167 matte counterexample    # Counterexamples to Hedetniemi's conjecture (2019) <= A counterexample to Hedetniemi's conjecture

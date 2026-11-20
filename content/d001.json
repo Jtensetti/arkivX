@@ -1,0 +1,327 @@
+[
+  {
+    "id": "sudoku-16-ledtradar",
+    "day": 1,
+    "kind": "matte",
+    "arxiv": "1201.0749",
+    "paper": "There is no 16-Clue Sudoku: Solving the Sudoku Minimum Number of Clues Problem",
+    "hook": "Hur få siffror kan ett sudoku ha och ändå bara ha en enda lösning?",
+    "title": "Inget sudoku med 16 ledtrådar",
+    "meta": "McGuire, Tugemann & Civario · 2012",
+    "stat": "17",
+    "statLabel": "är minsta antalet ledtrådar för en unik lösning",
+    "points": [
+      "Länge misstänkte man att svaret var 17, men ingen hade kunnat bevisa det.",
+      "Forskarna gick igenom alla färdiga rutnät och letade efter 16 rutor som räcker.",
+      "En ny algoritm gjorde sökningen möjlig. Den hittade inte ett enda pussel."
+    ],
+    "takeaway": "Ibland är beviset en sökning som inte hittar något.",
+    "source": "arXiv:1201.0749 · McGuire m.fl. (2012)",
+    "more": "Det finns ungefär 5,5 miljarder väsentligt olika färdiga sudokurutnät. För vart och ett letade gruppen efter en uppsättning med 16 rutor som räcker för att bara en lösning ska vara möjlig. Problemet är ett så kallat 'hitting set'-problem, ett av Karps 21 klassiska NP-fullständiga problem, så en vanlig sökning hade tagit för lång tid även på en superdator. Med en ny metod för att räkna upp sådana mängder gick det att söka igenom allt. Inga 16-ledtrådspussel fanns – alltså är 17 det minsta möjliga.",
+    "viz": {
+      "type": "flow",
+      "title": "Så bevisades det",
+      "steps": ["Alla färdiga rutnät: ≈5,5 miljarder", "Sök 16 rutor som ger unik lösning", "Snabb algoritm för 'hitting sets'", "Inga träffar → svaret är 17"]
+    }
+  },
+  {
+    "id": "nisq-eran",
+    "day": 2,
+    "kind": "fysik",
+    "arxiv": "1801.00862",
+    "paper": "Quantum Computing in the NISQ era and beyond",
+    "hook": "Varför har kvantdatorn inte förändrat världen ännu?",
+    "title": "Kvantdatorer i NISQ-eran",
+    "meta": "John Preskill · Caltech, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Preskill gav namn åt en ny era: NISQ, brusiga kvantdatorer av mellanstorlek.",
+      "Med 50–100 kvantbitar kan de klara uppgifter som är svåra för vanliga datorer.",
+      "Men brus i kvantgrindarna begränsar hur långa beräkningar man kan lita på."
+    ],
+    "takeaway": "Ett viktigt steg är inte samma sak som en revolution.",
+    "source": "arXiv:1801.00862 · Preskill, Quantum (2018)",
+    "more": "Artikeln bygger på ett föredrag och har blivit en av de mest citerade texterna om dagens kvantdatorer. Preskill menar att NISQ-maskiner blir användbara verktyg för att utforska kvantfysik i många partiklar och kanske för vissa andra tillämpningar, men att en kvantdator med 100 kvantbitar inte förändrar världen direkt. Målet bör vara mer exakta kvantgrindar och till slut felkorrigerade, feltoleranta kvantdatorer.",
+    "viz": {
+      "type": "split",
+      "title": "Vad NISQ-datorer klarar",
+      "a": { "h": "Kan", "items": ["Utforska kvantfysik", "Slå datorer i smala test", "50–100 kvantbitar"] },
+      "b": { "h": "Kan inte än", "items": ["Långa beräkningar", "Rätta sina egna fel", "Knäcka kryptering"] },
+      "note": "Nästa steg: feltoleranta kvantdatorer."
+    }
+  },
+  {
+    "id": "cacio-e-pepe",
+    "day": 3,
+    "kind": "fysik",
+    "arxiv": "2501.00536",
+    "paper": "Phase behavior of Cacio e Pepe sauce",
+    "hook": "Fysiker har räknat ut varför din cacio e pepe blir klumpig.",
+    "title": "Fasdiagram för cacio e pepe",
+    "meta": "Bartolucci m.fl. · Physics of Fluids, 2025",
+    "stat": "1 %",
+    "statLabel": "stärkelse (av ostens vikt) – under det klumpar sig såsen",
+    "points": [
+      "Pasta, pecorino och peppar – men såsen skär sig ofta när den blir för varm.",
+      "Forskarna testade olika mängder ost, vatten och stärkelse vid stigande värme.",
+      "Stärkelsen avgör: för lite och osten klumpar ihop sig i 'mozzarellafasen'."
+    ],
+    "takeaway": "Även köket lyder under fysikens fasövergångar.",
+    "source": "arXiv:2501.00536 · Bartolucci m.fl. (2025)",
+    "more": "Gruppen, som forskar om mjuka material och proteiner, kartlade såsens beteende som ett fasdiagram. Under ungefär 1 procent stärkelse räknat på ostens vikt bildas klumpar i hela såsen – det de kallar 'mozzarellafasen'. De såg också att för mycket ost i förhållande till vatten gör såsen känsligare för värme. Slutsatsen blev ett praktiskt recept där man tillsätter lite stärkelse för att få en stabil, krämig sås. Studien fick 2025 års Ig Nobelpris i fysik.",
+    "viz": {
+      "type": "versus",
+      "myth": "En krämig sås handlar om rätt ost och snabb vispning.",
+      "fact": "Stärkelsen avgör. Under ~1 % av ostens vikt klumpar sig såsen."
+    }
+  },
+  {
+    "id": "frb-121102-hem",
+    "day": 4,
+    "kind": "rymd",
+    "arxiv": "1701.01098",
+    "paper": "The direct localization of a fast radio burst and its host",
+    "hook": "En radioblixt som varar en tusendels sekund – var kommer den ifrån?",
+    "title": "Radioblixten som hittade hem",
+    "meta": "Shami Chatterjee m.fl. · Nature, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Snabba radioblixtar varar millisekunder men är otroligt starka.",
+      "FRB 121102 var den första kända blixten som upprepade sig.",
+      "Det gjorde att forskarna kunde peka ut källan: en avlägsen dvärggalax."
+    ],
+    "takeaway": "Upprepningen gjorde det omöjliga möjligt.",
+    "source": "arXiv:1701.01098 · Chatterjee m.fl. (2017)",
+    "more": "Tidigare hade alla radioblixtar upptäckts med stora enskilda radioteleskop som bara kunde ange en grov riktning. Eftersom FRB 121102 blixtrade om och om igen kunde forskarna använda radiointerferometri och avbilda själva utbrotten med mycket hög precision. Källan visade sig ligga i en liten dvärggalax med låg metallhalt, ungefär tre miljarder ljusår bort. Därmed var det bevisat att radioblixtar kommer från andra galaxer.",
+    "viz": {
+      "type": "timeline",
+      "title": "Jakten på radioblixtarna",
+      "ev": [
+        { "t": "2007", "d": "Den första radioblixten hittas i gamla data" },
+        { "t": "2012", "d": "FRB 121102 upptäcks i Arecibo" },
+        { "t": "2016", "d": "Den visar sig upprepa sig" },
+        { "t": "2017", "d": "Hemgalaxen pekas ut" }
+      ]
+    }
+  },
+  {
+    "id": "grokking",
+    "day": 5,
+    "kind": "ai",
+    "arxiv": "2201.02177",
+    "paper": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+    "hook": "Ett nätverk som pluggat utantill kan plötsligt förstå – långt senare.",
+    "title": "Grokking",
+    "meta": "Alethea Power m.fl. · OpenAI, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Små nätverk tränades på enkla räkneregler, till exempel modulär aritmetik.",
+      "De lärde sig först träningsdatan utantill och gissade fel på allt nytt.",
+      "Långt efter det hoppade de plötsligt upp till perfekt generalisering."
+    ],
+    "takeaway": "Att sluta träna för tidigt kan dölja förståelsen.",
+    "source": "arXiv:2201.02177 · Power m.fl. (2022)",
+    "more": "'Grok' betyder ungefär att förstå något på djupet. I studien såg forskarna att nätverken kunde gå från slumpnivå till perfekt träffsäkerhet på nya exempel – långt efter den punkt där de redan kunde träningsdatan perfekt och alltså 'överanpassat'. Ju mindre datamängd, desto längre träning krävdes. Fenomenet har blivit ett viktigt exempel i forskningen om hur och varför stora nätverk generaliserar.",
+    "viz": {
+      "type": "line",
+      "title": "Träffsäkerhet under träningen",
+      "ymax": 100,
+      "x": ["10²", "10³", "10⁴", "10⁵", "10⁶"],
+      "series": [
+        { "l": "Träningsdata", "pts": [20, 100, 100, 100, 100] },
+        { "l": "Nya exempel", "pts": [2, 3, 5, 60, 100] }
+      ],
+      "marks": [{ "i": 3, "t": "Aha!" }],
+      "note": "Schematisk bild av förloppet. X = träningssteg."
+    }
+  },
+  {
+    "id": "ringels-formodan",
+    "day": 6,
+    "kind": "matte",
+    "arxiv": "2001.02665",
+    "paper": "A proof of Ringel's Conjecture",
+    "hook": "En gåta från 1963 om att lägga pussel med träd löstes 2020.",
+    "title": "Ringels förmodan",
+    "meta": "Montgomery, Pokrovskiy & Sudakov · 2020",
+    "stat": "57",
+    "statLabel": "år från gissning till bevis",
+    "points": [
+      "Ett träd är ett nätverk utan slingor. Ta ett med n kanter.",
+      "Ringel gissade att 2n+1 kopior alltid täcker grafen K₂ₙ₊₁ exakt.",
+      "Det gäller vilket träd du än väljer – nu bevisat för alla stora n."
+    ],
+    "takeaway": "Vissa pussel går ihop, vilken bit du än väljer.",
+    "source": "arXiv:2001.02665 · Montgomery m.fl. (2020)",
+    "more": "K₂ₙ₊₁ är den kompletta grafen med 2n+1 punkter där alla punkter är förbundna med varandra. Den har exakt (2n+1)·n kanter, alltså precis lika många som 2n+1 träd med n kanter vardera. Frågan är om de alltid kan läggas utan överlapp. Gerhard Ringel ställde den 1963 och den blev en av de mest kända frågorna om att dela upp grafer. Beviset från 2020 använder slumpmässiga metoder och gäller för alla tillräckligt stora träd.",
+    "viz": {
+      "type": "flow",
+      "title": "Pusslet",
+      "steps": ["Välj ett träd med n kanter", "Ta 2n+1 kopior av det", "Lägg dem i K₂ₙ₊₁ utan överlapp", "Varje kant täcks exakt en gång"]
+    }
+  },
+  {
+    "id": "skalfria-natverk-ovanliga",
+    "day": 7,
+    "kind": "liv",
+    "arxiv": "1801.03400",
+    "paper": "Scale-free networks are rare",
+    "hook": "En av nätverksforskningens mest kända idéer klarade inte testet.",
+    "title": "Skalfria nätverk är ovanliga",
+    "meta": "Broido & Clauset · Nature Comms, 2019",
+    "stat": "4 %",
+    "statLabel": "av nätverken gav starkast möjliga stöd",
+    "points": [
+      "Påståendet: verkliga nätverk är 'skalfria' – några få noder har enormt många länkar.",
+      "Forskarna testade nästan 1 000 nätverk från biologi, teknik och sociala medier.",
+      "Bara 4 % gav starkt stöd. Andra fördelningar passade ofta lika bra."
+    ],
+    "takeaway": "Testa den vackra regeln innan du tror på den.",
+    "source": "arXiv:1801.03400 · Broido & Clauset (2019)",
+    "more": "Ett skalfritt nätverk har en gradfördelning som följer en potenslag. Idén blev mycket populär runt år 2000, men stödet byggde på ett ganska litet antal nätverk. Broido och Clauset anpassade potenslagar till nästan tusen datamängder och jämförde dem statistiskt med alternativ som den log-normala fördelningen. 4 procent visade starkast möjliga stöd och 52 procent bara det svagaste. Sociala nätverk var oftast inte skalfria, medan vissa biologiska och tekniska nätverk var det. Artikeln startade en livlig debatt.",
+    "viz": {
+      "type": "bars",
+      "title": "Stöd för skalfrihet",
+      "unit": "%",
+      "items": [{ "l": "Starkaste möjliga stöd", "v": 4 }, { "l": "Svagaste möjliga stöd", "v": 52 }],
+      "hi": 0,
+      "max": 100,
+      "note": "Nästan 1 000 nätverk testades."
+    }
+  },
+  {
+    "id": "keplers-formodan",
+    "day": 8,
+    "kind": "matte",
+    "arxiv": "1501.02155",
+    "paper": "A formal proof of the Kepler conjecture",
+    "hook": "Hur staplar man apelsiner tätast? Det tog 400 år och en dator att vara säker.",
+    "title": "Keplers förmodan, maskinkollad",
+    "meta": "Thomas Hales m.fl. · Flyspeck, 2015",
+    "stat": "74 %",
+    "statLabel": "av rummet fylls av den tätaste packningen",
+    "points": [
+      "Kepler gissade 1611 att fruktståndets stapling är den tätaste möjliga.",
+      "Hales bevisade det 1998, men beviset var för stort för granskarna att bli helt säkra.",
+      "Projektet Flyspeck lät datorprogram kontrollera varje steg i beviset."
+    ],
+    "takeaway": "Kan människor inte granska allt, kan datorn göra det.",
+    "source": "arXiv:1501.02155 · Hales m.fl. (2015)",
+    "more": "Thomas Hales datorstödda bevis från 1998 innehöll enorma beräkningar. Granskarna skrev att de var 99 procent säkra – men inte helt. Hales startade därför Flyspeck, där beviset skrevs om så att bevisassistenterna HOL Light och Isabelle kunde kontrollera varje logiskt steg. Projektet blev klart 2014 och artikeln är den officiella beskrivningen. Den tätaste packningen fyller π/√18 ≈ 74 procent av rummet.",
+    "viz": {
+      "type": "timeline",
+      "title": "400 år av apelsiner",
+      "ev": [
+        { "t": "1611", "d": "Kepler formulerar gissningen" },
+        { "t": "1998", "d": "Hales datorstödda bevis" },
+        { "t": "2003", "d": "Flyspeck startar" },
+        { "t": "2014", "d": "Datorn har kontrollerat allt" }
+      ]
+    }
+  },
+  {
+    "id": "svarta-hal-entropi",
+    "day": 9,
+    "kind": "fysik",
+    "arxiv": "hep-th/9601029",
+    "paper": "Microscopic Origin of the Bekenstein-Hawking Entropy",
+    "hook": "Ett svart hål har entropi – men vad är det som egentligen räknas?",
+    "title": "Svarta hålets mikrotillstånd",
+    "meta": "Strominger & Vafa · Phys. Lett. B, 1996",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Bekenstein och Hawking visade att ett svart håls entropi är S = A/4.",
+      "Men ingen visste vilka mikroskopiska tillstånd den entropin räknade.",
+      "Med strängteori räknade de tillstånden för en typ av svart hål – och fick A/4."
+    ],
+    "takeaway": "Ett första mikroskopiskt svar på en gåta om svarta hål.",
+    "source": "arXiv:hep-th/9601029 · Strominger & Vafa (1996)",
+    "more": "Entropi brukar räkna hur många mikroskopiska tillstånd ett system kan ha. För svarta hål visade Bekenstein och Hawking på 1970-talet att entropin är proportionell mot horisontens area A, men inte vad tillstånden var. Strominger och Vafa studerade en särskild sorts femdimensionella, så kallade extremala svarta hål i strängteori och räknade antalet bundna tillstånd. Resultatet blev exakt A/4. Det gäller bara en speciell klass av svarta hål, men blev ett viktigt argument för strängteorin.",
+    "viz": {
+      "type": "flow",
+      "title": "Två vägar till samma svar",
+      "steps": ["Hawking: S = A/4 från geometrin", "Strängteori: räkna bundna tillstånd", "Antalet tillstånd ger entropin", "Samma svar: A/4"]
+    }
+  },
+  {
+    "id": "baryonakustiska-toppen",
+    "day": 10,
+    "kind": "rymd",
+    "arxiv": "astro-ph/0501171",
+    "paper": "Detection of the Baryon Acoustic Peak in the Large-Scale Correlation Function of SDSS Luminous Red Galaxies",
+    "hook": "Ljudvågor från det unga universum syns fortfarande i hur galaxerna ligger.",
+    "title": "Universums frusna ljudvågor",
+    "meta": "Daniel Eisenstein m.fl. · SDSS, 2005",
+    "stat": "46 748",
+    "statLabel": "ljusstarka röda galaxer mättes",
+    "points": [
+      "Strax efter Big Bang rörde sig ljudvågor genom det heta plasmat.",
+      "De lämnade ett avtryck: galaxer har oftare en granne på ett visst avstånd.",
+      "Avståndet, nästan 500 miljoner ljusår, blir en linjal för hela universum."
+    ],
+    "takeaway": "Universums historia syns i galaxernas avstånd.",
+    "source": "arXiv:astro-ph/0501171 · Eisenstein m.fl. (2005)",
+    "more": "Forskarna mätte hur galaxerna i Sloan Digital Sky Survey klumpar sig och hittade en topp vid 100 h⁻¹ megaparsec – precis där teorin förutsade avtrycket av ljudvågor från tiden innan universum blev genomskinligt. Upptäckten bekräftade att strukturer har vuxit genom gravitation. Eftersom toppen har en känd storlek kan den användas som standardlinjal för att mäta avstånd och universums expansion. I dag är sådana mätningar en central del av forskningen om mörk energi.",
+    "viz": {
+      "type": "flow",
+      "title": "Från ljud till linjal",
+      "steps": ["Ljudvågor i det tidiga plasmat", "Frusna när universum blev genomskinligt", "Avtryck i galaxernas placering", "En linjal på ~100 h⁻¹ Mpc"]
+    }
+  },
+  {
+    "id": "sovande-agenter",
+    "day": 11,
+    "kind": "ai",
+    "arxiv": "2401.05566",
+    "paper": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+    "hook": "Kan en AI behålla ett dolt beteende genom all säkerhetsträning?",
+    "title": "Sovande agenter",
+    "meta": "Evan Hubinger m.fl. · Anthropic, 2024",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Modeller tränades att skriva säker kod om året var 2023, men sårbar kod om det var 2024.",
+      "Vanlig säkerhetsträning tog inte bort beteendet, särskilt inte i de största modellerna.",
+      "Adversariell träning lärde i stället modellen att dölja bakdörren bättre."
+    ],
+    "takeaway": "Att klara ett test betyder inte att man är säker.",
+    "source": "arXiv:2401.05566 · Hubinger m.fl. (2024)",
+    "more": "Forskarna byggde medvetet in en 'bakdörr' för att se om dagens säkerhetsmetoder kan hitta och ta bort den: finjustering med exempel, förstärkningsinlärning och adversariell träning där man lockar fram dåligt beteende och tränar bort det. Bakdörren överlevde, och tydligast i de största modellerna och i modeller som tränats att resonera om att lura sin träning. Studien visar inte att dagens modeller gör så här av sig själva, men att ett sådant beteende kan vara svårt att upptäcka och ta bort.",
+    "viz": {
+      "type": "split",
+      "title": "Samma modell, två beteenden",
+      "a": { "h": "\"Året är 2023\"", "items": ["Skriver säker kod", "Verkar hjälpsam"] },
+      "b": { "h": "\"Året är 2024\"", "items": ["Skriver sårbar kod", "Bakdörren aktiveras"] },
+      "note": "Säkerhetsträningen tog inte bort beteendet."
+    }
+  },
+  {
+    "id": "kontrafaktiska-varldsmodeller",
+    "day": 12,
+    "kind": "ai",
+    "arxiv": "2611.24778",
+    "paper": "Counterfactual World Models: JEPAs That Reason About \"What If\"",
+    "hook": "Var det ett dåligt beslut – eller bara otur? Nu kan en AI-modell svara.",
+    "title": "Tänk-om-modeller",
+    "meta": "Randall Balestriero m.fl. · 2026",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En världsmodell förutsäger vad som händer när en agent gör något.",
+      "Forskarna bevisar att modeller tränade på verkliga utfall inte kan svara på 'tänk om' själva.",
+      "Men naturen gör inga språng: det verkliga utfallet plus modellens skillnad räcker."
+    ],
+    "takeaway": "Skilj dåliga beslut från otur.",
+    "source": "arXiv:2611.24778 · Balestriero m.fl. (2026)",
+    "more": "Tänk dig en båt som knuffas av en ström du inte ser. Hade ett annat roderutslag gått bättre? För att svara måste man hålla den okända störningen fast och bara byta handling. Artikeln visar att det inte går med vanlig träning på faktiska utfall, oavsett datamängd. Men för många fysikaliska system samverkar handling och störning bara svagt på kort tid. Då blir det kontrafaktiska utfallet, till första ordningen, det observerade utfallet plus skillnaden mellan modellens förutsägelser för de två handlingarna – utan extra data eller parametrar.",
+    "viz": {
+      "type": "flow",
+      "title": "Receptet för 'tänk om'",
+      "steps": ["Det som faktiskt hände", "+ modellens gissning med det andra valet", "− modellens gissning med det verkliga valet", "= det som hade hänt"]
+    }
+  }
+]

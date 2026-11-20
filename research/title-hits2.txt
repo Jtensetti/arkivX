@@ -1,0 +1,73 @@
+1507.03414 fysik observation    # Observation of $J/ψp$ resonances consistent with pentaquark states in ${Λ_b^0\to J/ψK^-p}$ decays (2015) <= Observation of J/psi p resonances consistent with pentaquark
+hep-ex/0009029 fysik measurement    # Improved Measurement of the Positive Muon Anomalous Magnetic Moment (2000) <= Measurement of the Positive Muon Anomalous Magnetic Moment to 0.20 ppm
+# NOTFOUND fysik Quantum computational advantage with a programmable photonic processor
+# NOTFOUND fysik Physics of the cheerios effect
+1707.06050 fysik entanglement    # A Spin Entanglement Witness for Quantum Gravity (2017) <= Spin entanglement witness for quantum gravity
+1604.07422 fysik consistently    # Quantum theory cannot consistently describe the use of itself (2016) <= Quantum theory cannot consistently describe the use of itself
+1211.0545 fysik temperature    # Negative Absolute Temperature for Motional Degrees of Freedom (2012) <= Negative absolute temperature for motional degrees of freedom
+1510.00621 fysik entanglement    # Observation of quantum Hawking radiation and its entanglement in an analogue black hole (2015) <= Observation of quantum Hawking radiation and its entanglement in an analogue black hole
+cond-mat/0506438 fysik exactly    # Anyons in an exactly solved model and beyond (2005) <= Anyons in an exactly solved model and beyond
+# NOTFOUND fysik Self-organized origami
+# NOTFOUND fysik Evidence for a new particle diphoton 750
+# NOTFOUND fysik Hydrodynamics of soft active matter
+2310.04419 fysik microscopic    # Microscopic origin of the quantum Mpemba effect in integrable systems (2023) <= Microscopic origin of the Mpemba effect
+# NOTFOUND rymd Extreme magnification of an individual star at redshift 1.5
+# NOTFOUND rymd Discovery of a possible interstellar meteor
+2009.06593 rymd phosphine    # Phosphine Gas in the Cloud Decks of Venus (2020) <= Phosphine gas in the cloud decks of Venus
+1510.07704 rymd exploration    # The Pluto system: Initial results from its exploration by New Horizons (2015) <= The Pluto system: initial results from its exploration by New Horizons
+1409.0880 rymd supercluster    # The Laniakea supercluster of galaxies (2014) <= The Laniakea supercluster of galaxies
+2102.01522 rymd earliness    # If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare (2021) <= If loud aliens explain human earliness, quiet aliens are also rare
+1302.3180 rymd neighborhood    # HD 140283: A Star in the Solar Neighborhood that Formed Shortly After the Big Bang (2013) <= HD 140283: a star in the solar neighborhood that formed shortly after the big bang
+2507.02757 rymd characterization    # Discovery and Preliminary Characterization of a Third Interstellar Object: 3I/ATLAS (2025) <= Discovery and characterization of the interstellar comet 3I/ATLAS
+2212.04474 rymd pipeline    # Global warming in the pipeline (2022) <= Global warming in the pipeline
+2303.14849 rymd exoplanet    # Thermal emission from the Earth-sized exoplanet TRAPPIST-1 b using JWST (2023) <= Thermal emission from the Earth-sized exoplanet TRAPPIST-1 b using JWST
+2610.40129 rymd syndrome    # The Generalised Kessler Syndrome and the Persian Gulf (2026) <= The Kessler syndrome
+cond-mat/0303516 liv structure    # The structure and function of complex networks (2003) <= The structure and function of complex networks
+1707.07592 liv credibility    # The spread of low-credibility content by social bots (2017) <= The spread of low-credibility content by social bots
+1010.3003 liv predicts    # Twitter mood predicts the stock market (2010) <= Twitter mood predicts the stock market
+# NOTFOUND liv How social influence can undermine the wisdom of crowd effect
+cond-mat/9805244 liv pedestrian    # Social Force Model for Pedestrian Dynamics (1998) <= Social force model for pedestrian dynamics
+# NOTFOUND liv A mathematical model reveals the influence of population heterogeneity on herd immunity
+1205.5651 liv contemporary    # Measuring the evolution of contemporary western popular music (2012) <= Measuring the evolution of contemporary western popular music
+1101.5120 liv information    # Temporal patterns of happiness and information in a global social network: Hedonometrics and Twitter (2011) <= Temporal patterns of happiness and information in a global social network
+1606.07772 liv emotional    # The emotional arcs of stories are dominated by six basic shapes (2016) <= The emotional arcs of stories are dominated by six basic shapes
+# NOTFOUND liv Quantifying the evolution of individual scientific impact
+2304.09160 liv overturning    # Warning of a forthcoming collapse of the Atlantic meridional overturning circulation (2023) <= Warning of a forthcoming collapse of the Atlantic meridional overturning circulation
+1710.07867 liv transportation    # The Price of Anarchy for Transportation Networks with Mixed Autonomy (2017) <= The price of anarchy in transportation networks
+1705.10812 liv gerrymandering    # A formula goes to court: Partisan gerrymandering and the efficiency gap (2017) <= Partisan gerrymandering and the efficiency gap
+1506.03022 liv networks    # The Majority Illusion in Social Networks (2015) <= The majority illusion in social networks
+# NOTFOUND liv Accelerating dynamics of collective attention
+1709.02445 liv technology    # Large Teams Have Developed Science and Technology; Small Teams Have Disrupted It (2017) <= Large teams develop and small teams disrupt science and technology
+# NOTFOUND liv Combining satellite imagery and machine learning to predict poverty
+2105.01446 liv advantage    # Home advantage and crowd attendance: Evidence from rugby during the Covid 19 pandemic (2021) <= Home advantage during the COVID-19 pandemic
+# NOTFOUND liv Traffic jams without bottlenecks
+# NOTFOUND liv The hot hand fallacy surprised by the gambler
+1801.03400 liv networks    # Scale-free networks are rare (2018) <= Scale-free networks are rare
+2503.20543 liv science    # Entropy in Science of Science (2025) <= The science of science
+# NOTFOUND liv Experimental evidence for scale-free correlations in starling flocks
+# NOTFOUND liv Detecting influenza epidemics using search engine query data
+# NOTFOUND liv Mapping the global footprint of fisheries
+1604.08657 matte szekeres    # On the Erdos-Szekeres convex polygon problem (2016) <= On the Erdos-Szekeres convex polygon problem
+1605.09223 matte progression    # On large subsets of $F_q^n$ with no three-term arithmetic progression (2016) <= On large subsets of F_q^n with no three-term arithmetic progression
+1908.08483 matte sunflower    # Improved bounds for the sunflower lemma (2019) <= Improved bounds for the sunflower lemma
+2203.17207 matte conjecture    # A Proof of the Kahn-Kalai Conjecture (2022) <= A proof of the Kahn-Kalai conjecture
+1804.02385 matte chromatic    # The chromatic number of the plane is at least 5 (2018) <= The chromatic number of the plane is at least 5
+2609.03375 matte conjecture    # Generalized Telescope Conjecture (2026) <= On the telescope conjecture
+2409.08670 matte conjecture    # Proof of the geometric Langlands conjecture IV: ambidexterity (2024) <= Proof of the geometric Langlands conjecture
+2503.01800 matte derivation    # Hilbert's sixth problem: derivation of fluid equations via Boltzmann's kinetic theory (2025) <= Long time derivation of the Boltzmann equation hard sphere Hilbert sixth problem
+2304.00895 matte dedekind    # A computation of the ninth Dedekind Number (2023) <= The ninth Dedekind number
+1605.00723 matte pythagorean    # Solving and Verifying the boolean Pythagorean Triples problem via Cube-and-Conquer (2016) <= Solving and verifying the boolean Pythagorean triples problem
+1907.05083 matte protocol    # Cake Cutting on Graphs: A Discrete and Bounded Proportional Protocol (2019) <= A discrete and bounded envy-free cake cutting protocol
+1306.3969 matte characteristic    # Interlacing Families II: Mixed Characteristic Polynomials and the Kadison-Singer Problem (2013) <= Interlacing families II mixed characteristic polynomials and the Kadison-Singer problem
+1408.1028 matte correlation    # A simple proof of the Gaussian correlation conjecture extended to multivariate gamma distributions (2014) <= A simple proof of the Gaussian correlation conjecture
+# NOTFOUND matte A proof of the Duffin-Schaeffer conjecture
+2012.04125 matte sufficiently    # Sendov's conjecture for sufficiently high degree polynomials (2020) <= Sendov's conjecture for sufficiently high degree polynomials
+# NOTFOUND matte A proof of the Erdos-Faber-Lovasz conjecture
+2506.24088 matte unknotting    # Unknotting number is not additive under connected sum (2025) <= Unknotting number is not additive under connected sum
+# NOTFOUND matte The diameter of the Rubik's cube group is twenty
+2509.12337 matte determination    # Determination of the fifth Busy Beaver value (2025) <= Determination of the fifth Busy Beaver value
+math/9207215 matte shape    # One cannot hear the shape of a drum (1992) <= Can you hear the shape of a drum
+1707.06050 fysik entanglement    # A Spin Entanglement Witness for Quantum Gravity (2017) <= Spin entanglement witness quantum gravity Bose
+# NOTFOUND fysik Observation of quantum Hawking radiation analogue black hole Steinhauer
+1409.0880 rymd supercluster    # The Laniakea supercluster of galaxies (2014) <= Laniakea supercluster
+2209.09905 rymd interstellar    # Interstellar Meteors are Outliers in Material Strength (2022) <= interstellar meteor

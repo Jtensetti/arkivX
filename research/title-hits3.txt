@@ -1,0 +1,26 @@
+# NOTFOUND liv scale-free correlations starling flocks
+# NOTFOUND liv social influence undermine wisdom crowd
+# NOTFOUND liv accelerating dynamics collective attention
+0801.4472 liv gambler    # Belief revision in quantum decision theory: gambler's and hot hand fallacies (2008) <= hot hand fallacy gambler
+1101.4028 liv player    # Who is the best player ever? A complex network analysis of the history of professional tennis (2011) <= who is the best player ever tennis
+0710.3256 liv statistical    # Statistical physics of social dynamics (2007) <= statistical physics social dynamics
+0704.2711 liv popularity    # Zipf law in the popularity distribution of chess openings (2007) <= Zipf popularity chess openings
+# NOTFOUND liv universal resilience patterns complex networks
+# NOTFOUND liv traffic jams without bottlenecks experimental
+2509.04958 liv satellite    # Learning Multidimensional Urban Poverty Representation with Satellite Imagery (2025) <= satellite imagery poverty machine learning
+# NOTFOUND rymd shining cosmic dawn galaxy
+2401.12404 rymd betelgeuse    # Images of Betelgeuse with VLTI/MATISSE across the Great Dimming (2024) <= Betelgeuse great dimming
+# NOTFOUND rymd molecular water sunlit Moon SOFIA
+# NOTFOUND rymd star engulfing planet infrared transient
+2012.04486 rymd gw150914    # Testing the black-hole area law with GW150914 (2020) <= testing black hole area law GW150914
+# NOTFOUND rymd Hubble tension tip red giant branch JWST
+1405.6903 fysik complexity    # Quantifying the Rise and Fall of Complexity in Closed Systems: The Coffee Automaton (2014) <= coffee automaton complexity closed systems
+1406.5578 fysik redshift    # Tracing high redshift cosmic web with quasar systems (2014) <= cosmic Bell test high-redshift quasars
+1805.04431 fysik challenging    # Challenging local realism with human choices (2018) <= challenging local realism human choices
+1701.08685 fysik contribution    # Chiral extrapolation of the leading hadronic contribution to the muon anomalous magnetic moment (2017) <= leading hadronic contribution muon magnetic moment lattice
+# NOTFOUND fysik Bose-Einstein condensates Earth-orbiting research lab
+# NOTFOUND fysik spontaneous knotting agitated string
+2410.12849 fysik hydrodynamics    # Megastable quantization in generalized pilot-wave hydrodynamics (2024) <= pilot-wave hydrodynamics
+1110.4368 fysik falling    # The falling slinky (2011) <= falling slinky
+# NOTFOUND fysik rocking rolling suitcase
+1901.07982 fysik supersolid    # Transient supersolid properties in an array of dipolar quantum droplets (2019) <= transient supersolid dipolar quantum gas

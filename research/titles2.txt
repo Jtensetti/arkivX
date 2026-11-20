@@ -1,0 +1,73 @@
+fysik Observation of J/psi p resonances consistent with pentaquark
+fysik Measurement of the Positive Muon Anomalous Magnetic Moment to 0.20 ppm
+fysik Quantum computational advantage with a programmable photonic processor
+fysik Physics of the cheerios effect
+fysik Spin entanglement witness for quantum gravity
+fysik Quantum theory cannot consistently describe the use of itself
+fysik Negative absolute temperature for motional degrees of freedom
+fysik Observation of quantum Hawking radiation and its entanglement in an analogue black hole
+fysik Anyons in an exactly solved model and beyond
+fysik Self-organized origami
+fysik Evidence for a new particle diphoton 750
+fysik Hydrodynamics of soft active matter
+fysik Microscopic origin of the Mpemba effect
+rymd Extreme magnification of an individual star at redshift 1.5
+rymd Discovery of a possible interstellar meteor
+rymd Phosphine gas in the cloud decks of Venus
+rymd The Pluto system: initial results from its exploration by New Horizons
+rymd The Laniakea supercluster of galaxies
+rymd If loud aliens explain human earliness, quiet aliens are also rare
+rymd HD 140283: a star in the solar neighborhood that formed shortly after the big bang
+rymd Discovery and characterization of the interstellar comet 3I/ATLAS
+rymd Global warming in the pipeline
+rymd Thermal emission from the Earth-sized exoplanet TRAPPIST-1 b using JWST
+rymd The Kessler syndrome
+liv The structure and function of complex networks
+liv The spread of low-credibility content by social bots
+liv Twitter mood predicts the stock market
+liv How social influence can undermine the wisdom of crowd effect
+liv Social force model for pedestrian dynamics
+liv A mathematical model reveals the influence of population heterogeneity on herd immunity
+liv Measuring the evolution of contemporary western popular music
+liv Temporal patterns of happiness and information in a global social network
+liv The emotional arcs of stories are dominated by six basic shapes
+liv Quantifying the evolution of individual scientific impact
+liv Warning of a forthcoming collapse of the Atlantic meridional overturning circulation
+liv The price of anarchy in transportation networks
+liv Partisan gerrymandering and the efficiency gap
+liv The majority illusion in social networks
+liv Accelerating dynamics of collective attention
+liv Large teams develop and small teams disrupt science and technology
+liv Combining satellite imagery and machine learning to predict poverty
+liv Home advantage during the COVID-19 pandemic
+liv Traffic jams without bottlenecks
+liv The hot hand fallacy surprised by the gambler
+liv Scale-free networks are rare
+liv The science of science
+liv Experimental evidence for scale-free correlations in starling flocks
+liv Detecting influenza epidemics using search engine query data
+liv Mapping the global footprint of fisheries
+matte On the Erdos-Szekeres convex polygon problem
+matte On large subsets of F_q^n with no three-term arithmetic progression
+matte Improved bounds for the sunflower lemma
+matte A proof of the Kahn-Kalai conjecture
+matte The chromatic number of the plane is at least 5
+matte On the telescope conjecture
+matte Proof of the geometric Langlands conjecture
+matte Long time derivation of the Boltzmann equation hard sphere Hilbert sixth problem
+matte The ninth Dedekind number
+matte Solving and verifying the boolean Pythagorean triples problem
+matte A discrete and bounded envy-free cake cutting protocol
+matte Interlacing families II mixed characteristic polynomials and the Kadison-Singer problem
+matte A simple proof of the Gaussian correlation conjecture
+matte A proof of the Duffin-Schaeffer conjecture
+matte Sendov's conjecture for sufficiently high degree polynomials
+matte A proof of the Erdos-Faber-Lovasz conjecture
+matte Unknotting number is not additive under connected sum
+matte The diameter of the Rubik's cube group is twenty
+matte Determination of the fifth Busy Beaver value
+matte Can you hear the shape of a drum
+fysik Spin entanglement witness quantum gravity Bose
+fysik Observation of quantum Hawking radiation analogue black hole Steinhauer
+rymd Laniakea supercluster
+rymd interstellar meteor

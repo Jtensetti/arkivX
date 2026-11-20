@@ -1,0 +1,324 @@
+[
+  {
+    "id": "humanitys-last-exam",
+    "day": 25,
+    "kind": "ai",
+    "arxiv": "2501.14249",
+    "paper": "Humanity's Last Exam",
+    "hook": "Experter från hela världen skrev frågor som var för svåra för AI. Hur länge till?",
+    "title": "Humanity's Last Exam",
+    "meta": "Long Phan m.fl. · CAIS & Scale AI, 2025",
+    "stat": "2 500",
+    "statLabel": "frågor från experter i dussintals ämnen",
+    "points": [
+      "Populära test som MMLU klaras nu till över 90 % av språkmodeller.",
+      "Varje fråga har ett entydigt svar som inte går att söka fram på nätet.",
+      "De bästa modellerna fick först låga resultat – och var ofta säkra när de hade fel."
+    ],
+    "takeaway": "Ett test är bara bra tills det klaras.",
+    "source": "arXiv:2501.14249 · Phan m.fl. (2025)",
+    "more": "Över tusen forskare och experter bidrog med frågor i matematik, naturvetenskap och humaniora, och frågor som dåtidens modeller klarade sorterades bort. Testet ska vara det sista slutna akademiska provet i sitt slag: när AI klarar det säger det mycket om kunskaper, men inget om förmågan att forska på egen hand. Modellerna visade också dålig kalibrering – de angav hög säkerhet på fel svar. Resultaten har sedan stigit snabbt.",
+    "viz": {
+      "type": "versus",
+      "myth": "AI klarar redan alla akademiska prov.",
+      "fact": "På HLE klarade de bästa modellerna först bara en liten del av frågorna."
+    }
+  },
+  {
+    "id": "hedonometern",
+    "day": 26,
+    "kind": "liv",
+    "arxiv": "1101.5120",
+    "paper": "Temporal patterns of happiness and information in a global social network: Hedonometrics and Twitter",
+    "hook": "Går det att mäta en hel planets humör? Forskare läste 46 miljarder ord.",
+    "title": "Hedonometern",
+    "meta": "Peter Sheridan Dodds m.fl. · PLoS ONE, 2011",
+    "stat": "46 miljarder",
+    "statLabel": "ord från 63 miljoner Twitteranvändare",
+    "points": [
+      "Över 10 000 vanliga engelska ord fick ett lyckobetyg av människor.",
+      "Medelbetyget för orden i miljarder tweets blev en lyckomätare i realtid.",
+      "Mätaren visade rytmer över dygn och veckor – och dippar vid stora kriser."
+    ],
+    "takeaway": "Orden vi väljer avslöjar hur vi mår.",
+    "source": "arXiv:1101.5120 · Dodds m.fl. (2011)",
+    "more": "Lycka mäts oftast med enkäter, och i politiken styr mått som BNP. Här byggde forskarna en 'hedonometer' av 4,6 miljarder tweets under 33 månader. Ord som 'skratt' och 'kärlek' fick höga betyg och ord som 'terrorist' låga. Helgerna var gladare än vardagarna, och tydliga dippar syntes vid händelser som jordbävningar och finanskris. Metoden mäter hur folk uttrycker sig offentligt, inte hur de innerst inne mår, men den gav ett nytt sätt att följa stämningar över tid.",
+    "viz": {
+      "type": "flow",
+      "title": "Så fungerar lyckomätaren",
+      "steps": ["Över 10 000 ord får lyckobetyg", "Räkna orden i miljarder tweets", "Medelvärdet blir dagens lycka", "Toppar på helger, dippar vid kriser"]
+    }
+  },
+  {
+    "id": "chain-of-thought",
+    "day": 27,
+    "kind": "ai",
+    "arxiv": "2201.11903",
+    "paper": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "hook": "Be en AI att visa sina uträkningar – så räknar den rätt oftare.",
+    "title": "Chain of thought",
+    "meta": "Jason Wei m.fl. · Google, 2022",
+    "stat": "8",
+    "statLabel": "exempel med uträkningar räckte",
+    "points": [
+      "I stället för bara svar fick modellen se exempel med mellanled i frågan.",
+      "Då började den skriva egna resonemang innan den svarade.",
+      "Effekten syntes framför allt i riktigt stora modeller, som PaLM 540B."
+    ],
+    "takeaway": "Att tänka högt hjälper även maskiner.",
+    "source": "arXiv:2201.11903 · Wei m.fl. (2022)",
+    "more": "Tekniken kräver ingen ny träning – bara ett annat sätt att ställa frågan. På GSM8K, en samling textproblem i matematik, gick PaLM med 540 miljarder parametrar från knappt 18 till nästan 57 procent rätt med åtta exempel på resonemang. Små modeller fick ingen hjälp och skrev ofta resonemang som inte höll. Idén ligger bakom dagens resonerande modeller, som tränas att tänka i steg innan de svarar.",
+    "viz": {
+      "type": "bars",
+      "title": "PaLM 540B på mattetestet GSM8K",
+      "unit": "%",
+      "items": [{ "l": "Bara svar i exemplen", "v": 17.9, "t": "17,9 %" }, { "l": "Med resonemang", "v": 56.9, "t": "56,9 %" }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "beboeliga-zonen",
+    "day": 28,
+    "kind": "rymd",
+    "arxiv": "1301.6674",
+    "paper": "Habitable Zones Around Main-Sequence Stars: New Estimates",
+    "hook": "Hur nära en stjärna kan en planet ligga och ändå ha flytande vatten?",
+    "title": "Den beboeliga zonen",
+    "meta": "Ravi Kopparapu m.fl. · ApJ, 2013",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Den beboeliga zonen är avståndet där en planet kan ha flytande vatten på ytan.",
+      "Nya data om hur vatten och koldioxid tar upp ljus flyttade zonens gränser.",
+      "För solsystemet blev zonen ca 0,99–1,70 AU. Jorden ligger nära innerkanten."
+    ],
+    "takeaway": "Jorden ligger närmare kanten än vi trodde.",
+    "source": "arXiv:1301.6674 · Kopparapu m.fl. (2013)",
+    "more": "De flesta uppskattningar byggde på en klimatmodell av Kasting från 1993. Kopparapu och kollegor uppdaterade den med nya mätningar av hur vattenånga och koldioxid absorberar strålning. Innerkanten bestäms av när en planet förlorar sitt vatten och ytterkanten av hur mycket växthuseffekt en koldioxidatmosfär kan ge. Gränserna räknades ut för stjärnor av typerna F, G, K och M och används i dag när man letar efter planeter som kan ha liv.",
+    "viz": {
+      "type": "gauge",
+      "title": "Solsystemets beboeliga zon",
+      "min": 0.5,
+      "max": 2,
+      "v": 1,
+      "unit": "AU",
+      "zones": ["För varmt", "Beboeligt", "För kallt"],
+      "note": "Jorden: 1 AU. Zonen: ca 0,99–1,70 AU."
+    }
+  },
+  {
+    "id": "kakeya-3d",
+    "day": 29,
+    "kind": "matte",
+    "arxiv": "2502.17655",
+    "paper": "Volume estimates for unions of convex sets, and the Kakeya set conjecture in three dimensions",
+    "hook": "Hur lite plats behövs för att vrida en nål åt alla håll?",
+    "title": "Kakeyas förmodan i 3D",
+    "meta": "Hong Wang & Joshua Zahl · 2025",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En Kakeyamängd innehåller en nål med längden 1 i varje riktning.",
+      "Sådana mängder kan ha volymen noll – men hur 'tunna' kan de egentligen bli?",
+      "Wang och Zahl bevisade att de i tre dimensioner ändå är fullt tredimensionella."
+    ],
+    "takeaway": "En mängd utan volym kan ändå fylla rummet.",
+    "source": "arXiv:2502.17655 · Wang & Zahl (2025)",
+    "more": "Den japanske matematikern Sōichi Kakeya frågade 1917 hur liten yta som behövs för att vända en nål ett helt varv. Besicovitch visade att ytan kan göras hur liten som helst. Men mängdens dimension – ett mått på hur mycket den fyller ut – är en annan fråga. Förmodan säger att den alltid är full. I planet var det känt sedan 1970-talet, men i tre dimensioner har problemet varit öppet i årtionden. Beviset kopplar till svåra frågor i harmonisk analys och har kallats ett av årtiondets stora genombrott.",
+    "viz": {
+      "type": "timeline",
+      "title": "Nålen som ska vändas",
+      "ev": [
+        { "t": "1917", "d": "Kakeya ställer frågan om nålen" },
+        { "t": "1928", "d": "Besicovitch: ytan kan bli hur liten som helst" },
+        { "t": "1995", "d": "Wolff: dimensionen är minst 2,5 i 3D" },
+        { "t": "2025", "d": "Wang & Zahl: dimensionen är 3" }
+      ]
+    }
+  },
+  {
+    "id": "pengarnas-fysik",
+    "day": 30,
+    "kind": "liv",
+    "arxiv": "cond-mat/0001432",
+    "paper": "Statistical mechanics of money",
+    "hook": "Pengar beter sig som energi i en gas – och det skapar ojämlikhet.",
+    "title": "Pengarnas statistiska mekanik",
+    "meta": "Drăgulescu & Yakovenko · 2000",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "I en sluten ekonomi bevaras pengarna, precis som energin i fysiken.",
+      "Slumpmässiga affärer mellan människor ger då en exponentiell fördelning.",
+      "Även om alla börjar lika blir några få rika och många har lite."
+    ],
+    "takeaway": "Ojämlikhet kan uppstå av ren slump.",
+    "source": "arXiv:cond-mat/0001432 · Drăgulescu & Yakovenko (2000)",
+    "more": "Artikeln är en klassiker inom ekonofysik. Precis som energin i en gas fördelar sig enligt Boltzmann–Gibbs-lagen, visade simuleringar att pengar som byter ägare slumpmässigt fördelar sig exponentiellt. 'Temperaturen' blir den genomsnittliga summan per person. Senare studier av inkomstdata visade att de flesta människors inkomster följer en sådan fördelning, medan de allra rikaste följer en potenslag. Modellen är förenklad men visar att ojämlikhet inte kräver skillnader i skicklighet.",
+    "viz": {
+      "type": "flow",
+      "title": "En ekonomi som en gas",
+      "steps": ["Alla börjar med samma summa", "Slumpmässiga affärer mellan par", "Den totala summan bevaras", "Resultat: få rika, många med lite"]
+    }
+  },
+  {
+    "id": "deepseekmath-grpo",
+    "day": 31,
+    "kind": "ai",
+    "arxiv": "2402.03300",
+    "paper": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "hook": "En liten mattemodell gav upphov till tricket bakom DeepSeek-R1.",
+    "title": "DeepSeekMath och GRPO",
+    "meta": "Zhihong Shao m.fl. · DeepSeek, 2024",
+    "stat": "51,7 %",
+    "statLabel": "på tävlingsmatte – med bara 7 miljarder parametrar",
+    "points": [
+      "Modellen tränades vidare på 120 miljarder token matte, noga utvalda från webben.",
+      "Den lilla modellen närmade sig GPT-4 på tävlingsuppgifter i matematik.",
+      "Den nya träningsmetoden GRPO jämför en grupp svar med varandra."
+    ],
+    "takeaway": "Smart data och smart träning kan slå storlek.",
+    "source": "arXiv:2402.03300 · Shao m.fl. (2024)",
+    "more": "Vanlig förstärkningsinlärning för språkmodeller, PPO, behöver en extra värderingsmodell som uppskattar hur bra ett svar är. GRPO hoppar över den: modellen svarar flera gånger på samma fråga, och varje svar belönas efter hur mycket bättre det är än gruppens genomsnitt. Det sparar minne och visade sig fungera mycket bra. Ett år senare användes GRPO för att träna DeepSeek-R1.",
+    "viz": {
+      "type": "flow",
+      "title": "Så fungerar GRPO",
+      "steps": ["Ställ en mattefråga", "Låt modellen svara flera gånger", "Belöna svar som är bättre än snittet", "Ingen extra värderingsmodell behövs"]
+    }
+  },
+  {
+    "id": "hogljudda-utomjordingar",
+    "day": 32,
+    "kind": "rymd",
+    "arxiv": "2102.01522",
+    "paper": "If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare",
+    "hook": "Varför finns vi så tidigt i universums historia? Kanske på grund av utomjordingar.",
+    "title": "Högljudda utomjordingar",
+    "meta": "Robin Hanson m.fl. · ApJ, 2021",
+    "stat": "99 %",
+    "statLabel": "av avancerat liv borde uppstå efter i dag",
+    "points": [
+      "Om livet krävde flera svåra steg borde de flesta civilisationer uppstå långt senare.",
+      "Förklaringen: synliga civilisationer som växer och tar över allt större områden.",
+      "Vi måste hinna uppstå innan de når hit – därför är vi tidiga."
+    ],
+    "takeaway": "Att vi är tidiga kan vara en ledtråd.",
+    "source": "arXiv:2102.01522 · Hanson m.fl. (2021)",
+    "more": "Modellen kallas ofta 'grabby aliens'. Den har tre parametrar: hur snabbt civilisationer uppstår, när, och hur snabbt de expanderar. Att vi inte ser några sådana bubblor på himlen betyder att de expanderar nästan med ljusets hastighet. 'Tysta' civilisationer som inte expanderar skulle däremot vara svåra att se, men enligt modellen måste även de vara sällsynta. Det är en spekulativ men tänkvärd modell för Fermis paradox.",
+    "viz": {
+      "type": "flow",
+      "title": "Argumentet i fyra steg",
+      "steps": ["Liv kräver flera osannolika steg", "Det mesta livet borde komma sent", "Expanderande civilisationer sätter en gräns", "Därför finns vi tidigt"]
+    }
+  },
+  {
+    "id": "bicep2-dammet",
+    "day": 33,
+    "kind": "rymd",
+    "arxiv": "1502.00612",
+    "paper": "A Joint Analysis of BICEP2/Keck Array and Planck Data",
+    "hook": "Den stora upptäckten av Big Bangs gravitationsvågor visade sig vara damm.",
+    "title": "BICEP2 och dammet",
+    "meta": "BICEP2/Keck & Planck · PRL, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "2014 meddelade BICEP2 spår av gravitationsvågor från universums första ögonblick.",
+      "Samma virvelmönster i ljuset kan också komma från damm i vår egen galax.",
+      "När Plancks mätningar lades till försvann signalen i dammet."
+    ],
+    "takeaway": "Stora påståenden kräver fler kontroller.",
+    "source": "arXiv:1502.00612 · BICEP2/Keck & Planck (2015)",
+    "more": "Inflationsteorin förutsäger gravitationsvågor som lämnar ett virvlande 'B-mönster' i bakgrundsstrålningens polarisation. BICEP2 såg ett sådant mönster vid en frekvens och tolkade det som inflation. Planck mätte himlen vid många frekvenser och kunde se hur mycket polariserat damm som fanns i samma område. Den gemensamma analysen gav bara en övre gräns för signalen från inflationen. Episoden blev ett exempel på hur vetenskapen rättar sig själv.",
+    "viz": {
+      "type": "timeline",
+      "title": "Ett år av gravitationsvågor",
+      "ev": [
+        { "t": "Mars 2014", "d": "BICEP2 meddelar en upptäckt" },
+        { "t": "Hösten 2014", "d": "Planck: dammet kan förklara signalen" },
+        { "t": "Feb 2015", "d": "Gemensam analys: ingen säker signal" }
+      ]
+    }
+  },
+  {
+    "id": "tao-navier-stokes",
+    "day": 34,
+    "kind": "matte",
+    "arxiv": "1402.0290",
+    "paper": "Finite time blowup for an averaged three-dimensional Navier-Stokes equation",
+    "hook": "Kan ekvationerna för vatten plötsligt bryta samman? Tao visade en möjlig väg.",
+    "title": "Tao och Navier–Stokes",
+    "meta": "Terence Tao · J. AMS, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Navier–Stokes beskriver flöden. Om lösningarna alltid förblir jämna är ett milleniumproblem.",
+      "Tao ändrade ekvationen något men lät energin fortfarande bevaras.",
+      "I den varianten kan en jämn lösning 'blåsa upp' på ändlig tid."
+    ],
+    "takeaway": "Att energin bevaras räcker inte för att stoppa en explosion.",
+    "source": "arXiv:1402.0290 · Tao (2014)",
+    "more": "Milleniumproblemet frågar om lösningarna till Navier–Stokes ekvationer i tre dimensioner alltid förblir jämna, med en prissumma på en miljon dollar. Tao visade att ett bevis inte kan bygga enbart på energibevarandet och liknande allmänna egenskaper – för de gäller även hans variant, där lösningen exploderar. Han föreslog att en verklig explosion kanske skulle kunna byggas som en 'vätskedator' som skickar energi till allt mindre skalor. Problemet är fortfarande olöst.",
+    "viz": {
+      "type": "flow",
+      "title": "Taos tankeexperiment",
+      "steps": ["Navier–Stokes: är lösningarna alltid jämna?", "Byt ut en del mot ett medelvärde", "Energin bevaras fortfarande", "Lösningen exploderar på ändlig tid"]
+    }
+  },
+  {
+    "id": "kelley-meka",
+    "day": 35,
+    "kind": "matte",
+    "arxiv": "2302.05537",
+    "paper": "Strong Bounds for 3-Progressions",
+    "hook": "Hur många tal kan du välja utan att tre av dem ligger på jämnt avstånd?",
+    "title": "Tre tal på rad",
+    "meta": "Zander Kelley & Raghu Meka · 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En aritmetisk följd är tre tal med samma avstånd, som 4, 7 och 10.",
+      "Frågan: hur tät kan en mängd vara utan en enda sådan följd?",
+      "Två datavetare förbättrade gränsen dramatiskt, nära det bästa möjliga."
+    ],
+    "takeaway": "Nya ögon kan se nya vägar i gamla problem.",
+    "source": "arXiv:2302.05537 · Kelley & Meka (2023)",
+    "more": "Roth visade 1953 att varje tillräckligt tät mängd heltal innehåller en tretermig aritmetisk följd. Sedan dess har gränsen för hur gles en mängd utan följder kan vara förbättrats i små steg. Kelley och Meka, som forskar i teoretisk datavetenskap, tog ett jättekliv. Deras gräns har nästan samma form som Behrends konstruktion från 1946 av stora mängder utan följder, så nu vet man ungefär var sanningen ligger.",
+    "viz": {
+      "type": "timeline",
+      "title": "70 år av förbättringar",
+      "ev": [
+        { "t": "1946", "d": "Behrend: stora mängder utan följder" },
+        { "t": "1953", "d": "Roth: täta mängder har alltid följder" },
+        { "t": "1953–2020", "d": "Gränsen förbättras i små steg" },
+        { "t": "2023", "d": "Kelley & Meka: nästan optimalt" }
+      ]
+    }
+  },
+  {
+    "id": "controlnet",
+    "day": 36,
+    "kind": "ai",
+    "arxiv": "2302.05543",
+    "paper": "Adding Conditional Control to Text-to-Image Diffusion Models",
+    "hook": "Rita en streckgubbe – så målar AI:n en människa i exakt den posen.",
+    "title": "ControlNet",
+    "meta": "Lvmin Zhang m.fl. · Stanford, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Bildgeneratorer styrs med text, men det är svårt att bestämma exakt form och pose.",
+      "ControlNet låser den stora modellen och tränar en kopia som läser kanter, djup eller pose.",
+      "Lager som startar på noll gör att träningen inte förstör det modellen kan."
+    ],
+    "takeaway": "Styr detaljerna utan att lära om allt.",
+    "source": "arXiv:2302.05543 · Zhang m.fl. (2023)",
+    "more": "Att träna om en stor bildmodell kräver enorma resurser och kan förstöra det den redan kan. ControlNet behåller originalmodellen fryst och lägger till en tränbar kopia av dess kodare. Kopian kopplas in via 'nollkonvolutioner', lager som börjar med vikten noll och därför inte påverkar något i början. Metoden fungerade med både små och stora datamängder och blev snabbt ett standardverktyg för Stable Diffusion.",
+    "viz": {
+      "type": "flow",
+      "title": "Två sätt att styra samtidigt",
+      "steps": ["Text: 'en dansare i en park'", "+ en skiss av posen", "ControlNet styr den frysta modellen", "Bilden följer både text och form"]
+    }
+  }
+]

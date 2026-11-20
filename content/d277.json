@@ -1,0 +1,317 @@
+[
+  {
+    "id": "flow-matching",
+    "day": 277,
+    "kind": "ai",
+    "arxiv": "2210.02747",
+    "paper": "Flow Matching for Generative Modeling",
+    "hook": "Från brus till bild längs raka linjer – ett enklare sätt att träna bildgeneratorer.",
+    "title": "Flow matching",
+    "meta": "Yaron Lipman m.fl. · Meta AI, ICLR 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Diffusionsmodeller går från brus till bild via en krokig väg.",
+      "Flow matching tränar ett nätverk att förutsäga en 'flödesriktning' från brus mot data.",
+      "Med optimal transport blir vägarna raka – och genereringen snabbare."
+    ],
+    "takeaway": "Den rakaste vägen är ofta den bästa.",
+    "source": "arXiv:2210.02747 · Lipman m.fl. (2022)",
+    "more": "Metoden tränar kontinuerliga normaliserande flöden utan att simulera dem under träningen, genom att direkt regressera mot kända vektorfält för enkla vägar mellan brus och datapunkter. Diffusion blir ett specialfall. Med raka vägar från optimal transport behövs färre steg för att skapa en bild. Flow matching, och närbesläktade 'rectified flows', används i dag i modeller som Stable Diffusion 3 och Metas videomodeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två vägar från brus till bild",
+      "a": { "h": "Diffusion", "items": ["Krokig väg", "Många steg"] },
+      "b": { "h": "Flow matching (OT)", "items": ["Rak väg", "Färre steg"] }
+    }
+  },
+  {
+    "id": "modellkort",
+    "day": 278,
+    "kind": "ai",
+    "arxiv": "1810.03993",
+    "paper": "Model Cards for Model Reporting",
+    "hook": "Mat har innehållsförteckning. Varför inte AI-modeller?",
+    "title": "Modellkort",
+    "meta": "Margaret Mitchell m.fl. · FAT*, 2019",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "AI-modeller används i polis, vård och rekrytering – ofta utan tydlig dokumentation.",
+      "Ett modellkort är ett kort dokument som följer med modellen.",
+      "Det visar avsedd användning och hur väl modellen fungerar för olika grupper."
+    ],
+    "takeaway": "Det som ska användas av många måste dokumenteras.",
+    "source": "arXiv:1810.03993 · Mitchell m.fl. (2018)",
+    "more": "Kortet ska redovisa resultat uppdelat på till exempel kön, ålder, hudton och kombinationer av dessa, eftersom en modell kan fungera bra i snitt men dåligt för vissa grupper. Det ska också säga vad modellen inte är avsedd för och vilka etiska överväganden som gjorts. Idén spreds snabbt: i dag publiceras nästan alla öppna modeller med ett modellkort, till exempel på Hugging Face, och stora AI-bolag publicerar 'system cards'.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett modellkort innehåller",
+      "steps": ["Vad modellen är och vem som gjort den", "Avsedd – och olämplig – användning", "Resultat för olika grupper", "Etiska överväganden och brister"]
+    }
+  },
+  {
+    "id": "react-agenter",
+    "day": 279,
+    "kind": "ai",
+    "arxiv": "2210.03629",
+    "paper": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "hook": "Tänk, gör, titta, tänk igen. Receptet bakom dagens AI-agenter.",
+    "title": "ReAct",
+    "meta": "Shunyu Yao m.fl. · Princeton & Google, ICLR 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Språkmodeller kunde resonera, eller utföra handlingar – men sällan båda.",
+      "ReAct låter modellen växla: skriva en tanke, göra en handling, läsa resultatet.",
+      "Tankarna hjälper den att planera; handlingarna ger den ny information."
+    ],
+    "takeaway": "Tänkande och handlande gör varandra bättre.",
+    "source": "arXiv:2210.03629 · Yao m.fl. (2022)",
+    "more": "I frågesvarsuppgifter kunde modellen söka på Wikipedia mellan tankestegen och därmed hallucinera mindre än med bara tankekedjor. I textbaserade spel och en simulerad webbutik slog den metoder som tränats med förstärkningsinlärning. Att man kan läsa modellens tankar gör det också lättare att förstå och rätta dess beslut. Mönstret 'tanke – handling – observation' är grunden i många agentramverk i dag.",
+    "viz": {
+      "type": "flow",
+      "title": "ReAct-loopen",
+      "steps": ["Tanke: 'Jag behöver veta X'", "Handling: sök efter X", "Observation: läs resultatet", "Ny tanke – eller svar"]
+    }
+  },
+  {
+    "id": "lika-mojligheter",
+    "day": 280,
+    "kind": "ai",
+    "arxiv": "1610.02413",
+    "paper": "Equality of Opportunity in Supervised Learning",
+    "hook": "Vad betyder det att en algoritm är rättvis? Ett förslag: lika chans för de som förtjänar det.",
+    "title": "Lika möjligheter",
+    "meta": "Hardt, Price & Srebro · NeurIPS, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Att bara ta bort kön eller etnicitet ur datan räcker inte – annat kan avslöja dem.",
+      "Förslaget: bland dem som faktiskt skulle betala tillbaka ett lån ska alla grupper få lika chans.",
+      "Vilken modell som helst kan justeras i efterhand för att uppfylla kravet."
+    ],
+    "takeaway": "Rättvisa måste definieras för att kunna mätas.",
+    "source": "arXiv:1610.02413 · Hardt m.fl. (2016)",
+    "more": "Kriteriet kallas 'equalized odds' eller, i sin svagare form, 'equality of opportunity': träffsäkerheten för de positiva fallen ska vara lika i alla grupper. Det kan uppnås genom att välja olika trösklar för olika grupper. Författarna visar också att sådana statistiska mått har gränser – de kan inte skilja mellan vissa orsakssamband. Samma år visades att olika rättvisekriterier inte kan uppfyllas samtidigt.",
+    "viz": {
+      "type": "flow",
+      "title": "Kriteriet i ett exempel",
+      "steps": ["Personer som verkligen betalar tillbaka", "Andel som får lån – grupp A", "Andel som får lån – grupp B", "Ska vara lika"]
+    }
+  },
+  {
+    "id": "myntkast",
+    "day": 281,
+    "kind": "matte",
+    "arxiv": "2310.04153",
+    "paper": "Fair coins tend to land on the same side they started: Evidence from 350,757 flips",
+    "hook": "Singla slant är inte 50/50. 350 757 kast visade att myntet föredrar startsidan.",
+    "title": "Myntet minns",
+    "meta": "František Bartoš m.fl. · 2023",
+    "stat": "50,8 %",
+    "statLabel": "landade på samma sida som det startade",
+    "points": [
+      "En fysikmodell från 2007 förutsade att mynt oftare landar med startsidan upp.",
+      "48 personer singlade slant 350 757 gånger och filmade allt.",
+      "Resultatet: 50,8 % samma sida – precis som modellen sa."
+    ],
+    "takeaway": "Även slumpen har en liten bias.",
+    "source": "arXiv:2310.04153 · Bartoš m.fl. (2023)",
+    "more": "Diaconis, Holmes och Montgomery visade att ett mynt som kastas av en människa vinglar lite, så att det tillbringar mer tid med startsidan uppåt. Effekten varierade mellan personer – vissa kastade nästan perfekt, andra hade större bias. Om man inte vet vilken sida som är upp från början, är chansen för krona och klave fortfarande 50/50. Men om du ser startsidan och satsar på den, vinner du i längden. Studien fick Ig Nobelpriset i sannolikhet 2024.",
+    "viz": {
+      "type": "bars",
+      "title": "Andel samma sida som start",
+      "unit": "%",
+      "items": [{ "l": "Rättvist mynt (teori)", "v": 50, "t": "50,0 %" }, { "l": "Modellen 2007", "v": 51, "t": "≈51 %" }, { "l": "350 757 kast", "v": 50.8, "t": "50,8 %" }],
+      "hi": 2,
+      "max": 52,
+      "note": "Små skillnader – men statistiskt säkra."
+    }
+  },
+  {
+    "id": "vaningssangen",
+    "day": 282,
+    "kind": "matte",
+    "arxiv": "2410.02545",
+    "paper": "The bunkbed conjecture is false",
+    "hook": "En självklar gissning om 'våningssängar' visade sig vara fel – med en graf på 7 222 noder.",
+    "title": "Våningssängsgissningen faller",
+    "meta": "Gladkov, Pak & Zimin · 2024",
+    "stat": "7 222",
+    "statLabel": "noder i motexemplet",
+    "points": [
+      "Ta en graf och en kopia ovanpå den, med 'stegar' mellan våningarna.",
+      "Låt varje kant finnas med en viss chans. Är det lättare att nå en granne på samma våning?",
+      "Alla trodde ja. Men 2024 hittades en graf där det är tvärtom."
+    ],
+    "takeaway": "Intuition är inte bevis.",
+    "source": "arXiv:2410.02545 · Gladkov m.fl. (2024)",
+    "more": "Förmodan formulerades av Kasteleyn 1985 och verkade så självklar att många försökte bevisa den. Motexemplet bygger på ett arbete av Lawrence Hollom om hypergrafer. Skillnaden i sannolikhet är extremt liten, så den går inte att se i simuleringar – den måste bevisas. Författarna valde medvetet ett rigoröst bevis framför ett statistiskt test, och Igor Pak skrev om varför det är viktigt att inte förlita sig på Monte Carlo-simuleringar för sådana frågor.",
+    "viz": {
+      "type": "flow",
+      "title": "Våningssängen",
+      "steps": ["Graf på nedre våningen", "Kopia på övre våningen", "Stegar mellan motsvarande noder", "Samma våning alltid lättare? Nej!"]
+    }
+  },
+  {
+    "id": "swe-bench",
+    "day": 283,
+    "kind": "ai",
+    "arxiv": "2310.06770",
+    "paper": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "hook": "Riktiga buggar från riktiga projekt. 2023 löste den bästa AI:n under 2 %.",
+    "title": "SWE-bench",
+    "meta": "Carlos Jimenez m.fl. · Princeton, ICLR 2024",
+    "stat": "2 294",
+    "statLabel": "riktiga ärenden från 12 Python-projekt",
+    "points": [
+      "Tidigare kodtest bestod av korta, fristående uppgifter.",
+      "SWE-bench ger AI:n en hel kodbas och en buggrapport från GitHub.",
+      "Lösningen godkänns bara om projektets egna tester går igenom."
+    ],
+    "takeaway": "Verkliga uppgifter är det enda riktiga testet.",
+    "source": "arXiv:2310.06770 · Jimenez m.fl. (2023)",
+    "more": "Uppgifterna kommer från välkända projekt som Django, scikit-learn och matplotlib. Att lösa dem kräver ofta ändringar i flera filer, förståelse av lång kod och att köra tester. Den bästa modellen när testet släpptes, Claude 2, löste knappt 2 procent. Under de följande åren steg resultaten snabbt med AI-agenter som kan köra kod och söka i projekt, och SWE-bench blev ett av de viktigaste måtten för AI-programmering.",
+    "viz": {
+      "type": "flow",
+      "title": "En uppgift i SWE-bench",
+      "steps": ["En buggrapport från GitHub", "Hela kodbasen", "AI:n skriver en ändring", "Projektets tester avgör"]
+    }
+  },
+  {
+    "id": "bert",
+    "day": 284,
+    "kind": "ai",
+    "arxiv": "1810.04805",
+    "paper": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "hook": "Göm ett ord i en mening och låt AI:n gissa. Så lärde sig BERT förstå språk.",
+    "title": "BERT",
+    "meta": "Jacob Devlin m.fl. · Google, NAACL 2019",
+    "stat": "11",
+    "statLabel": "språkuppgifter där BERT satte nya rekord",
+    "points": [
+      "BERT läser texten åt båda hållen samtidigt, inte bara från vänster.",
+      "Den förtränas genom att gissa dolda ord och om två meningar hör ihop.",
+      "Sedan räcker ett litet extra lager för att anpassa den till nya uppgifter."
+    ],
+    "takeaway": "Förträning plus finjustering – receptet som tog över.",
+    "source": "arXiv:1810.04805 · Devlin m.fl. (2018)",
+    "more": "Tidigare språkmodeller läste ofta åt ett håll och kunde därför bara använda kontexten på ena sidan av ett ord. Genom att maskera ord kunde BERT använda båda. Den slog rekord i frågesvar, logisk slutledning och känsloanalys. Google började använda BERT i sökmotorn 2019. Sedan dess har GPT-liknande modeller tagit över många uppgifter, men BERT-liknande modeller används fortfarande flitigt för sökning och klassificering.",
+    "viz": {
+      "type": "flow",
+      "title": "Gissa det dolda ordet",
+      "steps": ["'Katten [MASK] på mattan'", "BERT läser åt båda hållen", "Gissning: 'sitter'", "Upprepa miljardtals gånger"]
+    }
+  },
+  {
+    "id": "robothand-rubiks-kub",
+    "day": 285,
+    "kind": "ai",
+    "arxiv": "1910.07113",
+    "paper": "Solving Rubik's Cube with a Robot Hand",
+    "hook": "En robothand lärde sig vrida en Rubiks kub – helt i simulering.",
+    "title": "Robothanden och kuben",
+    "meta": "OpenAI · 2019",
+    "stat": "60 %",
+    "statLabel": "av försöken lyckades",
+    "points": [
+      "Att träna robotar i verkligheten är långsamt och dyrt.",
+      "OpenAI tränade i simulering där friktion, vikt och färger hela tiden slumpades.",
+      "Simuleringen gjordes automatiskt svårare – och det lärda fungerade i verkligheten."
+    ],
+    "takeaway": "Träna i en föränderlig värld – så klarar du den verkliga.",
+    "source": "arXiv:1910.07113 · OpenAI (2019)",
+    "more": "Metoden kallas automatisk domänrandomisering (ADR). Handen kunde lösa kuben även när forskarna störde den med en gummihandske, fingrar som var hopbundna eller en giraffleksak som knuffade. Vilka vridningar som skulle göras räknades ut med en vanlig algoritm – nätverket skötte den svåra delen, att faktiskt utföra dem med fingrarna. Med de svåraste blandningarna lyckades handen i 20 procent av försöken.",
+    "viz": {
+      "type": "flow",
+      "title": "Från simulering till verklighet",
+      "steps": ["Simulerad hand och kub", "Slumpa fysik och utseende", "Gör det svårare när det går bra", "Samma nätverk i verkligheten"]
+    }
+  },
+  {
+    "id": "edges-21-cm",
+    "day": 286,
+    "kind": "rymd",
+    "arxiv": "1810.05912",
+    "paper": "An absorption profile centred at 78 megahertz in the sky-averaged spectrum",
+    "hook": "En liten antenn i Australiens öken hörde kanske de första stjärnornas eko.",
+    "title": "Kosmisk gryning i radio",
+    "meta": "Judd Bowman m.fl. · EDGES, Nature 2018",
+    "stat": "78",
+    "statLabel": "MHz – där signalen syntes",
+    "points": [
+      "De första stjärnornas ljus ändrade hur vätegas absorberade bakgrundsstrålning.",
+      "EDGES letade efter det spåret i radiospektrumet från hela himlen.",
+      "Signalen syntes – men var dubbelt så stark som någon modell förutsagt."
+    ],
+    "takeaway": "En överraskande signal måste upprepas.",
+    "source": "arXiv:1810.05912 · Bowman m.fl. (2018)",
+    "more": "Väte har en känd övergång vid 21 centimeter. Från en tid omkring 180 miljoner år efter Big Bang borde den synas som en absorption, idag förskjuten till runt 78 MHz. Att signalen var så djup antydde att gasen var kallare än väntat – kanske på grund av ovanliga egenskaper hos mörk materia. Men att skilja den från bruset från Vintergatan är extremt svårt. 2022 letade experimentet SARAS 3 i Indien efter samma signal och hittade den inte.",
+    "viz": {
+      "type": "timeline",
+      "title": "Universums tidiga historia",
+      "ev": [
+        { "t": "380 000 år", "d": "Bakgrundsstrålningen frigörs" },
+        { "t": "Mörka tiden", "d": "Inga stjärnor än" },
+        { "t": "≈180 milj. år", "d": "Första stjärnorna – EDGES-signalen?" },
+        { "t": "2022", "d": "SARAS 3 hittar inte signalen" }
+      ]
+    }
+  },
+  {
+    "id": "twitterhumor-borsen",
+    "day": 287,
+    "kind": "liv",
+    "arxiv": "1010.3003",
+    "paper": "Twitter mood predicts the stock market",
+    "hook": "När Twitter var lugnt steg börsen några dagar senare. Eller?",
+    "title": "Twitterhumöret och börsen",
+    "meta": "Bollen, Mao & Zeng · J. Comput. Sci., 2011",
+    "stat": "87,6 %",
+    "statLabel": "träffsäkerhet för börsens upp och ner – i studien",
+    "points": [
+      "Forskarna mätte folks humör i miljontals tweets längs sex dimensioner.",
+      "Dimensionen 'lugn' hängde ihop med Dow Jones-index några dagar senare.",
+      "En modell med humöret förutsade börsens riktning i 87,6 % av dagarna."
+    ],
+    "takeaway": "Ett spännande samband måste bekräftas innan man satsar.",
+    "source": "arXiv:1010.3003 · Bollen m.fl. (2010)",
+    "more": "Studien blev mycket uppmärksammad, och en hedgefond startades med idén. Men testperioden var kort – bara några veckor i slutet av 2008 – och många kritiker pekade på att resultaten kunde vara en slump eller bero på hur modellerna valdes. Hedgefonden lades ned efter en kort tid. Senare forskning har gett blandade resultat om sociala medier och börsen. Studien används ofta som exempel på risken med överanpassning.",
+    "viz": {
+      "type": "flow",
+      "title": "Studiens idé",
+      "steps": ["Miljoner tweets varje dag", "Mät humör: lugn, glad, alert …", "Jämför med börsen några dagar senare", "'Lugn' verkade förutsäga uppgång"]
+    }
+  },
+  {
+    "id": "gw170817-multibudbarare",
+    "day": 288,
+    "kind": "rymd",
+    "arxiv": "1710.05833",
+    "paper": "Multi-messenger Observations of a Binary Neutron Star Merger",
+    "hook": "Två neutronstjärnor krockade. Gravitationsvågor och ljus kom fram nästan samtidigt.",
+    "title": "Krocken som sågs och hördes",
+    "meta": "LIGO, Virgo m.fl. · ApJ Letters, 2017",
+    "stat": "1,7",
+    "statLabel": "sekunder mellan gravitationsvågen och gammablixten",
+    "points": [
+      "17 augusti 2017 fångade LIGO och Virgo vågor från två neutronstjärnor som smälte samman.",
+      "1,7 sekunder senare såg Fermi en gammablixt från samma del av himlen.",
+      "Inom 11 timmar hittades en ljus 'kilonova' i galaxen NGC 4993."
+    ],
+    "takeaway": "Flera budbärare berättar hela historien.",
+    "source": "arXiv:1710.05833 · LIGO, Virgo m.fl. (2017)",
+    "more": "Händelsen observerades av omkring 70 teleskop och tusentals astronomer i alla våglängder. Kilonovan visade att tunga grundämnen som guld och platina bildas i sådana krockar. Att ljus och gravitationsvågor kom fram nästan samtidigt efter 130 miljoner år visade att gravitationsvågor färdas med ljusets hastighet, vilket uteslöt många alternativa gravitationsteorier. Det var multibudbärarastronomins genombrott.",
+    "viz": {
+      "type": "timeline",
+      "title": "17 augusti 2017",
+      "ev": [
+        { "t": "12:41:04", "d": "Gravitationsvågor når jorden" },
+        { "t": "+1,7 s", "d": "Gammablixt syns" },
+        { "t": "+11 h", "d": "Kilonova hittas i NGC 4993" },
+        { "t": "Veckor", "d": "Röntgen och radio följer" }
+      ]
+    }
+  }
+]

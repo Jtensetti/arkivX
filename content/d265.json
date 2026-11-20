@@ -1,0 +1,316 @@
+[
+  {
+    "id": "opera-neutriner",
+    "day": 265,
+    "kind": "fysik",
+    "arxiv": "1109.4897",
+    "paper": "Measurement of the neutrino velocity with the OPERA detector in the CNGS beam",
+    "hook": "2011: neutriner verkade färdas snabbare än ljuset. Felet var en lös kabel.",
+    "title": "Snabbare än ljuset?",
+    "meta": "OPERA-samarbetet · JHEP, 2012",
+    "stat": "60",
+    "statLabel": "nanosekunder för tidigt – enligt den första mätningen",
+    "points": [
+      "Neutriner skickades 730 km från CERN till Gran Sasso i Italien.",
+      "De verkade komma fram 60 nanosekunder före ljuset – mot relativitetsteorin.",
+      "Forskarna bad själva andra att hitta felet. En lös fiberkabel visade sig vara boven."
+    ],
+    "takeaway": "Det troligaste är ett fel – be andra hjälpa dig hitta det.",
+    "source": "arXiv:1109.4897 · OPERA (2011)",
+    "more": "Forskarna var försiktiga redan från början och presenterade resultatet som en avvikelse de inte kunde förklara. Under 2012 hittades två fel i tidsmätningen: en dåligt ansluten optisk kabel och en klocka som gick fel. Ny mätning, och oberoende experiment som ICARUS, visade att neutrinerna färdas med ljusets hastighet inom felmarginalen. Den slutliga versionen av artikeln, som finns på arXiv, redovisar det korrigerade resultatet. Ledaren för experimentet avgick.",
+    "viz": {
+      "type": "timeline",
+      "title": "Fallet med de snabba neutrinerna",
+      "ev": [
+        { "t": "Sep 2011", "d": "OPERA: 60 ns för tidigt" },
+        { "t": "Feb 2012", "d": "En lös fiberkabel upptäcks" },
+        { "t": "Mars 2012", "d": "ICARUS: ljusets hastighet, inget mer" },
+        { "t": "Juli 2012", "d": "Korrigerat resultat publiceras" }
+      ]
+    }
+  },
+  {
+    "id": "superposition-leksaksmodeller",
+    "day": 266,
+    "kind": "ai",
+    "arxiv": "2209.10652",
+    "paper": "Toy Models of Superposition",
+    "hook": "En enda neuron kan betyda både 'katt' och 'bil'. Varför?",
+    "title": "Superposition",
+    "meta": "Nelson Elhage m.fl. · Anthropic, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Neuroner i stora nätverk reagerar ofta på flera orelaterade saker.",
+      "I små leksaksmodeller visade forskarna varför: modellen trycker in fler begrepp än den har neuroner.",
+      "Det går när begreppen sällan förekommer samtidigt – de lagras 'i superposition'."
+    ],
+    "takeaway": "Nätverk packar mer än de har plats för.",
+    "source": "arXiv:2209.10652 · Elhage m.fl. (2022)",
+    "more": "Fenomenet kallas polysemanticitet och gör det svårt att tolka nätverk neuron för neuron. Leksaksmodellerna visade tydliga fasövergångar mellan att lagra begrepp separat och i superposition, och att begreppen ordnar sig i vackra geometriska former. Insikten ledde till metoder som sparse autoencoders, som försöker 'packa upp' begreppen igen, och som senare användes för att hitta miljontals tolkbara begrepp i stora språkmodeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att lagra begrepp",
+      "a": { "h": "Ett per neuron", "items": ["Lätt att tolka", "Få begrepp"] },
+      "b": { "h": "Superposition", "items": ["Svårt att tolka", "Många fler begrepp"] }
+    }
+  },
+  {
+    "id": "omvandningsforbannelsen",
+    "day": 267,
+    "kind": "ai",
+    "arxiv": "2309.12288",
+    "paper": "The Reversal Curse: LLMs trained on \"A is B\" fail to learn \"B is A\"",
+    "hook": "En AI vet vem Tom Cruises mamma är – men inte vem hennes son är.",
+    "title": "Omvändningens förbannelse",
+    "meta": "Lukas Berglund m.fl. · ICLR, 2024",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Lär en språkmodell att 'A är B' – då lär den sig inte automatiskt att 'B är A'.",
+      "Forskarna tränade modeller på påhittade fakta och testade omvända frågor.",
+      "Svaren var inte bättre än slumpen – kunskapen gick bara åt ett håll."
+    ],
+    "takeaway": "Det som är självklart för oss är inte självklart för AI.",
+    "source": "arXiv:2309.12288 · Berglund m.fl. (2023)",
+    "more": "Även i verkliga modeller syntes effekten. GPT-4 kunde i många fall svara på vem en känd persons förälder är, men mycket sämre på den omvända frågan om förälderns barn. Om båda påståendena finns i samma prompt kan modellen dock dra slutsatsen. Fenomenet säger något om hur kunskap lagras i nätverk som lär sig förutsäga nästa ord, och är ett argument för att träningsdata bör innehålla information i båda riktningarna.",
+    "viz": {
+      "type": "split",
+      "title": "Samma fakta, två riktningar",
+      "a": { "h": "A → B", "items": ["'Tom Cruises mamma?'", "Ofta rätt"] },
+      "b": { "h": "B → A", "items": ["'Hennes son?'", "Ofta fel"] }
+    }
+  },
+  {
+    "id": "gsm-symbolic",
+    "day": 268,
+    "kind": "ai",
+    "arxiv": "2410.05229",
+    "paper": "GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models",
+    "hook": "Byt bara namnen och siffrorna i en mattefråga – och AI:n räknar sämre.",
+    "title": "GSM-Symbolic",
+    "meta": "Iman Mirzadeh m.fl. · Apple, ICLR 2025",
+    "stat": "65 %",
+    "statLabel": "– så mycket kunde resultaten sjunka med en irrelevant mening",
+    "points": [
+      "Testet GSM8K med skolmatte har blivit lätt för språkmodeller.",
+      "Apple gjorde mallar där namn och tal kan bytas – samma uppgift, nya versioner.",
+      "Resultaten varierade mycket, och en ovidkommande mening fick dem att rasa."
+    ],
+    "takeaway": "Att klara ett test är inte samma sak som att förstå.",
+    "source": "arXiv:2410.05229 · Mirzadeh m.fl. (2024)",
+    "more": "Exempel: 'Oliver plockar 44 kiwi på fredag … fem av dem var lite mindre än genomsnittet.' Den sista meningen påverkar inte svaret, men många modeller drog ändå bort fem. Sådana tillägg, kallade GSM-NoOp, sänkte resultaten med upp till 65 procent. Forskarna menar att modellerna snarare matchar mönster från träningen än resonerar formellt. Nyare resonerande modeller har klarat testet bättre, men frågan om vad 'resonemang' betyder för AI är fortfarande het.",
+    "viz": {
+      "type": "flow",
+      "title": "En fråga med en fälla",
+      "steps": ["Oliver plockar 44 kiwi på fredag …", "… och dubbelt så många på söndag", "'Fem var lite mindre än vanligt'", "Modellen drar felaktigt bort 5"]
+    }
+  },
+  {
+    "id": "diskret-tidskristall",
+    "day": 269,
+    "kind": "fysik",
+    "arxiv": "1609.08684",
+    "paper": "Observation of a Discrete Time Crystal",
+    "hook": "Tio atomer i en fälla tickade i sin egen takt – den första tidskristallen.",
+    "title": "Den första tidskristallen",
+    "meta": "Jiehang Zhang m.fl. · Nature, 2017",
+    "stat": "10",
+    "statLabel": "ytterbiumjoner i en kedja",
+    "points": [
+      "Wilczeks tidskristall i jämvikt visades vara omöjlig.",
+      "Men ett system som drivs med pulser kan svara med en annan, långsammare takt.",
+      "Forskarna såg exakt det i en kedja av fångade joner – och mönstret var stabilt."
+    ],
+    "takeaway": "Nya faser av materia kan finnas utanför jämvikt.",
+    "source": "arXiv:1609.08684 · Zhang m.fl. (2016)",
+    "more": "Jonernas spinn vändes med laserpulser, och de svarade med dubbla perioden – en 'subharmonisk' svängning. Det viktiga var att svängningen stod sig även när pulserna inte var perfekta, eftersom växelverkan mellan jonerna låste fast rytmen. Oordning, så kallad mångkroppslokalisering, hindrade systemet från att värmas upp. Samtidigt visade en grupp vid Harvard samma fenomen i diamanter.",
+    "viz": {
+      "type": "split",
+      "title": "Drivning och svar",
+      "a": { "h": "Laserpulser", "items": ["Period T", "Inte helt exakta"] },
+      "b": { "h": "Jonernas spinn", "items": ["Period 2T", "Stabil ändå"] }
+    }
+  },
+  {
+    "id": "lorimer-blixten",
+    "day": 270,
+    "kind": "rymd",
+    "arxiv": "0709.4301",
+    "paper": "A bright millisecond radio burst of extragalactic origin",
+    "hook": "En forskare letade i gamla data och hittade en radioblixt som ingen förstod.",
+    "title": "Den första radioblixten",
+    "meta": "Duncan Lorimer m.fl. · Science, 2007",
+    "stat": "5",
+    "statLabel": "millisekunder – blixtens längd",
+    "points": [
+      "En student hittade en kraftig blixt i arkivdata från ett pulsarteleskop i Australien.",
+      "Fördröjningen mellan frekvenserna tydde på ett avstånd långt utanför Vintergatan.",
+      "Ingen ny blixt syntes på samma plats – det verkade vara en engångshändelse."
+    ],
+    "takeaway": "Gamla data kan gömma nya fenomen.",
+    "source": "arXiv:0709.4301 · Lorimer m.fl. (2007)",
+    "more": "Blixten kom från 2001 års data från Parkesteleskopet och kallas ofta 'Lorimerblixten'. Kortare radiovågor anlände före längre, eftersom de bromsas olika mycket av fria elektroner på vägen – ju mer dispersion, desto längre bort. Under flera år var den unik, och vissa trodde att den var en störning. I dag känner man till tusentals snabba radioblixtar, och teleskopet CHIME upptäcker flera om dagen.",
+    "viz": {
+      "type": "timeline",
+      "title": "Från en blixt till tusentals",
+      "ev": [
+        { "t": "2001", "d": "Blixten registreras – men ingen ser den" },
+        { "t": "2007", "d": "Hittas i arkivdata" },
+        { "t": "2013", "d": "Fler blixtar bekräftas" },
+        { "t": "Idag", "d": "Tusentals kända" }
+      ]
+    }
+  },
+  {
+    "id": "panik-i-folkmassor",
+    "day": 271,
+    "kind": "liv",
+    "arxiv": "cond-mat/0009448",
+    "paper": "Simulating Dynamical Features of Escape Panic",
+    "hook": "I panik blir det trängre när alla skyndar sig. 'Fortare är långsammare.'",
+    "title": "Panik vid utgången",
+    "meta": "Helbing, Farkas & Vicsek · Nature, 2000",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Simuleringar av folkmassor visade vad som händer när alla vill ut samtidigt.",
+      "När farten ökar bildas valv vid dörren som blockerar flödet.",
+      "En pelare strax framför utgången kunde paradoxalt nog öka flödet."
+    ],
+    "takeaway": "Ibland går det fortare om alla tar det lugnt.",
+    "source": "arXiv:cond-mat/0009448 · Helbing m.fl. (2000)",
+    "more": "Modellen byggde på sociala krafter mellan fotgängare plus fysisk kontakt och friktion. När människor trycker på bildas tryckvågor och 'valv' av kroppar vid trånga passager, så att färre kommer ut per sekund. Panik gjorde också att folk följde massan i stället för att hitta andra utgångar. Studien skrevs efter tragedier som den vid Roskildefestivalen 2000, och idéerna används i dag när arenor och evakueringsvägar planeras.",
+    "viz": {
+      "type": "split",
+      "title": "Fortare är långsammare",
+      "a": { "h": "Lugnt", "items": ["Jämnt flöde", "Fler kommer ut"] },
+      "b": { "h": "Panik", "items": ["Valv vid dörren", "Färre kommer ut"] }
+    }
+  },
+  {
+    "id": "dreamfusion",
+    "day": 272,
+    "kind": "ai",
+    "arxiv": "2209.14988",
+    "paper": "DreamFusion: Text-to-3D using 2D Diffusion",
+    "hook": "Skriv 'en ekorre som spelar banjo' – och få en 3D-modell. Utan en enda 3D-träningsbild.",
+    "title": "DreamFusion",
+    "meta": "Ben Poole m.fl. · Google, ICLR 2023",
+    "stat": "0",
+    "statLabel": "3D-modeller användes i träningen",
+    "points": [
+      "Det finns miljarder bilder med text, men få 3D-modeller att träna på.",
+      "DreamFusion låter en 2D-bildmodell bedöma en 3D-modell från många vinklar.",
+      "3D-modellen justeras tills varje vy ser ut som en bra bild av beskrivningen."
+    ],
+    "takeaway": "Platta bilder kan lära oss om djup.",
+    "source": "arXiv:2209.14988 · Poole m.fl. (2022)",
+    "more": "3D-modellen är en NeRF som startar slumpmässigt. För varje slumpvis vy används diffusionsmodellen Imagen för att avgöra hur bilden borde ändras för att bättre matcha texten – en metod som kallas score distillation sampling. Resultaten kunde ses från alla håll och belysas på nya sätt. Metoden var långsam, men den startade ett helt fält av text-till-3D.",
+    "viz": {
+      "type": "flow",
+      "title": "Från text till 3D",
+      "steps": ["Börja med en slumpmässig 3D-modell", "Rendera från en slumpvis vinkel", "Bildmodellen säger hur den ska ändras", "Upprepa från många vinklar"]
+    }
+  },
+  {
+    "id": "earendel",
+    "day": 273,
+    "kind": "rymd",
+    "arxiv": "2209.14866",
+    "paper": "A Highly Magnified Star at Redshift 6.2",
+    "hook": "Den mest avlägsna stjärna som setts – förstorad tusentals gånger av en galaxhop.",
+    "title": "Earendel",
+    "meta": "Brian Welch m.fl. · Nature, 2022",
+    "stat": "900",
+    "statLabel": "miljoner år efter Big Bang – då ljuset sändes ut",
+    "points": [
+      "Enskilda stjärnor i avlägsna galaxer brukar vara omöjliga att se.",
+      "En galaxhop framför fungerar som ett förstoringsglas – gravitationslinsning.",
+      "Earendel förstoras tusentals gånger och har syntes i flera år."
+    ],
+    "takeaway": "Universum kan förstora sig själv.",
+    "source": "arXiv:2209.14866 · Welch m.fl. (2022)",
+    "more": "Namnet kommer från fornengelskans ord för 'morgonstjärna' och syftar också på Tolkiens Eärendil. Ljuset har färdats i ungefär 12,9 miljarder år. Stjärnan ligger nästan exakt på linsens 'kritiska kurva', där förstoringen blir extrem. Från ljusstyrkan uppskattades att den är minst 50 gånger tyngre än solen, men den kan också vara ett par stjärnor. Senare JWST-observationer har studerat den närmare.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett kosmiskt förstoringsglas",
+      "steps": ["Stjärna i en avlägsen galax", "Galaxhop framför böjer ljuset", "Förstoring tusentals gånger", "Hubble kan se en enda stjärna"]
+    }
+  },
+  {
+    "id": "representation-engineering",
+    "day": 274,
+    "kind": "ai",
+    "arxiv": "2310.01405",
+    "paper": "Representation Engineering: A Top-Down Approach to AI Transparency",
+    "hook": "Hitta 'ärlighet' inuti en AI – och skruva upp den.",
+    "title": "Representationsteknik",
+    "meta": "Andy Zou m.fl. · Center for AI Safety, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "I stället för enskilda neuroner tittar metoden på mönster i hela nätverket.",
+      "Jämför aktiveringar när modellen är ärlig och när den ljuger.",
+      "Skillnaden blir en riktning som kan övervakas – eller förstärkas."
+    ],
+    "takeaway": "Begrepp i AI kan hittas uppifrån och ned.",
+    "source": "arXiv:2310.01405 · Zou m.fl. (2023)",
+    "more": "Inspirationen kommer från kognitiv neurovetenskap, där man studerar mönster i hela hjärnan snarare än enskilda celler. Forskarna hittade representationer för begrepp som ärlighet, känslor, maktsträvan och skadlighet. Genom att lägga till eller dra ifrån en sådan riktning under körning kunde de styra beteendet, till exempel göra modellen mer sanningsenlig på faktatester. Metoden är enkel och har blivit populär, men vad riktningarna egentligen fångar är inte alltid klart.",
+    "viz": {
+      "type": "flow",
+      "title": "Hitta och styra ett begrepp",
+      "steps": ["Be modellen vara ärlig", "Be modellen ljuga", "Skillnaden i aktivering = 'ärlighet'", "Läs av eller förstärk riktningen"]
+    }
+  },
+  {
+    "id": "hawkingstralning-i-labbet",
+    "day": 275,
+    "kind": "fysik",
+    "arxiv": "1510.00621",
+    "paper": "Observation of quantum Hawking radiation and its entanglement in an analogue black hole",
+    "hook": "Ett svart hål för ljud i en ultrakall gas avgav Hawkingstrålning.",
+    "title": "Hawkingstrålning i labbet",
+    "meta": "Jeff Steinhauer · Technion, Nature Physics 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Hawking förutsade att svarta hål sänder ut svag strålning från kvantfluktuationer.",
+      "I ett Bose–Einstein-kondensat kan ljudvågor fångas, som ljus i ett svart hål.",
+      "Steinhauer såg par av ljudkvanta – ett utanför, ett innanför – och de var sammanflätade."
+    ],
+    "takeaway": "Även det omätbara kan efterliknas.",
+    "source": "arXiv:1510.00621 · Steinhauer (2015)",
+    "more": "Idén till 'akustiska svarta hål' kommer från fysikern William Unruh 1981. I kondensatet flödar atomerna snabbare än ljudets hastighet på ena sidan av en gräns, så att ljud inte kan ta sig ut – en ljudhorisont. Hawkingstrålning från riktiga svarta hål är alldeles för svag för att mätas. Experimentet visade att strålningen uppstår och är ungefär termisk, som teorin säger. Det är en analog, så det bevisar inte att verkliga svarta hål strålar.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett svart hål för ljud",
+      "steps": ["Ultrakall gas av atomer", "Flödet blir snabbare än ljudet", "En ljudhorisont uppstår", "Par av ljudkvanta skapas vid den"]
+    }
+  },
+  {
+    "id": "smorgasbord-fysik",
+    "day": 276,
+    "kind": "fysik",
+    "arxiv": "physics/0210015",
+    "paper": "The physics of stone skipping",
+    "hook": "Hur får man en sten att studsa så många gånger som möjligt? Fysiken har svaret.",
+    "title": "Fysiken bakom smörgåsar",
+    "meta": "Lydéric Bocquet · Am. J. Phys., 2003",
+    "stat": "88",
+    "statLabel": "studsar – världsrekordet i att kasta smörgås",
+    "points": [
+      "När stenen träffar vattnet ger trycket en kraft uppåt – om vinkeln är rätt.",
+      "Varje studs bromsar stenen; studsarna tar slut när farten blir för låg.",
+      "Snurr gör stenen stabil, som ett gyroskop, så att den inte välter."
+    ],
+    "takeaway": "Även lek följer naturlagar.",
+    "source": "arXiv:physics/0210015 · Bocquet (2002)",
+    "more": "Bocquet tog fram en enkel modell av kollisionen mellan sten och vatten. Den ger en uppskattning av hur många studsar som är möjliga, beroende på fart och snurr, och visar att stenen måste lutas lagom mot vattenytan. Experiment några år senare visade att runt 20 grader är den bästa vinkeln. Rekordet, 88 studsar, sattes av Kurt Steiner 2013. På svenska kallas leken att 'kasta smörgås'.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett bra kast",
+      "steps": ["Platt sten, hög fart", "Lagom lutning mot vattnet", "Mycket snurr för stabilitet", "Många studsar"]
+    }
+  }
+]

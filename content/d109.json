@@ -1,0 +1,318 @@
+[
+  {
+    "id": "rope",
+    "day": 109,
+    "kind": "ai",
+    "arxiv": "2104.09864",
+    "paper": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+    "hook": "Hur vet en språkmodell i vilken ordning orden kommer? Den vrider dem.",
+    "title": "RoPE: roterande positioner",
+    "meta": "Jianlin Su m.fl. · Zhuiyi, 2021",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En transformer ser alla ord samtidigt och vet inte själv deras ordning.",
+      "RoPE vrider varje ords vektor med en vinkel som beror på dess position.",
+      "När två ord jämförs blir det bara skillnaden i position som spelar roll."
+    ],
+    "takeaway": "Ett enkelt geometriskt knep kan bli standard.",
+    "source": "arXiv:2104.09864 · Su m.fl. (2021)",
+    "more": "Tidigare lade man till en positionsvektor på varje ord. RoPE använder i stället rotationsmatriser, så att den absoluta positionen kodas men uppmärksamheten mellan två ord bara beror på deras relativa avstånd. Det gör också att sambandet mellan ord avtar naturligt med avståndet. Metoden publicerades först på en kinesisk blogg och används i dag i de flesta stora språkmodeller, som LLaMA.",
+    "viz": {
+      "type": "flow",
+      "title": "Så kodas positionen",
+      "steps": ["Ord nr 1: vrid lite", "Ord nr 2: vrid lite mer", "Ord nr n: vrid n steg", "Jämförelsen ser bara skillnaden"]
+    }
+  },
+  {
+    "id": "zipf-schackoppningar",
+    "day": 110,
+    "kind": "liv",
+    "arxiv": "0704.2711",
+    "paper": "Zipf law in the popularity distribution of chess openings",
+    "hook": "Schacköppningar följer samma lag som ord i ett språk.",
+    "title": "Zipfs lag i schack",
+    "meta": "Blasius & Tönjes · PRL, 2009",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Zipfs lag: det vanligaste ordet används dubbelt så ofta som det näst vanligaste, och så vidare.",
+      "Forskarna räknade öppningar i stora schackdatabaser – och såg samma mönster.",
+      "Förklaringen: schackets spelträd förgrenar sig på ett självlikt sätt."
+    ],
+    "takeaway": "Samma lagar dyker upp i ord, städer och schack.",
+    "source": "arXiv:0704.2711 · Blasius & Tönjes (2007)",
+    "more": "När forskarna slog ihop alla öppningar oavsett djup följde populariteten Zipfs lag med en universell exponent nära 2 i fördelningen. För varje enskilt djup i partiet följde de också potenslagar, med exponenter som ökar med djupet. En enkel modell där varje drag delar upp sannolikheten slumpmässigt på möjliga fortsättningar räckte för att förklara mönstret. Resultatet gäller många processer där beslut fattas i steg.",
+    "viz": {
+      "type": "flow",
+      "title": "Spelträdet förgrenar sig",
+      "steps": ["Första draget: några vanliga val", "Varje val delas i nya val", "Populariteten splittras i varje steg", "Resultat: Zipfs lag"]
+    }
+  },
+  {
+    "id": "sno-neutriner",
+    "day": 111,
+    "kind": "fysik",
+    "arxiv": "nucl-ex/0204008",
+    "paper": "Direct Evidence for Neutrino Flavor Transformation from Neutral-Current Interactions in the Sudbury Neutrino Observatory",
+    "hook": "Två tredjedelar av solens neutriner verkade saknas. De hade bara bytt skepnad.",
+    "title": "Solneutrinernas gåta löst",
+    "meta": "SNO-samarbetet · PRL, 2002",
+    "stat": "5,3σ",
+    "statLabel": "säkerhet för att neutriner byter typ",
+    "points": [
+      "Solen skickar elektronneutriner, men detektorer såg bara en tredjedel av dem.",
+      "SNO kunde med tungt vatten mäta alla tre neutrinotyper på en gång.",
+      "Totalen stämde med solmodellerna – resten hade bytt till andra typer."
+    ],
+    "takeaway": "Det som saknas kan ha bytt form.",
+    "source": "arXiv:nucl-ex/0204008 · SNO (2002)",
+    "more": "Sudbury Neutrino Observatory låg två kilometer under jord i en gruva i Kanada och innehöll 1 000 ton tungt vatten. Vissa reaktioner känner bara av elektronneutriner, medan neutralströmsreaktionen känner av alla typer. Jämförelsen visade att ungefär två tredjedelar av neutrinerna anlände som andra typer. Det betyder att neutriner har massa, vilket inte ingår i standardmodellen. Arthur McDonald fick Nobelpriset 2015 för SNO tillsammans med Takaaki Kajita från Super-Kamiokande.",
+    "viz": {
+      "type": "bars",
+      "title": "Neutriner från solen (miljoner/cm²/s)",
+      "unit": "",
+      "items": [{ "l": "Elektronneutriner", "v": 1.76, "t": "1,76" }, { "l": "Andra typer", "v": 3.41, "t": "3,41" }, { "l": "Totalt", "v": 5.09, "t": "5,09" }],
+      "hi": 1,
+      "max": 6
+    }
+  },
+  {
+    "id": "tomma-hexagonen",
+    "day": 112,
+    "kind": "matte",
+    "arxiv": "2403.17370",
+    "paper": "Formal Verification of the Empty Hexagon Number",
+    "hook": "Bland 30 punkter finns alltid en tom sexhörning. En dator bevisade det – och en annan kollade.",
+    "title": "Den tomma sexhörningen",
+    "meta": "Subercaseaux m.fl. · ITP, 2024",
+    "stat": "30",
+    "statLabel": "punkter räcker alltid för en tom sexhörning",
+    "points": [
+      "Sprid ut punkter utan att tre hamnar på en linje. Finns det en tom sexhörning?",
+      "Heule och Scheucher visade med en SAT-lösare att svaret alltid är ja vid 30 punkter.",
+      "Här kontrollerades hela resonemanget i bevisassistenten Lean."
+    ],
+    "takeaway": "Lita på datorbevis – men kolla dem med en annan dator.",
+    "source": "arXiv:2403.17370 · Subercaseaux m.fl. (2024)",
+    "more": "Frågan går tillbaka till Erdős och Szekeres på 1930-talet. 'Tom' betyder att inga andra punkter ligger inuti sexhörningen. Man visste att 29 punkter kan placeras utan en tom sexhörning. Beviset för 30 krävde 17 300 processortimmar och gav ett enormt logiskt bevis. Den formella verifieringen i Lean säkerställer att översättningen från geometri till logik är korrekt – den svagaste länken i sådana datorbevis.",
+    "viz": {
+      "type": "flow",
+      "title": "Från geometri till bevis",
+      "steps": ["Geometrisk fråga om 30 punkter", "Översätt till en logisk formel", "SAT-lösaren: inga motexempel", "Lean kontrollerar översättningen"]
+    }
+  },
+  {
+    "id": "generativ-ai-pa-jobbet",
+    "day": 113,
+    "kind": "liv",
+    "arxiv": "2304.11771",
+    "paper": "Generative AI at Work",
+    "hook": "När 5 000 kundtjänstagenter fick en AI-assistent hjälpte den nybörjarna mest.",
+    "title": "Generativ AI på jobbet",
+    "meta": "Brynjolfsson, Li & Raymond · QJE, 2025",
+    "stat": "15 %",
+    "statLabel": "fler lösta ärenden per timme",
+    "points": [
+      "Ett företag införde en AI-assistent för kundtjänst steg för steg.",
+      "Mindre erfarna anställda blev både snabbare och bättre.",
+      "De mest erfarna fick knappt någon vinst – och lite sämre kvalitet."
+    ],
+    "takeaway": "AI kan sprida de bästas kunskap till alla.",
+    "source": "arXiv:2304.11771 · Brynjolfsson m.fl. (2023)",
+    "more": "Studien följde 5 172 agenter. AI:n föreslog svar baserat på hur de bästa medarbetarna hade löst liknande ärenden, och därför hjälpte den främst nya och mindre skickliga anställda. Nyanställda med AI nådde på två månader en nivå som annars tog sex månader. Kunderna blev också trevligare mot agenterna, och färre slutade. Studien är en av de första stora fältstudierna av generativ AI i ett riktigt arbete.",
+    "viz": {
+      "type": "split",
+      "title": "Vem vann mest?",
+      "a": { "h": "Nybörjare", "items": ["Mycket snabbare", "Bättre kvalitet"] },
+      "b": { "h": "Mest erfarna", "items": ["Lite snabbare", "Något sämre kvalitet"] }
+    }
+  },
+  {
+    "id": "gaia-dr2",
+    "day": 114,
+    "kind": "rymd",
+    "arxiv": "1804.09365",
+    "paper": "Gaia Data Release 2. Summary of the contents and survey properties",
+    "hook": "En satellit kartlade 1,7 miljarder stjärnor – och gjorde om astronomin.",
+    "title": "Gaias stora karta",
+    "meta": "Gaia-samarbetet · A&A, 2018",
+    "stat": "1,7 miljarder",
+    "statLabel": "himlakroppar med position och ljusstyrka",
+    "points": [
+      "ESA:s satellit Gaia mäter stjärnors positioner med otrolig precision.",
+      "För 1,3 miljarder av dem mättes också avstånd och rörelse över himlen.",
+      "Datan har lett till tusentals upptäckter om Vintergatans historia."
+    ],
+    "takeaway": "Exakta mätningar kan förändra ett helt fält.",
+    "source": "arXiv:1804.09365 · Gaia-samarbetet (2018)",
+    "more": "Gaia mäter parallax: hur en stjärna verkar flytta sig när jorden går runt solen. Ju närmare, desto större förflyttning. DR2 innehöll också radialhastigheter för miljontals stjärnor, temperaturer och data om variabla stjärnor och asteroider. Med datan kunde forskare se spår av gamla galaxer som Vintergatan slukat, mäta stjärnornas åldrar och hitta snabba stjärnor som kastats ut från galaxens centrum.",
+    "viz": {
+      "type": "bars",
+      "title": "Innehåll i Gaia DR2 (miljoner)",
+      "unit": "",
+      "items": [{ "l": "Position och ljusstyrka", "v": 1700, "t": "1 700" }, { "l": "Avstånd och rörelse", "v": 1300, "t": "1 300" }, { "l": "Variabla stjärnor", "v": 0.5, "t": "0,5" }],
+      "max": 1700
+    }
+  },
+  {
+    "id": "frauchiger-renner",
+    "day": 115,
+    "kind": "fysik",
+    "arxiv": "1604.07422",
+    "paper": "Quantum theory cannot consistently describe the use of itself",
+    "hook": "Om fysiker i labbet själva lyder kvantmekanik – kan de då motsäga varandra?",
+    "title": "När kvantteorin motsäger sig själv",
+    "meta": "Frauchiger & Renner · Nature Comms, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Tankeexperimentet har fyra agenter som själva använder kvantteorin.",
+      "Utifrån sina mätningar drar de slutsatser om vad de andra kommer att se.",
+      "Till slut kommer de fram till motsatta svar – med full säkerhet."
+    ],
+    "takeaway": "Kvantteorin kanske inte kan beskriva sina egna användare.",
+    "source": "arXiv:1604.07422 · Frauchiger & Renner (2016)",
+    "more": "Det är en utvidgning av Wigners vän. Om kvantteorin gäller överallt borde den kunna beskriva även laboratorier med fysiker i. Men då leder resonemang som alla är giltiga inom teorin till en motsägelse. Slutsatsen är att minst ett av tre antaganden måste ges upp: att kvantteorin gäller universellt, att resonemang mellan agenter är konsekventa, eller att varje mätning har ett enda utfall. Olika tolkningar av kvantmekaniken väljer olika vägar ut.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre antaganden – ett måste bort",
+      "steps": ["Kvantteorin gäller överallt", "Agenternas slutsatser går ihop", "Varje mätning har ett utfall", "→ Motsägelse"]
+    }
+  },
+  {
+    "id": "desi-2024",
+    "day": 116,
+    "kind": "rymd",
+    "arxiv": "2404.03002",
+    "paper": "DESI 2024 VI: Cosmological Constraints from the Measurements of Baryon Acoustic Oscillations",
+    "hook": "Den största 3D-kartan av universum gav en första ledtråd om att mörk energi förändras.",
+    "title": "DESI:s första år",
+    "meta": "DESI-samarbetet · JCAP, 2025",
+    "stat": "6 miljoner",
+    "statLabel": "galaxer och kvasarer i första årets data",
+    "points": [
+      "DESI mätte avstånd i universum med galaxer och kvasarer upp till 11 miljarder år bakåt.",
+      "Ensam passar datan standardmodellen med konstant mörk energi.",
+      "Ihop med supernovor och bakgrundsstrålning antyder den mörk energi som försvagas."
+    ],
+    "takeaway": "Ett första tecken – inte ett bevis.",
+    "source": "arXiv:2404.03002 · DESI-samarbetet (2024)",
+    "more": "DESI mäter baryonakustiska svängningar i sju avståndsintervall och får både avstånd och expansionstakt. Med bara DESI och mätningar från det tidiga universum blev Hubblekonstanten 68,5 km/s/Mpc, nära Plancks värde. När alla data kombinerades tydde resultatet på att mörk energi kanske varierar med tiden. Signalen var för svag för en upptäckt, men den blev starkare med andra årets data 2025.",
+    "viz": {
+      "type": "timeline",
+      "title": "DESI hittills",
+      "ev": [
+        { "t": "2021", "d": "Mätningarna startar i Arizona" },
+        { "t": "2024", "d": "Första året: en svag ledtråd" },
+        { "t": "2025", "d": "Tre år: ledtråden blir starkare" }
+      ]
+    }
+  },
+  {
+    "id": "emergens-hagring",
+    "day": 117,
+    "kind": "ai",
+    "arxiv": "2304.15004",
+    "paper": "Are Emergent Abilities of Large Language Models a Mirage?",
+    "hook": "AI-förmågor som plötsligt 'dyker upp' kanske bara beror på hur man mäter.",
+    "title": "Är emergens en hägring?",
+    "meta": "Schaeffer, Miranda & Koyejo · NeurIPS, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Stora modeller sades få förmågor plötsligt och oförutsägbart när de växer.",
+      "Men om man bara räknar helt rätt svar ser en jämn förbättring ut som ett hopp.",
+      "Med mått som ger delpoäng blev förbättringen ofta jämn och förutsägbar."
+    ],
+    "takeaway": "Måttet kan skapa det man tror sig se.",
+    "source": "arXiv:2304.15004 · Schaeffer m.fl. (2023)",
+    "more": "Exempel: om en uppgift kräver att tio siffror blir rätt och modellen blir lite bättre på varje siffra, stiger chansen att alla tio blir rätt först långsamt och sedan brant. Forskarna visade detta med en enkel matematisk modell, med GPT-3 och med bildmodeller där de kunde 'skapa' emergens genom att välja mått. Artikeln fick pris för bästa artikel på NeurIPS 2023. Den bevisar inte att emergens aldrig finns, men att man måste vara försiktig.",
+    "viz": {
+      "type": "split",
+      "title": "Samma modeller, två mått",
+      "a": { "h": "Allt eller inget", "items": ["Plötsligt hopp", "Ser magiskt ut"] },
+      "b": { "h": "Delpoäng", "items": ["Jämn kurva", "Förutsägbart"] }
+    }
+  },
+  {
+    "id": "dino",
+    "day": 118,
+    "kind": "ai",
+    "arxiv": "2104.14294",
+    "paper": "Emerging Properties in Self-Supervised Vision Transformers",
+    "hook": "En AI som aldrig fått veta vad en hund är lärde sig ändå rita konturen runt den.",
+    "title": "DINO",
+    "meta": "Mathilde Caron m.fl. · Meta AI, 2021",
+    "stat": "80,1 %",
+    "statLabel": "rätt på ImageNet utan en enda etikett i träningen",
+    "points": [
+      "En 'elev' och en 'lärare' får olika utsnitt av samma bild.",
+      "Eleven tränas att svara som läraren, och läraren blir ett medelvärde av eleven.",
+      "Uppmärksamheten i nätverket började av sig själv följa föremålens konturer."
+    ],
+    "takeaway": "Struktur kan växa fram utan facit.",
+    "source": "arXiv:2104.14294 · Caron m.fl. (2021)",
+    "more": "DINO står för 'self-distillation with no labels'. Kombinationen med Vision Transformers gav en överraskning: uppmärksamhetskartorna visade tydliga segmenteringar av föremål, vilket inte syntes lika tydligt med etiketter eller i konvolutionsnät. Funktionerna var också utmärkta för att hitta liknande bilder. Uppföljaren DINOv2 blev en av de mest använda bildmodellerna för forskning.",
+    "viz": {
+      "type": "flow",
+      "title": "Självdestillation",
+      "steps": ["Två olika utsnitt av en bild", "Eleven ser ett, läraren ett annat", "Eleven härmar lärarens svar", "Läraren följer eleven långsamt"]
+    }
+  },
+  {
+    "id": "happy-ending-problemet",
+    "day": 119,
+    "kind": "matte",
+    "arxiv": "1604.08657",
+    "paper": "On the Erdos-Szekeres convex polygon problem",
+    "hook": "Ett matteproblem ledde till ett bröllop – och löstes nästan 80 år senare.",
+    "title": "Det lyckliga slutets problem",
+    "meta": "Andrew Suk · JAMS, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Hur många punkter behövs för att n av dem säkert ska bilda en konvex polygon?",
+      "Erdős och Szekeres gissade 1960 svaret 2ⁿ⁻² + 1 punkter.",
+      "Suk visade att svaret är 2ⁿ⁺ᵒ⁽ⁿ⁾ – nästan exakt gissningen."
+    ],
+    "takeaway": "Vissa frågor tar ett liv att besvara.",
+    "source": "arXiv:1604.08657 · Suk (2016)",
+    "more": "Esther Klein lade fram frågan för fyra punkter: bland fem punkter finns alltid fyra som bildar en konvex fyrhörning. Hennes vän George Szekeres och Paul Erdős generaliserade problemet 1935. Szekeres och Klein gifte sig sedan, därav namnet 'the happy ending problem'. Den övre gränsen från 1935 var ungefär 4ⁿ. Suk förbättrade den till 2ⁿ gånger en mindre faktor, nära den gissade nedre gränsen.",
+    "viz": {
+      "type": "timeline",
+      "title": "Ett problem med lyckligt slut",
+      "ev": [
+        { "t": "1933", "d": "Esther Klein: fyra av fem punkter" },
+        { "t": "1935", "d": "Erdős & Szekeres: gräns ≈ 4ⁿ" },
+        { "t": "1937", "d": "Klein och Szekeres gifter sig" },
+        { "t": "2016", "d": "Suk: nästan 2ⁿ – som gissat" }
+      ]
+    }
+  },
+  {
+    "id": "infini-attention",
+    "day": 120,
+    "kind": "ai",
+    "arxiv": "2404.07143",
+    "paper": "Leave No Context Behind: Efficient Infinite Context Transformers with Infini-attention",
+    "hook": "Kan en språkmodell läsa en hel bok – utan att minnet växer?",
+    "title": "Infini-attention",
+    "meta": "Munkhdalai, Faruqui & Gopal · Google, 2024",
+    "stat": "1 miljon",
+    "statLabel": "token långa texter i testerna",
+    "points": [
+      "Vanlig uppmärksamhet blir dyrare ju längre texten är.",
+      "Infini-attention läser texten i bitar och sammanfattar det gamla i ett kompakt minne.",
+      "Minnet har fast storlek, oavsett hur lång texten blir."
+    ],
+    "takeaway": "Komprimera det gamla, fokusera på det nya.",
+    "source": "arXiv:2404.07143 · Munkhdalai m.fl. (2024)",
+    "more": "Varje block i modellen kombinerar vanlig uppmärksamhet på den aktuella biten med en linjär uppmärksamhet mot ett komprimerat minne av allt tidigare. Forskarna testade att hitta en dold kod i texter på en miljon token och att sammanfatta böcker på 500 000 token med modeller på 1 och 8 miljarder parametrar. Metoden är ett av flera försök att ge språkmodeller mycket långt minne till låg kostnad.",
+    "viz": {
+      "type": "flow",
+      "title": "Läs en oändlig text",
+      "steps": ["Läs ett avsnitt med full uppmärksamhet", "Komprimera det till minnet", "Läs nästa avsnitt", "Använd både avsnitt och minne"]
+    }
+  }
+]

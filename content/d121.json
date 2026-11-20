@@ -1,0 +1,312 @@
+[
+  {
+    "id": "hemmaplan-utan-publik",
+    "day": 121,
+    "kind": "liv",
+    "arxiv": "2105.01446",
+    "paper": "Home advantage and crowd attendance: Evidence from rugby during the Covid 19 pandemic",
+    "hook": "Är det publiken som ger hemmalaget fördel? Pandemin gav ett jätteexperiment.",
+    "title": "Hemmaplan utan publik",
+    "meta": "Federico Fioravanti m.fl. · 2021",
+    "stat": "1 027",
+    "statLabel": "rugbymatcher i 10 länder",
+    "points": [
+      "Under pandemin spelades nästan all idrott utan publik.",
+      "Forskarna jämförde rugbymatcher från 11 turneringar före och under pandemin.",
+      "Utan publik vann hemmalagen färre matcher och med mindre marginal."
+    ],
+    "takeaway": "Publiken spelar med.",
+    "source": "arXiv:2105.01446 · Fioravanti m.fl. (2021)",
+    "more": "Hemmafördel kan bero på många saker: resor, bekanta planer, domare som påverkas av publiken och spelare som peppas. Tomma arenor gjorde det möjligt att isolera publikens betydelse. Liknande studier av fotboll visade att domarna delade ut färre kort till bortalag när publiken saknades. Sammantaget tyder resultaten på att socialt tryck från läktarna påverkar både spelare och domare.",
+    "viz": {
+      "type": "split",
+      "title": "Före och under pandemin",
+      "a": { "h": "Med publik", "items": ["Fler hemmasegrar", "Större marginal"] },
+      "b": { "h": "Utan publik", "items": ["Färre hemmasegrar", "Mindre marginal"] }
+    }
+  },
+  {
+    "id": "ai-debatt",
+    "day": 122,
+    "kind": "ai",
+    "arxiv": "1805.00899",
+    "paper": "AI safety via debate",
+    "hook": "Hur bedömer man en AI som är smartare än en själv? Låt två AI:er debattera.",
+    "title": "AI-säkerhet genom debatt",
+    "meta": "Irving, Christiano & Amodei · OpenAI, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "När uppgifter blir för svåra kan människor inte längre bedöma AI:ns svar direkt.",
+      "Två AI-agenter turas om att argumentera, och en människa avgör vem som hade rätt.",
+      "Det är lättare att avslöja en lögn än att själv hitta sanningen."
+    ],
+    "takeaway": "Låt maskinerna granska varandra.",
+    "source": "arXiv:1805.00899 · Irving m.fl. (2018)",
+    "more": "Förslaget är att träna agenter genom att de spelar mot varandra i ett debattspel där bara en kan vinna. Om spelet är rättvist borde den ärliga strategin vinna, eftersom varje lögn kan avslöjas av motståndaren. Med en analogi från komplexitetsteori visade författarna att debatt i teorin kan avgöra mycket svårare frågor än en domare klarar själv. Huruvida det fungerar i praktiken beror på hur människor bedömer argument – en fråga som fortfarande forskas om.",
+    "viz": {
+      "type": "flow",
+      "title": "Debattspelet",
+      "steps": ["En svår fråga", "AI A och AI B argumenterar i tur och ordning", "Människan läser debatten", "Domen avgör vem som belönas"]
+    }
+  },
+  {
+    "id": "pythagoreiska-tripplar",
+    "day": 123,
+    "kind": "matte",
+    "arxiv": "1605.00723",
+    "paper": "Solving and Verifying the boolean Pythagorean Triples problem via Cube-and-Conquer",
+    "hook": "Världens största matematiska bevis var 200 terabyte stort.",
+    "title": "Beviset på 200 terabyte",
+    "meta": "Heule, Kullmann & Marek · SAT 2016",
+    "stat": "7 825",
+    "statLabel": "– här tar det slut",
+    "points": [
+      "Kan talen 1, 2, 3 … färgas röda och blå utan en enfärgad trippel a² + b² = c²?",
+      "Det går upp till 7 824 – men inte till 7 825.",
+      "Datorn behövde två dygn på 800 kärnor, och beviset blev 200 terabyte."
+    ],
+    "takeaway": "Vissa sanningar är för stora för en människa att läsa.",
+    "source": "arXiv:1605.00723 · Heule m.fl. (2016)",
+    "more": "Ronald Graham hade utlovat 100 dollar till den som löste problemet, och betalade. Frågan översattes till ett enormt logiskt problem som löstes med metoden 'cube-and-conquer': dela upp problemet i miljontals delar och lös var och en med SAT-lösare. Eftersom svaret var 'omöjligt' krävdes ett bevis på att ingen färgning fungerar, och beviset kontrollerades av ett oberoende program. En komprimerad version på 68 gigabyte finns för den som vill kontrollera.",
+    "viz": {
+      "type": "flow",
+      "title": "Från fråga till bevis",
+      "steps": ["Färga 1 … n röda och blå", "Översätt till en logisk formel", "Dela upp i miljontals delproblem", "Ingen färgning finns för 7 825"]
+    }
+  },
+  {
+    "id": "randall-sundrum",
+    "day": 124,
+    "kind": "fysik",
+    "arxiv": "hep-ph/9905221",
+    "paper": "A Large Mass Hierarchy from a Small Extra Dimension",
+    "hook": "En enda dold, krökt dimension kan förklara varför gravitationen är så svag.",
+    "title": "En krökt extra dimension",
+    "meta": "Lisa Randall & Raman Sundrum · PRL, 1999",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Gravitationen är svagare än andra krafter med en faktor på ungefär 10³².",
+      "Randall och Sundrum föreslog en enda extra dimension som är starkt krökt.",
+      "Krökningen gör att skalorna krymper exponentiellt mellan två 'branor'."
+    ],
+    "takeaway": "Geometrin kan förklara siffror som verkar slumpmässiga.",
+    "source": "arXiv:hep-ph/9905221 · Randall & Sundrum (1999)",
+    "more": "I modellen finns två tredimensionella 'branor' i ett femdimensionellt rum med anti-de Sitter-geometri. Vi lever på den ena, och gravitationen är koncentrerad till den andra. Den exponentiella krökningen översätter den enorma Planckskalan till den mycket lägre svaga skalan utan att man behöver finjustera några tal. Modellen förutsade nya partiklar – excitationer av gravitonen – som skulle kunna synas vid LHC. Några sådana har inte hittats, men artikeln är en av de mest citerade inom partikelfysiken.",
+    "viz": {
+      "type": "split",
+      "title": "Två branor",
+      "a": { "h": "Gravitationsbranan", "items": ["Gravitationen stark", "Planckskalan"] },
+      "b": { "h": "Vår brana", "items": ["Gravitationen svag", "Standardmodellen"] }
+    }
+  },
+  {
+    "id": "hedetniemis-formodan",
+    "day": 125,
+    "kind": "matte",
+    "arxiv": "1905.02167",
+    "paper": "Counterexamples to Hedetniemi's conjecture",
+    "hook": "En gissning från 1966 föll med ett bevis på tre sidor.",
+    "title": "Hedetniemis förmodan faller",
+    "meta": "Yaroslav Shitov · Annals of Math., 2019",
+    "stat": "3",
+    "statLabel": "sidor långt motbevis",
+    "points": [
+      "Kromatiska talet är hur många färger ett nätverk behöver så att grannar skiljer sig.",
+      "Hedetniemi gissade att produkten av två nätverk behöver lika många färger som det 'enklaste'.",
+      "Shitov hittade motexempel – mycket stora grafer – och förmodan föll."
+    ],
+    "takeaway": "Ett enda motexempel räcker.",
+    "source": "arXiv:1905.02167 · Shitov (2019)",
+    "more": "Förmodan hade stått sig i över 50 år och verkade så naturlig att många trodde på den. Shitovs korta artikel byggde motexempel med hjälp av en tidigare koppling till så kallade exponentiella grafer. Motexemplen var enorma, men andra matematiker krympte dem snabbt. Gil Kalai beskrev resultatet som en sensation. Shitov arbetar delvis utanför den akademiska huvudfåran och har löst flera kända problem.",
+    "viz": {
+      "type": "quote",
+      "text": "Det kromatiska talet för G × H kan vara mindre än det minsta av G:s och H:s.",
+      "by": "Hela sammanfattningen av Shitovs artikel"
+    }
+  },
+  {
+    "id": "twitter-valprognos",
+    "day": 126,
+    "kind": "liv",
+    "arxiv": "1505.01511",
+    "paper": "140 Characters to Victory?: Using Twitter to Predict the UK 2015 General Election",
+    "hook": "Kan tweets förutsäga ett val? Forskare testade – dagen före valet.",
+    "title": "Valet i 140 tecken",
+    "meta": "Pete Burnap m.fl. · Electoral Studies, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Flera studier hade påstått att Twitter kan förutsäga valresultat.",
+      "Forskarna byggde en öppen grundmodell och tillämpade den på valet i Storbritannien 2015.",
+      "Problem: Twitteranvändare är inte väljarkåren, och småpartiers väljare bor samlat."
+    ],
+    "takeaway": "Det som syns på nätet är inte hela folket.",
+    "source": "arXiv:1505.01511 · Burnap m.fl. (2015)",
+    "more": "Artikeln publicerades den 6 maj 2015, dagen innan valet. Valet blev en överraskning: nästan alla opinionsmätningar och modeller missade att de konservativa fick egen majoritet. Studien är intressant som ett ärligt försök att testa en metod i förväg i stället för att anpassa den efteråt. Den pekar på två grundproblem med sociala medier som väljarbarometer: urvalet är skevt, och i ett valsystem med enmansvalkretsar avgör var rösterna finns – inte bara hur många de är.",
+    "viz": {
+      "type": "split",
+      "title": "Twitter som valbarometer",
+      "a": { "h": "Fördelar", "items": ["Snabbt", "Billigt", "Mycket data"] },
+      "b": { "h": "Problem", "items": ["Skevt urval", "Geografi syns inte", "Bottar och brus"] }
+    }
+  },
+  {
+    "id": "dpo",
+    "day": 127,
+    "kind": "ai",
+    "arxiv": "2305.18290",
+    "paper": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "hook": "Att lära AI vad vi föredrar krävde ett krångligt system. Det gick att göra med en formel.",
+    "title": "DPO",
+    "meta": "Rafael Rafailov m.fl. · Stanford, NeurIPS 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "RLHF tränar först en belöningsmodell och sedan språkmodellen med förstärkningsinlärning.",
+      "DPO visar att språkmodellen i sig kan fungera som belöningsmodell.",
+      "Då räcker det med vanlig träning direkt på par av 'bättre' och 'sämre' svar."
+    ],
+    "takeaway": "Den enkla vägen kan vara lika bra.",
+    "source": "arXiv:2305.18290 · Rafailov m.fl. (2023)",
+    "more": "RLHF är instabilt och kräver flera modeller samtidigt. Rafailov och kollegor visade matematiskt att den optimala språkmodellen för RLHF-målet kan uttryckas direkt i termer av belöningen. Då kan man hoppa över både belöningsmodellen och förstärkningsinlärningen och träna med en enkel förlustfunktion. Resultaten var lika bra eller bättre, och DPO blev snabbt standard för att finjustera öppna modeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två vägar till samma mål",
+      "a": { "h": "RLHF", "items": ["Belöningsmodell", "Förstärkningsinlärning", "Instabilt"] },
+      "b": { "h": "DPO", "items": ["Bara par av svar", "Vanlig träning", "Stabilt"] }
+    }
+  },
+  {
+    "id": "modellkollaps",
+    "day": 128,
+    "kind": "ai",
+    "arxiv": "2305.17493",
+    "paper": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+    "hook": "Vad händer när AI tränas på text som AI har skrivit? Den börjar glömma.",
+    "title": "Modellkollaps",
+    "meta": "Ilia Shumailov m.fl. · Nature, 2024",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Snart kommer mycket av texten på nätet från språkmodeller.",
+      "När modeller tränas på tidigare modellers texter försvinner det ovanliga först.",
+      "Efter flera generationer blir resultatet allt snävare – och till slut nonsens."
+    ],
+    "takeaway": "Data från verkliga människor blir allt mer värdefull.",
+    "source": "arXiv:2305.17493 · Shumailov m.fl. (2023)",
+    "more": "Forskarna visade fenomenet i enkla statistiska modeller, i variationsautokodare och i språkmodeller. Varje generation gör små fel i att återge fördelningen, och felen förstärks. Det som är ovanligt – fördelningens 'svansar' – försvinner först. I ett exempel började en text om medeltida arkitektur efter nio generationer handla om harar med olika färgade svansar. Senare studier har visat att kollaps kan undvikas om verklig data behålls och blandas in.",
+    "viz": {
+      "type": "flow",
+      "title": "Generation efter generation",
+      "steps": ["Modell 1 tränas på mänsklig text", "Modell 2 tränas på modell 1:s text", "Det ovanliga försvinner", "Allt blir likriktat – eller nonsens"]
+    }
+  },
+  {
+    "id": "voyager-plasmavagor",
+    "day": 129,
+    "kind": "rymd",
+    "arxiv": "2105.04000",
+    "paper": "Persistent Plasma Waves in Interstellar Space Detected by Voyager 1",
+    "hook": "Voyager 1 hör ett svagt, ihållande brus i rymden mellan stjärnorna.",
+    "title": "Det interstellära bruset",
+    "meta": "Stella Koch Ocker m.fl. · Nature Astronomy, 2021",
+    "stat": "2012",
+    "statLabel": "– året Voyager 1 lämnade solens bubbla",
+    "points": [
+      "Voyager 1 sköts upp 1977 och är det första människoverket i interstellära rymden.",
+      "Förut mätte den bara tätheten när utbrott från solen skakade om plasmat.",
+      "Nu hittades en svag, jämn ton som gör att tätheten kan mätas hela tiden."
+    ],
+    "takeaway": "Även en 50 år gammal sond kan göra nya upptäckter.",
+    "source": "arXiv:2105.04000 · Ocker m.fl. (2021)",
+    "more": "Plasmat mellan stjärnorna är extremt tunt, men elektronerna svänger med en frekvens som beror på tätheten. Ocker och kollegor hittade en mycket svag, smalbandig signal som funnits sedan 2017. Med den kan tätheten mätas ungefär var tredje dag. Mätningarna visar små variationer över avstånd på astronomiska enheter, spår av turbulens i det interstellära mediet. Voyager 1 är i dag mer än 160 gånger längre från solen än jorden.",
+    "viz": {
+      "type": "timeline",
+      "title": "Voyager 1:s resa",
+      "ev": [
+        { "t": "1977", "d": "Uppskjutning" },
+        { "t": "1979–80", "d": "Förbi Jupiter och Saturnus" },
+        { "t": "2012", "d": "Lämnar solens bubbla, heliosfären" },
+        { "t": "2017–", "d": "Ett svagt plasmabrus upptäcks" }
+      ]
+    }
+  },
+  {
+    "id": "voyager-minecraft",
+    "day": 130,
+    "kind": "ai",
+    "arxiv": "2305.16291",
+    "paper": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "hook": "En AI spelade Minecraft och lärde sig nya färdigheter – genom att skriva sin egen kod.",
+    "title": "Voyager i Minecraft",
+    "meta": "Guanzhi Wang m.fl. · Nvidia & Caltech, 2023",
+    "stat": "15,3×",
+    "statLabel": "snabbare genom spelets teknikträd",
+    "points": [
+      "Voyager använder GPT-4 för att välja nya mål och skriva program som utför dem.",
+      "Program som fungerar sparas i ett växande bibliotek av färdigheter.",
+      "Agenten utforskar på egen hand och bygger nya färdigheter av gamla."
+    ],
+    "takeaway": "Färdigheter som kod kan återanvändas.",
+    "source": "arXiv:2305.16291 · Wang m.fl. (2023)",
+    "more": "Agenten har tre delar: en automatisk läroplan som föreslår lagom svåra mål, ett färdighetsbibliotek med körbar kod och en loop där GPT-4 förbättrar koden med hjälp av felmeddelanden och egenkontroll. Inga modellvikter tränades om. Jämfört med tidigare metoder samlade Voyager 3,3 gånger fler unika föremål och nådde viktiga steg i teknikträdet – som diamantverktyg – upp till 15,3 gånger snabbare.",
+    "viz": {
+      "type": "flow",
+      "title": "Agentens loop",
+      "steps": ["Läroplanen föreslår ett mål", "GPT-4 skriver kod för att nå det", "Testa i spelet och rätta fel", "Spara fungerande kod som färdighet"]
+    }
+  },
+  {
+    "id": "big-bell-test",
+    "day": 131,
+    "kind": "fysik",
+    "arxiv": "1805.04431",
+    "paper": "Challenging local realism with human choices",
+    "hook": "100 000 människor spelade ett tv-spel – och hjälpte till att testa kvantfysiken.",
+    "title": "The BIG Bell Test",
+    "meta": "BIG Bell Test-samarbetet · Nature, 2018",
+    "stat": "100 000",
+    "statLabel": "deltagare valde slumpmässiga ettor och nollor",
+    "points": [
+      "Ett Belltest kräver att mätinställningarna väljs helt oförutsägbart.",
+      "Maskiner kan ha dolda mönster – så Bell föreslog att människor skulle välja.",
+      "Deltagarnas val styrde 13 experiment på fem kontinenter. Kvantfysiken vann."
+    ],
+    "takeaway": "Även fri vilja kan bli en del av ett experiment.",
+    "source": "arXiv:1805.04431 · BIG Bell Test (2018)",
+    "more": "Den 30 november 2016 spelade deltagare över hela världen ett spel där de skulle trycka ettor och nollor så oförutsägbart som möjligt. Nästan 100 miljoner bitar skickades i realtid till laboratorier som använde dem för att välja hur sammanflätade partiklar skulle mätas. Alla experiment bröt mot Bells olikhet, vilket utesluter lokal realism under antagandet att människors val inte är förutbestämda av samma orsaker som partiklarna.",
+    "viz": {
+      "type": "flow",
+      "title": "Från knapptryck till kvanttest",
+      "steps": ["Människor trycker 0 eller 1", "Bitarna skickas till labben", "De väljer hur partiklarna mäts", "Bells olikhet bryts"]
+    }
+  },
+  {
+    "id": "lima",
+    "day": 132,
+    "kind": "ai",
+    "arxiv": "2305.11206",
+    "paper": "LIMA: Less Is More for Alignment",
+    "hook": "Tusen väl valda exempel räckte för att lära en språkmodell att bli en bra assistent.",
+    "title": "LIMA: mindre är mer",
+    "meta": "Chunting Zhou m.fl. · Meta AI, 2023",
+    "stat": "1 000",
+    "statLabel": "noga utvalda exempel – inget mer",
+    "points": [
+      "Språkmodeller tränas först på enorma mängder text, sedan på instruktioner.",
+      "LIMA finjusterades på bara 1 000 frågor och svar, utan förstärkningsinlärning.",
+      "I tester var svaren ofta lika bra som från GPT-4 eller bättre."
+    ],
+    "takeaway": "Kunskapen kommer från förträningen, stilen från finjustering.",
+    "source": "arXiv:2305.11206 · Zhou m.fl. (2023)",
+    "more": "Forskarna formulerade 'den ytliga anpassningshypotesen': nästan all kunskap lärs under förträningen, och finjusteringen lär bara modellen vilket format och vilken stil svaren ska ha. LIMA byggde på LLaMA med 65 miljarder parametrar. I en jämförelse med människor bedömdes LIMA:s svar som lika bra eller bättre än GPT-4:s i 43 procent av fallen. Studien visade att kvalitet och variation i träningsexempel kan vara viktigare än mängd.",
+    "viz": {
+      "type": "split",
+      "title": "Var lär sig modellen vad?",
+      "a": { "h": "Förträning", "items": ["Biljoner ord", "Kunskap och förmågor"] },
+      "b": { "h": "Finjustering", "items": ["1 000 exempel", "Format och stil"] }
+    }
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "dubbel-nedgang",
+    "day": 337,
+    "kind": "ai",
+    "arxiv": "1912.02292",
+    "paper": "Deep Double Descent: Where Bigger Models and More Data Hurt",
+    "hook": "Större modeller blir först sämre – och sedan bättre igen. Det kallas dubbel nedgång.",
+    "title": "Dubbel nedgång",
+    "meta": "Preetum Nakkiran m.fl. · OpenAI & Harvard, 2019",
+    "stat": "4×",
+    "statLabel": "mer data kunde ibland göra resultatet sämre",
+    "points": [
+      "Klassisk statistik: för stora modeller överanpassar och blir sämre.",
+      "Modern AI: större modeller blir bättre. Båda stämmer – i olika delar av kurvan.",
+      "Felet stiger nära gränsen där modellen precis kan lära sig all data, och sjunker sedan igen."
+    ],
+    "takeaway": "Mitt emellan kan vara sämst.",
+    "source": "arXiv:1912.02292 · Nakkiran m.fl. (2019)",
+    "more": "Forskarna visade att fenomenet gäller både modellstorlek, antal träningsomgångar och mängden data. Kritiskt är när modellens 'effektiva komplexitet' är ungefär lika med antalet träningsexempel – då finns precis en lösning som passar datan, och den är ofta dålig. Med större modeller finns många lösningar, och träningsmetoden hittar en bra. I vissa fall kunde fyra gånger mer data göra testresultatet sämre, eftersom det flyttade modellen till den farliga zonen.",
+    "viz": {
+      "type": "line",
+      "title": "Testfel mot modellstorlek",
+      "ymax": 100,
+      "x": ["Liten", "", "Kritisk", "", "Stor"],
+      "series": [{ "l": "Testfel", "pts": [60, 45, 85, 40, 25] }],
+      "marks": [{ "i": 2, "t": "Topp" }],
+      "note": "Schematisk bild av dubbel nedgång."
+    }
+  },
+  {
+    "id": "heta-perioder",
+    "day": 338,
+    "kind": "liv",
+    "arxiv": "1712.01804",
+    "paper": "Hot Streaks in Artistic, Cultural, and Scientific Careers",
+    "hook": "De flesta konstnärer, regissörer och forskare har en 'het period'. Den kan komma när som helst.",
+    "title": "Heta perioder i karriären",
+    "meta": "Lu Liu m.fl. · Nature, 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskarna gick igenom karriärer för konstnärer, filmregissörer och forskare.",
+      "Deras största framgångar kom ofta tätt efter varandra – i en het period.",
+      "Perioden kunde inträffa när som helst i karriären, inte bara tidigt."
+    ],
+    "takeaway": "Det är aldrig för sent för din bästa period.",
+    "source": "arXiv:1712.01804 · Liu m.fl. (2017)",
+    "more": "Datan bestod av auktionspriser för konstverk, betyg för filmer och citeringar för forskning. Mönstret var tydligt i alla tre områdena: de bästa verken klumpade sig, och utanför den heta perioden var prestationen mer genomsnittlig. Nästan alla hade minst en het period, oftast bara en, och den varade typiskt några år. Uppföljande studier har antytt att heta perioder ofta föregås av en tid av bred utforskning följd av fördjupning.",
+    "viz": {
+      "type": "line",
+      "title": "Genomslag under en karriär",
+      "ymax": 100,
+      "x": ["Start", "", "", "", "", "Slut"],
+      "series": [{ "l": "Genomslag", "pts": [25, 30, 85, 90, 30, 25] }],
+      "marks": [{ "i": 3, "t": "Het" }],
+      "note": "Schematisk. Perioden kan ligga var som helst."
+    }
+  },
+  {
+    "id": "alphazero",
+    "day": 339,
+    "kind": "ai",
+    "arxiv": "1712.01815",
+    "paper": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+    "hook": "Bara reglerna, ingen mänsklig kunskap – på 24 timmar slog den världens bästa schackprogram.",
+    "title": "AlphaZero",
+    "meta": "David Silver m.fl. · DeepMind, 2017",
+    "stat": "24",
+    "statLabel": "timmars träning till övermänsklig nivå",
+    "points": [
+      "Schackprogram byggde på årtionden av mänskliga regler och bedömningar.",
+      "AlphaZero började med slumpmässiga drag och spelade bara mot sig själv.",
+      "Det slog de starkaste programmen i schack, shogi och Go."
+    ],
+    "takeaway": "Självständig inlärning kan slå årtionden av expertkunskap.",
+    "source": "arXiv:1712.01815 · Silver m.fl. (2017)",
+    "more": "Samma algoritm, med samma inställningar, användes för alla tre spelen. Ett neuralt nätverk bedömde ställningar och föreslog drag, och en trädsökning planerade. AlphaZero sökte igenom mycket färre ställningar per sekund än Stockfish men valde dem smartare. Stilen beskrevs av stormästare som kreativ och 'mänsklig' – den offrade gärna material för långsiktiga fördelar. Den slutliga versionen publicerades i Science 2018.",
+    "viz": {
+      "type": "flow",
+      "title": "Självspel",
+      "steps": ["Börja med slumpmässiga drag", "Spela miljontals partier mot sig själv", "Lär av vinster och förluster", "Övermänsklig nivå"]
+    }
+  },
+  {
+    "id": "sendovs-formodan",
+    "day": 340,
+    "kind": "matte",
+    "arxiv": "2012.04125",
+    "paper": "Sendov's conjecture for sufficiently high degree polynomials",
+    "hook": "Var hamnar ett polynoms derivatas nollställen? En gissning från 1958 bevisades – nästan.",
+    "title": "Sendovs förmodan",
+    "meta": "Terence Tao · Acta Math., 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Om alla nollställen till ett polynom ligger i enhetscirkeln, gäller det också derivatans.",
+      "Sendov gissade mer: nära varje nollställe finns ett av derivatans, högst 1 bort.",
+      "Tao bevisade det för alla polynom av tillräckligt hög grad."
+    ],
+    "takeaway": "Ibland räcker 'tillräckligt stort' som ett stort steg.",
+    "source": "arXiv:2012.04125 · Tao (2020)",
+    "more": "Förmodan var känd för grad under 9, men för högre grad fanns bara delresultat. Tao delade upp problemet efter var nollstället ligger: nära origo, nära enhetscirkeln eller däremellan, och använde olika metoder för varje fall, bland annat kompakthetsargument och 'balayage' från potentialteori. Hans bevis säger att det finns en gräns n₀ för vilken det gäller, men inte hur stor den är, så fallen mellan 9 och n₀ är fortfarande öppna.",
+    "viz": {
+      "type": "flow",
+      "title": "Påståendet",
+      "steps": ["Polynom med nollställen i enhetscirkeln", "Välj ett nollställe λ", "Rita en cirkel med radie 1 runt λ", "Där finns ett nollställe till derivatan"]
+    }
+  },
+  {
+    "id": "girvan-newman",
+    "day": 341,
+    "kind": "liv",
+    "arxiv": "cond-mat/0112110",
+    "paper": "Community structure in social and biological networks",
+    "hook": "En karateklubb splittrades i två. En algoritm förutsade exakt hur.",
+    "title": "Hitta gemenskaper",
+    "meta": "Michelle Girvan & Mark Newman · PNAS, 2002",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Nätverk består ofta av täta grupper med glesa band emellan.",
+      "Idén: ta bort de länkar som flest kortaste vägar går genom – broarna mellan grupper.",
+      "Kvar blir grupperna, som faller isär naturligt."
+    ],
+    "takeaway": "Broarna avslöjar gränserna.",
+    "source": "arXiv:cond-mat/0112110 · Girvan & Newman (2001)",
+    "more": "Metoden bygger på 'betweenness' – hur många kortaste vägar som passerar en länk. Länkar mellan grupper har högt värde eftersom all trafik mellan grupperna måste gå där. Ett klassiskt test var Zacharys karateklubb från 1970-talet, som splittrades efter en konflikt mellan tränaren och ordföranden. Algoritmen delade nätverket nästan exakt som klubben faktiskt delades. Artikeln startade forskningen om att hitta gemenskaper i nätverk.",
+    "viz": {
+      "type": "flow",
+      "title": "Girvan–Newman-algoritmen",
+      "steps": ["Räkna kortaste vägar genom varje länk", "Ta bort länken med flest", "Räkna om", "Grupperna faller isär"]
+    }
+  },
+  {
+    "id": "perlmutter-42-supernovor",
+    "day": 342,
+    "kind": "rymd",
+    "arxiv": "astro-ph/9812133",
+    "paper": "Measurements of Omega and Lambda from 42 High-Redshift Supernovae",
+    "hook": "42 exploderande stjärnor visade att 70 % av universum är något okänt.",
+    "title": "42 supernovor och mörk energi",
+    "meta": "Saul Perlmutter m.fl. · ApJ, 1999",
+    "stat": "42",
+    "statLabel": "supernovor av typ Ia",
+    "points": [
+      "Supernova Cosmology Project jämförde avlägsna och närliggande supernovor.",
+      "De avlägsna var svagare än väntat i ett universum som bara bromsar in.",
+      "Bäst passade ett platt universum med ungefär 28 % materia och resten mörk energi."
+    ],
+    "takeaway": "Två konkurrerande lag – samma häpnadsväckande svar.",
+    "source": "arXiv:astro-ph/9812133 · Perlmutter m.fl. (1998)",
+    "more": "Perlmutters grupp i Berkeley och High-Z-teamet med Riess och Schmidt kom fram till samma slutsats oberoende av varandra. Resultaten var starkt oförenliga med ett universum utan kosmologisk konstant. Att två lag med olika metoder fick samma resultat gjorde det trovärdigt. Saul Perlmutter delade Nobelpriset i fysik 2011 med Brian Schmidt och Adam Riess.",
+    "viz": {
+      "type": "bars",
+      "title": "Platt universum enligt studien",
+      "unit": "%",
+      "items": [{ "l": "Materia", "v": 28 }, { "l": "Mörk energi", "v": 72 }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "kalla-atomer-i-rymden",
+    "day": 343,
+    "kind": "fysik",
+    "arxiv": "1912.04849",
+    "paper": "The Bose-Einstein Condensate and Cold Atom Laboratory",
+    "hook": "Kallare än någonstans i naturen – ombord på rymdstationen.",
+    "title": "Kalla atomer i rymden",
+    "meta": "Kai Frye m.fl. · NASA & DLR, EPJ QT 2021",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Bose–Einstein-kondensat är atomer så kalla att de beter sig som en enda kvantvåg.",
+      "På jorden drar gravitationen ner atomerna, så experimenten blir korta.",
+      "I tyngdlöshet kan de sväva fritt mycket längre – BECCAL ska utnyttja det."
+    ],
+    "takeaway": "Tyngdlöshet öppnar nya kvantexperiment.",
+    "source": "arXiv:1912.04849 · Frye m.fl. (2019)",
+    "more": "BECCAL är ett samarbete mellan NASA och tyska DLR och bygger vidare på Cold Atom Laboratory, som sedan 2018 skapat kondensat på den internationella rymdstationen. Det nya instrumentet använder både rubidium och kalium och har fler sätt att fånga och styra atomerna. Målen är bland annat mer precisa atominterferometrar, som kan testa Einsteins ekvivalensprincip och i framtiden användas för att mäta gravitation och navigera.",
+    "viz": {
+      "type": "split",
+      "title": "Jorden mot rymden",
+      "a": { "h": "På jorden", "items": ["Gravitationen drar", "Korta mätningar"] },
+      "b": { "h": "I omloppsbana", "items": ["Atomerna svävar", "Långa mätningar"] }
+    }
+  },
+  {
+    "id": "resnet",
+    "day": 344,
+    "kind": "ai",
+    "arxiv": "1512.03385",
+    "paper": "Deep Residual Learning for Image Recognition",
+    "hook": "Ett enkelt trick gjorde nätverk 152 lager djupa – och bättre än människor på ImageNet.",
+    "title": "ResNet",
+    "meta": "Kaiming He m.fl. · Microsoft Research, CVPR 2016",
+    "stat": "152",
+    "statLabel": "lager – åtta gånger djupare än tidigare",
+    "points": [
+      "Djupare nätverk borde vara bättre, men de blev svårare att träna.",
+      "ResNet lägger till genvägar som skickar indata förbi varje block.",
+      "Varje block lär sig bara skillnaden – 'residualen' – vilket är mycket lättare."
+    ],
+    "takeaway": "Låt varje steg bara lägga till det som saknas.",
+    "source": "arXiv:1512.03385 · He m.fl. (2015)",
+    "more": "Med genvägarna kunde forskarna träna nätverk med hundratals och till och med över tusen lager. En samling ResNets nådde 3,57 procents fel på ImageNet och vann tävlingen ILSVRC 2015. Idén med residualkopplingar finns i dag i nästan alla djupa nätverk, inklusive transformers. En analys 2025 utnämnde ResNet-artikeln till 2000-talets mest citerade vetenskapliga artikel.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett residualblock",
+      "steps": ["Indata x", "Blocket räknar F(x)", "Genväg: lägg till x igen", "Utdata: F(x) + x"]
+    }
+  },
+  {
+    "id": "grafisomorfi",
+    "day": 345,
+    "kind": "matte",
+    "arxiv": "1512.03547",
+    "paper": "Graph Isomorphism in Quasipolynomial Time",
+    "hook": "Är två nätverk egentligen samma? Babai gjorde frågan nästan lätt att besvara.",
+    "title": "Grafisomorfi nästan i polynomtid",
+    "meta": "László Babai · Chicago, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Två grafer är isomorfa om man kan döpa om noderna så att de blir identiska.",
+      "Problemet är varken känt som lätt eller som NP-fullständigt – ett mellanting.",
+      "Babais algoritm gick från nästan exponentiell till 'kvasipolynomisk' tid."
+    ],
+    "takeaway": "Även klassiska problem kan få stora genombrott.",
+    "source": "arXiv:1512.03547 · Babai (2015)",
+    "more": "Den tidigare bästa algoritmen, från 1983, var i värsta fall mycket långsam. Babai kombinerade gruppteori och kombinatorik med nya idéer som 'lokala certifikat'. Han presenterade resultatet i föreläsningar som väckte enorm uppmärksamhet. I januari 2017 hittade Harald Helfgott ett fel, men Babai lagade det inom några dagar. Resultatet räknas som ett av årtiondets största inom teoretisk datavetenskap.",
+    "viz": {
+      "type": "bars",
+      "title": "Tid i värsta fall (schematiskt)",
+      "unit": "",
+      "items": [{ "l": "Före (1983): exp(√n log n)", "v": 100 }, { "l": "Babai: exp((log n)^c)", "v": 15 }, { "l": "Polynomisk: n^c", "v": 5 }],
+      "hi": 1,
+      "max": 100,
+      "note": "Schematisk jämförelse för stora n."
+    }
+  },
+  {
+    "id": "stylegan",
+    "day": 346,
+    "kind": "ai",
+    "arxiv": "1812.04948",
+    "paper": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+    "hook": "Dessa människor finns inte. 2019 blev AI-genererade ansikten omöjliga att skilja från foton.",
+    "title": "StyleGAN",
+    "meta": "Karras, Laine & Aila · Nvidia, CVPR 2019",
+    "stat": "70 000",
+    "statLabel": "ansiktsbilder i den nya datamängden FFHQ",
+    "points": [
+      "StyleGAN lånade idéer från stilöverföring för att styra bildgenereringen.",
+      "Grova drag som pose styrs på ett ställe, fina detaljer som fräknar på ett annat.",
+      "Resultatet blev fotorealistiska ansikten – och ett nytt sätt att blanda dem."
+    ],
+    "takeaway": "Att dela upp stil i nivåer ger kontroll.",
+    "source": "arXiv:1812.04948 · Karras m.fl. (2018)",
+    "more": "Generatorn börjar med en inlärd konstant och får 'stil' från en latent vektor i varje lager, plus brus för slumpmässiga detaljer som hårstrån. Det gör att man kan blanda grova drag från en person med fina från en annan. Webbsidan thispersondoesnotexist.com, som visade ett nytt StyleGAN-ansikte vid varje besök, blev viral 2019. Tekniken väckte frågor om falska profiler och desinformation.",
+    "viz": {
+      "type": "flow",
+      "title": "Stil på olika nivåer",
+      "steps": ["Grova lager: pose och ansiktsform", "Mellersta lager: drag och frisyr", "Fina lager: färger och detaljer", "Brus: fräknar och hårstrån"]
+    }
+  },
+  {
+    "id": "openai-five",
+    "day": 347,
+    "kind": "ai",
+    "arxiv": "1912.06680",
+    "paper": "Dota 2 with Large Scale Deep Reinforcement Learning",
+    "hook": "En AI tränade motsvarande 45 000 års spelande – och slog världsmästarna i Dota 2.",
+    "title": "OpenAI Five",
+    "meta": "OpenAI · 2019",
+    "stat": "10",
+    "statLabel": "månaders oavbruten träning",
+    "points": [
+      "Dota 2 har långa matcher, dold information och tusentals möjliga handlingar.",
+      "Fem AI-hjältar tränades genom att spela mot sig själva i enorm skala.",
+      "13 april 2019 slog de världsmästarlaget OG."
+    ],
+    "takeaway": "Skala kan ta befintliga metoder hur långt som helst.",
+    "source": "arXiv:1912.06680 · OpenAI (2019)",
+    "more": "Systemet använde PPO och LSTM-nätverk, utan några nya algoritmer – det nya var skalan. Varje andra sekund behandlades runt två miljoner bildrutor från spelet. Eftersom spelet uppdaterades under träningen utvecklades metoder för att fortsätta träna en modell när miljön ändras, i stället för att börja om. En öppen tävling mot allmänheten samma månad gav en vinstandel på 99,4 procent.",
+    "viz": {
+      "type": "flow",
+      "title": "Träning i skala",
+      "steps": ["Tusentals spel parallellt", "AI:n spelar mot äldre versioner av sig själv", "2 miljoner bildrutor varannan sekund", "10 månader – världsmästarnivå"]
+    }
+  },
+  {
+    "id": "area-svarta-hal",
+    "day": 348,
+    "kind": "rymd",
+    "arxiv": "2012.04486",
+    "paper": "Testing the black-hole area law with GW150914",
+    "hook": "Hawking förutsade att svarta håls yta aldrig kan krympa. Gravitationsvågor bekräftade det.",
+    "title": "Svarta håls area växer",
+    "meta": "Maximiliano Isi m.fl. · PRL, 2021",
+    "stat": "97 %",
+    "statLabel": "sannolikhet att arealagen gäller",
+    "points": [
+      "Hawkings areasats från 1971: den totala horisontarean kan bara öka.",
+      "Forskarna mätte arean före och efter krocken i den första gravitationsvågen.",
+      "Arean efter var större än summan av de två före – precis enligt satsen."
+    ],
+    "takeaway": "En 50 år gammal förutsägelse höll i verkligheten.",
+    "source": "arXiv:2012.04486 · Isi m.fl. (2020)",
+    "more": "Arean beror på massa och rotation. Före krocken beräknades den från den inåtgående spiralen, efter från 'efterklangen' när det nya svarta hålet lugnade ner sig. Fast det nya svarta hålet hade mindre massa än de två tillsammans – energi strålade bort som vågor – var dess area större. Satsen hänger ihop med att svarta håls entropi är proportionell mot arean. 2025 bekräftades den med betydligt högre säkerhet med den starka signalen GW250114.",
+    "viz": {
+      "type": "bars",
+      "title": "Horisontarea före och efter (relativ)",
+      "unit": "",
+      "items": [{ "l": "Två svarta hål före", "v": 235 }, { "l": "Ett svart hål efter", "v": 367 }],
+      "hi": 1,
+      "max": 400,
+      "note": "Ungefärliga värden i tusentals km²."
+    }
+  },
+  {
+    "id": "extrahera-gpt-2",
+    "day": 349,
+    "kind": "ai",
+    "arxiv": "2012.07805",
+    "paper": "Extracting Training Data from Large Language Models",
+    "hook": "Fråga en språkmodell rätt – så avslöjar den namn och telefonnummer den läst.",
+    "title": "Läckande språkmodeller",
+    "meta": "Nicholas Carlini m.fl. · USENIX Security, 2021",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskarna lät GPT-2 generera mängder av text och letade efter memorerade bitar.",
+      "De hittade hundratals ordagranna sekvenser från träningsdatan.",
+      "Bland dem fanns namn, telefonnummer, e-postadresser och kod."
+    ],
+    "takeaway": "Det en modell läst kan komma ut igen.",
+    "source": "arXiv:2012.07805 · Carlini m.fl. (2020)",
+    "more": "Många av de extraherade texterna fanns bara i ett enda dokument i träningsdatan. Större modeller memorerade mer, vilket var oroande inför ännu större modeller. Studien gjordes med GPT-2 eftersom dess träningsdata var offentlig och forskarna kunde kontrollera fynden. Resultaten har påverkat diskussionen om integritet, upphovsrätt och om det går att 'avlära' en modell det den sett.",
+    "viz": {
+      "type": "flow",
+      "title": "Attacken",
+      "steps": ["Generera stora mängder text", "Leta efter text modellen är 'för säker' på", "Kontrollera mot träningsdatan", "Hundratals ordagranna träffar"]
+    }
+  },
+  {
+    "id": "latent-diffusion",
+    "day": 350,
+    "kind": "ai",
+    "arxiv": "2112.10752",
+    "paper": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "hook": "Grunden till Stable Diffusion: måla i en komprimerad värld, inte i pixlar.",
+    "title": "Latenta diffusionsmodeller",
+    "meta": "Robin Rombach m.fl. · LMU München, CVPR 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Diffusion direkt i pixlar kräver hundratals GPU-dygn att träna.",
+      "En autokodare komprimerar först bilden till en mindre 'latent' representation.",
+      "Diffusionen görs där – mycket billigare, med nästan samma kvalitet."
+    ],
+    "takeaway": "Arbeta där det är billigt, inte där det är vackert.",
+    "source": "arXiv:2112.10752 · Rombach m.fl. (2021)",
+    "more": "Kompressionen tar bort detaljer som ögat knappt märker men behåller bildens innehåll. Med 'korsuppmärksamhet' kunde modellen styras av text, skisser eller andra bilder. Augusti 2022 släppte Stability AI tillsammans med forskarna Stable Diffusion, byggd på denna metod, med öppna vikter. Det gjorde högkvalitativ bildgenerering möjlig på vanliga datorer och startade en explosion av verktyg och debatt.",
+    "viz": {
+      "type": "flow",
+      "title": "Diffusion i det latenta rummet",
+      "steps": ["Komprimera bilder med en autokodare", "Diffusion i den mindre representationen", "Styr med text via korsuppmärksamhet", "Avkoda tillbaka till pixlar"]
+    }
+  }
+]

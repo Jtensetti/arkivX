@@ -1,0 +1,311 @@
+[
+  {
+    "id": "simulerade-anvandare",
+    "day": 241,
+    "kind": "ai",
+    "arxiv": "2611.24892",
+    "paper": "On Evaluating User Simulators for Interactive Agents",
+    "hook": "AI-agenter testas ofta mot simulerade användare. Men vem testar simulatorerna?",
+    "title": "Vem testar testarna?",
+    "meta": "Hengguang Zhou m.fl. · 2026",
+    "stat": "5–6",
+    "statLabel": "av 10 inplanterade fel upptäcktes av gamla metoder",
+    "points": [
+      "Att testa agenter mot riktiga människor är dyrt, så man använder AI-simulerade användare.",
+      "Forskarna planterade fel i simuleringarna: bytta mål, glömda krav, att godta trasigt arbete.",
+      "Befintliga mått missade nästan hälften – och belönade ibland de felaktiga simulatorerna."
+    ],
+    "takeaway": "Även mätverktyg behöver mätas.",
+    "source": "arXiv:2611.24892 · Zhou m.fl. (2026)",
+    "more": "Studien är en meta-utvärdering: i stället för att utvärdera agenter undersöker den om måtten för användarsimulatorer fungerar. Tio sorters störningar infördes i inspelade dialoger, och tre tidigare utvärderingsmetoder testades. De upptäckte bara fem eller sex av störningarna, och deras sammanvägda poäng föredrog till och med simulerade användare som instruerats att acceptera trasigt arbete. Forskarna föreslår en ny metod som bättre fångar sådana fel.",
+    "viz": {
+      "type": "flow",
+      "title": "Metoden",
+      "steps": ["Spela in simulerade användare", "Plantera fel med flit", "Ger måtten lägre poäng?", "Ofta inte – nya mått behövs"]
+    }
+  },
+  {
+    "id": "shors-algoritm",
+    "day": 242,
+    "kind": "fysik",
+    "arxiv": "quant-ph/9508027",
+    "paper": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+    "hook": "1994 visade en matematiker att en kvantdator kan knäcka internets kryptering.",
+    "title": "Shors algoritm",
+    "meta": "Peter Shor · Bell Labs, 1994",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "RSA-kryptering bygger på att det är svårt att dela upp stora tal i primfaktorer.",
+      "Shor visade att en kvantdator kan göra det exponentiellt snabbare.",
+      "Tricket: hitta en dold period med kvant-Fouriertransformen."
+    ],
+    "takeaway": "En algoritm startade en hel industri.",
+    "source": "arXiv:quant-ph/9508027 · Shor (1995)",
+    "more": "Före Shor var kvantdatorer en kuriositet. Efteråt blev de en fråga om nationell säkerhet och miljardinvesteringar. Algoritmen gör om faktorisering till att hitta perioden i en funktion, vilket kvantdatorer klarar genom interferens. Den har bara körts på mycket små tal, som 15 och 21, eftersom den kräver många felkorrigerade kvantbitar. Hotet har ändå lett till att nya 'postkvantkrypton' nu standardiseras och införs.",
+    "viz": {
+      "type": "flow",
+      "title": "Shors idé",
+      "steps": ["Talet N ska faktoriseras", "Gör om till: hitta en period", "Kvant-Fourier hittar perioden", "Perioden ger faktorerna"]
+    }
+  },
+  {
+    "id": "bpe-delord",
+    "day": 243,
+    "kind": "ai",
+    "arxiv": "1508.07909",
+    "paper": "Neural Machine Translation of Rare Words with Subword Units",
+    "hook": "Hur läser en AI ett ord den aldrig sett? Den delar upp det i bitar.",
+    "title": "Delord och BPE",
+    "meta": "Sennrich, Haddow & Birch · Edinburgh, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Översättningsmodeller hade en fast ordlista – nya ord blev 'okänt'.",
+      "Sennrich lät i stället modellen arbeta med vanliga delar av ord.",
+      "Metoden byte pair encoding slår ihop de vanligaste bokstavsparen steg för steg."
+    ],
+    "takeaway": "Små byggstenar kan bilda vad som helst.",
+    "source": "arXiv:1508.07909 · Sennrich m.fl. (2015)",
+    "more": "Byte pair encoding var ursprungligen en komprimeringsalgoritm från 1994. Man börjar med enskilda tecken och slår upprepade gånger ihop det vanligaste paret, tills man har ett lagom stort 'ordförråd' av delord. Sällsynta ord, namn och sammansättningar – som svenska 'kvantdatorforskning' – kan då byggas av kända delar. Nästan alla dagens språkmodeller använder någon variant av BPE för att dela upp text i token.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett nytt ord delas upp",
+      "steps": ["kvantdatorforskning", "kvant + dator + forskning", "Varje del är känd", "Modellen förstår helheten"]
+    }
+  },
+  {
+    "id": "bahdanau-uppmarksamhet",
+    "day": 244,
+    "kind": "ai",
+    "arxiv": "1409.0473",
+    "paper": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "hook": "Uppmärksamhet – idén bakom dagens AI – började som ett knep för översättning.",
+    "title": "Uppmärksamhetens födelse",
+    "meta": "Bahdanau, Cho & Bengio · ICLR, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Tidiga översättningsnät pressade in hela meningen i en enda vektor.",
+      "Långa meningar blev dåligt översatta – vektorn var en flaskhals.",
+      "Lösningen: låt modellen titta tillbaka på relevanta ord för varje ord den skriver."
+    ],
+    "takeaway": "Titta tillbaka på det som är viktigt just nu.",
+    "source": "arXiv:1409.0473 · Bahdanau m.fl. (2014)",
+    "more": "Mekanismen räknar ut vikter för hur mycket varje ord i källmeningen ska påverka nästa översatta ord. Vikterna kan ritas som en karta som visar vilka ord modellen 'tittar på', ofta i linje med hur ord motsvarar varandra mellan språken. Tre år senare byggde transformern helt på uppmärksamhet. Dzmitry Bahdanau var praktikant hos Yoshua Bengio när artikeln skrevs.",
+    "viz": {
+      "type": "flow",
+      "title": "Översätt ord för ord",
+      "steps": ["Läs hela källmeningen", "För varje nytt ord: vikta källorden", "Fokusera på de relevanta", "Skriv nästa ord"]
+    }
+  },
+  {
+    "id": "laniakea",
+    "day": 245,
+    "kind": "rymd",
+    "arxiv": "1409.0880",
+    "paper": "The Laniakea supercluster of galaxies",
+    "hook": "Vår galax är en del av en jättelik struktur med namnet 'omätlig himmel'.",
+    "title": "Laniakea",
+    "meta": "R. Brent Tully m.fl. · Nature, 2014",
+    "stat": "100 000",
+    "statLabel": "galaxer ingår i Laniakea",
+    "points": [
+      "Superhopar av galaxer har inga skarpa gränser i vanliga kartor.",
+      "Forskarna mätte i stället hur galaxer rör sig, utöver universums expansion.",
+      "Galaxer vars rörelser flödar mot samma punkt bildar en superhop: Laniakea."
+    ],
+    "takeaway": "Gränser kan definieras av rörelse, inte av utseende.",
+    "source": "arXiv:1409.0880 · Tully m.fl. (2014)",
+    "more": "Laniakea betyder ungefär 'omätlig himmel' på hawaiiska och valdes för att hedra polynesiska navigatörer. Superhopen är cirka 520 miljoner ljusår i diameter och har en massa på omkring 10¹⁷ solmassor. Gränsen dras där rörelserna vänder mot andra strukturer, ungefär som vattendelare mellan flodsystem. Vintergatan ligger nära utkanten, och rörelserna strömmar mot ett område som kallas den Stora attraktorn.",
+    "viz": {
+      "type": "flow",
+      "title": "Vår kosmiska adress",
+      "steps": ["Jorden i solsystemet", "Vintergatan i Lokala gruppen", "Lokala gruppen i Virgohopen", "Allt i Laniakea"]
+    }
+  },
+  {
+    "id": "busy-beaver-5",
+    "day": 246,
+    "kind": "matte",
+    "arxiv": "2509.12337",
+    "paper": "Determination of the fifth Busy Beaver value",
+    "hook": "Hur länge kan en dator med fem tillstånd köra innan den stannar? 47 176 870 steg.",
+    "title": "Den femte flitiga bävern",
+    "meta": "bbchallenge-samarbetet · 2025",
+    "stat": "47 176 870",
+    "statLabel": "steg – längsta möjliga körning med fem tillstånd",
+    "points": [
+      "Busy Beaver-funktionen växer snabbare än något som går att beräkna.",
+      "Ett nätsamarbete gick igenom alla 181 miljoner Turingmaskiner med fem tillstånd.",
+      "För var och en bevisades om den stannar – allt kontrollerat i bevisassistenten Coq."
+    ],
+    "takeaway": "Även det oberäkneliga kan räknas en liten bit.",
+    "source": "arXiv:2509.12337 · bbchallenge (2025)",
+    "more": "Tibor Radó införde funktionen 1962. Värdena för en till fyra tillstånd är 1, 6, 21 och 107; det fjärde bestämdes 1983. Det femte hade misstänkts sedan 1989, då en maskin med 47 176 870 steg hittades, men det krävdes att man visade att ingen annan maskin stannar senare. Det svåra var att bevisa att vissa maskiner aldrig stannar. Över tjugo personer, många amatörer, bidrog. S(6) är astronomiskt större och troligen omöjligt att bestämma.",
+    "viz": {
+      "type": "bars",
+      "title": "Busy Beaver S(n)",
+      "unit": "",
+      "items": [{ "l": "S(2)", "v": 6 }, { "l": "S(3)", "v": 21 }, { "l": "S(4)", "v": 107 }, { "l": "S(5)", "v": 47176870, "t": "47 176 870" }],
+      "hi": 3,
+      "max": 47176870
+    }
+  },
+  {
+    "id": "vllm-pagedattention",
+    "day": 247,
+    "kind": "ai",
+    "arxiv": "2309.06180",
+    "paper": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "hook": "Ett knep från operativsystem fick chattbotar att svara 2–4 gånger fler användare.",
+    "title": "vLLM och PagedAttention",
+    "meta": "Woosuk Kwon m.fl. · Berkeley, SOSP 2023",
+    "stat": "2–4×",
+    "statLabel": "högre kapacitet med samma fördröjning",
+    "points": [
+      "En språkmodell sparar ett minne, KV-cache, för varje pågående konversation.",
+      "Minnet växer och krymper, och mycket slösades bort i fragment.",
+      "PagedAttention delar upp det i sidor, som virtuellt minne i en dator."
+    ],
+    "takeaway": "Gamla idéer kan lösa nya problem.",
+    "source": "arXiv:2309.06180 · Kwon m.fl. (2023)",
+    "more": "I operativsystem delas minnet i sidor som kan ligga var som helst fysiskt men verkar sammanhängande för programmet. vLLM gör samma sak med KV-cachen, vilket nästan eliminerar slöseri och gör det möjligt att dela minne mellan förfrågningar, till exempel när flera svar genereras från samma fråga. vLLM är öppen källkod och blev ett av de mest använda systemen för att köra språkmodeller.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att hantera minnet",
+      "a": { "h": "Förr", "items": ["Stort block per förfrågan", "Mycket slöseri"] },
+      "b": { "h": "PagedAttention", "items": ["Små sidor", "Nästan inget slöseri"] }
+    }
+  },
+  {
+    "id": "k2-18b-jwst",
+    "day": 248,
+    "kind": "rymd",
+    "arxiv": "2309.05566",
+    "paper": "Carbon-bearing Molecules in a Possible Hycean Atmosphere",
+    "hook": "JWST hittade metan och koldioxid på en planet som kanske har ett hav.",
+    "title": "K2-18 b",
+    "meta": "Nikku Madhusudhan m.fl. · ApJ Letters, 2023",
+    "stat": "120",
+    "statLabel": "ljusår bort",
+    "points": [
+      "K2-18 b är 8,6 gånger tyngre än jorden och ligger i sin stjärnas beboeliga zon.",
+      "JWST såg tydliga spår av metan och koldioxid i atmosfären.",
+      "Det passar en hyceanvärld – ett hav under en väteatmosfär."
+    ],
+    "takeaway": "Spännande – men 'möjligt liv' är långt från bevis.",
+    "source": "arXiv:2309.05566 · Madhusudhan m.fl. (2023)",
+    "more": "Metan syntes med 5 standardavvikelser och koldioxid med 3. Avsaknaden av ammoniak passar också ett hav. Studien nämnde ett svagt tecken på dimetylsulfid, en gas som på jorden bara produceras av liv. Det tecknet var mycket osäkert, och senare analyser av andra forskare har inte bekräftat det. Andra modeller menar också att planeten kan vara en mini-Neptunus med en het, inte beboelig, yta.",
+    "viz": {
+      "type": "bars",
+      "title": "Säkerhet för upptäckterna",
+      "unit": "σ",
+      "items": [{ "l": "Metan", "v": 5 }, { "l": "Koldioxid", "v": 3 }, { "l": "Dimetylsulfid", "v": 1, "t": "svag antydan" }],
+      "max": 6
+    }
+  },
+  {
+    "id": "mmlu",
+    "day": 249,
+    "kind": "ai",
+    "arxiv": "2009.03300",
+    "paper": "Measuring Massive Multitask Language Understanding",
+    "hook": "57 ämnen, från juridik till matte. Testet som AI-bolagen tävlade om i åratal.",
+    "title": "MMLU",
+    "meta": "Dan Hendrycks m.fl. · Berkeley, ICLR 2021",
+    "stat": "57",
+    "statLabel": "ämnen i testet",
+    "points": [
+      "Flervalsfrågor från grundskolenivå till yrkesnivå i 57 ämnen.",
+      "De flesta modeller 2020 låg nära slumpen: 25 %.",
+      "Den största GPT-3 nådde 44 % – och visste ofta inte när den hade fel."
+    ],
+    "takeaway": "Ett bra test visar också vad som saknas.",
+    "source": "arXiv:2009.03300 · Hendrycks m.fl. (2020)",
+    "more": "Testet täckte matematik, historia, datavetenskap, juridik, medicin, etik och mycket mer. Modellerna var ojämna: bra på vissa ämnen och nära slumpen på andra, som moral och juridik. MMLU blev det mest rapporterade måttet när nya språkmodeller lanserades. Inom några år låg de bästa modellerna på över 90 procent, och testet blev 'mättat' – vilket ledde till svårare test som GPQA och Humanity's Last Exam.",
+    "viz": {
+      "type": "bars",
+      "title": "Resultat på MMLU",
+      "unit": "%",
+      "items": [{ "l": "Slumpen", "v": 25 }, { "l": "GPT-3 (2020)", "v": 43.9, "t": "43,9 %" }, { "l": "Toppmodeller (2024)", "v": 90, "t": "≈90 %" }],
+      "max": 100
+    }
+  },
+  {
+    "id": "stora-och-sma-team",
+    "day": 250,
+    "kind": "liv",
+    "arxiv": "1709.02445",
+    "paper": "Large Teams Have Developed Science and Technology; Small Teams Have Disrupted It",
+    "hook": "Stora forskarlag utvecklar idéer. Små lag vänder upp och ner på dem.",
+    "title": "Små lag omvälver",
+    "meta": "Lingfei Wu, Dashun Wang & James Evans · Nature, 2019",
+    "stat": "50 miljoner",
+    "statLabel": "artiklar, patent och mjukvaruprojekt analyserades",
+    "points": [
+      "Forskningen görs i allt större lag – men vad betyder lagets storlek?",
+      "Stora lag bygger vidare på nya, populära idéer och får snabbt uppmärksamhet.",
+      "Små lag gräver i äldre, ovanligare idéer – och står oftare för de omvälvande genombrotten."
+    ],
+    "takeaway": "Vetenskapen behöver både små och stora lag.",
+    "source": "arXiv:1709.02445 · Wu m.fl. (2017)",
+    "more": "Studien omfattade data från 1954 till 2014. Skillnaden fanns inom samma ämnen och även för samma personer när de arbetade i lag av olika storlek. Små lags arbeten fick ofta sitt erkännande senare. Författarna menar att forskningspolitik som bara gynnar stora projekt riskerar att minska förnyelsen.",
+    "viz": {
+      "type": "split",
+      "title": "Två sorters lag",
+      "a": { "h": "Stora lag", "items": ["Utvecklar", "Nya, populära idéer", "Snabb uppmärksamhet"] },
+      "b": { "h": "Små lag", "items": ["Omvälver", "Äldre, ovanliga idéer", "Erkänns senare"] }
+    }
+  },
+  {
+    "id": "collatz-tao",
+    "day": 251,
+    "kind": "matte",
+    "arxiv": "1909.03562",
+    "paper": "Almost all orbits of the Collatz map attain almost bounded values",
+    "hook": "Udda: ×3 + 1. Jämnt: dela med 2. Hamnar man alltid på 1? Tao kom närmare än någon.",
+    "title": "Tao och Collatz",
+    "meta": "Terence Tao · Forum Math. Pi, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Collatzförmodan: oavsett starttal når man till slut 1.",
+      "Det är kontrollerat för enorma tal men obevisat i allmänhet.",
+      "Tao visade att nästan alla starttal når nästan hur låga värden som helst."
+    ],
+    "takeaway": "Nästan alla är inte alla – men det är ett steg.",
+    "source": "arXiv:1909.03562 · Tao (2019)",
+    "more": "Exempel: 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1. Tidigare hade man visat att nästan alla banor går under N⁰·⁷⁹. Tao visade att för vilken funktion f som helst som växer mot oändligheten, går nästan alla banor under f(N) – till exempel under log log log N. 'Nästan alla' betyder här i logaritmisk täthet. Förmodan kan fortfarande vara falsk för några enstaka tal. Paul Erdős sa om problemet att matematiken inte är redo för det.",
+    "viz": {
+      "type": "flow",
+      "title": "Exempel: start på 6",
+      "steps": ["6 → 3 → 10", "10 → 5 → 16", "16 → 8 → 4 → 2", "→ 1"]
+    }
+  },
+  {
+    "id": "gcn",
+    "day": 252,
+    "kind": "ai",
+    "arxiv": "1609.02907",
+    "paper": "Semi-Supervised Classification with Graph Convolutional Networks",
+    "hook": "Hur lär man en AI att förstå nätverk – som vänner, molekyler eller citeringar?",
+    "title": "Grafkonvolutionsnätverk",
+    "meta": "Thomas Kipf & Max Welling · ICLR, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Bilder har rutnät av pixlar, men många data är nätverk utan fast form.",
+      "Ett GCN låter varje nod samla information från sina grannar.",
+      "Med några få märkta noder kan resten av nätverket klassificeras."
+    ],
+    "takeaway": "Du är dina grannar – även för en AI.",
+    "source": "arXiv:1609.02907 · Kipf & Welling (2016)",
+    "more": "Metoden är en enkel och snabb approximation av spektrala grafkonvolutioner och skalar linjärt med antalet länkar. I testerna skulle till exempel forskningsartiklar i ett citeringsnätverk sorteras i ämnen när bara ett fåtal var märkta. GCN blev grunden för fältet grafneurala nätverk, som i dag används för att förutsäga egenskaper hos molekyler, rekommendationer och trafik.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett lager i ett GCN",
+      "steps": ["Varje nod har egenskaper", "Samla in grannarnas egenskaper", "Väg ihop och transformera", "Nya, rikare egenskaper"]
+    }
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "id": "seq2seq",
+    "day": 253,
+    "kind": "ai",
+    "arxiv": "1409.3215",
+    "paper": "Sequence to Sequence Learning with Neural Networks",
+    "hook": "Ett nätverk läser en mening, ett annat skriver översättningen. Och ett märkligt knep: läs baklänges.",
+    "title": "Sekvens till sekvens",
+    "meta": "Sutskever, Vinyals & Le · Google, 2014",
+    "stat": "34,8",
+    "statLabel": "BLEU på engelska–franska – bättre än klassiska system",
+    "points": [
+      "En LSTM läser källmeningen och sammanfattar den i en vektor.",
+      "En annan LSTM skriver översättningen ord för ord från vektorn.",
+      "Att vända källmeningen baklänges förbättrade resultaten kraftigt."
+    ],
+    "takeaway": "Ett enkelt ramverk kan lösa många problem.",
+    "source": "arXiv:1409.3215 · Sutskever m.fl. (2014)",
+    "more": "Encoder–decoder-idén var generell: samma upplägg fungerar för översättning, sammanfattning och dialog. Att vända källmeningen gjorde att de första orden i båda meningarna hamnade nära varandra, vilket gjorde inlärningen lättare. Modellen hade inga problem med långa meningar, tvärtemot vad man befarat. Ilya Sutskever var senare med och grundade OpenAI. Kort efter visade Bahdanau m.fl. att uppmärksamhet förbättrar modellen ytterligare.",
+    "viz": {
+      "type": "flow",
+      "title": "Kodare och avkodare",
+      "steps": ["Läs: 'katten sitter' (baklänges)", "Sammanfatta i en vektor", "Skriv: 'le chat est assis'", "Ett ord i taget"]
+    }
+  },
+  {
+    "id": "tabbys-stjarna",
+    "day": 254,
+    "kind": "rymd",
+    "arxiv": "1509.03622",
+    "paper": "Planet Hunters X. KIC 8462852 - Where's the Flux?",
+    "hook": "En stjärna dimmades med upp till 22 % – oregelbundet. Var det en utomjordisk megastruktur?",
+    "title": "Tabbys stjärna",
+    "meta": "Tabetha Boyajian m.fl. · MNRAS, 2016",
+    "stat": "22 %",
+    "statLabel": "– största minskningen i ljusstyrka",
+    "points": [
+      "Frivilliga i Planet Hunters hittade märkliga dippar i Keplers data.",
+      "Stjärnan såg normal ut, och dipparna berodde inte på fel i instrumentet.",
+      "Spekulationer om utomjordiska konstruktioner exploderade i media."
+    ],
+    "takeaway": "Det ovanliga förtjänar nyfikenhet – och skepsis.",
+    "source": "arXiv:1509.03622 · Boyajian m.fl. (2015)",
+    "more": "Artikeln diskuterade naturliga förklaringar, som en svärm av kometfragment. Astronomen Jason Wright föreslog att man också borde överväga en 'megastruktur', vilket gav stjärnan smeknamnet 'WTF-stjärnan' (artikelns undertitel är 'Where's the Flux?'). Senare observationer visade att dipparna är djupare i blått ljus än i rött, vilket pekar på damm snarare än fasta konstruktioner. Exakt vad som orsakar dammet är fortfarande oklart.",
+    "viz": {
+      "type": "split",
+      "title": "Förklaringar som testats",
+      "a": { "h": "Föreslaget", "items": ["Kometsvärm", "Damm", "Megastruktur"] },
+      "b": { "h": "Senare data", "items": ["Dipparna färgberoende", "Pekar på damm"] }
+    }
+  },
+  {
+    "id": "wavenet",
+    "day": 255,
+    "kind": "ai",
+    "arxiv": "1609.03499",
+    "paper": "WaveNet: A Generative Model for Raw Audio",
+    "hook": "Datorröster lät robotaktiga. WaveNet byggde tal sampel för sampel – och lät mänskligt.",
+    "title": "WaveNet",
+    "meta": "Aaron van den Oord m.fl. · DeepMind, 2016",
+    "stat": "16 000",
+    "statLabel": "ljudvärden per sekund – vart och ett förutsägs",
+    "points": [
+      "Talsyntes klippte ihop inspelade ljud eller använde enkla modeller – det lät konstgjort.",
+      "WaveNet förutsäger ljudvågen direkt, ett värde i taget, utifrån alla tidigare.",
+      "Lyssnare tyckte att den lät klart mer naturlig, på både engelska och mandarin."
+    ],
+    "takeaway": "Detaljerna gör rösten mänsklig.",
+    "source": "arXiv:1609.03499 · van den Oord m.fl. (2016)",
+    "more": "Nätverket använder 'utvidgade' faltningar som gör att det kan se långt bakåt i ljudet utan att bli för stort. Samma modell kunde härma många talare och generera korta musikstycken på piano. Den första versionen var för långsam för praktiskt bruk, men en snabbare variant användes i Google Assistent från 2017. WaveNet var ett genombrott för generativa ljudmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Ljud värde för värde",
+      "steps": ["Titta på tidigare ljudvärden", "Utvidgade faltningar ser långt bakåt", "Förutsäg nästa värde", "Upprepa 16 000 gånger per sekund"]
+    }
+  },
+  {
+    "id": "proxima-b",
+    "day": 256,
+    "kind": "rymd",
+    "arxiv": "1609.03449",
+    "paper": "A terrestrial planet candidate in a temperate orbit around Proxima Centauri",
+    "hook": "Vår närmaste stjärna har en planet där vatten kan vara flytande.",
+    "title": "Proxima b",
+    "meta": "Guillem Anglada-Escudé m.fl. · Nature, 2016",
+    "stat": "4,2",
+    "statLabel": "ljusår bort – närmaste exoplaneten",
+    "points": [
+      "Proxima Centauri är en röd dvärg och solens närmaste granne.",
+      "Stjärnan vickar lite fram och tillbaka var 11,2 dag – en planet drar i den.",
+      "Planeten väger minst 1,3 jordmassor och ligger i den beboeliga zonen."
+    ],
+    "takeaway": "En möjlig värld finns runt hörnet.",
+    "source": "arXiv:1609.03449 · Anglada-Escudé m.fl. (2016)",
+    "more": "Kampanjen 'Pale Red Dot' följde stjärnan intensivt för att utesluta att signalen orsakades av stjärnans aktivitet. Planeten går runt på bara 0,05 AU, men eftersom stjärnan är så ljussvag är temperaturen rätt för flytande vatten. Röda dvärgar har dock kraftiga utbrott som kan blåsa bort en atmosfär, och planeten är troligen tidvattenlåst med samma sida alltid mot stjärnan. Den är ett mål för projekt som Breakthrough Starshot.",
+    "viz": {
+      "type": "bars",
+      "title": "Proxima b mot jorden",
+      "unit": "",
+      "items": [{ "l": "Minsta massa (jorden = 1)", "v": 1.3, "t": "≥1,3" }, { "l": "År (dygn)", "v": 11.2, "t": "11,2" }, { "l": "Avstånd till stjärnan (AU)", "v": 0.05, "t": "0,05" }],
+      "max": 12
+    }
+  },
+  {
+    "id": "25-platser",
+    "day": 257,
+    "kind": "liv",
+    "arxiv": "1609.03526",
+    "paper": "Evidence for a Conserved Quantity in Human Mobility",
+    "hook": "Vi besöker hela tiden nya platser – men har alltid ungefär 25 stamställen.",
+    "title": "Våra 25 platser",
+    "meta": "Laura Alessandretti m.fl. · Nature Human Behaviour, 2018",
+    "stat": "25",
+    "statLabel": "bekanta platser – ungefär konstant över tid",
+    "points": [
+      "Människor återvänder till ett fåtal platser, men upptäcker också hela tiden nya.",
+      "Forskarna följde 40 000 personer i flera år.",
+      "När en ny plats blir ett stamställe faller en gammal bort – antalet står still."
+    ],
+    "takeaway": "Även våra vanor har en budget.",
+    "source": "arXiv:1609.03526 · Alessandretti m.fl. (2016)",
+    "more": "Studien använde högupplöst rörelsedata från fyra datamängder, bland annat från mobiltelefoner. Hur många bekanta platser en person har varierade mellan individer, men var stabilt över tid för varje person. Det liknar Dunbars tal för sociala relationer. Upptäckten förbättrade modeller för hur människor rör sig, vilket är viktigt för exempelvis stadsplanering och smittspridning. Antalet hängde också ihop med hur många sociala kontakter en person har.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett utbyte, inte en tillväxt",
+      "steps": ["Du har ungefär 25 stamställen", "Ett nytt kafé blir ett favoritställe", "Ett gammalt ställe glöms bort", "Antalet förblir ungefär 25"]
+    }
+  },
+  {
+    "id": "k2-18b-vatten",
+    "day": 258,
+    "kind": "rymd",
+    "arxiv": "1909.05218",
+    "paper": "Water vapour in the atmosphere of the habitable-zone eight Earth-mass planet K2-18 b",
+    "hook": "2019: vattenånga på en planet i den beboeliga zonen. Men var det verkligen vatten?",
+    "title": "Vattenånga på K2-18 b?",
+    "meta": "Angelos Tsiaras m.fl. · Nature Astronomy, 2019",
+    "stat": "8",
+    "statLabel": "jordmassor – planetens massa",
+    "points": [
+      "Hubble mätte ljus som passerade genom planetens atmosfär.",
+      "Ett tecken vid 1,4 mikrometer tolkades som vattenånga.",
+      "Det var första gången man såg något sådant på en planet i den beboeliga zonen."
+    ],
+    "takeaway": "Vetenskapen förfinar sina svar med bättre instrument.",
+    "source": "arXiv:1909.05218 · Tsiaras m.fl. (2019)",
+    "more": "Rubrikerna talade om 'vatten på en beboelig planet', men K2-18 b är mycket större än jorden och har troligen en tjock väteatmosfär. JWST:s mätningar 2023 med bättre precision visade att signalen bättre förklaras av metan än av vatten. Studien är ett exempel på hur tidiga resultat från gränsen för vad instrumenten klarar ofta behöver omvärderas.",
+    "viz": {
+      "type": "timeline",
+      "title": "K2-18 b genom åren",
+      "ev": [
+        { "t": "2015", "d": "Planeten upptäcks av Kepler (K2)" },
+        { "t": "2019", "d": "Hubble: möjlig vattenånga" },
+        { "t": "2023", "d": "JWST: metan och koldioxid" }
+      ]
+    }
+  },
+  {
+    "id": "fosfin-venus",
+    "day": 259,
+    "kind": "rymd",
+    "arxiv": "2009.06593",
+    "paper": "Phosphine Gas in the Cloud Decks of Venus",
+    "hook": "En gas som på jorden görs av liv verkade finnas i Venus moln.",
+    "title": "Fosfin på Venus?",
+    "meta": "Jane Greaves m.fl. · Nature Astronomy, 2020",
+    "stat": "20",
+    "statLabel": "miljarddelar fosfin – första uppskattningen",
+    "points": [
+      "Venus moln är tempererade men extremt sura.",
+      "Radioteleskop såg en spektrallinje som passade fosfin.",
+      "Ingen känd icke-biologisk process kunde förklara gasen."
+    ],
+    "takeaway": "Okänd kemi är inte samma sak som liv.",
+    "source": "arXiv:2009.06593 · Greaves m.fl. (2020)",
+    "more": "Fosfin bildas på jorden främst av mikrober i syrefria miljöer och av industri. Upptäckten gav enorm uppmärksamhet. Snart påpekade andra forskare problem med databehandlingen, och efter omkalibrering av ALMA-data sänktes uppskattningen kraftigt. Vissa menar att linjen kan komma från svaveldioxid. Senare mätningar har gett blandade resultat, och frågan är fortfarande omstridd. Episoden ökade intresset för nya rymdsonder till Venus.",
+    "viz": {
+      "type": "timeline",
+      "title": "Fosfindebatten",
+      "ev": [
+        { "t": "Sep 2020", "d": "Fosfin rapporteras: ~20 ppb" },
+        { "t": "Hösten 2020", "d": "Kritik mot databehandlingen" },
+        { "t": "2021", "d": "Omräknat: mycket lägre halter" },
+        { "t": "Idag", "d": "Fortfarande omstritt" }
+      ]
+    }
+  },
+  {
+    "id": "erdos-diskrepans",
+    "day": 260,
+    "kind": "matte",
+    "arxiv": "1509.05363",
+    "paper": "The Erdos discrepancy problem",
+    "hook": "Skriv en oändlig följd av +1 och −1. Hur jämn kan den vara? Erdős frågade på 1930-talet.",
+    "title": "Erdős diskrepansproblem",
+    "meta": "Terence Tao · Discrete Analysis, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Välj en följd av +1 och −1, till exempel +1, −1, −1, +1 …",
+      "Summera var d:e term, för olika d och längder. Kan summorna alltid hållas små?",
+      "Tao bevisade: nej, i varje följd blir någon summa hur stor som helst."
+    ],
+    "takeaway": "Total jämnhet är omöjlig.",
+    "source": "arXiv:1509.05363 · Tao (2015)",
+    "more": "Erdős erbjöd 500 dollar för en lösning. 2014 visade Konev och Lisitsa med en SAT-lösare att diskrepansen 2 inte går att hålla längre än 1 160 termer – med ett bevis på 13 gigabyte. Taos bevis bygger på arbete från nätsamarbetet Polymath5 och ett eget resultat om multiplikativa funktioner som han bevisat veckor tidigare. Han publicerade det i den nystartade öppna tidskriften Discrete Analysis.",
+    "viz": {
+      "type": "flow",
+      "title": "Problemet",
+      "steps": ["En följd: +1, −1, −1, +1, …", "Summera var d:e term", "Kan alla summor vara små?", "Nej – de växer obegränsat"]
+    }
+  },
+  {
+    "id": "kiselsampel",
+    "day": 261,
+    "kind": "liv",
+    "arxiv": "2209.06899",
+    "paper": "Out of One, Many: Using Language Models to Simulate Human Samples",
+    "hook": "Kan GPT-3 svara på en enkät som en 45-årig republikan från Texas skulle göra?",
+    "title": "Kiselurval",
+    "meta": "Lisa Argyle m.fl. · Political Analysis, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskarna gav GPT-3 bakgrunder från tusentals verkliga enkätdeltagare.",
+      "Modellen fick svara på samma frågor som om den vore de personerna.",
+      "Svaren liknade ofta de verkliga gruppernas fördelningar – 'algoritmisk trohet'."
+    ],
+    "takeaway": "AI:ns fördomar kan också vara en spegel.",
+    "source": "arXiv:2209.06899 · Argyle m.fl. (2022)",
+    "more": "I stället för att se modellens skevheter som ett enda problem menar forskarna att de är finfördelade och följer demografi. Med rätt bakgrund kan modellen därför återge hur olika grupper i USA tenderar att svara på politiska frågor. Idén att använda 'kiselurval' i samhällsvetenskap har väckt både intresse och kritik: modellerna kan sakna variation, spegla stereotyper och fungera sämre för grupper och länder som är underrepresenterade i träningsdatan.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett kiselurval",
+      "steps": ["Bakgrund: ålder, delstat, åsikter", "Ge den till språkmodellen", "Ställ enkätfrågan", "Jämför med verkliga svar"]
+    }
+  },
+  {
+    "id": "rattvisans-avvagningar",
+    "day": 262,
+    "kind": "liv",
+    "arxiv": "1609.05807",
+    "paper": "Inherent Trade-Offs in the Fair Determination of Risk Scores",
+    "hook": "Tre rimliga krav på rättvisa algoritmer – och det är matematiskt omöjligt att uppfylla alla.",
+    "title": "Rättvisans omöjlighet",
+    "meta": "Kleinberg, Mullainathan & Raghavan · ITCS, 2017",
+    "stat": "3",
+    "statLabel": "rättvisekrav som inte kan uppfyllas samtidigt",
+    "points": [
+      "Riskbedömningar används för beslut om borgen, lån och vård.",
+      "Debatten gällde vad rättvist betyder: lika träffsäkert, eller lika felfrekvens för alla grupper?",
+      "Om grupperna skiljer sig i grundrisk går kraven inte att förena."
+    ],
+    "takeaway": "Rättvisa kräver val, inte bara beräkning.",
+    "source": "arXiv:1609.05807 · Kleinberg m.fl. (2016)",
+    "more": "Artikeln kom efter granskningen av riskverktyget COMPAS, där journalister visade att svarta åtalade oftare felaktigt bedömdes som högrisk. Tillverkaren svarade att verktyget var lika väl kalibrerat för alla grupper. Kleinberg och kollegor visade att båda kan ha rätt: kalibrering och lika felfrekvenser kan inte uppfyllas samtidigt utom i specialfall. Liknande resultat visades samtidigt av Alexandra Chouldechova. Det betyder att samhället måste välja vilken rättvisa som väger tyngst.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre krav",
+      "steps": ["Kalibrering: 70 % risk betyder 70 % för alla", "Lika många falska larm per grupp", "Lika många missar per grupp", "Alla tre samtidigt: omöjligt*"],
+      "note": "*Utom om grupperna har samma grundrisk."
+    }
+  },
+  {
+    "id": "gaia-bh1",
+    "day": 263,
+    "kind": "rymd",
+    "arxiv": "2209.06833",
+    "paper": "A Sun-like star orbiting a black hole",
+    "hook": "Det närmaste kända svarta hålet ligger bara 1 600 ljusår bort – med en sol som sällskap.",
+    "title": "Gaia BH1",
+    "meta": "Kareem El-Badry m.fl. · MNRAS, 2023",
+    "stat": "9,62",
+    "statLabel": "solmassor – det osynliga följeslagarens massa",
+    "points": [
+      "Gaia såg en solliknande stjärna röra sig i en bana runt något osynligt.",
+      "Följeslagaren väger nästan tio solmassor men lyser inte alls.",
+      "Det kan bara vara ett 'sovande' svart hål."
+    ],
+    "takeaway": "De flesta svarta hål är tysta.",
+    "source": "arXiv:2209.06833 · El-Badry m.fl. (2022)",
+    "more": "De flesta kända svarta hål upptäcks för att de slukar gas från en grannstjärna och strålar i röntgen. Gaia BH1 gör inte det – stjärnan går runt på ungefär samma avstånd som jorden från solen. Det gör systemet till en gåta: hur kunde en stjärna överleva så nära när det svarta hålets föregångare var en jättestjärna? Forskarna uppskattar att det finns omkring 100 miljoner svarta hål i Vintergatan, de flesta sovande.",
+    "viz": {
+      "type": "bars",
+      "title": "Paret i Gaia BH1",
+      "unit": "",
+      "items": [{ "l": "Stjärnan (solmassor)", "v": 0.93, "t": "0,93" }, { "l": "Svarta hålet (solmassor)", "v": 9.62, "t": "9,62" }],
+      "hi": 1,
+      "max": 10
+    }
+  },
+  {
+    "id": "interstellara-meteorer",
+    "day": 264,
+    "kind": "rymd",
+    "arxiv": "2209.09905",
+    "paper": "Interstellar Meteors are Outliers in Material Strength",
+    "hook": "Ett eldklot över Stilla havet 2014 kan ha kommit från en annan stjärna.",
+    "title": "Meteorer från andra stjärnor?",
+    "meta": "Amir Siraj & Avi Loeb · 2022",
+    "stat": "273",
+    "statLabel": "eldklot i katalogen jämfördes",
+    "points": [
+      "Amerikanska satelliter registrerar stora eldklot i atmosfären.",
+      "Ett från 2014 hade så hög fart att det verkade komma utifrån solsystemet.",
+      "Det och en ny kandidat var ovanligt hårda jämfört med andra meteorer."
+    ],
+    "takeaway": "Extraordinära påståenden kräver extraordinära bevis.",
+    "source": "arXiv:2209.09905 · Siraj & Loeb (2022)",
+    "more": "Den första kandidaten, IM1, föll nära Papua Nya Guinea. USA:s försvarsdepartement bekräftade 2022 att hastighetsmätningen var tillräckligt säker för en interstellär bana. Forskarna jämförde hur stort tryck objekten tålde innan de bröts sönder. Många forskare har ifrågasatt osäkerheten i de militära sensordata. Loeb ledde 2023 en expedition som hittade små metallkulor på havsbotten, men om de kommer från meteoren – och från en annan stjärna – är starkt omdiskuterat.",
+    "viz": {
+      "type": "split",
+      "title": "Påstående och kritik",
+      "a": { "h": "Påstående", "items": ["Interstellär fart", "Ovanligt hård"] },
+      "b": { "h": "Kritik", "items": ["Osäkra sensordata", "Kulorna kan vara annat"] }
+    }
+  }
+]

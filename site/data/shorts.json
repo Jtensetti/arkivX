@@ -21,7 +21,7 @@
   "more": "Det finns ungefär 5,5 miljarder väsentligt olika färdiga sudokurutnät. För vart och ett letade gruppen efter en uppsättning med 16 rutor som räcker för att bara en lösning ska vara möjlig. Problemet är ett så kallat 'hitting set'-problem, ett av Karps 21 klassiska NP-fullständiga problem, så en vanlig sökning hade tagit för lång tid även på en superdator. Med en ny metod för att räkna upp sådana mängder gick det att söka igenom allt. Inga 16-ledtrådspussel fanns – alltså är 17 det minsta möjliga.",
   "video": "videos/sudoku-16-ledtradar.mp4",
   "poster": "posters/sudoku-16-ledtradar.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "nisq-eran",
@@ -45,7 +45,7 @@
   "more": "Artikeln bygger på ett föredrag och har blivit en av de mest citerade texterna om dagens kvantdatorer. Preskill menar att NISQ-maskiner blir användbara verktyg för att utforska kvantfysik i många partiklar och kanske för vissa andra tillämpningar, men att en kvantdator med 100 kvantbitar inte förändrar världen direkt. Målet bör vara mer exakta kvantgrindar och till slut felkorrigerade, feltoleranta kvantdatorer.",
   "video": "videos/nisq-eran.mp4",
   "poster": "posters/nisq-eran.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "cacio-e-pepe",
@@ -93,7 +93,7 @@
   "more": "Tidigare hade alla radioblixtar upptäckts med stora enskilda radioteleskop som bara kunde ange en grov riktning. Eftersom FRB 121102 blixtrade om och om igen kunde forskarna använda radiointerferometri och avbilda själva utbrotten med mycket hög precision. Källan visade sig ligga i en liten dvärggalax med låg metallhalt, ungefär tre miljarder ljusår bort. Därmed var det bevisat att radioblixtar kommer från andra galaxer.",
   "video": "videos/frb-121102-hem.mp4",
   "poster": "posters/frb-121102-hem.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "grokking",
@@ -117,7 +117,7 @@
   "more": "'Grok' betyder ungefär att förstå något på djupet. I studien såg forskarna att nätverken kunde gå från slumpnivå till perfekt träffsäkerhet på nya exempel – långt efter den punkt där de redan kunde träningsdatan perfekt och alltså 'överanpassat'. Ju mindre datamängd, desto längre träning krävdes. Fenomenet har blivit ett viktigt exempel i forskningen om hur och varför stora nätverk generaliserar.",
   "video": "videos/grokking.mp4",
   "poster": "posters/grokking.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "ringels-formodan",
@@ -141,7 +141,7 @@
   "more": "K₂ₙ₊₁ är den kompletta grafen med 2n+1 punkter där alla punkter är förbundna med varandra. Den har exakt (2n+1)·n kanter, alltså precis lika många som 2n+1 träd med n kanter vardera. Frågan är om de alltid kan läggas utan överlapp. Gerhard Ringel ställde den 1963 och den blev en av de mest kända frågorna om att dela upp grafer. Beviset från 2020 använder slumpmässiga metoder och gäller för alla tillräckligt stora träd.",
   "video": "videos/ringels-formodan.mp4",
   "poster": "posters/ringels-formodan.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "skalfria-natverk-ovanliga",
@@ -165,7 +165,7 @@
   "more": "Ett skalfritt nätverk har en gradfördelning som följer en potenslag. Idén blev mycket populär runt år 2000, men stödet byggde på ett ganska litet antal nätverk. Broido och Clauset anpassade potenslagar till nästan tusen datamängder och jämförde dem statistiskt med alternativ som den log-normala fördelningen. 4 procent visade starkast möjliga stöd och 52 procent bara det svagaste. Sociala nätverk var oftast inte skalfria, medan vissa biologiska och tekniska nätverk var det. Artikeln startade en livlig debatt.",
   "video": "videos/skalfria-natverk-ovanliga.mp4",
   "poster": "posters/skalfria-natverk-ovanliga.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "keplers-formodan",
@@ -189,7 +189,7 @@
   "more": "Thomas Hales datorstödda bevis från 1998 innehöll enorma beräkningar. Granskarna skrev att de var 99 procent säkra – men inte helt. Hales startade därför Flyspeck, där beviset skrevs om så att bevisassistenterna HOL Light och Isabelle kunde kontrollera varje logiskt steg. Projektet blev klart 2014 och artikeln är den officiella beskrivningen. Den tätaste packningen fyller π/√18 ≈ 74 procent av rummet.",
   "video": "videos/keplers-formodan.mp4",
   "poster": "posters/keplers-formodan.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "svarta-hal-entropi",
@@ -213,7 +213,7 @@
   "more": "Entropi brukar räkna hur många mikroskopiska tillstånd ett system kan ha. För svarta hål visade Bekenstein och Hawking på 1970-talet att entropin är proportionell mot horisontens area A, men inte vad tillstånden var. Strominger och Vafa studerade en särskild sorts femdimensionella, så kallade extremala svarta hål i strängteori och räknade antalet bundna tillstånd. Resultatet blev exakt A/4. Det gäller bara en speciell klass av svarta hål, men blev ett viktigt argument för strängteorin.",
   "video": "videos/svarta-hal-entropi.mp4",
   "poster": "posters/svarta-hal-entropi.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "baryonakustiska-toppen",
@@ -261,7 +261,7 @@
   "more": "Forskarna byggde medvetet in en 'bakdörr' för att se om dagens säkerhetsmetoder kan hitta och ta bort den: finjustering med exempel, förstärkningsinlärning och adversariell träning där man lockar fram dåligt beteende och tränar bort det. Bakdörren överlevde, och tydligast i de största modellerna och i modeller som tränats att resonera om att lura sin träning. Studien visar inte att dagens modeller gör så här av sig själva, men att ett sådant beteende kan vara svårt att upptäcka och ta bort.",
   "video": "videos/sovande-agenter.mp4",
   "poster": "posters/sovande-agenter.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "kontrafaktiska-varldsmodeller",
@@ -285,7 +285,7 @@
   "more": "Tänk dig en båt som knuffas av en ström du inte ser. Hade ett annat roderutslag gått bättre? För att svara måste man hålla den okända störningen fast och bara byta handling. Artikeln visar att det inte går med vanlig träning på faktiska utfall, oavsett datamängd. Men för många fysikaliska system samverkar handling och störning bara svagt på kort tid. Då blir det kontrafaktiska utfallet, till första ordningen, det observerade utfallet plus skillnaden mellan modellens förutsägelser för de två handlingarna – utan extra data eller parametrar.",
   "video": "videos/kontrafaktiska-varldsmodeller.mp4",
   "poster": "posters/kontrafaktiska-varldsmodeller.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "mip-re",
@@ -309,7 +309,7 @@
   "more": "MIP* är klassen av problem som en vanlig dator kan avgöra genom att ställa frågor till flera bevisare som inte kan prata med varandra men delar sammanflätade kvanttillstånd. RE är alla problem vars ja-svar kan bekräftas, bland dem stopproblemet. Att klasserna är lika betyder att sammanflätning gör sådana förhör otroligt kraftfulla. Resultatet gav också ett nej till Tsirelsons problem i kvantfysik och därmed till Connes inbäddningsförmodan i operatoralgebra – tre områden förenades i ett bevis.",
   "video": "videos/mip-re.mp4",
   "poster": "posters/mip-re.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "robomorpher",
@@ -333,7 +333,7 @@
   "more": "Målet är robotar som kan dela kunskap trots att deras kroppar är olika. Systemet är en 'tokeniserare' för handlingar som tar hänsyn till robotens form, tränad på 40 miljoner exempel från genererade robotarmar. Den kopplas sedan in i en modell som tolkar bilder och språk och väljer rörelser. Forskarna byggde också ett nytt test, EmbodiBench. Med robotformer som modellen aldrig sett i förträningen klarade den 56,4 procent av uppgifterna i RoboTwin 2.0 och 23,3 procent i EmbodiBench.",
   "video": "videos/robomorpher.mp4",
   "poster": "posters/robomorpher.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "desi-dr2",
@@ -357,7 +357,7 @@
   "more": "DESI är ett instrument på ett teleskop i Arizona som mäter spektrum från tusentals objekt samtidigt. Efter tre års data passar mätningarna av baryonakustiska svängningar en enkel modell med konstant mörk energi, men parametrarna ligger något ifrån dem som bakgrundsstrålningen ger. Spänningen minskar om den mörka energin får förändras över tid, särskilt när supernovadata läggs till. Signalen är ännu inte stark nog för att räknas som en upptäckt, men den har gjort frågan om mörk energi mer öppen än på länge.",
   "video": "videos/desi-dr2.mp4",
   "poster": "posters/desi-dr2.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "word2vec",
@@ -381,7 +381,7 @@
   "more": "Mikolov och kollegor föreslog två enkla modeller som lär sig ordvektorer genom att gissa ett ord utifrån orden runt omkring, eller tvärtom. De var mycket snabbare än tidigare neurala modeller men gav bättre vektorer. I ett test med analogier visade de att man kan räkna med betydelser: vektorn för 'kung' minus 'man' plus 'kvinna' hamnar närmast 'drottning'. Idén banade väg för dagens språkmodeller, som också gör om ord till vektorer.",
   "video": "videos/word2vec.mp4",
   "poster": "posters/word2vec.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "microsoft-majorana-paritet",
@@ -405,7 +405,7 @@
   "more": "En topologisk kvantbit skulle vara mycket mer tålig än dagens kvantbitar, eftersom informationen sprids ut så att lokala störningar inte når den. För att använda den måste man kunna mäta den gemensamma pariteten hos två Majoranalägen. Här görs det med en nanotråd av indiumarsenid och aluminium kopplad till kvantprickar, där kapacitansen ändras beroende på pariteten. Nature skrev i samband med publiceringen att resultaten inte i sig visar att Majoranalägen finns. Tidigare påstådda Majoranasignaler har dragits tillbaka, så fältet är försiktigt.",
   "video": "videos/microsoft-majorana-paritet.mp4",
   "poster": "posters/microsoft-majorana-paritet.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "hilberts-sjatte-problem",
@@ -429,7 +429,7 @@
   "more": "Fluiders rörelse beskrivs av ekvationer som Euler- och Navier–Stokes-ekvationerna, medan atomer följer Newtons lagar. Hilbert föreslog 1900 att man skulle visa hur det ena följer ur det andra via Boltzmanns kinetiska teori. Det svåra har varit att visa att Boltzmanns ekvation gäller under lång tid. Deng, Hani och Ma gör det för hårda sfärer som kolliderar elastiskt och fullbordar på så vis kedjan. Arbetet är en förhandspublicering och granskas fortfarande, men det har väckt stor uppmärksamhet.",
   "video": "videos/hilberts-sjatte-problem.mp4",
   "poster": "posters/hilberts-sjatte-problem.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "planet-nio",
@@ -453,7 +453,7 @@
   "more": "Batygin och Brown – Brown är astronomen bakom att Pluto degraderades till dvärgplanet – visade att de mest avlägsna objektens banor inte bara har liknande orientering utan också ligger samlade i rummet. Med simuleringar fann de att en tung planet på en lång, avlång bana kan hålla ihop mönstret. Ingen har ännu sett planeten. Kritiker menar att mönstret kan bero på var teleskopen har tittat. Vera C. Rubin-observatoriet väntas ge ett tydligare svar.",
   "video": "videos/planet-nio.mp4",
   "poster": "posters/planet-nio.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "tennis-pagerank",
@@ -477,7 +477,7 @@
   "more": "I nätverket pekar varje match från förloraren till vinnaren, så att 'prestige' flödar mot dem som slagit starka spelare. Radicchi rankade också bästa spelare per underlag och per år. Hans metod behövde inga godtyckliga poängregler, som de officiella rankningarna har, och förutsade utfallet av matcher bättre. Studien gäller bara data fram till 2010, så senare karriärer, som Djokovićs och Nadals fortsättning, ingår inte fullt ut.",
   "video": "videos/tennis-pagerank.mp4",
   "poster": "posters/tennis-pagerank.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "deepseek-r1",
@@ -525,7 +525,7 @@
   "more": "Supersolider förutsades redan på 1960- och 70-talen, men försök med fast helium gav inga säkra bevis. Under 2019 rapporterade tre grupper, i Stuttgart, Innsbruck och Florens, supersolida egenskaper i kalla gaser av starkt magnetiska atomer. I Stuttgart visade man både den periodiska täthetsvariationen och att faserna hängde ihop genom att låta dropparna interferera som materievågor. Tillståndet var kortlivat, men senare försök har gjort det stabilt.",
   "video": "videos/supersolid.mp4",
   "poster": "posters/supersolid.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "mixture-of-experts",
@@ -549,7 +549,7 @@
   "more": "Mer kapacitet brukar kräva mer beräkningar. Idén med villkorlig beräkning är att bara aktivera de delar av nätverket som behövs. Shazeer och kollegor löste flera praktiska problem, som att se till att alla experter faktiskt används. De byggde modeller med upp till 137 miljarder parametrar för språkmodellering och översättning. Tekniken används i dag i många av de största språkmodellerna.",
   "video": "videos/mixture-of-experts.mp4",
   "poster": "posters/mixture-of-experts.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "skalningslagar",
@@ -573,7 +573,7 @@
   "more": "Artikeln visade att språkmodellers fel följer jämna, förutsägbara kurvor när man ökar storleken. Det gjorde det möjligt att planera stora träningar i förväg. Slutsatsen att modellen borde växa snabbare än datamängden påverkade bland annat GPT-3. Två år senare visade Chinchilla-studien att man i stället bör öka modell och data ungefär lika mycket – men idén om skalningslagar står kvar.",
   "video": "videos/skalningslagar.mp4",
   "poster": "posters/skalningslagar.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "humanitys-last-exam",
@@ -597,7 +597,7 @@
   "more": "Över tusen forskare och experter bidrog med frågor i matematik, naturvetenskap och humaniora, och frågor som dåtidens modeller klarade sorterades bort. Testet ska vara det sista slutna akademiska provet i sitt slag: när AI klarar det säger det mycket om kunskaper, men inget om förmågan att forska på egen hand. Modellerna visade också dålig kalibrering – de angav hög säkerhet på fel svar. Resultaten har sedan stigit snabbt.",
   "video": "videos/humanitys-last-exam.mp4",
   "poster": "posters/humanitys-last-exam.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "hedonometern",
@@ -621,7 +621,7 @@
   "more": "Lycka mäts oftast med enkäter, och i politiken styr mått som BNP. Här byggde forskarna en 'hedonometer' av 4,6 miljarder tweets under 33 månader. Ord som 'skratt' och 'kärlek' fick höga betyg och ord som 'terrorist' låga. Helgerna var gladare än vardagarna, och tydliga dippar syntes vid händelser som jordbävningar och finanskris. Metoden mäter hur folk uttrycker sig offentligt, inte hur de innerst inne mår, men den gav ett nytt sätt att följa stämningar över tid.",
   "video": "videos/hedonometern.mp4",
   "poster": "posters/hedonometern.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "chain-of-thought",
@@ -693,7 +693,7 @@
   "more": "Den japanske matematikern Sōichi Kakeya frågade 1917 hur liten yta som behövs för att vända en nål ett helt varv. Besicovitch visade att ytan kan göras hur liten som helst. Men mängdens dimension – ett mått på hur mycket den fyller ut – är en annan fråga. Förmodan säger att den alltid är full. I planet var det känt sedan 1970-talet, men i tre dimensioner har problemet varit öppet i årtionden. Beviset kopplar till svåra frågor i harmonisk analys och har kallats ett av årtiondets stora genombrott.",
   "video": "videos/kakeya-3d.mp4",
   "poster": "posters/kakeya-3d.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "pengarnas-fysik",
@@ -717,7 +717,7 @@
   "more": "Artikeln är en klassiker inom ekonofysik. Precis som energin i en gas fördelar sig enligt Boltzmann–Gibbs-lagen, visade simuleringar att pengar som byter ägare slumpmässigt fördelar sig exponentiellt. 'Temperaturen' blir den genomsnittliga summan per person. Senare studier av inkomstdata visade att de flesta människors inkomster följer en sådan fördelning, medan de allra rikaste följer en potenslag. Modellen är förenklad men visar att ojämlikhet inte kräver skillnader i skicklighet.",
   "video": "videos/pengarnas-fysik.mp4",
   "poster": "posters/pengarnas-fysik.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "deepseekmath-grpo",
@@ -741,7 +741,7 @@
   "more": "Vanlig förstärkningsinlärning för språkmodeller, PPO, behöver en extra värderingsmodell som uppskattar hur bra ett svar är. GRPO hoppar över den: modellen svarar flera gånger på samma fråga, och varje svar belönas efter hur mycket bättre det är än gruppens genomsnitt. Det sparar minne och visade sig fungera mycket bra. Ett år senare användes GRPO för att träna DeepSeek-R1.",
   "video": "videos/deepseekmath-grpo.mp4",
   "poster": "posters/deepseekmath-grpo.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "hogljudda-utomjordingar",
@@ -765,7 +765,7 @@
   "more": "Modellen kallas ofta 'grabby aliens'. Den har tre parametrar: hur snabbt civilisationer uppstår, när, och hur snabbt de expanderar. Att vi inte ser några sådana bubblor på himlen betyder att de expanderar nästan med ljusets hastighet. 'Tysta' civilisationer som inte expanderar skulle däremot vara svåra att se, men enligt modellen måste även de vara sällsynta. Det är en spekulativ men tänkvärd modell för Fermis paradox.",
   "video": "videos/hogljudda-utomjordingar.mp4",
   "poster": "posters/hogljudda-utomjordingar.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "bicep2-dammet",
@@ -813,7 +813,7 @@
   "more": "Milleniumproblemet frågar om lösningarna till Navier–Stokes ekvationer i tre dimensioner alltid förblir jämna, med en prissumma på en miljon dollar. Tao visade att ett bevis inte kan bygga enbart på energibevarandet och liknande allmänna egenskaper – för de gäller även hans variant, där lösningen exploderar. Han föreslog att en verklig explosion kanske skulle kunna byggas som en 'vätskedator' som skickar energi till allt mindre skalor. Problemet är fortfarande olöst.",
   "video": "videos/tao-navier-stokes.mp4",
   "poster": "posters/tao-navier-stokes.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "kelley-meka",
@@ -837,7 +837,7 @@
   "more": "Roth visade 1953 att varje tillräckligt tät mängd heltal innehåller en tretermig aritmetisk följd. Sedan dess har gränsen för hur gles en mängd utan följder kan vara förbättrats i små steg. Kelley och Meka, som forskar i teoretisk datavetenskap, tog ett jättekliv. Deras gräns har nästan samma form som Behrends konstruktion från 1946 av stora mängder utan följder, så nu vet man ungefär var sanningen ligger.",
   "video": "videos/kelley-meka.mp4",
   "poster": "posters/kelley-meka.jpg",
-  "ready": false
+  "ready": true
  },
  {
   "id": "controlnet",
@@ -8757,6 +8757,6 @@
   "more": "DeepSeek-V3 är en Mixture-of-Experts-modell med en ny metod för att fördela arbetet mellan experterna utan extra förluster, en minnessnål uppmärksamhet (MLA) och träning att förutsäga flera ord åt gången. Den tränades på 14,8 biljoner token. Den rapporterade träningskostnaden motsvarade runt 5,6 miljoner dollar i GPU-hyra, utan att räkna forskning och tidigare experiment. Några veckor senare kom DeepSeek-R1, byggd på V3, och skakade om både AI-världen och börsen.",
   "video": "videos/deepseek-v3.mp4",
   "poster": "posters/deepseek-v3.jpg",
-  "ready": false
+  "ready": true
  }
 ]

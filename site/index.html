@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Smart Content</title>
-    <meta name="description" content="Korta videor om filosofi, vetenskapliga studier, tankemodeller och myter. Scrolla och lär dig något nytt." />
+    <title>arkivX</title>
+    <meta name="description" content="En kort video om dagen om riktig forskning från arXiv – AI, fysik, rymden, matematik och samhälle." />
     <meta name="theme-color" content="#0b0d14" />
-    <meta property="og:title" content="Smart Content – lär dig något på 20 sekunder" />
-    <meta property="og:description" content="Filosofer, studier, tankemodeller och myter i korta videor." />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0d14'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='%23f5b942' font-family='Georgia'%3E%CE%A6%3C/text%3E%3C/svg%3E" />
+    <meta property="og:title" content="arkivX – en studie om dagen" />
+    <meta property="og:description" content="365 korta videor om verkliga forskningsartiklar från arXiv, en för varje dag." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0d14'/%3E%3Ctext x='32' y='46' font-size='40' text-anchor='middle' fill='%234cc9f0' font-family='Georgia'%3EX%3C/text%3E%3C/svg%3E" />
     <style>
       :root {
         --ground: #0b0d14;
@@ -16,7 +16,7 @@
         --ink: #f6f3ec;
         --muted: rgba(246, 243, 236, 0.66);
         --line: rgba(255, 255, 255, 0.14);
-        --accent: #f5b942;
+        --accent: #4cc9f0;
         --col: min(100vw, calc(100dvh * 9 / 16));
         color-scheme: dark;
       }
@@ -101,6 +101,8 @@
       .take { margin-top: 18px; padding: 14px 16px; border-left: 4px solid var(--k); background: rgba(255,255,255,.05); border-radius: 0 12px 12px 0; font-weight: 800; font-size: 17px; line-height: 1.35; }
       .sheet-card .more { margin-top: 16px; font-size: 15px; line-height: 1.6; color: rgba(246,243,236,.86); }
       .sheet-card .src { margin-top: 16px; font-size: 13px; color: var(--muted); }
+      .sheet-card .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+      .sheet-card .links a { color: var(--ink); font-size: 14px; font-weight: 700; text-decoration: none; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line); }
       .sheet-card .close { margin-top: 20px; width: 100%; padding: 12px; border-radius: 12px; border: 1px solid var(--line); font-weight: 700; }
 
       @media (min-width: 700px) {
@@ -112,7 +114,7 @@
   </head>
   <body>
     <header>
-      <div class="brand">smart<b>·</b>content</div>
+      <div class="brand">arkiv<b>X</b></div>
       <nav class="chips" id="chips" aria-label="Filtrera"></nav>
     </header>
     <main id="feed" aria-live="polite"></main>
@@ -150,7 +152,9 @@
         const sheetCard = document.getElementById("sheet-card");
         const hint = document.getElementById("hint");
         const toast = document.getElementById("toast");
-        const FILTERS = [["alla", "Alla"], ["filosofi", "Filosofi"], ["studie", "Studier"], ["begrepp", "Tankemodeller"], ["myt", "Myter"]];
+        const FILTERS = [["alla", "Alla"], ["ai", "AI"], ["fysik", "Fysik"], ["rymd", "Rymden"], ["matte", "Matte"], ["liv", "Samhälle"]];
+        // Day 1 = 1 January in a non-leap year, the same mapping the build script uses.
+        const todayDay = () => { const n = new Date(); const d = new Date(Date.UTC(2027, n.getMonth(), n.getDate())); return Math.round((d - Date.UTC(2027, 0, 1)) / 864e5) + 1; };
 
         let shorts = [];
         let muted = true;
@@ -184,7 +188,7 @@
             v.addEventListener("error", () => stage.classList.add("novideo"));
             node.querySelector(".textcard .h").textContent = s.hook;
             node.querySelector(".textcard .t").textContent = s.points.join(" ") + " — " + s.takeaway;
-            node.querySelector(".kind").textContent = s.label + " · #" + s.num;
+            node.querySelector(".kind").textContent = s.label + " · " + s.date;
             node.querySelector(".info h2").textContent = s.title;
             node.querySelector(".info p").textContent = s.source;
             const fill = node.querySelector(".bar i");
@@ -262,7 +266,8 @@
             <ol>${s.points.map((p) => `<li><span>${esc(p)}</span></li>`).join("")}</ol>
             <div class="take">${esc(s.takeaway)}</div>
             <p class="more">${esc(s.more)}</p>
-            <p class="src">Källa: ${esc(s.source)}</p>
+            <p class="src">Källa: ${esc(s.source)}<br><i>${esc(s.paper)}</i></p>
+            <p class="links"><a href="https://arxiv.org/abs/${esc(s.arxiv)}" target="_blank" rel="noopener">Läs artikeln på arXiv ↗</a><a href="https://www.alphaxiv.org/abs/${esc(s.arxiv)}" target="_blank" rel="noopener">Diskutera på alphaXiv ↗</a></p>
             <button class="close">Stäng</button>`;
           sheetCard.querySelector(".close").onclick = closeSheet;
           sheet.classList.add("open");
@@ -316,8 +321,10 @@
           .then((data) => {
             shorts = data;
             render();
+            // Open on the shared short, or else on today's date.
             const target = decodeURIComponent(location.hash.slice(1));
-            const el = target && document.getElementById(target);
+            const today = shorts.find((s) => s.day === todayDay());
+            const el = (target && document.getElementById(target)) || (today && document.getElementById(today.id));
             if (el) el.scrollIntoView();
           })
           .catch(() => { feed.innerHTML = '<p style="padding:80px 20px">Kunde inte ladda innehållet.</p>'; });

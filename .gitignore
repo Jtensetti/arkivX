@@ -2,3 +2,4 @@ node_modules/
 renders/
 video/.hyperframes/
 video/batch.json
+research/render.log

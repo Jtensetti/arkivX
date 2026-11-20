@@ -1,25 +1,26 @@
 {
-  "name": "smart-content",
+  "name": "arkivx",
   "version": "1.0.0",
-  "description": "Lärorika YouTube Shorts: kurerat innehåll → HyperFrames-videor → scrollflöde",
+  "description": "En kort video om dagen om riktig forskning från arXiv: verifierade artiklar → HyperFrames-videor → scrollflöde",
   "scripts": {
     "content": "node scripts/build-content.mjs",
-    "render": "node scripts/build-content.mjs && cd video && hyperframes render --batch batch.json -o ../renders/{slug}.mp4",
+    "render": "bash scripts/render-loop.sh",
     "web": "bash scripts/encode-web.sh",
     "preview": "cd video && hyperframes preview",
     "serve": "npx --yes serve site",
-    "music": "bash scripts/make-music.sh"
+    "music": "bash scripts/make-music.sh",
+    "papers": "python3 research/fetch_arxiv.py research/candidates.txt"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jtensetti/smart-content-.git"
+    "url": "git+https://github.com/Jtensetti/arkivX.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jtensetti/smart-content-/issues"
+    "url": "https://github.com/Jtensetti/arkivX/issues"
   },
-  "homepage": "https://github.com/Jtensetti/smart-content-#readme",
+  "homepage": "https://github.com/Jtensetti/arkivX#readme",
   "devDependencies": {
     "hyperframes": "^0.9.23"
   },

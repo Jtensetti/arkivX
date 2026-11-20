@@ -1,0 +1,315 @@
+[
+  {
+    "id": "toolformer",
+    "day": 37,
+    "kind": "ai",
+    "arxiv": "2302.04761",
+    "paper": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "hook": "AI som skriver poesi räknar ändå fel på enkel matte. Lösning: låt den använda en miniräknare.",
+    "title": "Toolformer",
+    "meta": "Timo Schick m.fl. · Meta AI, 2023",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Stora språkmodeller klarar svåra uppgifter men slarvar med räkning och fakta.",
+      "Toolformer lärde sig själv när den ska anropa en miniräknare, sökmotor eller kalender.",
+      "Det krävdes bara en handfull exempel per verktyg – resten tränade modellen fram själv."
+    ],
+    "takeaway": "Den som vet vilket verktyg som behövs vinner.",
+    "source": "arXiv:2302.04761 · Schick m.fl. (2023)",
+    "more": "Modellen fick först några exempel på verktygsanrop. Sedan föreslog den själv anrop i stora mängder text och behöll bara de som gjorde det lättare att förutsäga nästa ord. På så vis lärde den sig utan mänsklig märkning när ett verktyg faktiskt hjälper. Verktygen var en miniräknare, ett frågesvarssystem, två sökmotorer, ett översättningssystem och en kalender. Idén ligger nära dagens AI-agenter som använder verktyg.",
+    "viz": {
+      "type": "flow",
+      "title": "Så lärde den sig",
+      "steps": ["Några exempel på verktygsanrop", "Modellen föreslår egna anrop i text", "Behåll de anrop som hjälper", "Träna om på de bästa exemplen"]
+    }
+  },
+  {
+    "id": "rome-redigera-fakta",
+    "day": 38,
+    "kind": "ai",
+    "arxiv": "2202.05262",
+    "paper": "Locating and Editing Factual Associations in GPT",
+    "hook": "Var i en AI-modell sitter vetskapen att Eiffeltornet står i Paris? Och kan man flytta det?",
+    "title": "Redigera fakta i GPT",
+    "meta": "Kevin Meng m.fl. · MIT, 2022",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskarna 'störde' modellen på olika ställen för att se vilka delar som bar på fakta.",
+      "Fakta om ett ämne verkade lagras i mellanlagrens framåtkopplade delar.",
+      "Med metoden ROME kunde de ändra en enda fakta genom att justera de vikterna."
+    ],
+    "takeaway": "Kunskap i AI kan ha en adress.",
+    "source": "arXiv:2202.05262 · Meng m.fl. (2022)",
+    "more": "Metoden kallas kausal spårning: man förstör en del av informationen och ser vilka aktiveringar som återställer rätt svar. De avgörande stegen fanns i mellanlagren när modellen läste ämnesordet. Med ROME (Rank-One Model Editing) ändrade forskarna fakta, till exempel att Eiffeltornet ligger i Rom, och modellen använde sedan den nya faktan i andra sammanhang. Senare forskning har visat att bilden är mer komplicerad, men studien blev en milstolpe inom tolkningsbar AI.",
+    "viz": {
+      "type": "flow",
+      "title": "Hitta och ändra en fakta",
+      "steps": ["Störa modellen på olika ställen", "Se vad som återställer rätt svar", "Fakta sitter i mellanlagren", "Ändra vikterna: ny fakta"]
+    }
+  },
+  {
+    "id": "umap",
+    "day": 39,
+    "kind": "matte",
+    "arxiv": "1802.03426",
+    "paper": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+    "hook": "Hur ritar man data med tusen dimensioner på ett platt papper?",
+    "title": "UMAP",
+    "meta": "McInnes, Healy & Melville · 2018",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Mycket data har hundratals dimensioner – omöjligt att se direkt.",
+      "UMAP bygger ett nätverk av grannar och lägger ut det i två dimensioner.",
+      "Den är snabb och bevarar mer av helheten än äldre metoden t-SNE."
+    ],
+    "takeaway": "Rätt karta gör det osynliga synligt.",
+    "source": "arXiv:1802.03426 · McInnes m.fl. (2018)",
+    "more": "UMAP bygger på idéer från Riemanngeometri och algebraisk topologi, men i praktiken är den ett snabbt verktyg. Den blev standard i biologin för att visualisera data från enskilda celler, där varje cell beskrivs av tusentals gener och celltyper syns som öar i kartan. Som alla sådana metoder förvränger den avstånd, så man ska vara försiktig med att tolka storlek och avstånd mellan öarna.",
+    "viz": {
+      "type": "flow",
+      "title": "Från tusen dimensioner till två",
+      "steps": ["Data med tusentals dimensioner", "Hitta varje punkts närmaste grannar", "Bygg ett nätverk av grannskap", "Lägg ut nätverket på ett plan"]
+    }
+  },
+  {
+    "id": "gravitationsvagor-gw150914",
+    "day": 40,
+    "kind": "rymd",
+    "arxiv": "1602.03837",
+    "paper": "Observation of Gravitational Waves from a Binary Black Hole Merger",
+    "hook": "För 1,3 miljarder år sedan krockade två svarta hål. 2015 hörde vi det.",
+    "title": "Den första gravitationsvågen",
+    "meta": "LIGO & Virgo · PRL, 2016",
+    "stat": "1,0 × 10⁻²¹",
+    "statLabel": "så mycket sträcktes rummet ut som mest",
+    "points": [
+      "Den 14 september 2015 fångade LIGO:s två detektorer samma signal.",
+      "Två svarta hål på 36 och 29 solmassor smälte samman till ett på 62.",
+      "Tre solmassor blev ren energi i form av gravitationsvågor."
+    ],
+    "takeaway": "Universum går att lyssna på, inte bara titta på.",
+    "source": "arXiv:1602.03837 · LIGO & Virgo (2016)",
+    "more": "Einstein förutsade gravitationsvågor 1916 men trodde att de var för svaga för att mätas. LIGO mäter längdskillnader i fyra kilometer långa laserarmar med en precision mindre än en tusendel av en protons diameter. Signalen steg i frekvens från 35 till 250 Hz – det klassiska 'kvittret' – och källan låg runt 410 megaparsec bort, ungefär 1,3 miljarder ljusår. Upptäckten gav Nobelpriset i fysik 2017.",
+    "viz": {
+      "type": "bars",
+      "title": "Massorna i krocken (solmassor)",
+      "unit": "",
+      "items": [{ "l": "Svart hål 1", "v": 36 }, { "l": "Svart hål 2", "v": 29 }, { "l": "Efter krocken", "v": 62 }],
+      "hi": 2,
+      "max": 70,
+      "note": "Tre solmassor blev gravitationsvågor."
+    }
+  },
+  {
+    "id": "weylfermioner",
+    "day": 41,
+    "kind": "fysik",
+    "arxiv": "1502.03807",
+    "paper": "Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs",
+    "hook": "En partikel som förutsades 1929 hittades till slut – inne i en kristall.",
+    "title": "Weylfermionen",
+    "meta": "Su-Yang Xu m.fl. · Science, 2015",
+    "stat": "86",
+    "statLabel": "år från förutsägelse till upptäckt",
+    "points": [
+      "Hermann Weyl beskrev 1929 en masslös partikel med en bestämd 'handighet'.",
+      "Den har aldrig setts som fri partikel – men elektroner kan bete sig som den.",
+      "I kristallen tantalarsenid sågs den, och 'Fermibågar' på ytan avslöjade den."
+    ],
+    "takeaway": "Material kan bli laboratorier för nya partiklar.",
+    "source": "arXiv:1502.03807 · Xu m.fl. (2015)",
+    "more": "I vissa material uppför sig elektronerna som om de vore andra partiklar. I tantalarsenid (TaAs) beter de sig som Weylfermioner, kvasipartiklar som kommer i par med motsatt handighet. Gruppen använde vinkelupplöst fotoemission för att se elektronernas energi och rörelse. På ytan såg de så kallade Fermibågar, ett tecken som bara Weylhalvmetaller har. Upptäckten gjordes samtidigt av flera grupper och väckte förhoppningar om nya elektroniska komponenter.",
+    "viz": {
+      "type": "timeline",
+      "title": "En lång väntan",
+      "ev": [
+        { "t": "1929", "d": "Weyl beskriver partikeln i teorin" },
+        { "t": "1998", "d": "Neutriner visar sig ha massa – inte Weyl" },
+        { "t": "2015", "d": "Weylfermioner hittas i en kristall" }
+      ]
+    }
+  },
+  {
+    "id": "batch-normalization",
+    "day": 42,
+    "kind": "ai",
+    "arxiv": "1502.03167",
+    "paper": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+    "hook": "Ett enkelt knep fick djupa nätverk att lära sig 14 gånger snabbare.",
+    "title": "Batch normalization",
+    "meta": "Ioffe & Szegedy · Google, 2015",
+    "stat": "14×",
+    "statLabel": "färre träningssteg för samma träffsäkerhet",
+    "points": [
+      "När ett lager ändras ändras indatan till nästa – det gör träningen trög.",
+      "Lösningen: normalisera varje lagers indata för varje liten grupp exempel.",
+      "Då går det att använda högre inlärningstakt och slarva mer med starten."
+    ],
+    "takeaway": "Stabila steg gör att man kan gå fortare.",
+    "source": "arXiv:1502.03167 · Ioffe & Szegedy (2015)",
+    "more": "Normaliseringen gör att varje lagers indata får medelvärde noll och samma spridning, beräknat för den lilla grupp exempel ('mini-batch') som tränas just då. Det gjorde det möjligt att träna mycket djupare nätverk och fungerade även som regularisering. Förklaringen i artikeln, att metoden minskar 'intern kovariatförskjutning', har senare ifrågasatts – en senare studie pekade i stället på att den gör optimeringen jämnare. Men tekniken blev standard nästan direkt.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett lager med batch norm",
+      "steps": ["Ta en liten grupp exempel", "Räkna medelvärde och spridning", "Normalisera lagrets indata", "Skala och flytta med inlärda värden"]
+    }
+  },
+  {
+    "id": "tidskristaller-wilczek",
+    "day": 43,
+    "kind": "fysik",
+    "arxiv": "1202.2539",
+    "paper": "Quantum Time Crystals",
+    "hook": "En kristall upprepar sig i rummet. Kan något upprepa sig i tiden – av sig självt?",
+    "title": "Tidskristaller",
+    "meta": "Frank Wilczek · PRL, 2012",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "I en kristall bryter atomerna rummets symmetri genom att ordna sig i ett mönster.",
+      "Nobelpristagaren Wilczek frågade om ett system kan göra samma sak i tiden.",
+      "Idén visade sig omöjlig i jämvikt – men en driven variant upptäcktes 2016."
+    ],
+    "takeaway": "En galen idé kan peka åt rätt håll ändå.",
+    "source": "arXiv:1202.2539 · Wilczek (2012)",
+    "more": "Wilczek föreslog att ett slutet kvantsystem i sitt lägsta energitillstånd skulle kunna röra sig periodiskt, spontant. Kort därefter visades att sådan rörelse inte går i jämvikt. Men idén levde vidare: i system som drivs av regelbundna pulser kan de svara med en annan rytm än drivningen, och 2016–2017 visade experiment sådana 'diskreta tidskristaller'. Idag är de ett aktivt forskningsfält, bland annat med kvantdatorer.",
+    "viz": {
+      "type": "split",
+      "title": "Ordning i rum och tid",
+      "a": { "h": "Vanlig kristall", "items": ["Upprepas i rummet", "Atomer i mönster"] },
+      "b": { "h": "Tidskristall", "items": ["Upprepas i tiden", "Egen takt"] }
+    }
+  },
+  {
+    "id": "methusalemstjarnan",
+    "day": 44,
+    "kind": "rymd",
+    "arxiv": "1302.3180",
+    "paper": "HD 140283: A Star in the Solar Neighborhood that Formed Shortly After the Big Bang",
+    "hook": "En stjärna i vårt grannskap verkade vara äldre än universum självt.",
+    "title": "Metusalemstjärnan",
+    "meta": "Howard Bond m.fl. · ApJ Letters, 2013",
+    "stat": "14,46",
+    "statLabel": "miljarder år – stjärnans uppmätta ålder",
+    "points": [
+      "HD 140283 innehåller nästan inga tunga grundämnen – ett tecken på hög ålder.",
+      "Hubble mätte avståndet fem gånger noggrannare än tidigare.",
+      "Åldern blev 14,46 ± 0,8 miljarder år; universum är ca 13,8."
+    ],
+    "takeaway": "Felmarginalen räddade universums ålder.",
+    "source": "arXiv:1302.3180 · Bond m.fl. (2013)",
+    "more": "Stjärnan är en så kallad underjätte, i ett skede där ljusstyrkan avslöjar åldern väl. Med Hubbles noggrannare avstånd kunde forskarna räkna ut åldern med moderna stjärnmodeller. Bara osäkerheten i avståndet gav ±0,31 miljarder år, men med osäkerheter i sammansättning och modeller blir felmarginalen ±0,8 miljarder år – och då ryms den inom universums ålder. Den blev snabbt känd som 'Metusalemstjärnan'.",
+    "viz": {
+      "type": "bars",
+      "title": "Åldrar i miljarder år",
+      "unit": "",
+      "items": [{ "l": "Universum (Planck)", "v": 13.8, "t": "13,8" }, { "l": "HD 140283", "v": 14.46, "t": "14,46 ± 0,8" }],
+      "hi": 1,
+      "max": 16,
+      "note": "Med osäkerheten ryms stjärnan i universums ålder."
+    }
+  },
+  {
+    "id": "wigners-van",
+    "day": 45,
+    "kind": "fysik",
+    "arxiv": "1902.05080",
+    "paper": "Experimental test of local observer-independence",
+    "hook": "Kan två observatörer uppleva olika verkligheter? Ett experiment med sex fotoner testade det.",
+    "title": "Wigners vän i labbet",
+    "meta": "Proietti m.fl. · Science Advances, 2019",
+    "stat": "5",
+    "statLabel": "standardavvikelser bröt mot olikheten",
+    "points": [
+      "I Wigners tankeexperiment kan en observatör och hennes vän få olika mätresultat.",
+      "En utvidgad version med fyra observatörer går att testa som en Bell-olikhet.",
+      "Experimentet bröt mot olikheten – fakta verkar inte vara oberoende av observatören."
+    ],
+    "takeaway": "I kvantvärlden kan 'fakta' bero på vem som tittar.",
+    "source": "arXiv:1902.05080 · Proietti m.fl. (2019)",
+    "more": "Vetenskap vilar på att fakta är desamma oavsett vem som mäter. I Eugene Wigners tankeexperiment mäter en vän ett kvantsystem i ett slutet labb, medan Wigner utanför beskriver vännen och systemet som en superposition. Teoretiska satser visade att en utvidgad version kan testas. Med sex sammanflätade fotoner, där enkla fotoner spelade observatörernas roll, bröt forskarna mot olikheten med fem standardavvikelser. Om man håller fast vid lokalitet och fri vilja tyder det på att kvantteorin måste tolkas med observatörsberoende fakta. Kritiker påpekar att fotoner inte är riktiga observatörer.",
+    "viz": {
+      "type": "flow",
+      "title": "Det utvidgade tankeexperimentet",
+      "steps": ["Två vänner mäter i stängda labb", "Två 'Wigner' mäter vännerna utifrån", "Jämför i en Bell-olikhet", "Olikheten bryts"]
+    }
+  },
+  {
+    "id": "lime-forklaringar",
+    "day": 46,
+    "kind": "ai",
+    "arxiv": "1602.04938",
+    "paper": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
+    "hook": "En AI skilde varg från husky – men tittade egentligen bara på snön.",
+    "title": "LIME: varför ska jag lita på dig?",
+    "meta": "Ribeiro, Singh & Guestrin · KDD, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Maskininlärningsmodeller är ofta svarta lådor – vi ser svaret, inte skälen.",
+      "LIME ändrar indatan lite och ser hur svaret förändras.",
+      "En enkel modell runt just det fallet visar vad som spelade störst roll."
+    ],
+    "takeaway": "Rätt svar av fel skäl är ett dolt fel.",
+    "source": "arXiv:1602.04938 · Ribeiro m.fl. (2016)",
+    "more": "LIME står för Local Interpretable Model-agnostic Explanations och fungerar på vilken modell som helst. I ett känt exempel tränade forskarna medvetet en dålig klassificerare där alla vargbilder hade snö i bakgrunden. Förklaringarna visade att modellen tittade på snön, inte på djuret, och testpersoner som såg förklaringarna slutade lita på modellen. Metoden blev en av de mest använda inom förklarbar AI.",
+    "viz": {
+      "type": "flow",
+      "title": "Så förklarar LIME",
+      "steps": ["Ta ett exempel, t.ex. en bild", "Dölj delar av den på många sätt", "Se hur modellens svar ändras", "Visa delarna som påverkade mest"]
+    }
+  },
+  {
+    "id": "wikipedia-redigeringskrig",
+    "day": 47,
+    "kind": "liv",
+    "arxiv": "1202.3643",
+    "paper": "Dynamics of conflicts in Wikipedia",
+    "hook": "Bakom Wikipedias lugna yta pågår redigeringskrig. Vem för dem?",
+    "title": "Krigen på Wikipedia",
+    "meta": "Taha Yasseri m.fl. · PLoS ONE, 2012",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskarna jämförde omstridda och fredliga artiklar över tid.",
+      "Konflikter syns som skurar av redigeringar, där varje ändring framkallar nästa.",
+      "De flesta redigeringskrig utkämpas av bara ett fåtal skribenter."
+    ],
+    "takeaway": "Några få kan forma det många läser.",
+    "source": "arXiv:1202.3643 · Yasseri m.fl. (2012)",
+    "more": "Gruppen hade tidigare tagit fram en algoritm som hittar konflikter genom att leta efter ömsesidiga återställningar mellan skribenter. Här studerade de hur aktiviteten utvecklas. På kort sikt hänger konflikter ihop med skurar och 'minne' i aktiviteten. På lång sikt fanns tre mönster: artiklar som når konsensus, artiklar där konflikter blossar upp igen och artiklar som förblir omstridda. Diskussionsnätverken visade att några få personer står för det mesta av striderna.",
+    "viz": {
+      "type": "flow",
+      "title": "Tre vägar för en artikel",
+      "steps": ["Konflikt → konsensus", "Konflikt → lugn → ny konflikt", "Konflikt som aldrig tar slut"]
+    }
+  },
+  {
+    "id": "modularitet-newman",
+    "day": 48,
+    "kind": "liv",
+    "arxiv": "physics/0602124",
+    "paper": "Modularity and community structure in networks",
+    "hook": "Hur hittar en dator kompisgängen i ett nätverk med tusentals människor?",
+    "title": "Hitta grupperna i nätverket",
+    "meta": "Mark Newman · PNAS, 2006",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Många nätverk delar sig naturligt i grupper med täta inre band.",
+      "Modularitet mäter hur mycket tätare grupperna är än om allt vore slumpmässigt.",
+      "Newman visade att uppdelningen kan hittas snabbt med linjär algebra."
+    ],
+    "takeaway": "Grupper syns när man jämför med slumpen.",
+    "source": "arXiv:physics/0602124 · Newman (2006)",
+    "more": "Modularitet räknar andelen länkar inom grupperna minus den andel man skulle vänta sig om länkarna drogs slumpmässigt. Att hitta den bästa uppdelningen är svårt. Newman skrev om problemet med hjälp av egenvektorer till en ny matris, modularitetsmatrisen, och fick en algoritm som var både bättre och snabbare än konkurrenterna. Idén används för att hitta allt från vänskapsgrupper till funktionella moduler i proteinnätverk.",
+    "viz": {
+      "type": "flow",
+      "title": "Så hittas grupperna",
+      "steps": ["Räkna länkar inom tänkta grupper", "Jämför med ett slumpnätverk", "Bygg modularitetsmatrisen", "Dela efter egenvektorns tecken"]
+    }
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "instructgpt",
+    "day": 61,
+    "kind": "ai",
+    "arxiv": "2203.02155",
+    "paper": "Training language models to follow instructions with human feedback",
+    "hook": "En liten modell som lyssnar slog en 100 gånger större som inte gjorde det.",
+    "title": "InstructGPT",
+    "meta": "Long Ouyang m.fl. · OpenAI, 2022",
+    "stat": "1,3",
+    "statLabel": "miljarder parametrar – föredrogs framför GPT-3 med 175",
+    "points": [
+      "Större språkmodeller blir inte automatiskt bättre på att göra det användaren vill.",
+      "Människor skrev bra svar och rankade modellens svar från bäst till sämst.",
+      "Rankningarna användes för att träna modellen med förstärkningsinlärning (RLHF)."
+    ],
+    "takeaway": "Att förstå vad folk vill är också en förmåga.",
+    "source": "arXiv:2203.02155 · Ouyang m.fl. (2022)",
+    "more": "Metoden har tre steg: finjustera GPT-3 på exempel skrivna av människor, träna en belöningsmodell på människors rankningar och optimera språkmodellen mot belöningsmodellen. Testpersoner föredrog svaren från InstructGPT med 1,3 miljarder parametrar framför GPT-3 med 175 miljarder. Modellen blev också mer sanningsenlig och något mindre giftig. Samma recept användes för ChatGPT, som släpptes i november 2022.",
+    "viz": {
+      "type": "flow",
+      "title": "RLHF i tre steg",
+      "steps": ["Människor skriver bra svar → finjustera", "Människor rankar modellens svar", "Träna en belöningsmodell", "Förstärkningsinlärning mot belöningen"]
+    }
+  },
+  {
+    "id": "magiska-vinkeln",
+    "day": 62,
+    "kind": "fysik",
+    "arxiv": "1803.02342",
+    "paper": "Magic-angle graphene superlattices: a new platform for unconventional superconductivity",
+    "hook": "Vrid två lager kol 1,1 grader – så leder de ström utan motstånd.",
+    "title": "Grafen i den magiska vinkeln",
+    "meta": "Yuan Cao m.fl. · MIT, Nature 2018",
+    "stat": "1,1°",
+    "statLabel": "vridning mellan lagren – den 'magiska vinkeln'",
+    "points": [
+      "Grafen är ett enda lager kolatomer. Två lager lades på varandra med en liten vridning.",
+      "Vid 1,1 grader bildas ett mönster där elektronerna nästan står still och påverkar varandra.",
+      "Med lite extra laddning blev materialet supraledande, under 1,7 kelvin."
+    ],
+    "takeaway": "En liten vridning kan förändra allt.",
+    "source": "arXiv:1803.02342 · Cao m.fl. (2018)",
+    "more": "Den magiska vinkeln hade förutsagts teoretiskt 2011. När MIT-gruppen under Pablo Jarillo-Herrero testade den hittade de först ett isolerande tillstånd orsakat av starka växelverkningar och sedan supraledning. Fasdiagrammet liknade det för kupraterna, de supraledare som fungerar vid högst temperatur. Upptäckten startade fältet 'twistronik', där vridna lager av tvådimensionella material används för att skapa nya kvanttillstånd.",
+    "viz": {
+      "type": "flow",
+      "title": "Från kol till supraledare",
+      "steps": ["Två lager grafen", "Vrid 1,1 grader", "Elektronerna blir långsamma och 'trånga'", "Supraledning under 1,7 kelvin"]
+    }
+  },
+  {
+    "id": "trappist-1",
+    "day": 63,
+    "kind": "rymd",
+    "arxiv": "1703.01424",
+    "paper": "Seven temperate terrestrial planets around the nearby ultracool dwarf star TRAPPIST-1",
+    "hook": "Sju jordstora planeter runt en enda liten stjärna, bara 40 ljusår bort.",
+    "title": "TRAPPIST-1:s sju planeter",
+    "meta": "Michaël Gillon m.fl. · Nature, 2017",
+    "stat": "7",
+    "statLabel": "jordstora planeter runt samma stjärna",
+    "points": [
+      "TRAPPIST-1 är en kall dvärgstjärna med bara 8 % av solens massa.",
+      "Stjärnan dimmades när planeterna passerade framför – sju olika planeter.",
+      "De sex inre går runt i en takt som nästan bildar enkla bråk."
+    ],
+    "takeaway": "Små stjärnor kan ha stora familjer.",
+    "source": "arXiv:1703.01424 · Gillon m.fl. (2017)",
+    "more": "Systemet är så kompakt att alla planeterna skulle få plats innanför Merkurius bana. Omloppstiderna är 1,51, 2,42, 4,04, 6,06, 9,21 och 12,35 dygn för de sex inre, nära enkla förhållanden som 8:5 och 5:3. Flera planeter ligger där flytande vatten skulle kunna finnas. Eftersom stjärnan är liten blir planeternas atmosfärer lättare att studera, och JWST har gjort det – de innersta verkar sakna tjocka atmosfärer.",
+    "viz": {
+      "type": "bars",
+      "title": "Omloppstid för de sex inre (dygn)",
+      "unit": "",
+      "items": [{ "l": "b", "v": 1.51, "t": "1,51" }, { "l": "c", "v": 2.42, "t": "2,42" }, { "l": "d", "v": 4.04, "t": "4,04" }, { "l": "e", "v": 6.06, "t": "6,06" }, { "l": "f", "v": 9.21, "t": "9,21" }],
+      "max": 13,
+      "note": "Jorden behöver 365 dygn."
+    }
+  },
+  {
+    "id": "maml",
+    "day": 64,
+    "kind": "ai",
+    "arxiv": "1703.03400",
+    "paper": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+    "hook": "Kan en AI lära sig att lära sig – så att den klarar nya uppgifter med fem exempel?",
+    "title": "MAML: lära sig lära",
+    "meta": "Finn, Abbeel & Levine · Berkeley, 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Vanliga nätverk behöver tusentals exempel för varje ny uppgift.",
+      "MAML tränar modellen på många uppgifter så att den blir lätt att finjustera.",
+      "Ett par steg med några få exempel räcker sedan för en helt ny uppgift."
+    ],
+    "takeaway": "Bra startpunkter gör det lätt att lära nytt.",
+    "source": "arXiv:1703.03400 · Finn m.fl. (2017)",
+    "more": "MAML står för Model-Agnostic Meta-Learning – den fungerar med vilken modell som helst som tränas med gradienter. Idén är att leta efter startvärden för vikterna som ligger 'nära' bra lösningar för många uppgifter. Metoden gav toppresultat på test där man ska känna igen nya bildkategorier från bara ett eller fem exempel, och den snabbade upp inlärningen för robotar i simulering.",
+    "viz": {
+      "type": "flow",
+      "title": "Två loopar i träningen",
+      "steps": ["Välj en uppgift", "Ta några steg med få exempel", "Mät hur bra det blev", "Flytta startpunkten så att det går bättre"]
+    }
+  },
+  {
+    "id": "xgboost",
+    "day": 65,
+    "kind": "matte",
+    "arxiv": "1603.02754",
+    "paper": "XGBoost: A Scalable Tree Boosting System",
+    "hook": "Glöm djupinlärning – i datatävlingar vann ofta en skog av små beslutsträd.",
+    "title": "XGBoost",
+    "meta": "Tianqi Chen & Carlos Guestrin · KDD, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Boostning bygger många små beslutsträd, där varje nytt rättar de tidigares fel.",
+      "XGBoost gjorde metoden snabb, även för glesa data och miljarder exempel.",
+      "Under 2015 låg den bakom de flesta vinnande lösningarna på Kaggle."
+    ],
+    "takeaway": "För tabeller slår enkla träd ofta stora nät.",
+    "source": "arXiv:1603.02754 · Chen & Guestrin (2016)",
+    "more": "Artikeln beskriver hur systemet hanterar saknade värden, hur det snabbt hittar bra delningspunkter med en viktad kvantilmetod, och hur det utnyttjar minne och cache smart. Enligt artikeln använde 17 av 29 vinnande lösningar på Kaggle 2015 XGBoost. För data i tabellform, som i ekonomi och medicin, är trädbaserade metoder fortfarande ofta bättre än neurala nätverk.",
+    "viz": {
+      "type": "flow",
+      "title": "Så fungerar boostning",
+      "steps": ["Träd 1 gör en grov gissning", "Träd 2 lär sig av felen", "Träd 3 rättar de kvarvarande felen", "Summan av alla träd blir svaret"]
+    }
+  },
+  {
+    "id": "nintendo-np-svart",
+    "day": 66,
+    "kind": "matte",
+    "arxiv": "1203.1895",
+    "paper": "Classic Nintendo Games are (Computationally) Hard",
+    "hook": "Super Mario är lika svårt som de svåraste problemen inom datavetenskap.",
+    "title": "Mario är NP-svårt",
+    "meta": "Greg Aloupis m.fl. · 2012",
+    "stat": "5",
+    "statLabel": "Nintendoserier bevisade NP-svåra",
+    "points": [
+      "Forskarna byggde banor som översätter logiska problem till Mario-nivåer.",
+      "Att avgöra om en bana går att klara blir då minst lika svårt som SAT-problemet.",
+      "Mario, Donkey Kong, Zelda, Metroid och Pokémon är alla NP-svåra."
+    ],
+    "takeaway": "Även lek kan vara svår matematik.",
+    "source": "arXiv:1203.1895 · Aloupis m.fl. (2012)",
+    "more": "Resultaten gäller generaliserade versioner av spelen, där banorna kan vara hur stora som helst. Bevisen bygger 'prylar' av spelets delar: en del som tvingar spelaren att välja mellan två vägar (en variabel), en del som bara går att passera om ett villkor är uppfyllt (en klausul) och korsningar. Några spel, som Donkey Kong Country och flera Zelda-spel, visades vara ännu svårare – PSPACE-fullständiga. Senare visades att Super Mario Bros. också är PSPACE-fullständigt.",
+    "viz": {
+      "type": "flow",
+      "title": "Från logik till Mario",
+      "steps": ["Ett logiskt pussel (SAT)", "Variabler blir vägval i banan", "Villkor blir hinder", "Banan klarbar ⇔ pusslet lösbart"]
+    }
+  },
+  {
+    "id": "daya-bay",
+    "day": 67,
+    "kind": "fysik",
+    "arxiv": "1203.1669",
+    "paper": "Observation of electron-antineutrino disappearance at Daya Bay",
+    "hook": "Neutriner från sex kärnreaktorer avslöjade en saknad bit i partikelfysiken.",
+    "title": "Daya Bay och θ₁₃",
+    "meta": "Daya Bay-samarbetet · PRL, 2012",
+    "stat": "6 %",
+    "statLabel": "av antineutrinerna försvann på vägen",
+    "points": [
+      "Neutriner byter skepnad medan de färdas – det styrs av tre 'blandningsvinklar'.",
+      "Den sista vinkeln, θ₁₃, var okänd och kunde ha varit noll.",
+      "Detektorer i Kina såg 6 % färre antineutriner längre bort – θ₁₃ är inte noll."
+    ],
+    "takeaway": "Att något saknas kan vara själva upptäckten.",
+    "source": "arXiv:1203.1669 · Daya Bay-samarbetet (2012)",
+    "more": "Experimentet jämförde antalet elektronantineutriner nära sex stora reaktorer med antalet 1,6 kilometer bort. Kvoten blev 0,940, och sin²2θ₁₃ blev 0,092 med en signifikans på 5,2 standardavvikelser. Att vinkeln är förhållandevis stor öppnade för att mäta om neutriner och antineutriner beter sig olika – en möjlig ledtråd till varför universum består av materia och inte antimateria.",
+    "viz": {
+      "type": "bars",
+      "title": "Antineutriner vid den bortre detektorn",
+      "unit": "%",
+      "items": [{ "l": "Väntat utan svängningar", "v": 100 }, { "l": "Uppmätt", "v": 94 }],
+      "hi": 1,
+      "max": 100
+    }
+  },
+  {
+    "id": "destillation",
+    "day": 68,
+    "kind": "ai",
+    "arxiv": "1503.02531",
+    "paper": "Distilling the Knowledge in a Neural Network",
+    "hook": "En stor AI kan lära en liten allt den kan – genom att visa hur osäker den är.",
+    "title": "Kunskapsdestillation",
+    "meta": "Hinton, Vinyals & Dean · Google, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "En stor modell, eller många modeller, ger bäst svar men är dyra att köra.",
+      "En liten 'elev' tränas på lärarens sannolikheter, inte bara på rätt svar.",
+      "Att läraren tror att en 2:a liknar en 3:a är också kunskap."
+    ],
+    "takeaway": "Även lärarens tvivel är värda att lära sig.",
+    "source": "arXiv:1503.02531 · Hinton m.fl. (2015)",
+    "more": "Hinton kallade sannolikheterna för fel svar 'mörk kunskap'. Genom att höja 'temperaturen' i modellens sista steg blir de små sannolikheterna synligare, och eleven kan lära sig av dem. Metoden förbättrade bland annat taligenkänningen i ett kommersiellt system genom att samla kunskapen från flera modeller i en. Destillation används i dag överallt för att göra små och snabba versioner av stora språkmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Från lärare till elev",
+      "steps": ["Stor lärarmodell", "Mjuka sannolikheter för alla svar", "Liten elev härmar fördelningen", "Nästan lika bra – mycket snabbare"]
+    }
+  },
+  {
+    "id": "perelman-ricciflode",
+    "day": 69,
+    "kind": "matte",
+    "arxiv": "math/0303109",
+    "paper": "Ricci flow with surgery on three-manifolds",
+    "hook": "En matematiker löste ett milleniumproblem, lade ut det på nätet och tackade nej till miljonen.",
+    "title": "Perelman och Poincaré",
+    "meta": "Grigorij Perelman · arXiv, 2003",
+    "stat": "1",
+    "statLabel": "miljon dollar som han tackade nej till",
+    "points": [
+      "Poincarés förmodan: varje sluten 3D-form utan hål är egentligen en sfär.",
+      "Perelman lät formen 'flyta' med Ricciflöde och klippte bort problem när de uppstod.",
+      "Han publicerade bara på arXiv – och vägrade både Fieldsmedalj och prissumma."
+    ],
+    "takeaway": "Det viktigaste beviset kan komma utan fanfarer.",
+    "source": "arXiv:math/0303109 · Perelman (2003)",
+    "more": "Detta är den andra av Perelmans tre artiklar. Ricciflöde, som Richard Hamilton utvecklade, jämnar ut krökningen i en form ungefär som värme som sprids. Problemet är att singulariteter kan uppstå. Perelman visade hur man klipper bort dem ('kirurgi') och fortsätter. Tillsammans bevisade artiklarna Thurstons geometriseringsförmodan och därmed Poincarés förmodan. Han tackade nej till Fieldsmedaljen 2006 och till Clayinstitutets milleniumpris 2010.",
+    "viz": {
+      "type": "timeline",
+      "title": "Ett århundrades fråga",
+      "ev": [
+        { "t": "1904", "d": "Poincaré ställer frågan" },
+        { "t": "1982", "d": "Hamilton inför Ricciflödet" },
+        { "t": "2002–03", "d": "Perelman lägger ut beviset på arXiv" },
+        { "t": "2010", "d": "Han tackar nej till miljonen" }
+      ]
+    }
+  },
+  {
+    "id": "extra-dimensioner",
+    "day": 70,
+    "kind": "fysik",
+    "arxiv": "hep-ph/9803315",
+    "paper": "The Hierarchy Problem and New Dimensions at a Millimeter",
+    "hook": "Kanske är gravitationen så svag för att den läcker ut i dolda dimensioner.",
+    "title": "Dolda dimensioner",
+    "meta": "Arkani-Hamed, Dimopoulos & Dvali · 1998",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Gravitationen är otroligt mycket svagare än de andra naturkrafterna. Varför?",
+      "Förslag: det finns extra rumsdimensioner, kanske så stora som en millimeter.",
+      "Gravitationen sprids i dem, medan vi och all annan materia sitter fast i våra tre."
+    ],
+    "takeaway": "En galen idé kan gå att testa på ett labbord.",
+    "source": "arXiv:hep-ph/9803315 · Arkani-Hamed m.fl. (1998)",
+    "more": "Teorin kallas ofta ADD efter författarna. Med två extra dimensioner skulle Newtons gravitationslag ändras på avstånd under en millimeter, och det gick att mäta. Precisionsmätningar med torsionsvågar har sedan inte sett någon avvikelse ner till runt 50 mikrometer, och partikelacceleratorn LHC har inte sett några tecken på extra dimensioner. Men idén inspirerade en hel generation av experiment och teorier.",
+    "viz": {
+      "type": "flow",
+      "title": "Idén i korthet",
+      "steps": ["Gravitationen är extremt svag", "Den sprids i dolda dimensioner", "Övrig materia sitter fast i tre", "Test: gravitationen under 1 mm"]
+    }
+  },
+  {
+    "id": "forsta-diffusionsmodellen",
+    "day": 71,
+    "kind": "ai",
+    "arxiv": "1503.03585",
+    "paper": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+    "hook": "Idén bakom dagens bildgeneratorer kom från fysiken – och fick vänta fem år.",
+    "title": "Den första diffusionsmodellen",
+    "meta": "Sohl-Dickstein m.fl. · Stanford, 2015",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Inspirerade av termodynamik förstörde forskarna data steg för steg med brus.",
+      "Ett nätverk tränades att göra processen baklänges: ta bort lite brus i taget.",
+      "Börja med rent brus, kör baklänges – och ny data växer fram."
+    ],
+    "takeaway": "Att lära sig förstöra kan lära en att skapa.",
+    "source": "arXiv:1503.03585 · Sohl-Dickstein m.fl. (2015)",
+    "more": "Artikeln presenterade en modell som var både flexibel och gick att räkna med exakt. Resultaten på bilder var dock inte imponerande jämfört med dåtidens GAN-modeller, och idén fick lite uppmärksamhet. År 2020 förenklade Ho, Jain och Abbeel metoden i DDPM och fick fantastiska bilder. Sedan dess bygger de flesta bild- och videogeneratorer, som Stable Diffusion, på diffusion.",
+    "viz": {
+      "type": "split",
+      "title": "Två riktningar",
+      "a": { "h": "Framåt (fast)", "items": ["Bild", "Lite brus", "Mer brus", "Bara brus"] },
+      "b": { "h": "Bakåt (inlärt)", "items": ["Bara brus", "Mindre brus", "Nästan bild", "Ny bild"] }
+    }
+  },
+  {
+    "id": "lotterisedelshypotesen",
+    "day": 72,
+    "kind": "ai",
+    "arxiv": "1803.03635",
+    "paper": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+    "hook": "I varje stort nätverk gömmer sig ett litet som kan göra samma jobb.",
+    "title": "Lotterisedelshypotesen",
+    "meta": "Frankle & Carbin · MIT, ICLR 2019",
+    "stat": "90 %",
+    "statLabel": "av vikterna kan ofta tas bort utan förlust",
+    "points": [
+      "Efter träning kan man klippa bort de flesta vikterna i ett nätverk.",
+      "Men att träna ett så glest nätverk från början har varit svårt.",
+      "Tricket: behåll de vinnande delarnas ursprungliga startvärden – då går det."
+    ],
+    "takeaway": "Starten avgör mer än man tror.",
+    "source": "arXiv:1803.03635 · Frankle & Carbin (2019)",
+    "more": "Hypotesen säger att ett stort, slumpmässigt initierat nätverk innehåller delnätverk – 'vinnande lotter' – som när de tränas ensamma når samma träffsäkerhet på ungefär lika lång tid. De vann 'initieringslotteriet'. Forskarna hittade dem genom att träna, klippa bort de minsta vikterna och återställa resten till sina startvärden. Artikeln fick pris för bästa artikel på ICLR 2019 och väckte frågor om varför stora nätverk är lättare att träna.",
+    "viz": {
+      "type": "flow",
+      "title": "Så hittas den vinnande lotten",
+      "steps": ["Träna hela nätverket", "Klipp bort de minsta vikterna", "Återställ resten till startvärdena", "Träna det lilla nätverket – lika bra"]
+    }
+  }
+]

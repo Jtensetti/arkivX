@@ -1,0 +1,327 @@
+[
+  {
+    "id": "simclr",
+    "day": 49,
+    "kind": "ai",
+    "arxiv": "2002.05709",
+    "paper": "A Simple Framework for Contrastive Learning of Visual Representations",
+    "hook": "Kan en dator lära sig se utan att någon berättar vad bilderna föreställer?",
+    "title": "SimCLR",
+    "meta": "Ting Chen m.fl. · Google, 2020",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Ta en bild och gör två förvrängda versioner – beskär, färga om, gör suddig.",
+      "Nätverket tränas att känna igen att de två hör ihop, men inte med andra bilder.",
+      "Utan några etiketter lär det sig ändå vad som är viktigt i en bild."
+    ],
+    "takeaway": "Jämförelser kan ersätta facit.",
+    "source": "arXiv:2002.05709 · Chen m.fl. (2020)",
+    "more": "Metoden kallas kontrastiv inlärning. Studien visade att valet av förvrängningar är avgörande – särskilt kombinationen av beskärning och färgändring – och att ett litet extra nätverk före jämförelsen förbättrar resultatet mycket. Stora grupper av bilder och lång träning hjälpte också. SimCLR närmade sig nätverk tränade med etiketter på ImageNet och blev en grund för senare självövervakade bildmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Lära sig se utan etiketter",
+      "steps": ["En bild", "Två förvrängda versioner", "Nätverket gör om båda till vektorer", "Dra ihop paret, skjut bort andra bilder"]
+    }
+  },
+  {
+    "id": "skadlig-ai",
+    "day": 50,
+    "kind": "ai",
+    "arxiv": "1802.07228",
+    "paper": "The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation",
+    "hook": "Redan 2018 varnade 26 forskare för hur AI kunde användas av skurkar.",
+    "title": "När AI används i ont syfte",
+    "meta": "Miles Brundage m.fl. · Oxford m.fl., 2018",
+    "stat": "26",
+    "statLabel": "forskare från 14 organisationer",
+    "points": [
+      "Rapporten kartlade hot i tre områden: digitalt, fysiskt och politiskt.",
+      "Exempel: automatiserade cyberattacker, drönare som vapen och falska videor.",
+      "Den gav fyra råd, bland annat att forskare ska tänka på missbruk redan från början."
+    ],
+    "takeaway": "Tänk på missbruket innan det händer.",
+    "source": "arXiv:1802.07228 · Brundage m.fl. (2018)",
+    "more": "Rapporten skrevs av forskare från bland annat Oxford, Cambridge, OpenAI och Electronic Frontier Foundation. Den förutsåg risker som riktad nätfiske i stor skala, självgående vapen och desinformation med AI-genererat innehåll – flera av dem har sedan blivit verkliga. Rekommendationerna handlade om samarbete mellan forskare och beslutsfattare, att lära av cybersäkerhetsområdet och att bredda debatten. Frågan om vem som till slut vinner, angripare eller försvarare, lämnades öppen.",
+    "viz": {
+      "type": "split",
+      "title": "Tre sorters hot",
+      "a": { "h": "Digitalt och fysiskt", "items": ["Automatiserade attacker", "Drönare som vapen"] },
+      "b": { "h": "Politiskt", "items": ["Falska videor", "Riktad propaganda"] }
+    }
+  },
+  {
+    "id": "topologiska-isolatorer",
+    "day": 51,
+    "kind": "fysik",
+    "arxiv": "1002.3895",
+    "paper": "Topological Insulators",
+    "hook": "Ett material som isolerar inuti men leder ström på ytan – och ytan går inte att förstöra.",
+    "title": "Topologiska isolatorer",
+    "meta": "Hasan & Kane · Rev. Mod. Phys., 2010",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Inuti är materialet en isolator, som glas. På kanten flyter strömmen fritt.",
+      "Ytan skyddas av topologi – en egenskap som inte ändras av små skador.",
+      "Elektronerna på ytan har spinnet låst till rörelseriktningen."
+    ],
+    "takeaway": "Vissa egenskaper sitter i formen, inte i detaljerna.",
+    "source": "arXiv:1002.3895 · Hasan & Kane (2010)",
+    "more": "Topologi är matematiken för egenskaper som inte ändras när något töjs, som antalet hål i en munk. I topologiska isolatorer gör elektronernas kvantmekaniska struktur att ledande tillstånd måste finnas på ytan. De förutsades runt 2005–2007 och sågs först i kvantbrunnar av kvicksilvertellurid, sedan i material som vismutselenid. Översikten blev en av de mest citerade inom fasta tillståndets fysik, och området hänger ihop med Nobelpriset 2016 om topologiska faser.",
+    "viz": {
+      "type": "split",
+      "title": "Ett material, två beteenden",
+      "a": { "h": "Inuti", "items": ["Isolerar", "Ingen ström"] },
+      "b": { "h": "På ytan", "items": ["Leder ström", "Skyddad av topologi"] }
+    }
+  },
+  {
+    "id": "copilot-produktivitet",
+    "day": 52,
+    "kind": "liv",
+    "arxiv": "2302.06590",
+    "paper": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+    "hook": "Programmerare med AI-hjälp blev klara mer än hälften så snabbt.",
+    "title": "Copilot i ett experiment",
+    "meta": "Sida Peng m.fl. · Microsoft & MIT, 2023",
+    "stat": "55,8 %",
+    "statLabel": "snabbare med AI-assistenten",
+    "points": [
+      "Utvecklare skulle bygga en webbserver i JavaScript så snabbt som möjligt.",
+      "Hälften fick använda GitHub Copilot, hälften fick klara sig själva.",
+      "Gruppen med AI blev klar 55,8 % snabbare."
+    ],
+    "takeaway": "AI-hjälp kan öppna dörren för nya programmerare.",
+    "source": "arXiv:2302.06590 · Peng m.fl. (2023)",
+    "more": "Det var ett av de första kontrollerade experimenten med en AI-assistent för kod. Effekten var störst för mindre erfarna programmerare och för äldre deltagare, vilket författarna ser som ett tecken på att AI kan göra det lättare att byta till yrket. Uppgiften var dock kort och väldefinierad. Senare studier av verkligt arbete i stora kodbaser har visat mer blandade resultat, ibland till och med att erfarna utvecklare blir långsammare.",
+    "viz": {
+      "type": "bars",
+      "title": "Tid för att bli klar (index)",
+      "unit": "",
+      "items": [{ "l": "Utan Copilot", "v": 100, "t": "100" }, { "l": "Med Copilot", "v": 44.2, "t": "44" }],
+      "hi": 1,
+      "max": 100,
+      "note": "Kontrollgruppens tid satt till 100."
+    }
+  },
+  {
+    "id": "gaia-bh3",
+    "day": 53,
+    "kind": "rymd",
+    "arxiv": "2404.10486",
+    "paper": "Discovery of a dormant 33 solar-mass black hole in pre-release Gaia astrometry",
+    "hook": "Ett svart hål på 33 solmassor gömde sig bara 2 000 ljusår bort.",
+    "title": "Gaia BH3",
+    "meta": "Gaia-samarbetet · A&A, 2024",
+    "stat": "33",
+    "statLabel": "solmassor – det tyngsta stjärnsvarta hålet i Vintergatan",
+    "points": [
+      "Svarta hål som inte äter något syns inte – de är 'sovande'.",
+      "Gaia såg en stjärna vagga runt något osynligt och tungt.",
+      "Följeslagaren är en gammal stjärna med nästan inga tunga grundämnen."
+    ],
+    "takeaway": "Det tyngsta kan gömma sig närmast.",
+    "source": "arXiv:2404.10486 · Gaia-samarbetet (2024)",
+    "more": "Gravitationsvågor har avslöjat många svarta hål på 30 solmassor och mer i andra galaxer, men i Vintergatan var de kända stjärnsvarta hålen lättare. Gaia BH3 hittades när forskarna kontrollerade förhandsdata inför Gaias fjärde datasläpp. Den gamla följeslagaren saknar nästan tunga grundämnen, vilket stöder idén att tunga svarta hål bildas av metallfattiga stjärnor. Upptäckten var så viktig att den publicerades före det ordinarie släppet.",
+    "viz": {
+      "type": "bars",
+      "title": "Kända svarta hål i Vintergatan",
+      "unit": "",
+      "items": [{ "l": "Cygnus X-1", "v": 21 }, { "l": "Gaia BH1", "v": 9.6, "t": "9,6" }, { "l": "Gaia BH3", "v": 33 }],
+      "hi": 2,
+      "max": 40,
+      "note": "Massa i solmassor."
+    }
+  },
+  {
+    "id": "genie",
+    "day": 54,
+    "kind": "ai",
+    "arxiv": "2402.15391",
+    "paper": "Genie: Generative Interactive Environments",
+    "hook": "En AI tittade på spelvideor – och kan nu skapa spelbara världar från en enda bild.",
+    "title": "Genie",
+    "meta": "Jake Bruce m.fl. · Google DeepMind, 2024",
+    "stat": "11",
+    "statLabel": "miljarder parametrar",
+    "points": [
+      "Genie tränades på videor från nätet, utan information om vilka knappar som trycktes.",
+      "Den lärde sig själv vilka 'handlingar' som finns i världarna.",
+      "Ge den en skiss eller ett foto – så blir det en värld du kan styra bild för bild."
+    ],
+    "takeaway": "Världar kan läras från video.",
+    "source": "arXiv:2402.15391 · Bruce m.fl. (2024)",
+    "more": "Genie består av tre delar: en modell som gör om video till symboler, en modell som förutsäger nästa bildruta och en modell som hittar dolda handlingar mellan bildrutorna. Den tränades främst på 2D-plattformsspel. Eftersom den lär sig handlingar utan facit kan den också användas för att träna agenter att härma beteenden från videor de aldrig sett. Senare versioner har skapat 3D-världar i realtid.",
+    "viz": {
+      "type": "flow",
+      "title": "Från video till spelbar värld",
+      "steps": ["Tusentals timmar spelvideo", "Lär dig dolda handlingar", "Förutsäg nästa bildruta", "Starta från en bild – och spela"]
+    }
+  },
+  {
+    "id": "bitnet-158",
+    "day": 55,
+    "kind": "ai",
+    "arxiv": "2402.17764",
+    "paper": "The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits",
+    "hook": "Tänk om en AI bara behövde tre siffror: −1, 0 och 1?",
+    "title": "1,58-bitars språkmodeller",
+    "meta": "Shuming Ma m.fl. · Microsoft Research, 2024",
+    "stat": "1,58",
+    "statLabel": "bitar per vikt i stället för 16",
+    "points": [
+      "Vanliga språkmodeller lagrar varje vikt med 16 bitar.",
+      "BitNet b1.58 använder bara −1, 0 eller 1 – det motsvarar 1,58 bitar.",
+      "Den matchar vanliga modeller i samma storlek men drar mycket mindre minne och energi."
+    ],
+    "takeaway": "Precision är dyr – och ofta onödig.",
+    "source": "arXiv:2402.17764 · Ma m.fl. (2024)",
+    "more": "Tre möjliga värden ger log₂(3) ≈ 1,58 bitar information per vikt. Eftersom multiplikation med −1, 0 och 1 bara är addition, subtraktion eller ingenting, kan beräkningarna bli mycket billigare. Modellen tränas med de låga värdena från början i stället för att komprimeras efteråt. Författarna menar att det kan leda till ny hårdvara gjord för sådana modeller. Jämförelserna gjordes på modeller upp till några miljarder parametrar.",
+    "viz": {
+      "type": "split",
+      "title": "Två sätt att lagra en vikt",
+      "a": { "h": "Vanlig modell", "items": ["16 bitar per vikt", "Multiplikationer"] },
+      "b": { "h": "BitNet b1.58", "items": ["−1, 0 eller 1", "Bara additioner"] }
+    }
+  },
+  {
+    "id": "dart-dimorphos",
+    "day": 56,
+    "kind": "rymd",
+    "arxiv": "2303.03464",
+    "paper": "Momentum Transfer from the DART Mission Kinetic Impact on Asteroid Dimorphos",
+    "hook": "Mänskligheten knuffade en asteroid ur sin bana – med flit.",
+    "title": "DART knuffar en asteroid",
+    "meta": "Andrew Cheng m.fl. · Nature, 2023",
+    "stat": "2,70",
+    "statLabel": "mm/s – så mycket bromsades asteroiden",
+    "points": [
+      "Den 26 september 2022 krockade NASA:s rymdsond DART med asteroiden Dimorphos.",
+      "Månen Dimorphos kretsar runt den större Didymos – och fick en kortare bana.",
+      "Utkastat grus gav en extra rekyl: knuffen blev 2–5 gånger starkare än själva krocken."
+    ],
+    "takeaway": "Vi kan flytta en asteroid – om vi ser den i tid.",
+    "source": "arXiv:2303.03464 · Cheng m.fl. (2023)",
+    "more": "DART var det första försöket i planetförsvar i verklig skala. Ingen av asteroiderna var något hot mot jorden. Genom att mäta hur omloppstiden ändrades – den blev drygt en halvtimme kortare – räknade forskarna ut hur mycket rörelsemängd som överfördes. Faktorn β, som anger hur mycket utkastat material förstärker knuffen, blev mellan 2,2 och 4,9 beroende på asteroidens täthet. Det betyder att metoden fungerar bättre än om man bara räknar med sondens egen fart.",
+    "viz": {
+      "type": "gauge",
+      "title": "Förstärkning av knuffen (β)",
+      "min": 1,
+      "max": 5,
+      "v": 3.6,
+      "unit": "",
+      "zones": ["Bara sonden", "Lite grus", "Mycket grus"],
+      "note": "β mellan 2,2 och 4,9 beroende på täthet."
+    }
+  },
+  {
+    "id": "clip",
+    "day": 57,
+    "kind": "ai",
+    "arxiv": "2103.00020",
+    "paper": "Learning Transferable Visual Models From Natural Language Supervision",
+    "hook": "En AI lärde sig se genom att läsa bildtexter från internet.",
+    "title": "CLIP",
+    "meta": "Alec Radford m.fl. · OpenAI, 2021",
+    "stat": "400 miljoner",
+    "statLabel": "par av bild och text från nätet",
+    "points": [
+      "Vanliga bildmodeller känner bara igen en fast lista med kategorier.",
+      "CLIP tränades att para ihop rätt bildtext med rätt bild.",
+      "Sedan kan den känna igen nästan vad som helst som går att beskriva i ord."
+    ],
+    "takeaway": "Språket gör seendet flexibelt.",
+    "source": "arXiv:2103.00020 · Radford m.fl. (2021)",
+    "more": "CLIP har två delar, en för bilder och en för text, som tränas att hamna nära varandra när bild och text hör ihop. För att klassificera en bild skriver man helt enkelt 'ett foto av en hund', 'ett foto av en katt' och ser vilken text som passar bäst. Utan att se en enda ImageNet-etikett nådde CLIP samma träffsäkerhet som en klassisk ResNet-50 tränad på ImageNet. CLIP blev en byggsten i bildgeneratorer som DALL·E 2 och Stable Diffusion.",
+    "viz": {
+      "type": "flow",
+      "title": "Så tränas CLIP",
+      "steps": ["400 miljoner bilder med bildtext", "Gör om bild och text till vektorer", "Rätt par ska hamna nära varandra", "Klassificera med vilken text som helst"]
+    }
+  },
+  {
+    "id": "myonens-magnetism-gitter",
+    "day": 58,
+    "kind": "fysik",
+    "arxiv": "2002.12347",
+    "paper": "Leading hadronic contribution to the muon magnetic moment from lattice QCD",
+    "hook": "Var myonens gåta ett tecken på ny fysik – eller ett räknefel i teorin?",
+    "title": "Myonens magnetism räknas om",
+    "meta": "Borsányi m.fl. · BMW, Nature 2021",
+    "stat": "0,8 %",
+    "statLabel": "osäkerhet i den nya beräkningen",
+    "points": [
+      "Myonens magnetiska moment mättes större än vad standardmodellen förutsade.",
+      "Den svåraste delen av teorin gäller kvarkar och gluoner i vakuumet.",
+      "En superdatorberäkning på ett rumtidsgitter krympte skillnaden kraftigt."
+    ],
+    "takeaway": "Innan du hittar ny fysik – kolla teorin.",
+    "source": "arXiv:2002.12347 · Borsányi m.fl. (2020)",
+    "more": "Den äldre teoretiska förutsägelsen byggde på mätningar av hur elektroner och positroner bildar hadroner. BMW-gruppen räknade i stället direkt med kvantkromodynamik på ett gitter, med hänsyn till många små effekter. Deras resultat låg närmare mätningarna. Senare beräkningar från andra grupper bekräftade gitterresultatet, och 2025 uppdaterades den teoretiska standardförutsägelsen så att den stämmer med experimentet. Gåtan ser alltså ut att ha lösts i teorin, inte med nya partiklar.",
+    "viz": {
+      "type": "timeline",
+      "title": "Myongåtan",
+      "ev": [
+        { "t": "2006", "d": "Brookhaven: myonen avviker från teorin" },
+        { "t": "2020", "d": "BMW räknar på gitter: mindre avvikelse" },
+        { "t": "2021", "d": "Fermilab bekräftar mätningen" },
+        { "t": "2025", "d": "Ny teori stämmer med experimentet" }
+      ]
+    }
+  },
+  {
+    "id": "llama",
+    "day": 59,
+    "kind": "ai",
+    "arxiv": "2302.13971",
+    "paper": "LLaMA: Open and Efficient Foundation Language Models",
+    "hook": "En språkmodell 13 gånger mindre än GPT-3 slog den ändå – och sedan läckte den.",
+    "title": "LLaMA",
+    "meta": "Hugo Touvron m.fl. · Meta AI, 2023",
+    "stat": "13",
+    "statLabel": "miljarder parametrar slog GPT-3:s 175 miljarder",
+    "points": [
+      "Meta tränade modeller från 7 till 65 miljarder parametrar på biljoner ord.",
+      "Bara offentligt tillgänglig data användes.",
+      "LLaMA-13B slog GPT-3 på de flesta test – och vikterna delades med forskare."
+    ],
+    "takeaway": "Mer data kan slå större modeller.",
+    "source": "arXiv:2302.13971 · Touvron m.fl. (2023)",
+    "more": "Tanken var att träna mindre modeller längre, så att de blir billiga att använda. Vikterna delades först bara med forskare, men läckte på nätet inom en vecka. Det startade en våg av öppna modeller som byggde vidare på LLaMA – Alpaca, Vicuna och många fler – och gjorde det möjligt att köra kraftfulla språkmodeller på en vanlig dator. Meta släppte sedan Llama 2 och senare versioner med öppnare licens.",
+    "viz": {
+      "type": "bars",
+      "title": "Modellstorlek (miljarder parametrar)",
+      "unit": "",
+      "items": [{ "l": "LLaMA-13B", "v": 13 }, { "l": "GPT-3", "v": 175 }],
+      "hi": 0,
+      "max": 180,
+      "note": "Den mindre modellen var bättre på de flesta test."
+    }
+  },
+  {
+    "id": "ligo-mork-materia",
+    "day": 60,
+    "kind": "rymd",
+    "arxiv": "1603.00464",
+    "paper": "Did LIGO detect dark matter?",
+    "hook": "Var de svarta hålen LIGO hörde i själva verket mörk materia?",
+    "title": "Hörde LIGO mörk materia?",
+    "meta": "Simeon Bird m.fl. · PRL, 2016",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Kanske bildades svarta hål redan i universums första sekund – urtida svarta hål.",
+      "Om de väger 20–100 solmassor skulle de kunna vara den mörka materien.",
+      "Hur ofta de krockar stämmer överraskande bra med LIGO:s första mätning."
+    ],
+    "takeaway": "En upptäckt kan väcka nya frågor.",
+    "source": "arXiv:1603.00464 · Bird m.fl. (2016)",
+    "more": "Artikeln kom bara veckor efter att LIGO tillkännagav den första gravitationsvågen. Författarna visade att det fanns ett massintervall där urtida svarta hål inte var uteslutna som mörk materia, och att deras uppskattade krockfrekvens överlappade LIGO:s. Senare observationer, bland annat av mikrolinsning och bakgrundsstrålningen, har gjort det svårare för sådana svarta hål att utgöra all mörk materia, men frågan om en del av den finns kvar.",
+    "viz": {
+      "type": "flow",
+      "title": "Hypotesen",
+      "steps": ["Svarta hål bildas direkt efter Big Bang", "De utgör den mörka materien", "Ibland möts två och bildar par", "Paren krockar – LIGO hör dem"]
+    }
+  }
+]

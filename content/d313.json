@@ -1,0 +1,322 @@
+[
+  {
+    "id": "omtanka-generalisering",
+    "day": 313,
+    "kind": "ai",
+    "arxiv": "1611.03530",
+    "paper": "Understanding deep learning requires rethinking generalization",
+    "hook": "Neurala nätverk kan lära sig helt slumpmässiga etiketter utantill. Varför fungerar de ändå?",
+    "title": "Omtänkt generalisering",
+    "meta": "Chiyuan Zhang m.fl. · ICLR, 2017",
+    "stat": "100 %",
+    "statLabel": "rätt på träningsdata – även med slumpade etiketter",
+    "points": [
+      "Forskarna gav bilder helt slumpmässiga etiketter – 'katt' på en bil, och så vidare.",
+      "Nätverken lärde sig ändå varje etikett perfekt, även när bilderna var rent brus.",
+      "Klassiska teorier om varför nätverk generaliserar kunde alltså inte stämma."
+    ],
+    "takeaway": "En stor modell kan memorera – men väljer ofta att förstå.",
+    "source": "arXiv:1611.03530 · Zhang m.fl. (2016)",
+    "more": "Enligt klassisk statistik borde en modell som kan passa vilken data som helst generalisera dåligt. Ändå fungerar stora nätverk bra på nya exempel när etiketterna är riktiga. Regularisering som dropout förändrade inte bilden. Artikeln fick pris för bästa artikel på ICLR 2017 och startade en våg av forskning om generalisering, bland annat om 'double descent' och hur träningsmetoden i sig gynnar enkla lösningar.",
+    "viz": {
+      "type": "split",
+      "title": "Samma nätverk, två dataset",
+      "a": { "h": "Riktiga etiketter", "items": ["100 % på träning", "Bra på nya bilder"] },
+      "b": { "h": "Slumpade etiketter", "items": ["100 % på träning", "Slumpen på nya bilder"] }
+    }
+  },
+  {
+    "id": "belltest-wien",
+    "day": 314,
+    "kind": "fysik",
+    "arxiv": "1511.03190",
+    "paper": "Significant-loophole-free test of Bell's theorem with entangled photons",
+    "hook": "Chansen att resultatet var slump: 1 på 10³⁰. Kvantfysiken vann igen.",
+    "title": "Belltest med fotoner",
+    "meta": "Marissa Giustina m.fl. · Wien, PRL 2015",
+    "stat": "11,5σ",
+    "statLabel": "säkerhet för att lokal realism bryts",
+    "points": [
+      "Bara veckor efter Delft gjorde en grupp i Wien ett eget kryphålsfritt Belltest.",
+      "De använde fotoner, snabba slumpgeneratorer och extremt effektiva detektorer.",
+      "Resultatet var statistiskt överväldigande: 11,5 standardavvikelser."
+    ],
+    "takeaway": "Två oberoende test är starkare än ett.",
+    "source": "arXiv:1511.03190 · Giustina m.fl. (2015)",
+    "more": "Fotoner är lätta att skicka långt men svåra att detektera alla. Med supraledande detektorer som fångar nästan varje foton kunde gruppen stänga detektionskryphålet, och snabba slumpval stängde lokalitetskryphålet. Samtidigt publicerade NIST i USA ett liknande test. Gruppen leddes av Anton Zeilinger, som fick Nobelpriset i fysik 2022 tillsammans med Alain Aspect och John Clauser.",
+    "viz": {
+      "type": "timeline",
+      "title": "Hösten 2015: tre kryphålsfria test",
+      "ev": [
+        { "t": "Aug 2015", "d": "Delft: elektronspinn 1,3 km isär" },
+        { "t": "Nov 2015", "d": "Wien: fotoner, 11,5σ" },
+        { "t": "Nov 2015", "d": "NIST: fotoner, oberoende test" },
+        { "t": "2022", "d": "Nobelpris för Belltester" }
+      ]
+    }
+  },
+  {
+    "id": "perelman-entropi",
+    "day": 315,
+    "kind": "matte",
+    "arxiv": "math/0211159",
+    "paper": "The entropy formula for the Ricci flow and its geometric applications",
+    "hook": "11 november 2002 lade en okänd ryss ut en artikel på arXiv. Den löste ett av sju milleniumproblem.",
+    "title": "Perelmans första artikel",
+    "meta": "Grigorij Perelman · arXiv, 2002",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Perelman hittade en storhet som alltid ökar under Ricciflödet – en sorts entropi.",
+      "Den gav kontroll över de singulariteter som hade stoppat Hamiltons program.",
+      "Han skissade också ett bevis för Thurstons geometriseringsförmodan."
+    ],
+    "takeaway": "Ett bevis behöver ingen tidskrift för att vara sant.",
+    "source": "arXiv:math/0211159 · Perelman (2002)",
+    "more": "Perelman skickade inte artikeln till någon tidskrift. Under flera år granskade grupper av matematiker hans tre artiklar och skrev ut detaljerna i hundratals sidor. Slutsatsen var att beviset höll. Poincarés förmodan – att varje enkelt sammanhängande, sluten tredimensionell form är en sfär – är det enda av Clayinstitutets sju milleniumproblem som har lösts. Perelman drog sig sedan tillbaka från matematiken.",
+    "viz": {
+      "type": "flow",
+      "title": "Strategin",
+      "steps": ["Låt formen flyta med Ricciflödet", "Entropin ökar hela tiden", "Kontrollera singulariteter", "Formen blir en sfär – eller enkla bitar"]
+    }
+  },
+  {
+    "id": "masked-autoencoders",
+    "day": 316,
+    "kind": "ai",
+    "arxiv": "2111.06377",
+    "paper": "Masked Autoencoders Are Scalable Vision Learners",
+    "hook": "Dölj tre fjärdedelar av en bild. Låt AI:n gissa resten. Så lär den sig se.",
+    "title": "Maskerade autokodare",
+    "meta": "Kaiming He m.fl. · Meta AI, CVPR 2022",
+    "stat": "75 %",
+    "statLabel": "av bilden döljs under träningen",
+    "points": [
+      "BERT lärde sig språk genom att gissa dolda ord. Kan bilder läras på samma sätt?",
+      "MAE döljer slumpvisa rutor och låter nätverket återskapa pixlarna.",
+      "Att dölja så mycket som 75 % gör uppgiften svår nog att lära något."
+    ],
+    "takeaway": "Det som saknas lär oss vad som är viktigt.",
+    "source": "arXiv:2111.06377 · He m.fl. (2021)",
+    "more": "Bilder har mycket upprepning – om man döljer lite kan man gissa från grannarna utan att förstå något. Med 75 procent dolt måste nätverket förstå helheten. Kodaren ser bara de synliga rutorna, vilket gör träningen minst tre gånger snabbare, och en liten avkodare återskapar resten. Med en stor ViT nådde MAE 87,8 procent på ImageNet, den bästa siffran för modeller tränade bara på ImageNet-data.",
+    "viz": {
+      "type": "flow",
+      "title": "Så tränas MAE",
+      "steps": ["Dela bilden i rutor", "Dölj 75 % av dem", "Kodaren ser bara resten", "Avkodaren återskapar bilden"]
+    }
+  },
+  {
+    "id": "amaterasu",
+    "day": 317,
+    "kind": "rymd",
+    "arxiv": "2311.14231",
+    "paper": "An extremely energetic cosmic ray observed by a surface detector array",
+    "hook": "En enda partikel från rymden hade lika mycket energi som en tegelsten som tappas på foten.",
+    "title": "Amaterasu-partikeln",
+    "meta": "Telescope Array · Science, 2023",
+    "stat": "244",
+    "statLabel": "EeV – ungefär 40 joule i en enda partikel",
+    "points": [
+      "Kosmisk strålning är laddade partiklar från rymden, ofta från andra galaxer.",
+      "Detektorer i Utahs öken fångade 2021 en av de mest energirika som setts.",
+      "Riktningen pekar mot ett tomrum i rymden – där inga kända källor finns."
+    ],
+    "takeaway": "Vissa partiklar har ingen känd avsändare.",
+    "source": "arXiv:2311.14231 · Telescope Array (2023)",
+    "more": "Partikeln fick namnet Amaterasu efter den japanska solgudinnan. Bara 'Oh-My-God'-partikeln från 1991, på cirka 320 EeV, var mer energirik. Partiklar med så hög energi borde inte kunna färdas särskilt långt, så källan bör vara relativt nära. Att riktningen pekar mot 'Lokala tomrummet' kan betyda att magnetfält böjt banan kraftigt, att det finns en okänd källa – eller att vi inte förstår partikelfysiken vid så höga energier.",
+    "viz": {
+      "type": "bars",
+      "title": "De mest energirika partiklarna (EeV)",
+      "unit": "",
+      "items": [{ "l": "LHC-proton (jämförelse)", "v": 0.0000068, "t": "0,0000068" }, { "l": "Amaterasu (2021)", "v": 244 }, { "l": "Oh-My-God (1991)", "v": 320, "t": "≈320" }],
+      "max": 320
+    }
+  },
+  {
+    "id": "chexnet",
+    "day": 318,
+    "kind": "liv",
+    "arxiv": "1711.05225",
+    "paper": "CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning",
+    "hook": "En AI hittade lunginflammation på röntgenbilder bättre än radiologer. Eller?",
+    "title": "CheXNet",
+    "meta": "Pranav Rajpurkar m.fl. · Stanford, 2017",
+    "stat": "100 000",
+    "statLabel": "lungröntgenbilder i träningen",
+    "points": [
+      "Ett nätverk med 121 lager tränades på över 100 000 lungröntgenbilder.",
+      "På ett testset märkt av fyra radiologer slog det deras genomsnitt i F1-poäng.",
+      "Det klarade också 13 andra sjukdomar i datamängden."
+    ],
+    "takeaway": "Bra resultat i ett test är inte samma sak som bra vård.",
+    "source": "arXiv:1711.05225 · Rajpurkar m.fl. (2017)",
+    "more": "Studien fick stor uppmärksamhet, och Geoffrey Hinton hade året innan sagt att man borde sluta utbilda radiologer. Kritiker påpekade att etiketterna i datamängden hade tagits fram automatiskt ur journaltext och innehöll fel, att radiologerna inte fick se tidigare bilder eller journal, och att modeller ofta fungerar sämre på sjukhus de inte tränats på. AI används i dag som stöd inom radiologi, men radiologerna finns kvar.",
+    "viz": {
+      "type": "flow",
+      "title": "Från bild till diagnos",
+      "steps": ["Lungröntgenbild", "121-lagers faltningsnätverk", "Sannolikhet för lunginflammation", "Värmekarta visar var"]
+    }
+  },
+  {
+    "id": "gpqa",
+    "day": 319,
+    "kind": "ai",
+    "arxiv": "2311.12022",
+    "paper": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+    "hook": "Frågor så svåra att även experter med Google bara klarar en tredjedel utanför sitt fält.",
+    "title": "GPQA",
+    "meta": "David Rein m.fl. · NYU m.fl., 2023",
+    "stat": "448",
+    "statLabel": "frågor i biologi, fysik och kemi",
+    "points": [
+      "Experter med doktorsexamen skrev flervalsfrågor inom sina egna fält.",
+      "Andra experter klarade 65 %, men duktiga icke-experter bara 34 % – med fri tillgång till nätet.",
+      "GPT-4 klarade 39 % när testet släpptes."
+    ],
+    "takeaway": "För att granska superhjälp behövs nya metoder.",
+    "source": "arXiv:2311.12022 · Rein m.fl. (2023)",
+    "more": "Namnet står för Graduate-level Google-Proof Q&A: frågorna går inte att googla fram svaret på. Syftet var inte bara att testa AI utan att studera 'skalbar övervakning' – hur människor kan kontrollera svar från AI som vet mer än de själva. Inom ett par år klarade de bästa resonerande modellerna mer än experterna, och GPQA blev ett av de vanligaste måtten för vetenskapliga kunskaper hos AI.",
+    "viz": {
+      "type": "bars",
+      "title": "Andel rätt på GPQA",
+      "unit": "%",
+      "items": [{ "l": "Icke-experter med Google", "v": 34 }, { "l": "GPT-4 (2023)", "v": 39 }, { "l": "Experter i ämnet", "v": 65 }],
+      "max": 100
+    }
+  },
+  {
+    "id": "union-closed",
+    "day": 320,
+    "kind": "matte",
+    "arxiv": "2211.09055",
+    "paper": "A constant lower bound for the union-closed sets conjecture",
+    "hook": "En forskare på Google löste en del av ett 40 år gammalt matteproblem – med informationsteori.",
+    "title": "Unionsslutna mängder",
+    "meta": "Justin Gilmer · 2022",
+    "stat": "1 %",
+    "statLabel": "– minst så stor andel av mängderna innehåller något element",
+    "points": [
+      "En familj av mängder är unionssluten om föreningen av två alltid finns med.",
+      "Frankls förmodan: något element finns i minst hälften av mängderna.",
+      "Gilmer visade för första gången en fast andel: minst 1 %."
+    ],
+    "takeaway": "Verktyg från ett fält kan låsa upp ett annat.",
+    "source": "arXiv:2211.09055 · Gilmer (2022)",
+    "more": "Förmodan ställdes av Péter Frankl 1979 och var känd för att vara lätt att formulera men svår att angripa. Tidigare gränser krympte när familjen blev större. Gilmer, som arbetade med maskininlärning på Google, använde entropi från informationsteorin. Inom några veckor förbättrade flera grupper hans metod till ungefär 38 procent. Hela vägen till 50 procent återstår.",
+    "viz": {
+      "type": "bars",
+      "title": "Bevisad andel",
+      "unit": "%",
+      "items": [{ "l": "Gilmer (nov 2022)", "v": 1 }, { "l": "Förbättringar (dec 2022)", "v": 38, "t": "≈38 %" }, { "l": "Förmodan", "v": 50 }],
+      "max": 50
+    }
+  },
+  {
+    "id": "muzero",
+    "day": 321,
+    "kind": "ai",
+    "arxiv": "1911.08265",
+    "paper": "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model",
+    "hook": "MuZero bemästrade schack och Go – utan att ens få veta reglerna.",
+    "title": "MuZero",
+    "meta": "Julian Schrittwieser m.fl. · DeepMind, Nature 2020",
+    "stat": "57",
+    "statLabel": "Atarispel – plus schack, Go och shogi",
+    "points": [
+      "AlphaZero fick spelreglerna och planerade med dem.",
+      "MuZero lär sig i stället en egen modell av vad som spelar roll för planeringen.",
+      "Den förutsäger belöning, bästa drag och värde – inte exakt hur världen ser ut."
+    ],
+    "takeaway": "Man behöver inte förstå allt – bara det som påverkar beslutet.",
+    "source": "arXiv:1911.08265 · Schrittwieser m.fl. (2019)",
+    "more": "Planering med trädsökning har varit mycket framgångsrik i spel där man har en perfekt simulator. I verkligheten saknas oftast sådana. MuZero kombinerar trädsökning med en inlärd modell som bara behöver förutsäga det som är relevant för att välja handlingar. Den matchade AlphaZero i schack, Go och shogi och satte nya rekord i Atarispel, där modellbaserade metoder tidigare varit svaga. Tekniken har använts för att komprimera YouTube-video.",
+    "viz": {
+      "type": "flow",
+      "title": "Att planera i huvudet",
+      "steps": ["Se nuvarande läge", "Inlärd modell: vad händer om …?", "Sök bland möjliga drag", "Välj det bästa"]
+    }
+  },
+  {
+    "id": "facebooks-sociala-graf",
+    "day": 322,
+    "kind": "liv",
+    "arxiv": "1111.4503",
+    "paper": "The Anatomy of the Facebook Social Graph",
+    "hook": "721 miljoner Facebookanvändare: nästan alla hänger ihop, med under fem steg emellan.",
+    "title": "Facebooks sociala graf",
+    "meta": "Johan Ugander m.fl. · 2011",
+    "stat": "99,91 %",
+    "statLabel": "av användarna i samma sammanhängande nätverk",
+    "points": [
+      "Studien var den största analysen av ett socialt nätverk som gjorts dittills.",
+      "Nästan alla användare var förbundna med alla andra via vänners vänner.",
+      "Varje persons vänkrets var förvånansvärt tätt sammanflätad."
+    ],
+    "takeaway": "Världen är mindre än vi tror.",
+    "source": "arXiv:1111.4503 · Ugander m.fl. (2011)",
+    "more": "Nätverket bestod av 721 miljoner aktiva användare och 69 miljarder vänskapsband. En systerstudie samma dag visade att det i genomsnitt bara var 4,74 steg mellan två användare – färre än de 'sex leden' från Stanley Milgrams berömda experiment. Forskarna såg också att vänner ofta liknar varandra i ålder och nationalitet. Studien gjordes av forskare på Facebook och Cornell med anonymiserad data.",
+    "viz": {
+      "type": "bars",
+      "title": "Steg mellan två personer",
+      "unit": "",
+      "items": [{ "l": "Milgram 1967 (brev)", "v": 6, "t": "≈6" }, { "l": "Facebook 2011", "v": 4.74, "t": "4,74" }],
+      "max": 7
+    }
+  },
+  {
+    "id": "hhl-algoritmen",
+    "day": 323,
+    "kind": "matte",
+    "arxiv": "0811.3171",
+    "paper": "Quantum algorithm for solving linear systems of equations",
+    "hook": "En kvantalgoritm löser ekvationssystem exponentiellt snabbare – med några förbehåll.",
+    "title": "HHL-algoritmen",
+    "meta": "Harrow, Hassidim & Lloyd · PRL, 2009",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Att lösa Ax = b är grundläggande i nästan all teknisk beräkning.",
+      "HHL ger svaret som ett kvanttillstånd på tid som växer med log N i stället för N.",
+      "Men det fungerar bara under vissa villkor, och svaret kan inte läsas ut helt."
+    ],
+    "takeaway": "Det finstilta avgör om en uppsnabbning är verklig.",
+    "source": "arXiv:0811.3171 · Harrow m.fl. (2008)",
+    "more": "Algoritmen kräver att matrisen är gles och välkonditionerad och att indata kan laddas snabbt in i en kvantdator. Den ger inte vektorn x, utan bara vissa egenskaper hos den. Trots förbehållen blev HHL grunden för kvantmaskininlärning. Senare visade datavetaren Ewin Tang, som 18-åring, att flera påstådda kvantfördelar inom rekommendationssystem kunde uppnås med vanliga datorer – en process som kallas 'avkvantisering'.",
+    "viz": {
+      "type": "split",
+      "title": "Löftet och förbehållen",
+      "a": { "h": "Löftet", "items": ["Exponentiell uppsnabbning", "Tid ~ log N"] },
+      "b": { "h": "Förbehållen", "items": ["Gles matris", "Snabb inladdning", "Bara delar av svaret"] }
+    }
+  },
+  {
+    "id": "maynard-primtalsgap",
+    "day": 324,
+    "kind": "matte",
+    "arxiv": "1311.4600",
+    "paper": "Small gaps between primes",
+    "hook": "Ett halvår efter Zhangs genombrott hittade en ung postdoc en enklare och starkare väg.",
+    "title": "Små gap mellan primtal",
+    "meta": "James Maynard · Annals of Math., 2015",
+    "stat": "600",
+    "statLabel": "– oändligt många primtalspar ligger så nära eller närmare",
+    "points": [
+      "Zhang visade 2013 att oändligt många primtalspar ligger högst 70 miljoner isär.",
+      "Maynard förfinade en 'såll'-metod och fick gränsen 600.",
+      "Metoden visade också att det finns oändligt många tätt packade grupper av primtal."
+    ],
+    "takeaway": "En ny idé kan göra det svåra enkelt.",
+    "source": "arXiv:1311.4600 · Maynard (2013)",
+    "more": "Maynards metod var både enklare och kraftfullare än Zhangs. Den visade också att för varje m finns oändligt många intervall av begränsad längd som innehåller minst m primtal. Samtidigt hittade Terence Tao oberoende samma idé. Tillsammans med Polymath-projektet sänktes gränsen sedan till 246. Maynard fick Fieldsmedaljen 2022. Tvillingprimtalsförmodan – avståndet 2 – återstår.",
+    "viz": {
+      "type": "timeline",
+      "title": "Kapplöpningen mot 2",
+      "ev": [
+        { "t": "Apr 2013", "d": "Zhang: 70 000 000" },
+        { "t": "Nov 2013", "d": "Maynard: 600" },
+        { "t": "2014", "d": "Polymath: 246" },
+        { "t": "?", "d": "Tvillingprimtal: 2" }
+      ]
+    }
+  }
+]

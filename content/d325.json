@@ -1,0 +1,307 @@
+[
+  {
+    "id": "icecube-kosmiska-neutriner",
+    "day": 325,
+    "kind": "rymd",
+    "arxiv": "1311.5238",
+    "paper": "Evidence for High-Energy Extraterrestrial Neutrinos at the IceCube Detector",
+    "hook": "Två neutriner kallade Bert och Ernie bevisade att spöklika partiklar når oss från rymden.",
+    "title": "Neutriner från rymden",
+    "meta": "IceCube-samarbetet · Science, 2013",
+    "stat": "28",
+    "statLabel": "neutriner med extremt hög energi",
+    "points": [
+      "IceCube består av 5 160 ljusdetektorer nedsänkta i isen vid Sydpolen.",
+      "Två neutriner med över 1 PeV energi – Bert och Ernie – startade jakten.",
+      "Ytterligare 26 hittades. De kunde inte komma från jordens atmosfär."
+    ],
+    "takeaway": "Ett nytt fönster mot universum öppnades.",
+    "source": "arXiv:1311.5238 · IceCube (2013)",
+    "more": "Neutriner reagerar nästan aldrig med materia och kan därför färdas raka vägen från avlägsna källor, genom gas och damm. När en neutrino ändå krockar i isen bildas laddade partiklar som ger svagt blått ljus. De 28 händelserna var för många, för energirika och kom från för många riktningar för att förklaras av atmosfären. Resultatet, med 4 standardavvikelser, blev starten på neutrinoastronomi med hög energi.",
+    "viz": {
+      "type": "flow",
+      "title": "Ett teleskop av is",
+      "steps": ["En neutrino färdas genom rymden", "Krockar med en atom i isen", "Blått ljus sprids", "Detektorerna avslöjar riktning och energi"]
+    }
+  },
+  {
+    "id": "supernova-refsdal",
+    "day": 326,
+    "kind": "rymd",
+    "arxiv": "1411.6009",
+    "paper": "Multiple Images of a Highly Magnified Supernova Formed by an Early-Type Cluster Galaxy Lens",
+    "hook": "Samma supernova syntes fyra gånger – och astronomer förutsade när den skulle dyka upp igen.",
+    "title": "Supernova Refsdal",
+    "meta": "Patrick Kelly m.fl. · Science, 2015",
+    "stat": "4",
+    "statLabel": "bilder av samma supernova",
+    "points": [
+      "1964 föreslog Sjur Refsdal att en linsad supernova kan mäta universums expansion.",
+      "Hubble såg en supernova i fyra bilder runt en galax – ett Einsteinkors.",
+      "Ljuset tar olika vägar, så en femte bild förutsades dyka upp senare."
+    ],
+    "takeaway": "Även fördröjt ljus bär information.",
+    "source": "arXiv:1411.6009 · Kelly m.fl. (2014)",
+    "more": "Galaxhopen MACS J1149 och en galax i den böjer ljuset från en supernova nio miljarder ljusår bort. Varje väg har olika längd, så samma explosion syns vid olika tidpunkter. Modellerna förutsade att en ny bild skulle synas i en annan del av hopen runt slutet av 2015 – och den gjorde det, som förutsagt. Tidsfördröjningarna har sedan använts för att mäta Hubblekonstanten oberoende av andra metoder.",
+    "viz": {
+      "type": "flow",
+      "title": "Samma explosion, flera vägar",
+      "steps": ["En supernova exploderar", "Ljuset böjs runt en galaxhop", "Fyra bilder syns 2014", "En femte bild dyker upp 2015"]
+    }
+  },
+  {
+    "id": "starar-skalfria-korrelationer",
+    "day": 327,
+    "kind": "fysik",
+    "arxiv": "0911.4393",
+    "paper": "Scale-free correlations in bird flocks",
+    "hook": "Hur kan tusentals starar svänga som en enda kropp? Varje fågel 'känner' hela flocken.",
+    "title": "Starflockarnas hemlighet",
+    "meta": "Andrea Cavagna m.fl. · PNAS, 2010",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Forskare i Rom filmade starflockar i 3D och följde varje fågel.",
+      "Fåglarnas avvikelser i fart och riktning hängde ihop över hela flocken.",
+      "Korrelationen växte med flockens storlek – den var skalfri."
+    ],
+    "takeaway": "En flock reagerar som en helhet.",
+    "source": "arXiv:0911.4393 · Cavagna m.fl. (2009)",
+    "more": "Varje stare anpassar sig bara till ett fåtal grannar, ungefär sex eller sju. Ändå sprids information om till exempel en anfallande falk genom hela flocken nästan direkt. Att korrelationerna inte har någon fast längdskala betyder att flocken befinner sig nära en kritisk punkt, som material vid en fasövergång. Det gör att gruppen kan reagera snabbt och samordnat på hot.",
+    "viz": {
+      "type": "flow",
+      "title": "Från granne till flock",
+      "steps": ["Varje fågel följer sina närmaste grannar", "Små avvikelser sprids vidare", "Korrelationer över hela flocken", "Hela flocken svänger som en"]
+    }
+  },
+  {
+    "id": "schurtal-fem",
+    "day": 328,
+    "kind": "matte",
+    "arxiv": "1711.08076",
+    "paper": "Schur Number Five",
+    "hook": "Ett hundra år gammalt problem löstes – med ett bevis på två petabyte.",
+    "title": "Schurtal fem",
+    "meta": "Marijn Heule · AAAI, 2018",
+    "stat": "160",
+    "statLabel": "– det femte Schurtalet",
+    "points": [
+      "Färga talen 1, 2, 3 … med fem färger utan att a + b = c får samma färg.",
+      "Hur långt går det? Svaret visade sig vara 160.",
+      "Datorn behövde 14 processorår, och beviset blev två petabyte."
+    ],
+    "takeaway": "Gamla gåtor kan lösas med ny kraft.",
+    "source": "arXiv:1711.08076 · Heule (2017)",
+    "more": "Issai Schur visade 1916 att det alltid finns en gräns. För en färg är svaret 1, för två 4, för tre 13 och för fyra 44. Att 160 kunde nås med fem färger var känt sedan 1994, men inte att det inte gick längre. Problemet översattes till logik och löstes med SAT-lösare på en superdator. Beviset kontrollerades sedan av ett formellt verifierat program för att man skulle kunna lita på det.",
+    "viz": {
+      "type": "bars",
+      "title": "Schurtalen",
+      "unit": "",
+      "items": [{ "l": "1 färg", "v": 1 }, { "l": "2 färger", "v": 4 }, { "l": "3 färger", "v": 13 }, { "l": "4 färger", "v": 44 }, { "l": "5 färger", "v": 160 }],
+      "hi": 4,
+      "max": 160
+    }
+  },
+  {
+    "id": "whisper",
+    "day": 329,
+    "kind": "ai",
+    "arxiv": "2212.04356",
+    "paper": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "hook": "680 000 timmar ljud från nätet lärde en AI att förstå tal på nästan hundra språk.",
+    "title": "Whisper",
+    "meta": "Alec Radford m.fl. · OpenAI, 2022",
+    "stat": "680 000",
+    "statLabel": "timmar ljud med textning",
+    "points": [
+      "Whisper tränades på ljud och texter från nätet – brokiga och ofullkomliga.",
+      "Mängden kompenserade kvaliteten: modellen blev robust mot brus och accenter.",
+      "Den fungerar utan finjustering och släpptes öppet."
+    ],
+    "takeaway": "Mycket rörig data kan slå lite perfekt data.",
+    "source": "arXiv:2212.04356 · Radford m.fl. (2022)",
+    "more": "Ungefär en tredjedel av träningsdatan var på andra språk än engelska, och modellen kan också översätta till engelska. Tidigare taligenkänning tränades ofta på rena inspelningar och fungerade sämre i verkliga miljöer. Whisper närmade sig människors träffsäkerhet och robusthet. Eftersom modellen var öppen används den i dag i otaliga appar för textning och transkribering – och har lett till debatt om modeller som ibland 'hittar på' text i tystnad.",
+    "viz": {
+      "type": "flow",
+      "title": "Så fungerar Whisper",
+      "steps": ["Ljud delas i 30-sekundersbitar", "Görs om till spektrogram", "Transformer lyssnar", "Skriver text – eller översätter"]
+    }
+  },
+  {
+    "id": "spekulativ-avkodning",
+    "day": 330,
+    "kind": "ai",
+    "arxiv": "2211.17192",
+    "paper": "Fast Inference from Transformers via Speculative Decoding",
+    "hook": "Låt en liten AI gissa – och en stor kontrollera. Svaren blir exakt desamma, bara snabbare.",
+    "title": "Spekulativ avkodning",
+    "meta": "Leviathan, Kalman & Matias · Google, ICML 2023",
+    "stat": "2–3×",
+    "statLabel": "snabbare – med exakt samma resultat",
+    "points": [
+      "Stora språkmodeller skriver ett ord i taget, och varje ord kostar en körning.",
+      "En liten modell gissar flera ord framåt.",
+      "Den stora modellen kontrollerar alla gissningar på en gång och behåller de rätta."
+    ],
+    "takeaway": "Låt den snabba gissa och den smarta döma.",
+    "source": "arXiv:2211.17192 · Leviathan m.fl. (2022)",
+    "more": "Många ord i en text är lätta att förutsäga, och där räcker en liten modell. Den stora modellen kan kontrollera flera föreslagna ord parallellt, ungefär lika snabbt som att generera ett. Med ett smart samplingsknep blir fördelningen av svaren exakt densamma som om den stora modellen arbetat ensam. Tekniken kräver ingen omträning och används i dag i många system för att köra språkmodeller.",
+    "viz": {
+      "type": "flow",
+      "title": "Gissa och kontrollera",
+      "steps": ["Liten modell gissar 4 ord", "Stor modell kontrollerar alla 4 på en gång", "Behåll de rätta, rätta första felet", "Upprepa"]
+    }
+  },
+  {
+    "id": "ads-cft",
+    "day": 331,
+    "kind": "fysik",
+    "arxiv": "hep-th/9711200",
+    "paper": "The Large N Limit of Superconformal Field Theories and Supergravity",
+    "hook": "Ett universum med gravitation kan vara samma sak som en kvantteori utan – på dess rand.",
+    "title": "AdS/CFT",
+    "meta": "Juan Maldacena · 1997",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Maldacena föreslog att strängteori i ett visst krökt rum är likvärdig med en kvantteori.",
+      "Kvantteorin lever på rummets rand, med en dimension mindre.",
+      "Det är ett konkret exempel på den holografiska principen."
+    ],
+    "takeaway": "Kanske är rummet ett hologram.",
+    "source": "arXiv:hep-th/9711200 · Maldacena (1997)",
+    "more": "AdS står för anti-de Sitter-rum, ett rum med negativ krökning, och CFT för konform fältteori. Förmodan säger att varje fråga om gravitationen i rummet kan översättas till en fråga om fältteorin på randen och tvärtom. Det har använts för att studera svarta hål, kvarg–gluonplasma och supraledare. Artikeln är den mest citerade i högenergifysikens historia. Vårt universum är inte ett AdS-rum, så hur idén ska tillämpas på verkligheten är en öppen fråga.",
+    "viz": {
+      "type": "split",
+      "title": "Två beskrivningar av samma sak",
+      "a": { "h": "Inuti (bulk)", "items": ["Gravitation", "Strängteori", "5 dimensioner"] },
+      "b": { "h": "På randen", "items": ["Ingen gravitation", "Kvantfältteori", "4 dimensioner"] }
+    }
+  },
+  {
+    "id": "pinn",
+    "day": 332,
+    "kind": "ai",
+    "arxiv": "1711.10561",
+    "paper": "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations",
+    "hook": "Lär ett neuralt nätverk fysikens lagar – så behöver det mycket mindre data.",
+    "title": "Fysikinformerade nätverk",
+    "meta": "Raissi, Perdikaris & Karniadakis · 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Vanliga nätverk lär sig bara från data och kan bryta mot fysikens lagar.",
+      "PINN lägger till ett straff när nätverket inte uppfyller en känd ekvation.",
+      "Då räcker få mätpunkter för att lösa till exempel flödesekvationer."
+    ],
+    "takeaway": "Kunskap och data är starkare tillsammans.",
+    "source": "arXiv:1711.10561 · Raissi m.fl. (2017)",
+    "more": "Nätverket representerar lösningen till en partiell differentialekvation som en funktion av rum och tid. Eftersom nätverket kan deriveras automatiskt går det att kontrollera hur väl ekvationen är uppfylld i vilka punkter som helst. I del två användes samma idé för att hitta okända parametrar i ekvationerna utifrån data. PINN blev mycket populära inom teknik och naturvetenskap, även om de för vissa problem är långsammare än klassiska numeriska metoder.",
+    "viz": {
+      "type": "flow",
+      "title": "Två mål samtidigt",
+      "steps": ["Passa de få mätpunkterna", "Uppfyll fysikens ekvation överallt", "Träna mot båda", "En lösning som följer fysiken"]
+    }
+  },
+  {
+    "id": "vicsek-modellen",
+    "day": 333,
+    "kind": "fysik",
+    "arxiv": "cond-mat/0611743",
+    "paper": "Novel type of phase transition in a system of self-driven particles",
+    "hook": "En enkel regel – gör som grannarna, ungefär – ger plötslig ordning i en svärm.",
+    "title": "Vicsekmodellen",
+    "meta": "Tamás Vicsek m.fl. · PRL, 1995",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Partiklar rör sig med samma fart och tar grannarnas genomsnittliga riktning.",
+      "Lite slump läggs till i varje steg.",
+      "När slumpen minskar under en kritisk nivå börjar alla röra sig åt samma håll."
+    ],
+    "takeaway": "Ordning kan uppstå ur enkla, lokala regler.",
+    "source": "arXiv:cond-mat/0611743 · Vicsek m.fl. (1995)",
+    "more": "Modellen publicerades 1995 och lades ut på arXiv 2006. Den visade en fasövergång från oordnad rörelse till kollektivt flöde genom spontant symmetribrott – som när magnetiska spinn ordnar sig vid låg temperatur, men här med rörliga partiklar. Den blev grunden för fältet 'aktiv materia' och har använts för att förstå allt från bakterier till fågelflockar och styrning av drönarsvärmar.",
+    "viz": {
+      "type": "split",
+      "title": "Fasövergången",
+      "a": { "h": "Mycket brus", "items": ["Alla åt olika håll", "Ingen nettorörelse"] },
+      "b": { "h": "Lite brus", "items": ["Alla åt samma håll", "Kollektivt flöde"] }
+    }
+  },
+  {
+    "id": "jiuzhang",
+    "day": 334,
+    "kind": "fysik",
+    "arxiv": "2012.01625",
+    "paper": "Quantum computational advantage using photons",
+    "hook": "En kinesisk ljusdator gjorde på minuter det som skulle ta superdatorer miljarder år.",
+    "title": "Jiuzhang",
+    "meta": "Han-Sen Zhong m.fl. · USTC, Science 2020",
+    "stat": "76",
+    "statLabel": "fotoner registrerades som mest",
+    "points": [
+      "Jiuzhang är en optisk kvantdator med speglar, ljusdelare och fotondetektorer.",
+      "Den gör 'gaussisk bosonsampling': ljus sprids och man ser var fotonerna hamnar.",
+      "Det uppskattades gå 10¹⁴ gånger snabbare än den bästa simuleringen."
+    ],
+    "takeaway": "Kvantfördel kan nås med ljus också.",
+    "source": "arXiv:2012.01625 · Zhong m.fl. (2020)",
+    "more": "Femtio ingångar med 'pressat ljus' skickades in i ett nätverk med 100 kanaler och 100 detektorer. Att förutsäga fördelningen av utfall är extremt svårt för vanliga datorer. Till skillnad från Googles supraledande kvantdator är Jiuzhang inte programmerbar för allmänna beräkningar – den gör en enda sorts uppgift. Namnet kommer från en klassisk kinesisk mattebok. Senare har bättre klassiska algoritmer ifrågasatt en del av försprånget.",
+    "viz": {
+      "type": "flow",
+      "title": "Bosonsampling",
+      "steps": ["50 källor av pressat ljus", "Nätverk av 100 optiska kanaler", "100 detektorer räknar fotoner", "Fördelningen är svår att simulera"]
+    }
+  },
+  {
+    "id": "beroende-natverk",
+    "day": 335,
+    "kind": "liv",
+    "arxiv": "1012.0206",
+    "paper": "Catastrophic Cascade of Failures in Interdependent Networks",
+    "hook": "Elnätet behöver internet och internet behöver el. Det gör båda sårbarare.",
+    "title": "Nätverk som drar ner varandra",
+    "meta": "Shlomo Havlin m.fl. · 2010",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Elnät, kommunikation och transporter är beroende av varandra.",
+      "Ett fel i ett nätverk kan slå ut noder i ett annat, som i sin tur slår ut fler.",
+      "Sådana kopplade nätverk kan kollapsa plötsligt – inte gradvis."
+    ],
+    "takeaway": "Det som binder ihop kan också dra ner.",
+    "source": "arXiv:1012.0206 · Havlin m.fl. (2010)",
+    "more": "Översikten bygger på en modell av Buldyrev, Havlin och kollegor, inspirerad av strömavbrottet i Italien 2003, där kraftstationer som slogs ut ledde till att datornoder som styrde elnätet slutade fungera, vilket slog ut fler kraftstationer. I enskilda nätverk sker sönderfall ofta gradvis, men i beroende nätverk kan det ske som ett plötsligt ras. Forskningen har påverkat hur man tänker kring kritisk infrastruktur.",
+    "viz": {
+      "type": "flow",
+      "title": "En kaskad",
+      "steps": ["Ett kraftverk slås ut", "Datornoder som behöver el stängs av", "Kraftverk som styrs av dem faller", "Allt rasar plötsligt"]
+    }
+  },
+  {
+    "id": "pointnet",
+    "day": 336,
+    "kind": "ai",
+    "arxiv": "1612.00593",
+    "paper": "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation",
+    "hook": "Lidar ger miljontals punkter i 3D utan ordning. Hur ska en AI förstå dem?",
+    "title": "PointNet",
+    "meta": "Charles Qi m.fl. · Stanford, CVPR 2017",
+    "stat": "",
+    "statLabel": "",
+    "points": [
+      "Punktmoln från lasrar och 3D-skannrar har ingen naturlig ordning.",
+      "PointNet behandlar varje punkt för sig och slår sedan ihop dem med ett maximum.",
+      "Då spelar ordningen ingen roll – och nätverket blir enkelt och snabbt."
+    ],
+    "takeaway": "Rätt symmetri i modellen ger rätt svar.",
+    "source": "arXiv:1612.00593 · Qi m.fl. (2016)",
+    "more": "Tidigare gjorde man om punktmoln till rutnät av voxlar eller till bilder från olika vinklar, vilket slösar minne och förlorar detaljer. PointNet tar punkterna direkt. Eftersom maxfunktionen ger samma svar oavsett ordning blir modellen 'permutationsinvariant'. Den kunde klassificera föremål, dela upp dem i delar och tolka hela rum. PointNet och efterföljaren PointNet++ blev standard för 3D-data i självkörande bilar och robotar.",
+    "viz": {
+      "type": "flow",
+      "title": "Så läser PointNet ett punktmoln",
+      "steps": ["Tusentals punkter (x, y, z)", "Samma lilla nätverk för varje punkt", "Maximum över alla punkter", "Klass: stol, bord, bil …"]
+    }
+  }
+]
